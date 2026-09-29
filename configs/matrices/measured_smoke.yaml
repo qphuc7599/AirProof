@@ -1,0 +1,7 @@
+base_config: ../smoke.yaml
+seeds: [0, 1, 2, 3, 4, 5]
+methods: [airproof, centralized, air_quality_dt, qpta_adaptation, opportunistic_ttl, blockchain_dt]
+factors:
+  network.availability: [1.0, 0.75, 0.4]
+  world.participation_skew: [1.0, 5.0, 10.0]
+

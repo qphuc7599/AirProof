@@ -1,0 +1,14 @@
+campaign_version: airproof-24h-parallel-calibration-v1
+status: runtime-only-not-scientific-evidence
+base_config: f1.yaml
+requested_workers: 12
+hard_limit_hours: 1
+minimum_free_disk_gb: 5
+studies:
+  calibration:
+    execution: simulation
+    seeds: [9010, 9011, 9012, 9013, 9014, 9015, 9016, 9017, 9018, 9019, 9020, 9021]
+    methods: [airproof]
+    scenarios:
+      - id: anchor
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0}

@@ -1,0 +1,27 @@
+name: AirProof staged protocol
+version: 1
+claim_status: prospective-until-executed
+independent_unit: world=(data_regime,nonoverlapping_test_window,master_seed)
+common_random_numbers: true
+primary_stages:
+  P0:
+    gate: [merkle, atomic_nullifier, user_epoch_dp, fair_recompute, standardized_irls, fixed_lag_timestamp]
+  P1:
+    matrices: [matrices/e1_primary.yaml]
+    endpoints: [worst_group_rmse, rmse, aoi_p95, delivery_ratio, coverage_gap]
+  P2:
+    matrices: [matrices/e3_nominal.yaml, matrices/e3_severe.yaml, matrices/e4_attack.yaml]
+    design: paired_2x2x2_factorial_and_clean_attack_difference_in_differences
+  P3:
+    matrices: [matrices/e2_privacy.yaml]
+    endpoints: [release_rmse, suppressed_release_count, declined_privacy_users]
+  P4:
+    matrices: [matrices/e5_agents.yaml, matrices/e5_grid.yaml]
+    endpoints: [runtime_seconds, peak_memory_mb, solver_failure_rate, delivery_ratio]
+forbidden:
+  - mainnet_transaction
+  - treating_agent_cell_epoch_as_independent_replicate
+  - selecting_baseline_on_test
+  - reporting_target_numbers_as_observations
+  - silently_dropping_timeout_or_nonconvergence
+

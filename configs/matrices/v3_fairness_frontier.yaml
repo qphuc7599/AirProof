@@ -1,0 +1,6 @@
+base_config: ../v3/frontier.yaml
+seeds: [5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107]
+methods: [airproof_predictive_residual]
+factors:
+  scheduler.fairness_strength: [0.0, 0.25, 0.5, 0.75, 1.0]
+  scheduler.target_contributors: [10, 20, 30]

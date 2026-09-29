@@ -1,0 +1,85 @@
+campaign_version: airproof-24h-v1
+status: frozen-before-local-run
+base_config: f1.yaml
+requested_workers: 12
+hard_limit_hours: 23
+minimum_free_disk_gb: 5
+primary_independent_unit: world
+paired_common_random_numbers: true
+studies:
+  e1:
+    execution: simulation
+    seeds: [10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009,
+            10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019,
+            10020, 10021, 10022, 10023, 10024, 10025, 10026, 10027, 10028, 10029]
+    methods: [airproof, air_quality_dt, opportunistic_ttl]
+    scenarios:
+      - id: c1_best
+        overrides: {network.availability: 1.0, network.outage_median_hours: 0, network.outage_p95_hours: 0, world.participation_skew: 1.0}
+      - id: c2_participation
+        overrides: {network.availability: 1.0, network.outage_median_hours: 0, network.outage_p95_hours: 0, world.participation_skew: 10.0}
+      - id: c3_anchor
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0}
+      - id: c4_outage
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 1.0}
+      - id: c5_severe
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0}
+  e3:
+    execution: simulation
+    seeds: [10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011]
+    methods: [factorial_000, factorial_001, factorial_010, factorial_011, factorial_100, factorial_101, factorial_110, factorial_111]
+    scenarios:
+      - id: nominal
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0, attack.fraction: 0.0, attack.kind: clean}
+      - id: severe
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: gradual_drift}
+  e4:
+    execution: simulation
+    seeds: [10000, 10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011]
+    methods: [airproof, squared_loss]
+    scenarios:
+      - id: clean
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.0, attack.kind: clean}
+      - id: drift20
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: gradual_drift}
+      - id: drift40
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.4, attack.kind: gradual_drift}
+      - id: hotspot20
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: hotspot_suppression}
+      - id: hotspot40
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.4, attack.kind: hotspot_suppression}
+  e2a:
+    execution: privacy_replay
+    seeds: [11000, 11001, 11002, 11003, 11004, 11005, 11006, 11007, 11008, 11009, 11010, 11011]
+    methods: [airproof]
+    base_overrides: {privacy.private_eligibility: true, privacy.epsilon_user_max: 512.0}
+    factors:
+      privacy.epsilon_mean: [0.25, 0.5, 1.0, 2.0, 4.0]
+      privacy.k_min: [10, 20, 50]
+      privacy.epsilon_count: [0.1, 0.25, 0.5]
+  e2l:
+    execution: privacy_replay
+    seeds: [11100, 11101, 11102, 11103, 11104, 11105, 11106, 11107]
+    methods: [airproof, no_fairness]
+    base_overrides: {privacy.private_eligibility: false, privacy.epsilon_count: 0.0}
+    factors:
+      privacy.epsilon_user_max: [2.0, 4.0, 8.0]
+      world.participation_skew: [1.0, 10.0]
+  e2_poison:
+    execution: privacy_replay
+    seeds: [11200, 11201, 11202, 11203, 11204, 11205, 11206, 11207]
+    methods: [airproof]
+    base_overrides: {privacy.private_eligibility: false, privacy.epsilon_count: 0.0, privacy.epsilon_user_max: 192.0}
+    scenarios:
+      - id: clean
+        overrides: {attack.fraction: 0.0, attack.kind: clean}
+      - id: drift20
+        overrides: {attack.fraction: 0.2, attack.kind: gradual_drift}
+      - id: hotspot20
+        overrides: {attack.fraction: 0.2, attack.kind: hotspot_suppression}
+    factors:
+      privacy.epsilon_mean: [0.5, 2.0]
+  e5:
+    execution: simulation
+    methods: [airproof]
+    generated_scalability_design: true

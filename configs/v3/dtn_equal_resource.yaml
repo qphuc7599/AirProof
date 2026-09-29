@@ -1,0 +1,32 @@
+protocol_version: airproof-v3-dtn-equal-resource-1
+status: frozen-before-confirmatory-seeds
+selection_seeds: [5200, 5201, 5202, 5203]
+confirmatory_seeds: [5300, 5301, 5302, 5303, 5304, 5305, 5306, 5307, 5308, 5309, 5310, 5311, 5312, 5313, 5314, 5315, 5316, 5317, 5318, 5319, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5328, 5329]
+policies: [direct, ttl_one_copy, prophet_gtmx, binary_spray_wait, epidemic_cap, airproof_deficit]
+trace:
+  nodes: 120
+  groups: 4
+  steps: 168
+  message_probability: 0.50
+  regular_gateway_availability: 0.45
+  underserved_gateway_availability: 0.18
+  gateway_outage_start_probability: 0.08
+  peer_contact_rate: 0.35
+resources:
+  record_size_bytes: 512
+  ttl_steps: 24
+  bytes_per_contact: 1024
+  queue_records: 48
+  copy_budget: 4
+prophet_rfc6693:
+  forwarding: GTMX
+  p_encounter_max: 0.7
+  p_encounter_first: 0.5
+  p_first_threshold: 0.1
+  beta: 0.9
+  gamma: 0.999
+  delta: 0.01
+primary_endpoint: restricted_mean_delivery_delay
+secondary_endpoints: [deadline_delivery_ratio, restricted_mean_aoi, group_delivery_gap, transmissions_per_delivered]
+practical_gate: paired mean restricted-delivery-delay improvement >= 0.15 versus strongest non-AirProof relay
+interpretation: capacity-constrained synthetic transport evidence; not a wireless deployment trace

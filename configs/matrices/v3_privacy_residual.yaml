@@ -1,0 +1,7 @@
+base_config: ../v3/diagnostic.yaml
+seeds: [3100, 3101, 3102, 3103, 3104, 3105, 3106, 3107]
+methods: [airproof]
+factors:
+  privacy.release_mode: [raw, residual]
+  privacy.residual_clip: [10.0]
+  privacy.epsilon_mean: [0.25, 1.0]

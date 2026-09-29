@@ -1,0 +1,53 @@
+protocol_version: airproof-24h-f1-v1
+status: preregistered-local-confirmatory
+world:
+  agents: 200
+  grid_side: 12
+  groups: 4
+  steps: 96
+  burn_in_steps: 24
+  epoch_hours: 1
+  baseline: 12.0
+  process_noise: 0.35
+  measurement_sigma: 2.0
+  participation_rate: 0.65
+  participation_skew: 5.0
+network:
+  availability: 0.75
+  outage_median_hours: 6
+  outage_p95_hours: 24
+  group_correlation: 0.5
+  contact_probability: 0.15
+  ttl_steps: 24
+  replication_factor: 2
+  record_size_bytes: 512
+scheduler:
+  budget_bytes_per_epoch: 32768
+  reserve_fraction: 0.25
+  target_contributors: 10
+twin:
+  fixed_lag: 6
+  huber_delta: 1.5
+  lambda_prior: 0.5
+  lambda_spatial: 0.2
+  max_irls: 20
+  tolerance: 0.00001
+privacy:
+  clip: 50.0
+  k_min: 10
+  epsilon_mean: 1.0
+  epsilon_count: 0.0
+  epsilon_user_max: 8.0
+  private_eligibility: false
+  eligibility_false_release_probability: 0.01
+  public_claim_scope: scoped-release-interface-only
+attack:
+  fraction: 0.0
+  kind: clean
+  amplitude: 12.0
+  start_epoch: 48
+blockchain:
+  batch_size: 512
+  anchor_interval_minutes: 60
+  networks: [hardhat-local]
+  mainnet_forbidden: true

@@ -1,0 +1,7 @@
+base_config: ../v3/diagnostic.yaml
+seeds: [3000, 3001, 3002, 3003, 3004, 3005, 3006, 3007, 3008, 3009, 3010, 3011]
+methods: [airproof]
+factors:
+  attack.kind: [clean]
+  attack.fraction: [0.0]
+  twin.huber_delta: [3.0, 6.0, 12.0]

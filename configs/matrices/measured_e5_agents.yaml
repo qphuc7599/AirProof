@@ -1,0 +1,6 @@
+base_config: ../smoke.yaml
+seeds: [0, 1, 2]
+methods: [airproof]
+factors:
+  world.agents: [50, 100, 250, 500]
+

@@ -1,0 +1,64 @@
+status: prospective-draft-before-final-data-requires-selection-and-power-completion
+unit: independent-world
+minimum_worlds: 30
+maximum_worlds: 100
+sample_size_lock: >-
+  Select the final count prospectively from complete final-configuration
+  validation; use at least 30 and at most 100 worlds within the local campaign
+  budget. The first 30 reserved seeds are listed below; any expansion continues
+  contiguously from 7630 and is locked before primary data. Report conditional
+  power and any unmet planning target rather than asserting 90% by construction.
+reserved_final_seeds: [7600, 7601, 7602, 7603, 7604, 7605, 7606, 7607, 7608, 7609, 7610, 7611, 7612, 7613, 7614, 7615, 7616, 7617, 7618, 7619, 7620, 7621, 7622, 7623, 7624, 7625, 7626, 7627, 7628, 7629]
+family_wise_alpha: 0.05
+adjustment: Holm-seven-prespecified-one-sided-world-contrast-tests
+confidence_intervals: paired-world-bootstrap-descriptive-10000-draws
+reconstruction_rmse_clock: >-
+  Bounded-fixed-lag reconstruction available no later than acquisition epoch plus
+  L, evaluated on the completed finite trajectory. Last L epochs have shorter
+  revision opportunity at the finite horizon. This is not instantaneous live RMSE.
+additional_clock_audit: >-
+  Also report live RMSE/WG-RMSE frozen at each acquisition epoch before future
+  arrivals, and overlapping spatial/availability outcome strata fixed on the
+  completed calibration prefix. These do not change the seven primary contrasts.
+power:
+  target: 0.90
+  pilot_source: pending-selected-final-config-all-five-cells-and-ablations
+  standard_deviation: upper95-bootstrap-pilot-sd
+  sizing_alpha: 0.007142857142857143
+  note: Prospective calculation must be produced before final seeds are run; never retrofit a-priori power to archived campaigns.
+hypotheses:
+  H1:
+    cell: anchor_clean
+    contrast: rmse_airproof_minus_1.05_times_rmse_squared
+    alternative: less_than_zero
+  H2:
+    cell: outage_clean
+    contrast: rmse_airproof_minus_1.05_times_rmse_squared
+    alternative: less_than_zero
+  H3:
+    cell: severe_clean
+    contrast: rmse_airproof_minus_1.05_times_rmse_squared
+    alternative: less_than_zero
+  H4:
+    cell: severe_adversarial_drift
+    contrast: airproof_rmse_growth_minus_0.80_times_squared_rmse_growth
+    alternative: less_than_zero
+  H5:
+    cell: severe_hotspot_suppression
+    contrast: airproof_rmse_growth_minus_0.80_times_squared_rmse_growth
+    alternative: less_than_zero
+  H6:
+    cell: severe_clean
+    contrast: coverage_gap_airproof_minus_0.80_times_coverage_gap_no_fairness
+    alternative: less_than_zero
+  H7:
+    cell: severe_clean
+    contrast: worst_group_rmse_airproof_minus_0.90_times_worst_group_rmse_no_fairness
+    alternative: less_than_zero
+secondary_families:
+  - privacy_budget_and_same_budget_raw_dp_utility
+  - dtn_equal_resource_and_empirical_trace_comparisons
+  - modern_predictor_wrapper_noninferiority
+  - nested_city_transfer_noninferiority
+  - integrity_receipt_and_public_testnet_feasibility
+note: Targets are falsifiable hypotheses, not promised outcomes or permission to retune on final data.

@@ -1,0 +1,34 @@
+protocol_version: airproof-v3-prediction-holdout-1
+status: frozen-before-any-seed-5600-to-5611-execution
+frozen_at_local: 2026-09-02T14:45:00+07:00
+selection_evidence:
+  seeds: [5400, 5401, 5402, 5403, 5404, 5405]
+  artifact: reports/v3_validation/prediction_calibrated_tail_gate_validation_summary.json
+  selected_rule: maximize_attack_robustness_subject_to_clean_95ci_ratio_lte_1_05
+locked_inputs:
+  experiment_config: configs/v3/prediction_endpoints.yaml
+  config_sha256: 9b2f85a41820f5474bf9bab643dcda4ca619c4b7473e51dfecb38c51b2ccb7e6
+  executable_source_sha256: db3d50bab735a2f6705f80935155fb353898338381ffb029a3e22e8ffdd927ef
+  seeds: [5600, 5601, 5602, 5603, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611]
+  scenarios: [clean, adversarial_drift20, hotspot_suppression20]
+  predictors:
+    - persistence
+    - idw
+    - histgb_spatiotemporal
+    - graph_squared
+    - airproof_predictive_residual
+decision_gates:
+  clean_airproof_to_strongest_rmse_ratio_mean_lte: 1.05
+  clean_airproof_to_strongest_rmse_ratio_ci95_upper_lte: 1.05
+  adversarial_drift_rmse_growth_attenuation_mean_gte: 0.08
+  adversarial_drift_rmse_growth_attenuation_ci95_lower_gt: 0.0
+  hotspot_rmse_growth_attenuation_mean_gte: 0.20
+  hotspot_rmse_growth_attenuation_ci95_lower_gt: 0.0
+statistics:
+  pairing: common_random_number_by_seed
+  interval: paired_world_bootstrap
+  bootstrap_replicates: 10000
+  alpha: 0.05
+interpretation_boundary: >-
+  This independent mechanism holdout selects no parameters. It is not the powered
+  1000-agent by 672-epoch primary campaign and cannot replace that campaign.

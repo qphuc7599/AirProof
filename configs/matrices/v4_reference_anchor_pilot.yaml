@@ -1,0 +1,18 @@
+base_config: ../v3/primary_full_horizon.yaml
+status: diagnostic-only-not-primary
+seeds: [7001, 7002, 7003]
+methods: [squared_loss, airproof_predictive_residual, airproof_reference_anchored]
+factors:
+  protocol_version: [airproof-v4-reference-anchor-pilot-1]
+  status: [diagnostic-new-worlds-only]
+  world.agents: [500]
+  world.grid_side: [16]
+  world.steps: [168]
+  world.participation_skew: [10.0]
+  network.availability: [0.4]
+  network.outage_median_hours: [24]
+  network.outage_p95_hours: [72]
+  scheduler.budget_bytes_per_epoch: [41600]
+  attack.fraction: [0.2]
+  attack.start_epoch: [84]
+  attack.kind: [clean, adversarial_drift, hotspot_suppression]

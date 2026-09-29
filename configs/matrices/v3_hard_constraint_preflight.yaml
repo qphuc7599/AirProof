@@ -1,0 +1,11 @@
+base_config: ../v3/diagnostic.yaml
+seeds: [5000, 5001, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011]
+methods: [squared_loss, airproof_predictive_residual]
+factors:
+  attack.kind: [clean, adversarial_drift, hotspot_suppression]
+  attack.fraction: [0.2]
+  world.reference_station_count: [16]
+  twin.correction_delta: [2.9]
+  twin.correction_clip: [8.0]
+  scheduler.fairness_strength: [1.0]
+  scheduler.constraint_mode: [hard_if_feasible]

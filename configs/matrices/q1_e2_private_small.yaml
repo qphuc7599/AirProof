@@ -1,0 +1,8 @@
+base_config: ../q1_small.yaml
+seeds: [2100, 2101, 2102, 2103]
+methods: [airproof]
+factors:
+  privacy.private_eligibility: [true]
+  privacy.epsilon_mean: [0.25, 1.0, 4.0]
+  privacy.epsilon_count: [0.25, 0.5]
+  privacy.k_min: [5, 10]

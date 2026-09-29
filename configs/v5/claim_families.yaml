@@ -1,0 +1,32 @@
+registration_role: prospective-before-validation-and-confirmation
+primary_H1_H7: unchanged-in-protocol.yaml
+cells: [anchor_clean, outage_clean, severe_clean, severe_drift, severe_hotspot]
+alpha: 0.05
+adjustment: Holm-within-each-declared-family
+inference_unit: paired-world
+scope: familywise-control-within-each-family-not-global-across-all-families
+families:
+  citizen_value:
+    count: 5
+    endpoints: AP_RMSE-minus-PUBLIC_RMSE-in-each-cell
+    success: strictly-negative-paired-world-contrast-with-Holm-support
+  wrapper_and_events:
+    count: 8
+    endpoints:
+      - three-clean-cells-AP_RMSE-minus-1.05-times-SQ_RMSE
+      - five-cells-SQ_event_recall-minus-AP_event_recall-minus-0.05
+    note: Clean endpoints overlap primary H1-H3; duplication does not create independent evidence.
+  release_citizen_value:
+    count: 20
+    endpoints: five-cells-times-two-clocks-times-two-public-controls
+    clocks: [live, reconstructed]
+    support: all-post-burn-acquisition-clock
+    contrast: CALIBRATED_world_RMSE-minus-public-control_world_RMSE
+    public_controls: [PUBLIC, PUBLIC_CALIBRATED]
+    note: PUBLIC_CALIBRATED uses identical frozen moment model with no protected observations. Gains over PUBLIC alone may reflect calibration rather than citizen information.
+descriptive_only:
+  - stress-matrix-expanded-cells
+  - historical-archive-reanalyses
+  - empirical-contact-role-resampling-conditional-on-three-existing-collections
+  - individual-bootstrap-intervals-without-simultaneous-coverage
+invalid_values: preserve-and-block-family-no-favorable-substitution

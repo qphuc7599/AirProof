@@ -1,0 +1,99 @@
+registry_version: 1
+status: airproof24h-confirmatory-frozen
+independent_unit: world_or_nonoverlapping_archived_test_window
+paired_common_random_numbers: true
+pilot:
+  seeds: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011]
+  data_scope: synthetic-validation-only
+  matrix: matrices/q1_pilot_small.yaml
+  practical_deltas:
+    worst_group_rmse: 0.5
+    overall_rmse: 0.35
+    restricted_mean_aoi: 1.0
+small_run_now:
+  - id: P0
+    command: python -m airproof.cli fixtures
+  - id: PILOT
+    matrix: matrices/q1_pilot_small.yaml
+  - id: E2_SMALL
+    matrix: matrices/q1_e2_private_small.yaml
+  - id: E2L_SMALL
+    matrix: matrices/q1_e2_longitudinal_small.yaml
+  - id: E6_SMALL
+    command: python -m airproof.cli audit-benchmark
+  - id: E7_SMALL
+    command: python -m airproof.cli availability-benchmark
+local_confirmatory:
+  id: AIRPROOF24H_V1
+  config: airproof24h/campaign.yaml
+  base_fidelity: airproof24h/f1.yaml
+  status: authorized-frozen
+  execution_host: local-i5-12450HX-15.7GB
+  independent_test_seed_ranges:
+    e1: [10000, 10029]
+    e2a: [11000, 11011]
+    e2l: [11100, 11107]
+    e2_poison: [11200, 11207]
+    e5: [12000, 12300]
+  design:
+    e1: five-cell-fractional-design-30-paired-worlds
+    e2: cached-privacy-replay
+    e3: full-2x2x2-two-regimes-12-paired-worlds
+    e4: clean-plus-two-attacks-at-20-and-40-percent-12-paired-worlds
+    e5: short-horizon-ofat-plus-10k-sentinel
+    e6: deterministic-local-merkle-log-and-contract-benchmark
+    e7: vectorized-replication-and-fault-injection
+    transfer: twelve-station-held-out-beijing
+  interpretation: confirmatory-for-registered-f1-regime-not-substitute-for-full-anchor
+deferred_large:
+  - id: E1
+    reason: 1000_agents_x_672_steps_x_30_to_100_worlds
+    matrices: [matrices/e1_primary.yaml]
+  - id: E2_FULL
+    reason: full_privacy_interaction_grid_after_pilot_freeze
+  - id: E3
+    reason: two_regimes_x_eight_treatments_x_30_to_100_worlds
+    matrices: [matrices/e3_nominal.yaml, matrices/e3_severe.yaml]
+  - id: E4
+    reason: attack_family_requires_frozen_attacker_on_validation
+    matrices: [matrices/e4_attack.yaml]
+  - id: E5
+    reason: 5000_to_10000_agents_and_4096_cells_require_64gb_ram
+    matrices: [matrices/e5_agents.yaml, matrices/e5_grid.yaml]
+  - id: ARCHIVED_PRIMARY
+    reason: epa_era5_acs_and_independent_us_test_windows_not_acquired
+  - id: SEPOLIA
+    reason: requires_operator_test_account_and_external_confirmation_time
+primary_unlock_conditions:
+  - all_p0_fixtures_pass
+  - baseline_fidelity_review_complete
+  - validation_power_report_written
+  - claims_and_sample_sizes_frozen
+  - independent_test_seeds_and_windows_sealed
+airproof24h_unlock_audit:
+  p0_and_tests: passed-before-launch
+  baseline_selection: validation-locked-air_quality_dt-and-opportunistic_ttl
+  sample_size: 30-world-e1-floor-frozen
+  test_seeds: sealed-in-airproof24h-campaign-config
+  outcome_dependent_fidelity_selection: forbidden
+v3_full_horizon_primary:
+  id: AIRPROOF_V3_FULL_HORIZON_20260902
+  status: frozen-before-execution
+  execution_host: local-i5-12450HX-15.7GB-12-workers
+  independent_test_seeds: [6000, 6029]
+  cells:
+    - anchor-clean
+    - outage-clean
+    - severe-clean
+    - severe-whitebox-drift20
+    - severe-hotspot-suppression20
+  primary_methods: [squared_loss, airproof_predictive_residual]
+  severe_clean_fairness_ablation: airproof_predictive_no_fairness
+  matrices:
+    - matrices/v3_primary_anchor.yaml
+    - matrices/v3_primary_outage.yaml
+    - matrices/v3_primary_severe_clean.yaml
+    - matrices/v3_primary_severe_drift.yaml
+    - matrices/v3_primary_severe_hotspot.yaml
+  multiplicity_policy: endpoint-family-specific-estimates-with-paired-world-bootstrap
+  interpretation: first-powered-full-horizon-evaluation-of-final-v3-architecture

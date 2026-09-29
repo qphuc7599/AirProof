@@ -1,0 +1,124 @@
+campaign_version: airproof-fullpaper30h-v1
+status: frozen-before-local-run
+base_config: f2.yaml
+requested_workers: 12
+hard_limit_hours: 29
+minimum_free_disk_gb: 10
+primary_independent_unit: world
+paired_common_random_numbers: true
+prior_evidence:
+  campaign: results/campaign_20260902
+  role: broad-f1-surface-and-replay-evidence
+auxiliary:
+  e6_batch_sizes: [32, 128, 512, 2048]
+  e6_replicates: 30
+  e7_replicas: [1, 2, 3]
+  e7_loss_probabilities: [0.0, 0.25, 0.5, 0.75]
+  e7_trials: 20000
+  e7_seed: 20260903
+  transfer_input: data/processed/beijing_hourly.parquet
+  transfer_max_test_steps: 336
+  epa_transfer_input: data/external/epa/epa_bay_area_pm25_2024.parquet
+  epa_transfer_max_test_steps: 336
+studies:
+  e1:
+    execution: simulation
+    seeds: [20000, 20001, 20002, 20003, 20004, 20005, 20006, 20007, 20008, 20009,
+            20010, 20011, 20012, 20013, 20014, 20015, 20016, 20017, 20018, 20019,
+            20020, 20021, 20022, 20023, 20024, 20025, 20026, 20027, 20028, 20029]
+    methods: [airproof, air_quality_dt, opportunistic_ttl]
+    scenarios:
+      - id: anchor_full672
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0}
+      - id: outage_full672
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 1.0}
+      - id: severe_full672
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0}
+  e3:
+    execution: simulation
+    seeds: [21000, 21001, 21002, 21003, 21004, 21005, 21006, 21007, 21008, 21009, 21010, 21011]
+    methods: [factorial_000, factorial_001, factorial_010, factorial_011, factorial_100, factorial_101, factorial_110, factorial_111]
+    scenarios:
+      - id: nominal_full672
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0, attack.fraction: 0.0, attack.kind: clean}
+      - id: severe_drift20_full672
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: gradual_drift}
+  e4:
+    execution: simulation
+    seeds: [21000, 21001, 21002, 21003, 21004, 21005, 21006, 21007, 21008, 21009, 21010, 21011]
+    methods: [airproof, squared_loss]
+    scenarios:
+      - id: clean
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.0, attack.kind: clean}
+      - id: drift20
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: gradual_drift}
+      - id: hotspot20
+        overrides: {network.availability: 0.4, network.outage_median_hours: 24, network.outage_p95_hours: 72, world.participation_skew: 10.0, attack.fraction: 0.2, attack.kind: hotspot_suppression}
+  e2a:
+    execution: privacy_replay
+    seeds: [22000, 22001, 22002, 22003, 22004, 22005, 22006, 22007]
+    methods: [airproof]
+    base_overrides: {privacy.private_eligibility: true, privacy.epsilon_user_max: 512.0}
+    factors:
+      privacy.epsilon_mean: [0.25, 1.0, 4.0]
+      privacy.k_min: [10, 20]
+      privacy.epsilon_count: [0.1, 0.5]
+  e2l:
+    execution: privacy_replay
+    seeds: [22100, 22101, 22102, 22103, 22104, 22105, 22106, 22107]
+    methods: [airproof, no_fairness]
+    base_overrides: {privacy.private_eligibility: false, privacy.epsilon_count: 0.0}
+    factors:
+      privacy.epsilon_user_max: [2.0, 8.0]
+      world.participation_skew: [1.0, 10.0]
+  e2_poison:
+    execution: privacy_replay
+    seeds: [22200, 22201, 22202, 22203, 22204, 22205, 22206, 22207]
+    methods: [airproof]
+    base_overrides: {privacy.private_eligibility: false, privacy.epsilon_count: 0.0, privacy.epsilon_user_max: 512.0}
+    scenarios:
+      - id: clean
+        overrides: {attack.fraction: 0.0, attack.kind: clean}
+      - id: drift20
+        overrides: {attack.fraction: 0.2, attack.kind: gradual_drift}
+    factors:
+      privacy.epsilon_mean: [0.5, 2.0]
+  e5:
+    execution: simulation
+    generated_scalability_design: fullpaper30h
+    methods: [airproof]
+    base_overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0, attack.fraction: 0.0, attack.kind: clean}
+    cases:
+      - id: agents100_full168
+        seeds: [23000, 23001, 23002]
+        overrides: {world.agents: 100, world.grid_side: 32, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: agents500_full168
+        seeds: [23000, 23001, 23002]
+        overrides: {world.agents: 500, world.grid_side: 32, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: agents1000_full168
+        seeds: [23000, 23001, 23002]
+        overrides: {world.agents: 1000, world.grid_side: 32, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: agents5000_full672
+        seeds: [23000, 23001, 23002, 23003, 23004, 23005, 23006, 23007, 23008, 23009]
+        overrides: {world.agents: 5000, world.grid_side: 32, world.steps: 672, world.burn_in_steps: 48}
+      - id: agents5000_per_agent_budget_full672
+        seeds: [23100, 23101, 23102]
+        overrides: {world.agents: 5000, world.grid_side: 32, world.steps: 672, world.burn_in_steps: 48, scheduler.budget_bytes_per_epoch: 640000}
+      - id: grid8_full168
+        seeds: [23200, 23201, 23202]
+        overrides: {world.agents: 1000, world.grid_side: 8, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: grid16_full168
+        seeds: [23200, 23201, 23202]
+        overrides: {world.agents: 1000, world.grid_side: 16, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: grid32_full168
+        seeds: [23200, 23201, 23202]
+        overrides: {world.agents: 1000, world.grid_side: 32, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: grid64_full168
+        seeds: [23200, 23201, 23202]
+        overrides: {world.agents: 1000, world.grid_side: 64, world.steps: 216, world.burn_in_steps: 48, attack.start_epoch: 108}
+      - id: agents10000_grid64_steps96
+        seeds: [23300, 23301, 23302, 23303, 23304]
+        overrides: {world.agents: 10000, world.grid_side: 64, world.steps: 96, world.burn_in_steps: 12, attack.start_epoch: 48}
+      - id: agents10000_grid64_full672_sentinel
+        seeds: [23400]
+        overrides: {world.agents: 10000, world.grid_side: 64, world.steps: 672, world.burn_in_steps: 48, attack.start_epoch: 224, attack.fraction: 0.2, attack.kind: gradual_drift}

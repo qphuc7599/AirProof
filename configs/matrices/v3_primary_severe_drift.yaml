@@ -1,0 +1,11 @@
+base_config: ../v3/primary_full_horizon.yaml
+seeds: [6000, 6001, 6002, 6003, 6004, 6005, 6006, 6007, 6008, 6009, 6010, 6011, 6012, 6013, 6014, 6015, 6016, 6017, 6018, 6019, 6020, 6021, 6022, 6023, 6024, 6025, 6026, 6027, 6028, 6029]
+methods: [squared_loss, airproof_predictive_residual]
+factors:
+  network.availability: [0.4]
+  network.outage_median_hours: [24]
+  network.outage_p95_hours: [72]
+  world.participation_skew: [10.0]
+  attack.fraction: [0.2]
+  attack.kind: [adversarial_drift]
+

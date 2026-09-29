@@ -1,0 +1,69 @@
+protocol_version: airproof-v3-prediction-endpoints-2
+status: calibrated-dual-track-selected-on-5400-to-5405-frozen-before-5600-to-5611-holdout
+world:
+  agents: 500
+  grid_side: 16
+  groups: 4
+  steps: 168
+  burn_in_steps: 48
+  epoch_hours: 1
+  baseline: 12.0
+  reference_station_count: 16
+  reference_measurement_sigma: 0.5
+  process_noise: 0.35
+  measurement_sigma: 2.0
+  participation_rate: 0.65
+  participation_skew: 5.0
+network:
+  availability: 1.0
+  outage_median_hours: 0
+  outage_p95_hours: 0
+  group_correlation: 0.5
+  contact_probability: 0.15
+  ttl_steps: 24
+  replication_factor: 2
+  record_size_bytes: 512
+scheduler:
+  budget_bytes_per_epoch: 256000
+  reserve_fraction: 0.25
+  fairness_strength: 1.0
+  constraint_mode: hard_if_feasible
+  target_mode: constant
+  target_contributors: 10
+twin:
+  fixed_lag: 6
+  huber_delta: 1.345
+  correction_delta: 4.0
+  predictive_adaptive_delta: true
+  predictive_clean_delta: 4.0
+  predictive_robust_delta: 2.9
+  predictive_activation_gain: 1.0
+  predictive_calibrated_gate: true
+  predictive_calibration_epochs: 48
+  predictive_excess_gate_start: 0.01
+  predictive_excess_gate_full: 0.04
+  innovation_gate_start: 0.02
+  innovation_gate_full: 0.12
+  innovation_gate_tail_z: 3.5
+  correction_clip: 8.0
+  lambda_prior: 0.5
+  lambda_spatial: 0.2
+  max_irls: 12
+  tolerance: 0.00001
+privacy:
+  clip: 50.0
+  residual_clip: 10.0
+  release_mode: residual
+  public_baseline_value: 12.0
+  k_min: 20
+  epsilon_mean: 1.0
+  epsilon_count: 0.0
+  epsilon_user_max: 512.0
+  private_eligibility: false
+  eligibility_false_release_probability: 0.01
+  public_claim_scope: scoped-release-interface-only
+attack:
+  fraction: 0.0
+  kind: clean
+  amplitude: 12.0
+  start_epoch: 84

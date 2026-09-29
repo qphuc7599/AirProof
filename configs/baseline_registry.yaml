@@ -1,0 +1,95 @@
+registry_version: 1
+status: v3-endpoint-and-transport-baselines-frozen
+baselines:
+  persistence:
+    endpoints: [prediction]
+    fidelity: FULL_REPRODUCTION
+    role: one-step-naive-endpoint-control
+  idw:
+    endpoints: [prediction]
+    fidelity: FULL_REPRODUCTION
+    role: current-evidence-spatial-interpolation-control
+  histgb_spatiotemporal:
+    endpoints: [prediction]
+    fidelity: FULL_REPRODUCTION
+    role: burn-in-trained-nonlinear-spatiotemporal-endpoint-control
+  graph_squared:
+    endpoints: [prediction]
+    fidelity: FULL_REPRODUCTION
+    role: matched-nonrobust-graph-estimator-control
+  centralized:
+    endpoints: [prediction]
+    fidelity: FAITHFUL_ADAPTATION
+    role: direct-upload-nonrobust-control
+  air_quality_dt:
+    endpoints: [prediction]
+    fidelity: FAITHFUL_ADAPTATION
+    role: graph-state-estimator-control
+  qpta_adaptation:
+    endpoints: [allocation, privacy]
+    fidelity: FAITHFUL_ADAPTATION
+    role: online-quality-private-allocation-adaptation
+  opportunistic_ttl:
+    endpoints: [transport, freshness]
+    fidelity: FAITHFUL_ADAPTATION
+    role: relay-control
+  prophet_gtmx:
+    endpoints: [transport, freshness]
+    fidelity: FAITHFUL_ADAPTATION
+    role: rfc6693-equations-1-to-3-with-gtmx-copy-cap
+  binary_spray_and_wait:
+    endpoints: [transport, freshness]
+    fidelity: FAITHFUL_ADAPTATION
+    role: binary-spray-then-direct-wait
+  epidemic_cap:
+    endpoints: [transport, freshness]
+    fidelity: CAPACITY_MATCHED_ADAPTATION
+    role: epidemic-replication-under-common-copy-budget
+  blockchain_dt:
+    endpoints: [audit, prediction]
+    fidelity: FAITHFUL_ADAPTATION
+    role: batched-anchor-control
+  sorted_batch_merkle_local:
+    endpoints: [audit]
+    fidelity: FULL_REPRODUCTION
+    role: local-batch-commitment-primitive
+  rfc9162_style_transparency_log:
+    endpoints: [audit]
+    fidelity: FAITHFUL_ADAPTATION
+    role: append-only-log-with-inclusion-and-consistency-proofs
+  cai_tdsc:
+    endpoints: [architecture]
+    fidelity: ARCHITECTURAL_COMPARATOR
+    numerical_winner_claim_allowed: false
+  blocksense:
+    endpoints: [architecture]
+    fidelity: ARCHITECTURAL_COMPARATOR
+    numerical_winner_claim_allowed: false
+  pear_2025:
+    endpoints: [architecture, privacy]
+    fidelity: ARCHITECTURAL_COMPARATOR
+    numerical_winner_claim_allowed: false
+v3_prediction_frozen:
+  protocol: configs/v3/prediction_endpoints.yaml
+  evidence: reports/v3_holdout/prediction_endpoint_5600_5611_summary.json
+  selection_seeds: [5400, 5401, 5402, 5403, 5404, 5405]
+  confirmatory_seeds: [5600, 5601, 5602, 5603, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611]
+  primary_endpoint: held-out-cell-rmse-after-burn-in
+  strongest_clean_comparator: graph_squared
+  status: completed-independent-synthetic-endpoint-holdout
+airproof24h_selected:
+  selection_data: synthetic-validation-only-seeds-2000-to-2011
+  prediction_control: air_quality_dt
+  transport_control: opportunistic_ttl
+  robust_matched_control: squared_loss
+  factorial_full_system: factorial_111
+  rule: no baseline changes after test-seed execution begins
+  scope: numerical claims limited to these executable layer adaptations
+v3_transport_frozen:
+  protocol: configs/v3/dtn_equal_resource.yaml
+  evidence: reports/v3_validation/dtn_equal_resource_analysis.json
+  selection_seeds: [5200, 5201, 5202, 5203]
+  confirmatory_seeds: [5300, 5329]
+  common_resources: [trace, bytes_per_contact, queue_records, ttl_steps, copy_budget]
+  primary_endpoint: restricted_mean_delivery_delay
+  status: completed-confirmatory-synthetic-transport

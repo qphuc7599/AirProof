@@ -1,0 +1,9 @@
+base_config: ../v3/diagnostic.yaml
+seeds: [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011]
+methods: [squared_loss, airproof, airproof_predictive_residual]
+factors:
+  attack.kind: [clean, adversarial_drift, hotspot_suppression]
+  attack.fraction: [0.2]
+  world.reference_station_count: [16]
+  twin.correction_delta: [2.9]
+  twin.correction_clip: [8.0]

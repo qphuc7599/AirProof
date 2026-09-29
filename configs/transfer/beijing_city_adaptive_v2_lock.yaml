@@ -1,0 +1,33 @@
+protocol_version: beijing-city-adaptive-v2
+status: locked-after-inner-selection-before-outer-test
+frozen_at_local_date: 2026-09-02
+dataset_sha256: 6E6487CABDCA593C4AA87D1F03E70B3573F44FB0FC70D3D6AA27FCAAA83DBE34
+protocol_config_sha256: 2F48A68880754794DCCD4FEC3625E7961100A9BA2C32A85FB8B95803F408AE95
+selection_artifact: reports/analysis/beijing_city_adaptive_v2_selection.json
+selection_artifact_file_sha256: 212CF3D025018CA32A7204EFAE1C1DE0A2640BDDFAE09F65B94D4C165CE50926
+selection_protocol_sha256: 5d9b5c9de7b883fa8a732046a78389bdb81f5b22d89fa352bcafb4005c79261a
+outer_test:
+  start_utc: 2017-02-15T00:00:00+00:00
+  end_utc: 2017-02-28T23:00:00+00:00
+  steps: 336
+  state_before_lock: unread
+selection_summary:
+  outer_folds: 12
+  all_outer_targets_excluded: true
+  all_selected_robust_delta: 1.345
+  kernels: {gaussian: 10, exponential: 1, idw: 1}
+  bias_shrinkage: {0.0: 11, 1.0: 1}
+  mean_inner_station_rmse: 21.17607514877915
+frozen_selection:
+  Aotizhongxin: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Changping: {kernel: gaussian, scale: 40.0, neighbors: 6, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Dingling: {kernel: exponential, scale: 40.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 1.0}
+  Dongsi: {kernel: idw, scale: 1.0, neighbors: 6, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Guanyuan: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Gucheng: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Huairou: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Nongzhanguan: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Shunyi: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Tiantan: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Wanliu: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}
+  Wanshouxigong: {kernel: gaussian, scale: 20.0, neighbors: 11, robust_delta: 1.345, bias_shrinkage: 0.0}

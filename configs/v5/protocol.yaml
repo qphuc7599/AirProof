@@ -1,0 +1,77 @@
+protocol_version: airproof-v5-integrated-1
+created_utc: '2026-09-07T00:23:42Z'
+deadline_utc: '2026-09-08T05:53:42Z'
+role: prospective-development-validation-confirmation
+historical_configuration: reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml
+historical_primary: reports/v4_primary/core_final_7600_7629_20260903
+scale: {agents: 1000, grid_side: 32, groups: 4, acquisition_epochs: 672, burn_in: 48, drain_epochs: 24}
+processing: {budget_bytes_per_epoch: 83200, target_contributors: 30, raw_lag: 6}
+transport:
+  capacity_bytes_per_direction: 1024
+  raw_packet_bytes: 512
+  release_packet_bytes: 256
+  raw_buffer_bytes: 18432
+  release_buffer_bytes: 6144
+  ttl_epochs: 24
+  copy_tokens: 4
+  release_gateway_reservation_bytes: 256
+  control_budget_bytes: 128
+  gateway_release_path: source-owned-direct-only
+  raw_policy: airproof_deadline
+  peer_copy_available_next_epoch: true
+  ack_mode: bounded-contact-local-no-global-deletion
+  topology: exogenous-public-world-mobility-colocation-and-renewal-uplink
+  privacy_scope: fixed-release-transcript-given-public-topology-not-audit-or-mobility
+privacy: {epsilon_history: 8.0, queries: 28, k_min: 20, residual_clip: 10.0, raw_clip: 50.0, deadline: 24, private_gate: false}
+selection:
+  objectives: [full_field, residual]
+  regularization_multipliers: [0.1, 0.3, 1.0]
+  caps: [8.0, 16.0]
+  delta: 4.0
+  lag: 6
+  candidate_count: 12
+  clean_ratio_max: 1.05
+  attack_growth_attenuation_min: 0.20
+  event_recall_loss_max: 0.05
+  ranking: eligible-worst-normalized-loss-then-smaller-cap-then-runtime
+  extra_search: forbidden
+seed_namespaces:
+  preflight: [910000, 910009]
+  development: [911000, 911007]
+  calibration: [912000, 912007]
+  validation: [913000, 913011]
+  confirmation: [914000, 914099]
+  stress: [915000, 915011]
+  archived_channel: [916000, 916029]
+  transport_confirmation: [917000, 917029]
+  rule: ranges-must-be-audited-for-prior-use-before-any-outcomes
+primary:
+  min_worlds: 30
+  max_worlds: 100
+  power_target: 0.90
+  familywise_alpha: 0.05
+  sizing_alpha: 0.007142857142857143
+  adjustment: Holm
+  common_methods: [AP, SQ, PUBLIC, HUBER]
+  cells: [anchor_clean, outage_clean, severe_clean, severe_drift, severe_hotspot]
+  factorial_cells: [severe_clean, severe_hotspot]
+  evaluations_per_world: 32
+  H1: {cell: anchor_clean, contrast: 'RMSE_AP-1.05*RMSE_SQ'}
+  H2: {cell: outage_clean, contrast: 'RMSE_AP-1.05*RMSE_SQ'}
+  H3: {cell: severe_clean, contrast: 'RMSE_AP-1.05*RMSE_SQ'}
+  H4: {cell: severe_drift, contrast: 'growth_AP-0.8*growth_SQ'}
+  H5: {cell: severe_hotspot, contrast: 'growth_AP-0.8*growth_SQ'}
+  H6: {cell: severe_clean, contrast: 'gap_AP-0.8*gap_NF'}
+  H7: {cell: severe_clean, contrast: 'worst_group_AP-0.9*worst_group_NF'}
+  no_optional_stopping: true
+  no_post_confirmation_retuning: true
+  invalid_or_failed_selection: do-not-launch-confirmatory-campaign
+uncertainty: {levels: [0.90, 0.95], min_stratum_support: 100, calibration_worlds: 8, inference: descriptive-world-or-shared-time-block}
+release_twin: {lag_hours: 48, covariance_diagonal_shrinkage: 0.10, calibration_source: public-synthetic-only}
+execution: {initial_workers: 8, max_workers: 11, reserve_ram_mb: 3072, rss_safety_multiplier: 1.25, runtime_safety_multiplier: 1.5}
+research_rules:
+  - Preserve all historical outcomes including failures.
+  - Reuse only evidence matching its source, mechanism, inputs, resource contract, target and clock.
+  - New synthetic-channel seeds over a viewed archive are not new pollution holdouts.
+  - Scientific non-attainment is retained; margins and test support never change to produce a pass.
+  - No new public-chain transactions or device deployment.

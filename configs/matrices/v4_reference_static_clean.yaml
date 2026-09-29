@@ -1,0 +1,15 @@
+base_config: ../v3/primary_full_horizon.yaml
+status: open-validation-not-primary
+seeds: [7004, 7005, 7006]
+methods: [airproof_reference_anchored]
+factors:
+  protocol_version: [airproof-reference-static-validation-1]
+  status: [open-validation-not-primary]
+  world.participation_skew: [10.0]
+  network.availability: [0.4]
+  network.outage_median_hours: [24]
+  network.outage_p95_hours: [72]
+  twin.predictive_adaptive_delta: [false]
+  twin.correction_delta: [4.0]
+  attack.fraction: [0.2]
+  attack.kind: [clean]

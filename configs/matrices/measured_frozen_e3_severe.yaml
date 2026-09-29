@@ -1,0 +1,9 @@
+base_config: ../smoke_frozen.yaml
+seeds: [100, 101, 102, 103, 104, 105]
+methods: [factorial_000, factorial_001, factorial_010, factorial_011, factorial_100, factorial_101, factorial_110, factorial_111]
+factors:
+  network.availability: [0.4]
+  world.participation_skew: [10.0]
+  attack.fraction: [0.2]
+  attack.kind: [gradual_drift]
+

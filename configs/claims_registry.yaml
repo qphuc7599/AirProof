@@ -1,0 +1,173 @@
+registry_version: 1
+status: airproof24h-confirmatory-frozen-awaiting-evidence
+source: source_paper/deep-research-report.md
+protected_interface:
+  claim: scoped-user-level-dp
+  fields: [group, epoch, released, noisy_value, fixed_policy_metadata]
+  explicitly_excluded:
+    - exact_contributor_count
+    - contributor_derived_coverage
+    - contributor_derived_freshness
+    - merkle_root
+    - ciphertext_commitment
+    - exact_batch_size
+    - network_timing
+claims:
+  privacy:
+    gate:
+      - DP-01_one_epoch_aggregate
+      - DP-02_release_duplicate_rejected
+      - DP-03_adjacent_epoch_unlinkable
+      - DP-04_raw_intervals_distinct
+      - DP-05_replace_sensitivity_tight
+      - DP-06_threshold_add_remove_bounded
+      - DP-07_protected_interface_excludes_exact_count
+      - DP-08_longitudinal_accounting
+      - PRIVACY-LEAK-01_no_raw_fields
+    bar: max_composed_user_epsilon_lte_configured_budget
+    status: executable-spec-only
+  fairness:
+    gate:
+      - FAIR-01_two_groups_three_slots
+      - FAIR-02_three_groups_balanced
+      - FAIR-03_shortfall_explicit
+      - FAIR-04_hard_floor_when_globally_feasible
+    practical_bar:
+      worst_group_rmse_reduction: 0.10
+      max_service_deficit_reduction: 0.20
+    status: validation-frontier-passed-awaiting-full-horizon-primary
+  overall_utility:
+    noninferiority_margin: 0.05
+    status: awaiting-primary-evidence
+  freshness:
+    practical_bar: 0.15
+    metric: restricted_mean_aoi_including_undelivered
+    status: awaiting-primary-evidence
+  poisoning:
+    practical_bar:
+      clean_rmse_degradation_max: 0.05
+      hotspot_rmse_growth_attenuation_min: 0.20
+      whitebox_drift_attacked_rmse_noninferiority_margin: 0.05
+      whitebox_drift_bias_reduction_min: 0.0
+    status: endpoint-holdout-clean-and-hotspot-passed-drift-rmse-attenuation-not-supported
+  delayed_robust_estimation:
+    gate:
+      - ROB-01_precision_ratio_four
+      - ROB-02_huber_weight_tenth
+      - ROB-03_quadratic_region_matches_gls
+      - ROB-04_path_variance_separated
+      - ROB-05_residual_squared_limit
+      - ROB-06_excess_influence_opposed
+      - ROB-07_predictor_precedes_current_batch
+      - ROB-08_predictive_quadratic_equivalence
+      - LATE-01_updates_acquisition_state
+      - LATE-02_pre_window_immutable
+      - LATE-03_block_solver_matches_dense
+    status: executable-spec-only
+  integrity:
+    gate:
+      - LEDGER-01_tamper_rejected
+      - LEDGER-02_concurrent_replay_exactly_once
+      - LEDGER-05_competing_root_rejected
+    bar: all_injected_tamper_and_replay_rejected
+    status: executable-spec-only
+  post_receipt_accountability:
+    gate: [LEDGER-03_unresolved_receipt_detected]
+    bar: all_overdue_unresolved_receipts_surfaced
+    status: completed-900-of-900-expected-decisions
+  availability:
+    gate: [LEDGER-04_deletion_is_availability_failure]
+    status: completed-480000-retrieval-trials
+  scalability:
+    practical_bar:
+      agents: 5000
+      p95_epoch_update_lt_epoch_duration: true
+      solver_failure_rate_lt: 0.01
+    status: deferred-large-host
+v3_validation:
+  source_plan: docs/PAPER_V3_MAJOR_REVISION_PLAN.md
+  evidence_report: reports/V3_ARCHITECTURE_DIAGNOSTIC_20260902.md
+  estimator_gate:
+    clean_rmse_degradation_max: 0.05
+    drift_attack_induced_rmse_reduction_min: 0.20
+    status: locked-holdout-mechanism-gate-passed
+    metric_definition: paired-mean-relative-effect-over-locked-worlds
+    retained_candidate: airproof_predictive_residual
+    locked_parameters:
+      reference_station_count: 16
+      correction_delta: 2.9
+      correction_clip: 8.0
+    holdout_seeds: [4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011]
+    holdout_evidence: reports/v3_validation/predictive_reference_holdout_summary.json
+    observed:
+      clean_mean_relative_penalty: 0.04277
+      clean_bootstrap_95_ci: [0.03764, 0.04796]
+      adversarial_drift_rmse_attenuation: 0.20314
+      adversarial_drift_bootstrap_95_ci: [0.17709, 0.22927]
+      hotspot_rmse_attenuation: 0.35799
+      hotspot_bootstrap_95_ci: [0.32172, 0.38960]
+    boundary: validation-only-not-a-primary-paper-claim
+  residual_dp_gate:
+    status: small-mechanism-gate-passed
+    observed_release_rmse_reduction:
+      epsilon_0_25: 0.7998
+      epsilon_1_0: 0.7925
+    next_gate: previous-finalized-public-baseline-full-e2-interaction
+  primary_campaign:
+    status: frozen-ready-to-run-seeds-6000-to-6029
+    satisfied:
+      - estimator_validation_joint_gate_passed
+      - city_adaptive_transfer_protocol_frozen
+      - constrained_network_protocol_frozen
+      - powered_estimator_primary_matrix_frozen
+      - endpoint_specific_baselines_frozen
+    protocol:
+      - configs/matrices/v3_primary_anchor.yaml
+      - configs/matrices/v3_primary_outage.yaml
+      - configs/matrices/v3_primary_severe_clean.yaml
+      - configs/matrices/v3_primary_severe_drift.yaml
+      - configs/matrices/v3_primary_severe_hotspot.yaml
+    independent_seeds: [6000, 6029]
+    primary_methods: [squared_loss, airproof_predictive_residual]
+    fairness_ablation: airproof_predictive_no_fairness
+  endpoint_prediction_holdout:
+    status: completed-independent-holdout
+    protocol: configs/v3/prediction_holdout_5600_5611.yaml
+    evidence: reports/v3_holdout/prediction_endpoint_5600_5611_summary.json
+    observed:
+      clean_rmse_ratio_to_graph_squared: 1.01719
+      clean_bootstrap_95_ci: [1.01222, 1.02205]
+      whitebox_drift_rmse_growth_attenuation: 0.00438
+      whitebox_drift_bootstrap_95_ci: [-0.06903, 0.07408]
+      whitebox_drift_attacked_rmse_ratio: 1.01341
+      whitebox_drift_attacked_bias_reduction: 0.13511
+      hotspot_rmse_growth_attenuation: 0.26254
+      hotspot_bootstrap_95_ci: [0.20312, 0.31614]
+    boundary: whitebox-drift-rmse-attenuation-gate-failed-and-is-not-a-supported-claim
+  fairness_frontier:
+    status: completed-validation-selection-frozen
+    protocol: configs/matrices/v3_fairness_frontier.yaml
+    evidence: reports/v3_validation/fairness_frontier_analysis.json
+    selected:
+      fairness_strength: 1.0
+      target_contributors: 10
+      effective_floor: 10
+    observed:
+      global_feasibility_rate: 0.9635
+      paired_rmse_price: -0.0298
+      paired_coverage_gap_reduction: 0.3593
+  constrained_network:
+    status: completed-confirmatory-synthetic-transport
+    protocol: configs/v3/dtn_equal_resource.yaml
+    evidence: reports/v3_validation/dtn_equal_resource_analysis.json
+    observed:
+      strongest_delay_comparator: binary_spray_wait
+      paired_restricted_mean_delay_improvement: 0.2161
+      bootstrap_95_ci: [0.2103, 0.2217]
+    boundary: deadline-delivery-ratio-tradeoff-remains-explicit
+forbidden_claims:
+  - full-public-transcript-is-dp
+  - blockchain-verifies-physical-truth
+  - merkle-root-proves-pre-receipt-completeness
+  - smoke-results-are-primary-results
+  - architectural-comparators-are-numerical-winner-baselines

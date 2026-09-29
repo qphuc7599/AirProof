@@ -1,0 +1,46 @@
+protocol_version: airproof-v3-primary-freeze-1
+status: frozen-before-any-seed-6000-to-6029-execution
+frozen_at_local: 2026-09-02T15:16:51+07:00
+execution:
+  workers: 12
+  host: local-i5-12450HX-15.7GB
+  estimated_wall_minutes: [80, 110]
+  estimated_peak_ram_gb: 8.0
+  validation_only_runtime_seed: 5999
+immutable_digests:
+  executable_source_sha256: a11734addcabd75b6c1b178f731bc355ed6debafa2a60b8540250413dbd3931e
+  registry_bundle_sha256: ccd4b408c5e3770cfde3f2361819fe27e708f424433faf2cd80ec2506227bd71
+  base_config_semantic_sha256: f54e0ebad1d48a729635fdc98197b4203d3a634023e434324091b7716b35e3ce
+  base_config_file_sha256: f73ef7e96d17c34f19ff9bb9d0e12e5ffa07d0ae00a797414b60821072d819fa
+  matrices:
+    configs/matrices/v3_primary_anchor.yaml: d73e3331c00b0ce0d7637f253ab8914d4af68381248969904222e1c8539402f2
+    configs/matrices/v3_primary_outage.yaml: f35d6af3685e05d97dd2bb5c43856a7c94833d6219f565446760ab30e1ef5418
+    configs/matrices/v3_primary_severe_clean.yaml: 17cf33f78b2dd3834d1cc26ae1f8c521de7ae5a0dbb951fbaa9ef872f6f9fb63
+    configs/matrices/v3_primary_severe_drift.yaml: 0d93bd7532e2da2479615034f17e37ce9da02a5d64470caa95277f055c4e87dd
+    configs/matrices/v3_primary_severe_hotspot.yaml: fc631dd3905fa78ccf292aef423e2ecfc245d2772573dbdbe25ef173d3685f97
+design:
+  independent_seeds: [6000, 6029]
+  worlds_per_cell: 30
+  agents: 1000
+  epochs: 672
+  clean_regimes: [anchor, outage, severe]
+  attack_regimes: [severe-whitebox-drift20, severe-hotspot-suppression20]
+  primary_methods: [squared_loss, airproof_predictive_residual]
+  fairness_ablation: airproof_predictive_no_fairness
+  total_runs: 330
+decision_gates:
+  each_clean_regime_airproof_to_squared_rmse_ratio_lte: 1.05
+  hotspot_rmse_growth_attenuation_gte: 0.20
+  whitebox_drift_attacked_rmse_ratio_lte: 1.05
+  whitebox_drift_attacked_bias_reduction_gt: 0.0
+  severe_fairness_coverage_gap_reduction_gte: 0.20
+  severe_fairness_rmse_price_lte: 0.05
+  feasible_epoch_floor_violations_eq: 0
+  solver_failure_rate_lt: 0.01
+  p95_epoch_update_seconds_lt: 3600
+analysis:
+  paired_by: seed
+  interval: paired_world_bootstrap
+  bootstrap_replicates: 10000
+  alpha: 0.05
+  selection_after_execution: forbidden

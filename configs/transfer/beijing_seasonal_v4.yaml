@@ -1,0 +1,45 @@
+protocol_version: beijing-public-weather-seasonal-v4-1
+dataset: data/processed/beijing_hourly.parquet
+source_doi: https://doi.org/10.24432/C5RK5G
+measurement_task: contemporaneous-public-station-spatial-reconstruction-not-forecasting
+outer_train_fraction: 0.8
+inner_fit_steps: 2016
+inner_validation_steps: 168
+purge_hours: 6
+validation_starts: ['2015-02-01', '2015-05-01', '2015-08-01', '2015-11-01']
+test_start_inclusive: '2016-06-01'
+test_stop_exclusive: '2017-01-01'
+test_steps: 5136
+test_window: fixed-seven-calendar-months-in-remaining-unscored-outer-partition
+preserved_diagnostic: reports/v4_validation/beijing_public_weather_20260903
+previous_test_windows:
+  - [28057, 28393]
+  - [34050, 34722]
+  - [34728, 35064]
+public_mix_weights: [0.25, 0.5, 0.75, 1.0]
+public_max_station_ratio: 1.05
+public_selection: minimize-mean-ratio-plus-quarter-worst-ratio-across-all-season-station-folds
+public_reference_anchor: fixed-IDW-p2-all-available-source-stations
+graph_selection: same-normalized-season-station-objective-among-zero-solver-failure-candidates
+worst_station_weight: 0.25
+graph_neighbors: [4, 8]
+graph_length_scales_km: [15.0, 30.0]
+correction_clips: [2.0, 8.0]
+fixed_lag: 6
+citizen_delta: 4.0
+lambda_temporal: 0.02
+lambda_spatial: 0.02
+regulatory_sigma_model: 3.0
+transport: 0.12
+directionality: 1.0
+selection_before_all_test_folds: true
+claim_gate_upper_paired_ratio: 1.10
+preferred_gate_upper_paired_ratio: 1.05
+inference: paired-station-and-shared-24-72-168-hour-block-bootstrap
+limitations:
+  - calibration-revision-after-earlier-winter-tail-failure-not-a-relabelled-success-on-that-tail
+  - all-four-validation-seasons-precede-outer-training-cutoff-and-exclude-outer-station-values-and-weather
+  - test-is-contiguous-seven-calendar-months-selected-before-any-new-test-outcome
+  - same-production-weather-aware-solver-and-nonzero-correction-candidate-family
+  - reference-reuse-is-deterministic-no-independent-evidence-or-calibrated-posterior-claim
+  - public-only-spatial-transfer-not-private-citizen-robustness-or-forecasting

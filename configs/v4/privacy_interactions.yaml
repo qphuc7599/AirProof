@@ -1,0 +1,60 @@
+protocol_version: v4-public-reference-full-privacy-interactions-1
+role: prespecified-secondary-mechanism-campaign-not-primary-twin-confirmation
+base_config: public_reference_validation.yaml
+agents: 1000
+steps: 672
+seeds: [7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7518, 7519, 7520, 7521, 7522, 7523, 7524, 7525, 7526, 7527, 7528, 7529]
+epsilon_user_caps: [1.0, 4.0, 8.0, 32.0, 128.0, 512.0]
+scheduled_epochs: [28, 112, 672]
+k_min: [10, 20, 50]
+private_eligibility: [false, true]
+count_budget_fraction: 0.2
+false_release_probability: 0.01
+release_modes: [raw, residual]
+raw_clip: 50.0
+residual_clip: 10.0
+public_collection_deadline_steps: 24
+cells:
+  anchor_clean:
+    network.availability: 1.0
+    network.outage_median_hours: 0
+    network.outage_p95_hours: 0
+    world.participation_skew: 1.0
+    attack.kind: clean
+    attack.fraction: 0.0
+  outage_clean:
+    network.availability: 0.75
+    network.outage_median_hours: 6
+    network.outage_p95_hours: 24
+    world.participation_skew: 5.0
+    attack.kind: clean
+    attack.fraction: 0.0
+  severe_clean:
+    attack.kind: clean
+  severe_adversarial_drift:
+    attack.kind: adversarial_drift
+  severe_hotspot_suppression:
+    attack.kind: hotspot_suppression
+analysis:
+  unit: paired-independent-physical-world
+  bootstrap_replicates: 10000
+  primary_secondary_claim_cell: severe_clean
+  primary_secondary_claim_epsilon_user_max: 8.0
+  primary_secondary_claim_scheduled_epochs: 28
+  primary_secondary_claim_k_min: 20
+  primary_secondary_claim_private_eligibility: false
+  reduction_target: 0.5
+  rest_of_full_grid: descriptive-interactions-including-suppression-and-release-cadence
+  empty_or_selectively_released_cohorts: report-support-never-replace-missing-RMSE-by-zero
+resource_contract:
+  independently_reserved_bytes_per_user_per_epoch: 256
+  additional_to_raw_evidence_budget: true
+  raw_evidence_budget_bytes_per_epoch: 83200
+  ingress_model: logical-reservation-not-measured-DTN-control-packet-encoding
+privacy_scope:
+  - arbitrary-replacement-of-one-user-complete-history-including-region-changes
+  - vector-sensitivity-4C-over-k-and-optional-count-vector-sensitivity-2
+  - public-schedule-and-full-composition-even-for-suppressed-queries
+  - no-private-scheduler-displacement-or-unaccounted-private-predictor
+  - grid-is-counterfactual-on-synthetic-data-not-jointly-private-publication
+  - fixed-deadline-output-horizon-extends-24-epochs-beyond-acquisition-horizon

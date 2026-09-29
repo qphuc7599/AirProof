@@ -1,0 +1,6 @@
+base_config: ../smoke_frozen.yaml
+seeds: [100, 101, 102, 103, 104, 105]
+methods: [airproof, centralized, air_quality_dt, qpta_adaptation, opportunistic_ttl, blockchain_dt]
+factors:
+  network.availability: [1.0, 0.75, 0.4]
+  world.participation_skew: [1.0, 5.0, 10.0]

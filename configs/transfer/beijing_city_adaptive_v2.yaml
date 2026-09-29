@@ -1,0 +1,36 @@
+protocol_version: beijing-city-adaptive-v2
+status: frozen-before-locked-tail-test
+dataset: data/processed/beijing_hourly.parquet
+pollutant: PM2.5
+outer:
+  split: chronological-80-percent-train
+  held_out_unit: station
+  target_exclusion: all-training-validation-and-prediction-inputs
+  purge_hours: 6
+  test_window: archive-tail-untouched-by-v1
+  test_steps: 336
+inner:
+  split: chronological
+  fit_steps: 2016
+  purge_hours: 6
+  validation_steps: 336
+  pseudo_held_out_units: all-non-outer-stations
+selection:
+  objective: mean_station_rmse_plus_0.25_worst_station_rmse
+  shortlist: 6
+  kernels: [idw, exponential, gaussian]
+  idw_exponents: [1.0, 1.5, 2.0, 2.5, 3.0]
+  length_scales_km: [5.0, 10.0, 20.0, 40.0, 80.0]
+  neighbors: [3, 4, 6, 11]
+  robust_delta: [null, 1.345, 2.0, 3.0]
+  bias_shrinkage: [0.0, 0.5, 1.0]
+comparators:
+  - idw_frozen_p2_all_neighbors
+retention:
+  preserve_original_v1_result: reports/analysis/beijing_transfer.json
+  preserve_original_v1_mean_huber_rmse: 32.83841179372552
+  preserve_original_v1_mean_idw_rmse: 10.034662258023234
+claim_gate:
+  primary: mean_station_rmse_ratio_vs_idw_lte_1.10
+  preferred: mean_station_rmse_ratio_vs_idw_lte_1.05
+  no_test_tuning: true

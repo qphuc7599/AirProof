@@ -1,0 +1,9 @@
+base_config: ../smoke.yaml
+seeds: [0, 1, 2, 3, 4, 5]
+methods: [factorial_000, factorial_001, factorial_010, factorial_011, factorial_100, factorial_101, factorial_110, factorial_111]
+factors:
+  network.availability: [0.75]
+  world.participation_skew: [5.0]
+  attack.fraction: [0.0]
+  attack.kind: [clean]
+

@@ -1,0 +1,6 @@
+base_config: ../q1_small.yaml
+seeds: [2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011]
+methods: [airproof, centralized, air_quality_dt, qpta_adaptation, opportunistic_ttl, blockchain_dt]
+factors:
+  network.availability: [0.75]
+  world.participation_skew: [5.0]

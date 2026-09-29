@@ -1,0 +1,13 @@
+campaign_version: airproof-fullpaper30h-calibration-v1
+status: calibration-only-no-claim
+base_config: f2.yaml
+hard_limit_hours: 2
+minimum_free_disk_gb: 10
+studies:
+  e1:
+    execution: simulation
+    seeds: [19988, 19989, 19990, 19991, 19992, 19993, 19994, 19995, 19996, 19997, 19998, 19999]
+    methods: [airproof, air_quality_dt, opportunistic_ttl]
+    scenarios:
+      - id: anchor_full672_calibration
+        overrides: {network.availability: 0.75, network.outage_median_hours: 6, network.outage_p95_hours: 24, world.participation_skew: 5.0}

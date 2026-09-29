@@ -1,0 +1,43 @@
+protocol_version: beijing-public-weather-v4
+dataset: data/processed/beijing_hourly.parquet
+source_doi: https://doi.org/10.24432/C5RK5G
+measurement_task: contemporaneous-public-station-spatial-reconstruction-not-forecasting
+outer_train_fraction: 0.8
+inner_fit_steps: 2016
+inner_validation_steps: 336
+purge_hours: 6
+test_steps: 672
+historical_v1_steps: 336
+historical_v2_tail_steps: 336
+test_window: 672-hours-ending-six-hours-before-previously-inspected-v2-tail
+time_interpretation: raw-calendar-Beijing-local-time-Asia-Shanghai
+outer_target_exclusion: all-concentration-and-weather-training-validation-prediction-inputs
+missingness: target-NA-not-scored-source-missingness-renormalized-weather-past-only-fill
+public_predictor_grid: 16-geometry-kernels-as-declared-in-beijing_v4-public_candidates
+public_max_station_ratio: 1.10
+public_selection: minimize-mean-plus-weighted-worst-RMSE-among-inner-10-percent-station-guard
+graph_selection: minimize-mean-plus-weighted-worst-RMSE-among-zero-solver-failure-candidates
+worst_station_weight: 0.25
+graph_neighbors: [4, 8]
+graph_length_scales_km: [15.0, 30.0]
+correction_clips: [2.0, 8.0]
+fixed_lag: 6
+citizen_delta: 4.0
+lambda_temporal: 0.02
+lambda_spatial: 0.02
+regulatory_sigma_model: 3.0
+transport: 0.12
+directionality: 1.0
+selection_before_all_test_folds: true
+claim_gate_upper_paired_ratio: 1.10
+preferred_gate_upper_paired_ratio: 1.05
+inference: paired-station-descriptive-bootstrap-plus-shared-moving-time-block-sensitivity
+non_independent_stations: true
+private_observations: none-observed-public-regulatory-only
+weather: observed-CMA-TEMP-DEWP-wd-WSPM-from-UCI-not-ERA5
+humidity: Magnus-derived-RH-not-independently-measured
+limitations:
+  - archived-nowcast-assumes-current-public-measurements-and-weather-available-without-reporting-latency
+  - city-specific-parameters-selected-on-public-training-side-not-transferred-simulator-optima
+  - public-observations-enter-baseline-and-correction-no-independent-evidence-or-calibrated-posterior-claim
+  - public-only-transfer-does-not-test-private-citizen-noise-robustness-or-DP
