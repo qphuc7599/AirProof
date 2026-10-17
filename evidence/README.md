@@ -63,6 +63,6 @@ The manifest covers 1,887 source/configuration/evidence files. Additional releas
 | `reports/raw/q1_e7_availability_small.csv` | 1 | 0.00 |
 | `reports/raw/q1_e7_availability_small.json` | 1 | 0.01 |
 
-The exact primary source snapshot is retained in the primary result directory. Other source-locked analyses retain their source-lock records; those historical locks must not be rewritten to claim that the current implementation is identical. External raw datasets, some large historical calibration inputs and learned backbone weights are not included. A saved-output audit and full regeneration are separate capabilities.
+The exact primary source snapshot is retained in the primary result directory. Other source-locked analyses retain their source-lock records; those historical locks must not be rewritten to claim that the current implementation is identical. External raw datasets and some large historical calibration inputs are not included. Saved model files, when present in the selected final-study outputs, are included in the binary assets. A saved-output audit and full regeneration are separate capabilities.
 
 For the finality study use `verified_analysis.json` for linearly interpolated quantiles. `summary.json` is the unaltered original journal summary, which used floor-index order statistics. Signing-to-two-confirmation observation and consensus-finalized-head observation are distinct clocks.
