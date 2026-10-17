@@ -17,3 +17,10 @@ contracts/types/
 .evidence-downloads/
 *.partial
 *.sqlite*
+
+# Large restored objects remain in release assets; tracked compact arrays stay tracked.
+*.npz
+*.npy
+*.pkl
+*.parquet
+*.gz
