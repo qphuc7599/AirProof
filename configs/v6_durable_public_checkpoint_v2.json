@@ -1,0 +1,32 @@
+{
+  "registration": "v6-durable-public-checkpoint-v2",
+  "registered_date": "2026-09-08",
+  "role": "single engineering development fixture; not scientific evidence or confirmation",
+  "fixture_seed": 6006001,
+  "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+  "immutable_fixture": {"agents": 24, "steps": 48, "grid_side": 4, "burn_in_steps": 8, "reference_station_count": 4, "attack_start_epoch": 24, "drain_epochs": 24},
+  "audit": {
+    "return_mode": "durable_inclusion_async_return_v1",
+    "max_records": 2048,
+    "max_content_bytes": 2048,
+    "durable_log_capacity_bytes": 1048576,
+    "collector_return_buffer_bytes": 18432,
+    "inclusion_deadline_epochs": 24,
+    "max_epoch": 1000000000,
+    "public_checkpoint": {
+      "enabled": true,
+      "schedule_source": "prospectively fixed synthetic public-auditor uplink; every fourth epoch over the registered 72-epoch engineering horizon",
+      "uplink_epochs": [0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68],
+      "capacity_bytes_per_direction": 1024,
+      "release_reserved_bytes": 256,
+      "control_budget_bytes": 128,
+      "queue_buffer_bytes": 4096,
+      "auditor_reassembly_buffer_bytes": 4096,
+      "expiry_epochs": 8
+    }
+  },
+  "comparators": {"batch_v3": "reports/v6/integration_smoke_accountability_batch_v3/outcome.json", "durable_v1": "reports/v6/durable_inclusion_async_return_v1/results.json"},
+  "counting_rule": "publicly_checkpointed is the largest verified append-only tree size reassembled by the auditor; queued, expired, signature-invalid, rollback, split-view, or consistency-invalid heads do not count",
+  "decision_rule": "This single exposed engineering fixture cannot authorize confirmation; public-path and detection checks must pass before any separately registered validation proposal.",
+  "scope_limits": "No availability, BFT, finality, censorship-resistance, scientific, or general-publication claim."
+}

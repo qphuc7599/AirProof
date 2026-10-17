@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "namespaces": {
+    "m5_release_reference_stress_confirmation_v1": [
+      6255000,
+      6255001,
+      6255002,
+      6255003,
+      6255004,
+      6255005,
+      6255006,
+      6255007
+    ],
+    "m3_m6_external_wrapper_gate_c_confirmation_v1": [
+      6286000,
+      6286001,
+      6286002,
+      6286003,
+      6286004,
+      6286005,
+      6286006,
+      6286007
+    ]
+  },
+  "collision_rule": "confirmation seeds must not occur in configs/v7/seed_registry.json, reports/v5 registrations, or another v8 namespace",
+  "status": "frozen before independent confirmation outcomes"
+}

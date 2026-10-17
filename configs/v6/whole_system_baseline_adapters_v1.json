@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "status": "adapter-contract-only-no-large-campaign",
+  "common_contract": {
+    "transport_trace": "identical caller-supplied TransportTrace and trace_hash",
+    "capacity": "1024 bytes per direction with 256 release and 128 control reserved",
+    "clock": "immutable acquisition epoch; actual arrival; lag-6 usefulness; TTL-24 archive deadline",
+    "packet_sizes": "512-byte raw and 256-byte protected-release envelopes",
+    "denominators": "all generated records retained; timely, late, rejected, selected and origin-verified are distinct"
+  },
+  "adapters": {
+    "centralized_v6_reference": {
+      "family": "centralized",
+      "transport_policy": "direct",
+      "raw_channel": true,
+      "protected_release_channel": false,
+      "accountability_return": false,
+      "prediction_input": "timely_raw",
+      "selection": "all timely direct arrivals; downstream estimator must use the common processing budget",
+      "fidelity": "internal matched reference adapter",
+      "external_reproduction_claim_allowed": false,
+      "threat_model": ["trusted collector", "no relay", "no release-DP claim", "no public audit claim"],
+      "exclusions": ["not U-Air", "not Li et al.", "no external model weights or feature pipeline"]
+    },
+    "privacy_only_v6_reference": {
+      "family": "privacy-only",
+      "transport_policy": "direct",
+      "raw_channel": false,
+      "protected_release_channel": true,
+      "accountability_return": false,
+      "prediction_input": "protected_release_only",
+      "selection": "no raw estimator input; transport accepts only caller-created protected releases",
+      "fidelity": "internal information-path adapter",
+      "external_reproduction_claim_allowed": false,
+      "threat_model": ["trusted release authority", "fixed protected transcript", "no raw prediction access"],
+      "exclusions": ["does not create DP", "not QPTA", "no private task-allocation or truth-discovery reproduction"]
+    },
+    "blockchain_dt_v6_reference": {
+      "family": "blockchain/digital-twin",
+      "transport_policy": "direct",
+      "raw_channel": true,
+      "protected_release_channel": false,
+      "accountability_return": true,
+      "prediction_input": "timely_raw",
+      "selection": "audit-admitted timely direct arrivals; signed inclusion required before allocation",
+      "fidelity": "internal signed-transparency adapter",
+      "external_reproduction_claim_allowed": false,
+      "threat_model": ["single protected collector authority", "signed receipt and terminal checkpoint", "finite origin return"],
+      "exclusions": ["not CoTwin", "not FIWARE/Ethereum", "not Cai et al.", "no BFT, finality, availability or censorship-resistance claim"]
+    },
+    "opportunistic_ttl_v6_reference": {
+      "family": "opportunistic TTL",
+      "transport_policy": "airproof_deadline",
+      "raw_channel": true,
+      "protected_release_channel": false,
+      "accountability_return": false,
+      "prediction_input": "timely_raw",
+      "selection": "all timely arrivals after bounded-copy deadline-priority forwarding",
+      "fidelity": "capacity-matched internal TTL adaptation",
+      "external_reproduction_claim_allowed": false,
+      "threat_model": ["honest store-carry-forward nodes", "no payload oracle", "bounded copies and buffers"],
+      "exclusions": ["not a reproduction of Hernandez-Orallo et al.", "no external utility or diffusion-learning logic"]
+    }
+  }
+}

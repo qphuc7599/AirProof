@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-reviewer-shared-resource-confirmation-v2",
+  "status": "prospectively frozen after v1 comparator-information audit and before any v2 outcome",
+  "role": "independent synthetic confirmation of joint execution under one finite resource contract with exposure-matched numerical controls",
+  "historical_reuse": {
+    "v4_primary": "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+    "v6_lifetime_validation": "reports/v6/lifetime_budget7_validation_v2/outcomes/analysis.json",
+    "rerun_historical_studies": false
+  },
+  "worlds": {
+    "seeds": [
+      6251100,
+      6251101,
+      6251102,
+      6251103,
+      6251104,
+      6251105,
+      6251106,
+      6251107,
+      6251108,
+      6251109,
+      6251110,
+      6251111
+    ],
+    "seed_namespace": "reviewer_shared_resource_confirmation_v2",
+    "cells": [
+      "severe_clean",
+      "severe_hotspot"
+    ],
+    "agents": 1000,
+    "grid_side": 32,
+    "acquisition_epochs": 672,
+    "burn_in_epochs": 48,
+    "drain_epochs": 24
+  },
+  "sources": {
+    "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+    "resource_protocol": "configs/v6/protocol.yaml",
+    "innovation_calibration": "reports/v6/lifetime_budget7_validation_v2/inputs/global_calibration.json"
+  },
+  "execution": {
+    "relay_policy": "combined",
+    "allocation_policy": "v4_outcome_effective_hard_if_feasible",
+    "fairness": true,
+    "raw_useful_lag_epochs": 6,
+    "processing_budget_bytes_per_epoch": 83200,
+    "release_reservation_bytes_per_gateway_contact": 256,
+    "contact_capacity_bytes_per_direction": 1024,
+    "control_budget_bytes_per_direction": 128,
+    "raw_buffer_bytes_per_node": 18432,
+    "release_buffer_bytes_per_node": 6144,
+    "copy_tokens": 4,
+    "ttl_epochs": 24,
+    "workers": 4
+  },
+  "estimator": {
+    "method": "AP_LIFETIME7",
+    "cap": 8.0,
+    "huber_delta": 1.345,
+    "lag": 6,
+    "lambda_zero": 0.05,
+    "lambda_temporal": 0.05,
+    "lambda_spatial": 0.02,
+    "time_step": 1.0,
+    "tolerance": 1e-07,
+    "max_iterations": 1000,
+    "numerical_refinements": 2,
+    "per_user_exposure_budget": 7.0,
+    "controls": [
+      "PUBLIC",
+      "SQ_EXPOSURE_MATCHED",
+      "HUBER_EXPOSURE_MATCHED"
+    ],
+    "control_information_contract": "AP, SQ and Huber receive the identical causal lifetime-weighted records and arrivals; PUBLIC receives no citizen records"
+  },
+  "privacy": {
+    "epsilon_history": 8.0,
+    "public_query_count": 28,
+    "k_min": 20,
+    "collection_deadline_epochs": 24,
+    "protected_residual_clip": 10.0,
+    "raw_clip": 50.0,
+    "nonnegative_raw_domain": [
+      0.0,
+      50.0
+    ],
+    "nonnegative_raw_replacement_l1_sensitivity": 5.0,
+    "nonnegative_raw_laplace_scale": 17.5,
+    "admission": "source-owned reserved direct gateway lane",
+    "consumer": "registered release-evidence scorer on actual reserved arrivals"
+  },
+  "accountability": {
+    "audit_scope": "Every processing-selected evidence item receives a durable signed acceptance and terminal inclusion proof; unselected physical arrivals are counted but do not enter the evidence log.",
+    "return_mode": "incremental_selected_receipts_v1",
+    "max_records": 200000,
+    "max_content_bytes": 2048,
+    "durable_log_capacity_bytes": 536870912,
+    "collector_return_buffer_bytes": 18432,
+    "inclusion_deadline_epochs": 24,
+    "max_epoch": 1000000000,
+    "public_checkpoint_in_common_execution": false,
+    "external_anchor_evidence": "reports/v4_validation/sepolia_30_anchors_20260903/anchors.json",
+    "same_stream_transparency_benchmark": "reports/v6/ledger_transparency_same_stream_v2/analysis.json"
+  },
+  "evaluation": {
+    "scored_acquisition_half_open": [
+      48,
+      672
+    ],
+    "reconstruction_clock": "fixed-lag estimate after lag-6 drain",
+    "live_clock": "immutable estimate at each acquisition epoch",
+    "event_threshold": "95th percentile of the same world's truth prefix [0,48), fixed before scoring",
+    "bootstrap_seed": 6251999,
+    "bootstrap_replicates": 20000,
+    "simultaneous_inference": "paired-world percentile bootstrap with one-sided Bonferroni alpha/4 bounds for the four efficacy claims",
+    "report": [
+      "timely useful raw arrivals",
+      "live and reconstructed RMSE",
+      "worst-group RMSE",
+      "service floors and avoidable/unavoidable deficits",
+      "protected release utility and cadence",
+      "signed receipt return and resolution",
+      "proof, ACK, payload, control and checkpoint bytes"
+    ]
+  },
+  "decision_rules": {
+    "clean_AP_to_SQ_ratio_upper": 1.05,
+    "hotspot_growth_attenuation_lower": 0.2,
+    "clean_AP_to_PUBLIC_ratio_upper": 1.0,
+    "event_recall_loss_vs_SQ_upper_percentage_points": 5.0,
+    "privacy_epsilon_history_upper": 8.0,
+    "resource_violation_count": 0,
+    "feasible_floor_violation_count": 0,
+    "solver_failure_rate": 0.0,
+    "claim_rule": "A new integrated claim is made only when its registered simultaneous paired-world bound and every relevant execution invariant pass. Other results remain descriptive."
+  },
+  "artifacts": {
+    "directory": "reports/v7/reviewer_revision/shared_resource_confirmation_v2",
+    "predictions": "one compressed live/reconstructed array per method and job",
+    "paired_rows": "all world-level outcomes are retained"
+  }
+}

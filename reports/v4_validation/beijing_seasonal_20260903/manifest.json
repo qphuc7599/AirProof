@@ -1,0 +1,178 @@
+{
+  "role": "locked-seasonal-calibration-fresh-contiguous-transfer",
+  "protocol": {
+    "protocol_version": "beijing-public-weather-seasonal-v4-1",
+    "dataset": "data/processed/beijing_hourly.parquet",
+    "source_doi": "https://doi.org/10.24432/C5RK5G",
+    "measurement_task": "contemporaneous-public-station-spatial-reconstruction-not-forecasting",
+    "outer_train_fraction": 0.8,
+    "inner_fit_steps": 2016,
+    "inner_validation_steps": 168,
+    "purge_hours": 6,
+    "validation_starts": [
+      "2015-02-01",
+      "2015-05-01",
+      "2015-08-01",
+      "2015-11-01"
+    ],
+    "test_start_inclusive": "2016-06-01",
+    "test_stop_exclusive": "2017-01-01",
+    "test_steps": 5136,
+    "test_window": "fixed-seven-calendar-months-in-remaining-unscored-outer-partition",
+    "preserved_diagnostic": "reports/v4_validation/beijing_public_weather_20260903",
+    "previous_test_windows": [
+      [
+        28057,
+        28393
+      ],
+      [
+        34050,
+        34722
+      ],
+      [
+        34728,
+        35064
+      ]
+    ],
+    "public_mix_weights": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "public_max_station_ratio": 1.05,
+    "public_selection": "minimize-mean-ratio-plus-quarter-worst-ratio-across-all-season-station-folds",
+    "public_reference_anchor": "fixed-IDW-p2-all-available-source-stations",
+    "graph_selection": "same-normalized-season-station-objective-among-zero-solver-failure-candidates",
+    "worst_station_weight": 0.25,
+    "graph_neighbors": [
+      4,
+      8
+    ],
+    "graph_length_scales_km": [
+      15.0,
+      30.0
+    ],
+    "correction_clips": [
+      2.0,
+      8.0
+    ],
+    "fixed_lag": 6,
+    "citizen_delta": 4.0,
+    "lambda_temporal": 0.02,
+    "lambda_spatial": 0.02,
+    "regulatory_sigma_model": 3.0,
+    "transport": 0.12,
+    "directionality": 1.0,
+    "selection_before_all_test_folds": true,
+    "claim_gate_upper_paired_ratio": 1.1,
+    "preferred_gate_upper_paired_ratio": 1.05,
+    "inference": "paired-station-and-shared-24-72-168-hour-block-bootstrap",
+    "limitations": [
+      "calibration-revision-after-earlier-winter-tail-failure-not-a-relabelled-success-on-that-tail",
+      "all-four-validation-seasons-precede-outer-training-cutoff-and-exclude-outer-station-values-and-weather",
+      "test-is-contiguous-seven-calendar-months-selected-before-any-new-test-outcome",
+      "same-production-weather-aware-solver-and-nonzero-correction-candidate-family",
+      "reference-reuse-is-deterministic-no-independent-evidence-or-calibrated-posterior-claim",
+      "public-only-spatial-transfer-not-private-citizen-robustness-or-forecasting"
+    ]
+  },
+  "source_hash": "943fc5613cb858d41585b00b00d967ae77440c95005bbfbe42731ba734cdfa69",
+  "dataset_hash": "6e6487cabdca593c4aa87d1f03e70b3573f44fb0fc70d3d6aa27fcaaa83dbe34",
+  "runner_hash": "decfa4dad458a1a483fe9bc3e16c278d1da7222ad0cd1bbc81665999311a9e65",
+  "analyzer_hash": "054eefe5f912176512e5932ff576d5382ab984497cb7f95174580e7a1124c2e9",
+  "stations": [
+    "Aotizhongxin",
+    "Changping",
+    "Dingling",
+    "Dongsi",
+    "Guanyuan",
+    "Gucheng",
+    "Huairou",
+    "Nongzhanguan",
+    "Shunyi",
+    "Tiantan",
+    "Wanliu",
+    "Wanshouxigong"
+  ],
+  "workers_max": 11,
+  "resource_dependency": {
+    "pid": 6000,
+    "created": 1788415632.6737196
+  },
+  "created_unix": 1788416285.723065,
+  "time_windows": {
+    "test": {
+      "start_inclusive": 28512,
+      "stop_exclusive": 33648,
+      "first_local": "2016-06-01T00:00:00+08:00",
+      "last_local": "2016-12-31T23:00:00+08:00"
+    },
+    "deployment_fit": {
+      "start_inclusive": 26035,
+      "stop_exclusive": 28051,
+      "first_local": "2016-02-18T19:00:00+08:00",
+      "last_local": "2016-05-12T18:00:00+08:00"
+    },
+    "seasons": [
+      {
+        "fit": {
+          "start_inclusive": 14826,
+          "stop_exclusive": 16842,
+          "first_local": "2014-11-08T18:00:00+08:00",
+          "last_local": "2015-01-31T17:00:00+08:00"
+        },
+        "validation": {
+          "start_inclusive": 16848,
+          "stop_exclusive": 17016,
+          "first_local": "2015-02-01T00:00:00+08:00",
+          "last_local": "2015-02-07T23:00:00+08:00"
+        }
+      },
+      {
+        "fit": {
+          "start_inclusive": 16962,
+          "stop_exclusive": 18978,
+          "first_local": "2015-02-05T18:00:00+08:00",
+          "last_local": "2015-04-30T17:00:00+08:00"
+        },
+        "validation": {
+          "start_inclusive": 18984,
+          "stop_exclusive": 19152,
+          "first_local": "2015-05-01T00:00:00+08:00",
+          "last_local": "2015-05-07T23:00:00+08:00"
+        }
+      },
+      {
+        "fit": {
+          "start_inclusive": 19170,
+          "stop_exclusive": 21186,
+          "first_local": "2015-05-08T18:00:00+08:00",
+          "last_local": "2015-07-31T17:00:00+08:00"
+        },
+        "validation": {
+          "start_inclusive": 21192,
+          "stop_exclusive": 21360,
+          "first_local": "2015-08-01T00:00:00+08:00",
+          "last_local": "2015-08-07T23:00:00+08:00"
+        }
+      },
+      {
+        "fit": {
+          "start_inclusive": 21378,
+          "stop_exclusive": 23394,
+          "first_local": "2015-08-08T18:00:00+08:00",
+          "last_local": "2015-10-31T17:00:00+08:00"
+        },
+        "validation": {
+          "start_inclusive": 23400,
+          "stop_exclusive": 23568,
+          "first_local": "2015-11-01T00:00:00+08:00",
+          "last_local": "2015-11-07T23:00:00+08:00"
+        }
+      }
+    ]
+  },
+  "all_selection_precedes_any_test": true,
+  "earlier_result_preserved": "reports/v4_validation/beijing_public_weather_20260903"
+}

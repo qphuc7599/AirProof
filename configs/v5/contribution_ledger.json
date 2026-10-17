@@ -1,0 +1,181 @@
+{
+  "version": "v5-implementation-disposition",
+  "updated_utc": "2026-09-07T04:32:28.348689+00:00",
+  "scientific_targets_lowered": false,
+  "claims": [
+    {
+      "claim_id": "C1",
+      "pillar": "robust digital twin",
+      "original_statement": "Original contribution2: uncertainty-aware graph state-space twin with clipped quality weighting, Huber robustness and explicit privacy-noise variance.",
+      "v4_mechanism_evidence": "v4 bounded full-field quadratic wrapper; historical30-world primary and viewed-archive failure.",
+      "current_mechanism": "Residual-coordinate bounded quadratic AP selected on8development worlds; matched same-information SQ/Huber/public controls.",
+      "assumptions": "Finite public cap; public-reference model exogenous; causal acquisition/arrival routing; positive correction ridge.",
+      "acceptance_criteria": "5% clean noninferiority;20% attack-growth attenuation;event recall loss<=5pp.",
+      "evidence": [
+        "reports/v5/development/integrated_911000_911007_v1/selection.json",
+        "docs/V5_WRAPPER_FAILURE_DIAGNOSIS.md",
+        "docs/V5_CAP_ACCURACY_CERTIFICATE.md",
+        "docs/V5_SELECTED_ARCHIVE_FACTORIAL.md",
+        "docs/V5_EPA_RESULTS.md",
+        "reports/v5/selected_campaign_v1/validation_claim_families.json",
+        "reports/v5/stress_export/manifest.json",
+        "reports/v5/huber_repair_export/summary.json"
+      ],
+      "unverified_scope": "Selected residual_reg0.1_cap8. All five synthetic AP/PUBLIC validation contrasts pass their Holm family. PurpleAir clean AP/SQ1.3529; cap8 necessary floor/SQ1.0888 excludes1.05. Both EPA windows fail clean1.05 on both clocks. Huber numerical repair is separately identified; no extra candidate search.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Residual-coordinate bounded quadratic AP selected on8development worlds; matched same-information SQ/Huber/public controls.",
+      "status": "implemented; synthetic validation clean/event targets pass, archive clean targets fail; no primary"
+    },
+    {
+      "claim_id": "C2",
+      "pillar": "fairness",
+      "original_statement": "Original contribution3: deficit-aware online scheduling and relay priority enforce minimum neighborhood coverage.",
+      "v4_mechanism_evidence": "v4 feasible floor certificate and scarcity fallback, q30.",
+      "current_mechanism": "Exact per-epoch minimax avoidable deficit under heterogeneous byte costs on representatives; fixed q30.",
+      "assumptions": "Disjoint representative partition; additive costs; opportunity counts are available; no overlapping-groups theorem.",
+      "acceptance_criteria": "H6 contributor gap reduction>=20%;H7 worst-group RMSE reduction>=10%;zero feasible-floor violation.",
+      "evidence": [
+        "docs/V5_FAIRNESS_THEOREM.md",
+        "docs/V5_CORRECTNESS_COVERAGE.md",
+        "docs/V5_INTEGRATED_FAIRNESS_DIAGNOSIS.md",
+        "reports/v5/validation_export/integrated_fairness_diagnosis.json"
+      ],
+      "unverified_scope": "12 validation worlds: contributor-gap reduction0.161%, worst-group RMSE reduction-0.006%, against20%/10%. AP avoidable deficit0 but unavoidable0.730008; no joint feasible-floor epochs. The per-epoch theorem does not imply cumulative unique coverage or lower error.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Exact per-epoch minimax avoidable deficit under heterogeneous byte costs on representatives; fixed q30.",
+      "status": "exact local objective verified; integrated H6 and H7 fail"
+    },
+    {
+      "claim_id": "C3",
+      "pillar": "DTN",
+      "original_statement": "Original contribution1/3 and RQ1: delayed duplicate-safe relay improves evidence freshness at a fixed communication budget.",
+      "v4_mechanism_evidence": "Separate synthetic/empirical transport evidence, retained.",
+      "current_mechanism": "Arrival-driven raw assimilation; finite buffers/copies; source-owned direct DP reservation; serialized local control.",
+      "assumptions": "Public contact trace; authenticated-link assumption; acquisition identity immutable; next-slot peer forwarding.",
+      "acceptance_criteria": "Delivery deficit<=2pp versus capped epidemic;delay reduction>=15% and gap reduction>=20% versus Spray.",
+      "evidence": [
+        "docs/V5_TRANSPORT_CONTRACT.md",
+        "docs/V5_WIRE_CONTROL_INTEGRATION.md",
+        "reports/v5/preflight/empirical_transport_v1/manifest.json",
+        "reports/v5/transport_analysis_correction/analysis.json",
+        "docs/V5_EMPIRICAL_TRANSPORT_RESULTS.md"
+      ],
+      "unverified_scope": "480/480 empirical jobs complete. Correct user D1 is epidemic-.02-AP; old Spray+.02-AP analysis retained as erroneous. Conditional D1 passes; restricted-delay reduction1.10% misses15%, gap increases and misses20%. Five role/traffic seeds do not create new contact datasets. Old/new control bytes equivalent; no inherited serialization CPU claim. Receipt return remains open.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Arrival-driven raw assimilation; finite buffers/copies; source-owned direct DP reservation; serialized local control.",
+      "status": "implemented; conditional D1 pass, D2/D3 fail; no population confirmation"
+    },
+    {
+      "claim_id": "C4",
+      "pillar": "privacy",
+      "original_statement": "Original contribution2/4 and RQ2: user-level private public aggregates with explicit DP-noise treatment in assimilation.",
+      "v4_mechanism_evidence": "Historical32400grid/accountant, no complete release-only estimator.",
+      "current_mechanism": "Reserved independent ingress plus group-space public/release-only lag48 twin; calibrated correlated bias; independent Laplace variance once.",
+      "assumptions": "Whole-history arbitrary replacement may change group; sensitivity4C/k;public schedule;disjoint no-borrowing ingress; no raw/private-count estimator input.",
+      "acceptance_criteria": "epsilon<=8;28queries;k_min20;deadline24h;zero accounting/admission violation;citizen gain only if matched public contrasts support.",
+      "evidence": [
+        "docs/V5_DP_PUBLIC_REANALYSIS.md",
+        "docs/V5_INTEGRATED_RELEASE_TWIN.md",
+        "reports/v5/selected_campaign_v1/release_calibration/manifest.json",
+        "docs/V5_RELEASE_VALIDATION_RESULTS.md",
+        "reports/v5/release_validation_export/manifest.json"
+      ],
+      "unverified_scope": "All10 CALIBRATED-versus-PUBLIC validation contrasts pass; all10 versus PUBLIC_CALIBRATED fail with positive mean differences. Calibration gain is not demonstrated citizen value. Scale7/variance98 once; raw and residual arms are separate counterfactual epsilon8 mechanisms. Raw/control/audit outputs remain outside release-transcript DP.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Reserved independent ingress plus group-space public/release-only lag48 twin; calibrated correlated bias; independent Laplace variance once.",
+      "status": "accounting/admission checks pass; release citizen-value gain not established"
+    },
+    {
+      "claim_id": "C5",
+      "pillar": "blockchain/accountability",
+      "original_statement": "Original contribution1/4: encrypted off-chain traces, Merkle-root commitments, policy metadata and tamper evidence under ledger assumptions.",
+      "v4_mechanism_evidence": "Unchanged receipt/contract900+900trials and30Sepolia/30localanchors.",
+      "current_mechanism": "Same-stream signed/transparency/anchored comparison; actual packet/receipt codec; one joined receipt interface sample per physical cell.",
+      "assumptions": "Honest prior anchor;available independent read path;accepted receipt defines obligation;no physical-truth guarantee.",
+      "acceptance_criteria": "Matched workload detection and cost;no forged inclusion/terminal acceptance;report censorship/partition support and limitations.",
+      "evidence": [
+        "docs/V5_EVIDENCE_REUSE.md",
+        "docs/V5_RECEIPT_WIRE_AUDIT.md",
+        "docs/V5_RUN_EVIDENCE.md",
+        "reports/v5/audit_supplement/summary.json",
+        "docs/V5_AUDIT_SUPPLEMENT.md"
+      ],
+      "unverified_scope": "Original9600 plus2400 supplementary faults retained; same400 payload streams link to400localEVM roots with readback/conflicting-write rejection. LocalEVM timing/gas is distinct from prior30Sepolia anchors and logical detection clocks. Full receipt return and network/consensus execution not established.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Same-stream signed/transparency/anchored comparison; actual packet/receipt codec; one joined receipt interface sample per physical cell.",
+      "status": "implemented component comparisons and matched local EVM; full origin receipt delivery unverified"
+    },
+    {
+      "claim_id": "C6",
+      "pillar": "uncertainty",
+      "original_statement": "Original contribution2: explicitly represent uncertainty from quality, privacy and delayed evidence.",
+      "v4_mechanism_evidence": "Observation variance and point estimates; calibrated predictive intervals missing.",
+      "current_mechanism": "90/95% empirical residual intervals, disjoint8-world calibration, fixed group strata and pooled fallback.",
+      "assumptions": "Calibration excludes development and validation;group labels fixed;no exact conformal coverage under temporal dependence.",
+      "acceptance_criteria": "Report coverage,width,interval score on live/reconstructed clocks, clean/attack/event/reference stress.",
+      "evidence": [
+        "docs/V5_UNCERTAINTY_ANALYSIS.md",
+        "reports/v5/selected_campaign_v1/uncertainty_calibration/freeze_identity.json",
+        "docs/V5_UNCERTAINTY_RESULTS.md",
+        "reports/v5/uncertainty_export/all_controls_all_strata.csv",
+        "reports/v5/stress_export/manifest.json",
+        "reports/v5/huber_repair_export/summary.json"
+      ],
+      "unverified_scope": "8 calibration/12 validation worlds;560 summaries retain all controls/clocks/groups. AP live event90 coverage51.45-59.63%, event95 coverage61.78-69.99%. No exact dependent-data guarantee. Public age/context stratification unavailable. Registered stress completed304 evaluations/608 sidecars. Original Huber intervals remain failed-solver diagnostics; separately corrected140 validation summaries use repaired calibration. Event-conditional failure and unavailable public age/context stratification remain.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "90/95% empirical residual intervals, disjoint8-world calibration, fixed group strata and pooled fallback.",
+      "status": "independent group calibration evaluated; event coverage fails nominal levels"
+    },
+    {
+      "claim_id": "C7",
+      "pillar": "composition",
+      "original_statement": "Original RQ1/RQ3: coupled end-to-end system and ablated contributions at a fixed communication budget.",
+      "v4_mechanism_evidence": "Historicalv4 pipeline plus separately measured DTN/privacy/ledger primitives.",
+      "current_mechanism": "Common packet identities, transport arrivals, processing allocation, raw twin and scheduled DP release;2^3factorial.",
+      "assumptions": "Processing83200bytes distinct from link budget;1024B/contact;immutable acquisition;672+24tail;rawlag6.",
+      "acceptance_criteria": "All numerical/resource invariants;factorial benefits retained in same execution;no mixed-version fullv5 table.",
+      "evidence": [
+        "docs/V5_RUN_EVIDENCE.md",
+        "docs/V5_CORRECTNESS_COVERAGE.md",
+        "configs/v5/protocol.yaml",
+        "reports/v5/selected_campaign_v1/validation_integrity.json",
+        "docs/V5_REQUIRED_TEST_COVERAGE.md",
+        "reports/v5/validation_export/manifest.json"
+      ],
+      "unverified_scope": "384 validation rows include all2^3 variants in two severe cells. Resource/DP structural audit passes; fairness benefits do not survive the unchanged output targets. Actual packet/receipt cryptography is a component interface, not per-packet campaign CPU. Full origin receipt return and39-stratum contributor trajectories remain unimplemented. Contact and sensing paths use separate random streams: shared identities do not establish a joint physical mobility/sensing model.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Common packet identities, transport arrivals, processing allocation, raw twin and scheduled DP release;2^3factorial.",
+      "status": "common finite numerical pipeline and complete factorial evaluated; joint performance target not attained"
+    },
+    {
+      "claim_id": "C8",
+      "pillar": "evaluation",
+      "original_statement": "Original contribution5/RQ4: preregistered device-free open-data, mobility, local-chain/testnet evidence and scaling.",
+      "v4_mechanism_evidence": "30-world360evaluationprimary;Beijing12stations7months;viewedPurpleAir;existingcontactarchives.",
+      "current_mechanism": "Bounded12candidate development;8worldcalibration;12worldvalidation;prospective90%power n30..100 conditionalprimary;freshwithin-inventoriedEPA windows.",
+      "assumptions": "Fixedtargets/denominators;stage-separated seeds;datasetusage registry;no newseed labeled newpollutiondataset.",
+      "acceptance_criteria": "Complete matrices and frozen source/config;all failures retained;primary only if power/runtime/validation lock permits.",
+      "evidence": [
+        "configs/v5/archive_usage.json",
+        "configs/v5/seed_usage.json",
+        "reports/v5/selected_campaign_v1/controller_status.json",
+        "reports/v5/selected_campaign_v1/confirmation_lock.json",
+        "reports/v5/epa_results_export/manifest.json",
+        "reports/v5/stress_export/manifest.json",
+        "reports/v5/huber_repair_export/summary.json"
+      ],
+      "unverified_scope": "760 development,160 calibration,384 validation,192 EPA and480 empirical transport rows complete. H6/H7 miss mean targets and90% prospective power unsupported in30-100 worlds; confirmation_lock is null. H4 validation Holm fails. No seed substitution, optional stopping, v4 relabeling or extra parameter search. Stress304/304 and numerical Huber repair100/100 complete; all corrected Huber rows converge. No independent primary was launched.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "historical evidence retained only within original mechanism/data/clock scope",
+      "changed_part": "Bounded12candidate development;8worldcalibration;12worldvalidation;prospective90%power n30..100 conditionalprimary;freshwithin-inventoriedEPA windows.",
+      "status": "development/calibration/validation complete; independent primary blocked by unchanged gates"
+    }
+  ]
+}

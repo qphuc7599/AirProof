@@ -1,0 +1,87 @@
+{
+  "created_utc": "2026-09-08T07:42:44.737252+00:00",
+  "role": "registered v6 fairness-mechanism validation; descriptive, not primary or estimator validation",
+  "registration": {
+    "role": "registered v6 fairness-mechanism validation; descriptive, not primary or estimator validation",
+    "registered_before_outcomes": true,
+    "seeds": [
+      6203000,
+      6203001,
+      6203002,
+      6203003,
+      6203004,
+      6203005,
+      6203006,
+      6203007,
+      6203008,
+      6203009,
+      6203010,
+      6203011
+    ],
+    "cell": "severe_clean",
+    "target_contributors_q": 30,
+    "processing_budget_bytes_per_epoch": 83200,
+    "raw_lag_epochs": 6,
+    "rolling_window_epochs": 24,
+    "allocator_levels": [
+      "v6_minimax",
+      "utility_only",
+      "v4_fallback"
+    ],
+    "factorial_allocator_levels": [
+      "v6_minimax",
+      "utility_only"
+    ],
+    "relay_levels": {
+      "off": "direct",
+      "on": "deadline6"
+    },
+    "robustification_levels": {
+      "off": "quadratic without output cap",
+      "on": "Huber loss with output cap"
+    },
+    "estimator": {
+      "regularization_multiplier": 0.1,
+      "huber_delta": 1.345,
+      "note": "fixed registered development-family member; it failed whole-estimator selection and is used only to measure allocator/factorial outcomes"
+    },
+    "matrix": {
+      "factorial_2x2x2_arms_per_world": 8,
+      "v4_comparator_arms_per_world": 4,
+      "total_arms_per_world": 12,
+      "total_evaluations": 144
+    },
+    "paired_trace_contract": "Within a world and relay level, every allocator and robustification arm receives the identical raw-arrival map and processing budget. Relay levels share the same exogenous mobility/contact trace and finite transport resources.",
+    "transport_scope": "finite raw/release buffers, directional contact capacity, copy tokens and reserved release path; receipt return is excluded from this allocator-attribution validation",
+    "outcomes": [
+      "H6 coverage-gap contrast using unchanged 20 percent reduction threshold",
+      "H7 worst-group RMSE contrast using unchanged 10 percent reduction threshold",
+      "24-epoch capped target service by group",
+      "zero-service and opportunity-aware starvation runs",
+      "cumulative distinct contributors and population distinct-user debt",
+      "opportunity and allocation deficits",
+      "all 39 frozen-prefix outcome strata with support retained",
+      "processing and transport byte/resource invariants",
+      "paired per-world baseline differences and 2x2x2 factorial effects"
+    ],
+    "claim_rule": "Validation is descriptive. Preserve adverse outcomes. Do not launch primary, alter H6/H7 thresholds, select an estimator, or claim starvation freedom."
+  },
+  "registration_sha256": "f84d3b2718500edd7eecd8e31e95f698876280e4c939c59373beac1522cde378",
+  "source_hash": "dfb374e0c4679f5a47f12681e588f47eb777eeb1da5bd4ca7bc27596545e0e83",
+  "source_files": {
+    "airproof/v6_fairness.py": "7dbf106702c1b8fac81e69247cbb9fe1141dca898d9e8b9c6cc66f215cc94b16",
+    "airproof/v6_fairness_validation.py": "fe1ff16bebbccfe946be17bf070cfe0975ff4017048c9019ccab4d580d59622f",
+    "airproof/v6_numerical_experiment.py": "6bacab4df3a988a6b65a5870d1f35376f8620c098c552b5ce559a428e7187add",
+    "airproof/v6_transport.py": "aa7de6f00b52bd14d2f5ffe5ed095839e21073c41bf0c2691a187a9fd7b32b92",
+    "airproof/v6_mobility.py": "6e7ebcb97d25fd6b84d29f77fc2161d06602bac5493bc6dacbd67389358fd0af",
+    "airproof/v6_estimator.py": "5f6d603367c441062c0887fac90655587d8f198e5aa80871da1b0a8d93ef042d",
+    "airproof/scheduler.py": "4894699bef9c509984c0b0ce1f659bfc3211b3fc6ec23d9590abcd36d38c46d2",
+    "airproof/simulator.py": "62a8734dfc40d173dc46d423ec2368a501d25ab5766df8104582e8a73045d468",
+    "configs/v6/fairness_validation.json": "f84d3b2718500edd7eecd8e31e95f698876280e4c939c59373beac1522cde378",
+    "configs/v6/protocol.yaml": "e5048a2e141b31863a18e61aa7f08801ede02f42687fb40b68790adf387b2424",
+    "scripts/run_v6_fairness_validation.py": "0fedd99393c696d083263338d8bbf362079eab3c1faa979cfd738830bebc6e63"
+  },
+  "expected_worlds": 12,
+  "expected_evaluations": 144,
+  "primary_authorized": false
+}

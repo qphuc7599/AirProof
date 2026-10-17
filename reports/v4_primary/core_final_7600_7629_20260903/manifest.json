@@ -1,0 +1,2356 @@
+{
+  "stage": "primary",
+  "protocol": {
+    "protocol_version": "final-public-reference-v4-core-campaign-1",
+    "status": "prospective-protocol-final-config-and-power-required-before-primary",
+    "frontier": "reports/v4_validation/fairness_frontier_7400_7407",
+    "validation_seeds": [
+      7300,
+      7301,
+      7302,
+      7303,
+      7304,
+      7305,
+      7306,
+      7307,
+      7308,
+      7309,
+      7310,
+      7311
+    ],
+    "primary_seed_start": 7600,
+    "primary_min_worlds": 30,
+    "primary_max_worlds": 100,
+    "agents": 1000,
+    "steps": 672,
+    "common_methods": [
+      "airproof_v4",
+      "squared_loss_v4"
+    ],
+    "additional_severe_clean_methods": [
+      "airproof_v4_no_fairness",
+      "airproof_v4_no_relay"
+    ],
+    "predeclared_operational_overrides": {
+      "protocol_version": "airproof-v4-core-final-architecture-1",
+      "status": "final-configuration-role-defined-by-campaign-manifest",
+      "execution.trace_python_allocations": false,
+      "privacy.epsilon_user_max": 8.0,
+      "privacy.epsilon_mean": 0.2857142857142857,
+      "privacy.epsilon_count": 0.0,
+      "privacy.private_eligibility": false,
+      "privacy.k_min": 20,
+      "privacy.release_mode": "residual",
+      "privacy.residual_clip": 10.0,
+      "privacy.release_deadline_steps": 24
+    },
+    "operational_choice_rationale": [
+      "hourly-internal-twin-but-daily-public-DP-views-with-eight-epsilon-full-history-budget",
+      "chosen-before-new-DP-grid-outcomes-not-selected-from-best-observed-setting",
+      "legacy-hourly-epsilon-504-validation-is-permissive-numerical-diagnostic-not-practical-main-budget",
+      "instrumentation-choice-does-not-change-any-scientific-metric-ABBA-regression-verified",
+      "RSS-sampling-remains-enabled-python-allocation-profiler-disabled-to-reduce-runtime"
+    ],
+    "cells": {
+      "anchor_clean": {
+        "network.availability": 1.0,
+        "network.outage_median_hours": 0,
+        "network.outage_p95_hours": 0,
+        "world.participation_skew": 1.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "outage_clean": {
+        "network.availability": 0.75,
+        "network.outage_median_hours": 6,
+        "network.outage_p95_hours": 24,
+        "world.participation_skew": 5.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "severe_clean": {
+        "attack.kind": "clean"
+      },
+      "severe_adversarial_drift": {
+        "attack.kind": "adversarial_drift"
+      },
+      "severe_hotspot_suppression": {
+        "attack.kind": "hotspot_suppression"
+      }
+    },
+    "validation_role": "all-five-physical-cells-and-both-ablations-at-selected-final-fairness-point",
+    "power": "upper95-bootstrap-validation-contrast-SD-and-one-sided-noncentral-t-power",
+    "power_target": 0.9,
+    "power_sizing_alpha": 0.007142857142857143,
+    "familywise_alpha": 0.05,
+    "primary_adjustment": "Holm-seven-prespecified-hypotheses",
+    "report_unattainable_power": true,
+    "no_retuning_after_primary": true,
+    "primary_n_selected_before_primary_data": true,
+    "source_rule": "primary-reuses-validation-source-snapshot-and-configuration-exactly",
+    "clock": {
+      "prediction": "bounded-fixed-lag-reconstruction-and-separately-frozen-live-nowcast",
+      "DP": "acquisition-epoch-plus-fixed-24-epoch-collection-deadline"
+    }
+  },
+  "source_hash": "758f96a75587eaaf1c0f884444f62d0aa12353dfa8ef0e85ddbc3c3746eb64a5",
+  "base_configuration_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f",
+  "seeds": [
+    7600,
+    7601,
+    7602,
+    7603,
+    7604,
+    7605,
+    7606,
+    7607,
+    7608,
+    7609,
+    7610,
+    7611,
+    7612,
+    7613,
+    7614,
+    7615,
+    7616,
+    7617,
+    7618,
+    7619,
+    7620,
+    7621,
+    7622,
+    7623,
+    7624,
+    7625,
+    7626,
+    7627,
+    7628,
+    7629
+  ],
+  "total_jobs": 360,
+  "selected_fairness": {
+    "target": 30,
+    "strength": 1.0,
+    "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b",
+    "paired_relative_changes": {
+      "rmse": {
+        "mean": -0.05254803745330029,
+        "lower95": -0.06201595605611063,
+        "upper95": -0.04344974401147605,
+        "worlds": 8,
+        "sd": 0.014362523938190278
+      },
+      "live_rmse": {
+        "mean": -0.04291049428970344,
+        "lower95": -0.05085906928512042,
+        "upper95": -0.035157269811303786,
+        "worlds": 8,
+        "sd": 0.012209079601077597
+      },
+      "worst_group_rmse": {
+        "mean": -0.13500006041265375,
+        "lower95": -0.14705653153414144,
+        "upper95": -0.12294716003038084,
+        "worlds": 8,
+        "sd": 0.018841240779835153
+      },
+      "live_worst_group_rmse": {
+        "mean": -0.11532491368053072,
+        "lower95": -0.12591141747516216,
+        "upper95": -0.10481555199797135,
+        "worlds": 8,
+        "sd": 0.01653174925608886
+      },
+      "coverage_gap": {
+        "mean": -0.2860150850414056,
+        "lower95": -0.3336060504401758,
+        "upper95": -0.2303856958077375,
+        "worlds": 8,
+        "sd": 0.08291124398175471
+      }
+    },
+    "violations": {
+      "feasible_floor": 0,
+      "privacy_cap": 0,
+      "max_solver_failure_rate": 0.0
+    },
+    "eligible": true,
+    "balanced_target_score": 1.3500006041265373,
+    "both_fairness_targets_pass": true,
+    "unconditional_global_floor_feasibility": 0.006009615384615384,
+    "mean_opportunity_shortfall_group_epochs": 620.25,
+    "means": {
+      "rmse": 2.0829166961890797,
+      "live_rmse": 2.1562381518987555,
+      "worst_group_rmse": 2.594767171230713,
+      "live_worst_group_rmse": 2.696510346057858,
+      "coverage_gap": 0.3028974163416784
+    }
+  },
+  "selection_sha256": "974030d62c427092dce1f01859372588179de1d76b53bdba76433ceab6bda5a2",
+  "job_plan": [
+    {
+      "seed": 7600,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7600,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7600,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7600,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7600,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7601,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7601,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7601,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7601,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7601,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7602,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7602,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7602,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7602,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7602,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7603,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7603,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7603,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7603,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7603,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7604,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7604,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7604,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7604,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7604,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7605,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7605,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7605,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7605,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7605,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7606,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7606,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7606,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7606,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7606,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7607,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7607,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7607,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7607,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7607,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7608,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7608,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7608,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7608,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7608,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7609,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7609,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7609,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7609,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7609,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7610,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7610,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7610,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7610,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7610,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7611,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7611,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7611,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7611,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7611,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7612,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7612,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7612,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7612,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7612,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7613,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7613,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7613,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7613,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7613,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7614,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7614,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7614,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7614,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7614,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7615,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7615,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7615,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7615,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7615,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7616,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7616,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7616,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7616,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7616,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7617,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7617,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7617,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7617,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7617,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7618,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7618,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7618,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7618,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7618,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7619,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7619,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7619,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7619,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7619,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7620,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7620,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7620,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7620,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7620,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7621,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7621,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7621,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7621,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7621,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7622,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7622,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7622,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7622,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7622,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7623,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7623,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7623,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7623,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7623,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7624,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7624,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7624,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7624,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7624,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7625,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7625,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7625,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7625,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7625,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7626,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7626,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7626,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7626,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7626,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7627,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7627,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7627,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7627,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7627,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7628,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7628,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7628,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7628,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7628,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7629,
+      "cell": "anchor_clean",
+      "method": "airproof_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7629,
+      "cell": "anchor_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "9e468e8c8e4aa2d82ac37342b868993163ed5eed8d05ebdc6d272a4d144c8b4f"
+    },
+    {
+      "seed": 7629,
+      "cell": "outage_clean",
+      "method": "airproof_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7629,
+      "cell": "outage_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "64b26316985a3653fa8feb42409d9343c8febaa7cf10eb19d7864347b8da8c89"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_clean",
+      "method": "airproof_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_clean",
+      "method": "squared_loss_v4",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_fairness",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_clean",
+      "method": "airproof_v4_no_relay",
+      "config_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_adversarial_drift",
+      "method": "airproof_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_adversarial_drift",
+      "method": "squared_loss_v4",
+      "config_hash": "7397d8a693a76eb67314f651a1f96ee8ba5cef78622be1bed3e8f0a99c5c0cca"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_hotspot_suppression",
+      "method": "airproof_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    },
+    {
+      "seed": 7629,
+      "cell": "severe_hotspot_suppression",
+      "method": "squared_loss_v4",
+      "config_hash": "304b2b863f159a8308fcf066d55cfdeadd62f843b3658d6e565a1b417b67ebb0"
+    }
+  ],
+  "workers_max": 11,
+  "created_unix": 1788418727.6361773,
+  "runner_sha256": "924748c4431fa546f0d2583e87cd5718022ea94d0cbe4c5688bc13edb1984c98"
+}

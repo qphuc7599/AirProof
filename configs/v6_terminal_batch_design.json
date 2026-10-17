@@ -1,0 +1,25 @@
+{
+  "registration": "v6-reservation-safe-terminal-batch-design-v1",
+  "registered_date": "2026-09-08",
+  "role": "bounded serialization and integrity analysis; not an implemented transport or scientific campaign",
+  "frame_bytes": 512,
+  "return_ack_bytes": 16,
+  "same_origin_batch_sizes": [1, 2, 4, 8, 16, 32],
+  "max_records": 2048,
+  "max_origin": 2147483647,
+  "max_epoch": 1000000000,
+  "design": {
+    "acceptance": "issue each content-bound signed receipt promptly after reserving its acceptance frames and the incremental worst-case terminal-batch growth",
+    "terminal": "one same-origin payload containing individually signed terminal witnesses and one shared signed checkpoint",
+    "reservation": "reserve acceptance frames plus max(0, envelope_frames(k+1)-envelope_frames(k)) before each new promise; the first member also reserves envelope_frames(1)",
+    "flush": "flush before the earliest receipt inclusion deadline and before waiting would make any member stale for allocation"
+  },
+  "required_checks": [
+    "every receipt verifies against its original content and the shared checkpoint",
+    "content mutation fails verification",
+    "record reorder fails the ordered receipt/content association",
+    "aggregate reservation is never below serialized terminal frames",
+    "one-record behavior is no worse than the current serializer"
+  ],
+  "scope_limits": "Same-origin serialization analysis only. No cross-origin aggregation, availability, BFT, finality, censorship-resistance, throughput-recovery, or scientific claim."
+}

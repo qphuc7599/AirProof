@@ -1,0 +1,19 @@
+{
+  "registration": "v6-accountability-throughput-decomposition-v1",
+  "registered_date": "2026-09-08",
+  "role": "internal engineering upper-bound decomposition; not scientific evidence",
+  "fixture_seed": 6006001,
+  "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+  "immutable_fixture": {"agents": 24, "steps": 48, "grid_side": 4, "burn_in_steps": 8, "reference_station_count": 4, "attack_start_epoch": 24, "drain_epochs": 24},
+  "frozen_audit": {"return_mode": "same_origin_terminal_batch_v1", "terminal_batch_size": 4, "terminal_batch_timeout_epochs": 3, "inclusion_deadline_epochs": 24, "max_records": 2048, "collector_return_buffer_bytes": 18432},
+  "oracles": [
+    {"id": "actual_v3", "change": "none"},
+    {"id": "infinite_return_frames_same_contacts_buffer", "change": "remove service-frame-count cap; already true in v3"},
+    {"id": "sufficient_buffer_same_contacts", "collector_return_buffer_bytes": 2097152},
+    {"id": "zero_return_cost", "definition": "all timely physical arrivals pass audit admission and their origin verification is instantaneous; selection still uses the unchanged allocator"},
+    {"id": "byte_exact_serialization_bound", "definition": "replace only final-fragment zero padding; retain every 44-byte header, 64-byte frame signature, signed receipt, signed witness, checkpoint and contact"}
+  ],
+  "codec_prototype_gate": {"minimum_padding_fraction_of_fixed_wire": 0.25, "also_require": "sufficient-buffer origin verification must not be limited by reverse contact opportunities"},
+  "comparators": {"legacy_selected": 181, "per_record_selected": 39, "stale_gate_selected": 50, "batch_v3_selected": 45, "batch_v3_origin_verified": 32},
+  "scope_limits": "No retuning, primary confirmation, scientific, availability, BFT, finality, censorship-resistance, or general throughput claim."
+}

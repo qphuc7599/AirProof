@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v8-m5-release-reference-stress-confirmation-v1",
+  "status": "prospectively frozen after exposed development and before independent outcomes",
+  "role": "independent synthetic confirmation of protected-release incremental value under a predeclared persistent public-reference stress",
+  "development_result": "reports/v8/m5_release_assimilation_development_v1/result.json",
+  "shared_resource_configuration": "configs/v7/reviewer_shared_resource_core_confirmation_v3.json",
+  "seed_registry": "configs/v8/seed_registry.json",
+  "seed_namespace": "m5_release_reference_stress_confirmation_v1",
+  "seeds": [6255000, 6255001, 6255002, 6255003, 6255004, 6255005, 6255006, 6255007],
+  "cell": "severe_clean",
+  "worlds": 8,
+  "selected_estimator": {
+    "name": "POOL_V16",
+    "state": "groupwise persistent public-reference bias",
+    "prior_variance": 16.0,
+    "public_uncertainty_gate": 4.0,
+    "innovation_clip": 21.0,
+    "correction_cap": 8.0
+  },
+  "privacy_contract": {
+    "epsilon_history": 8.0,
+    "release_count": 28,
+    "deadline_epochs": 24,
+    "k_min": 20,
+    "residual_laplace_scale": 7.0,
+    "nonnegative_raw_laplace_scale": 17.5,
+    "postprocessing_epsilon": 0.0,
+    "consumer_inputs": ["public group reference", "public uncertainty", "fixed schedule", "protected released value", "public suppression indicator"],
+    "prohibited_consumer_inputs": ["exact contributor counts", "raw records", "noiseless private query", "private twin state"]
+  },
+  "stress_regime": {
+    "name": "persistent_regulatory_sensor_group_calibration_shift_4",
+    "group_bias": [4.0, -4.0, -4.0, 4.0],
+    "magnitude": 4.0,
+    "units": "pollutant concentration units",
+    "scope": "the fixed shift is applied to regulatory reference-observation values before public-model fitting and protected-query construction for the complete deployment; every arm scores the unchanged physical truth on identical support",
+    "transform_order": ["generate physical world and public regulatory observations", "apply registered group shift to regulatory observations without reading truth", "fit public reference", "construct all protected mechanisms under that same reference", "run consumers", "load truth only in isolated scorer"],
+    "nominal_uncertainty_source": "citizen-independent public LOSO pooled scale",
+    "uncertainty_inflation": "sqrt(nominal_scale^2 + 4^2)",
+    "rationale": "half the predeclared correction cap and below the residual clipping radius; a persistent public-sensor calibration offset rather than an outcome-selected event"
+  },
+  "evaluation": {
+    "score_half_open": [48, 672],
+    "prediction_clock": "causal publication clock; acquisition plus 24 epochs",
+    "target": "same four group means used by the fixed release mechanism and public-only comparator",
+    "bootstrap_seed": 6255099,
+    "bootstrap_replicates": 20000,
+    "interval": "paired-world one-sided 95 percent percentile bootstrap upper bound",
+    "report_main_regime": true,
+    "report_all_worlds": true
+  },
+  "decision_rules": {
+    "primary_reference_stress": "upper95(mean RMSE protected pool minus public-only) < 0",
+    "retained_raw_advantage": "upper95(mean RMSE protected pool minus direct nonnegative raw DP carry) < 0; equally postprocessed nonnegative raw is also reported",
+    "main_regime": "descriptive and always reported; no incremental-value claim unless its own upper95 difference is below 0",
+    "privacy_epsilon_history_upper": 8.0,
+    "release_count_exact": 28,
+    "deadline_exact": 24,
+    "k_min_exact": 20,
+    "postprocessing_epsilon_exact": 0.0,
+    "resource_or_support_violation_count": 0,
+    "claim_rule": "reference-stress claim only if both scientific bounds and every privacy, support, cadence and shared-resource invariant pass"
+  },
+  "observed_proxy_rule": "seek a proxy only if an already valid, legally usable, unviewed split contains the same target plus public reference and can support a protected-release simulation without redefining admission; otherwise record no eligible split and do not fabricate one",
+  "artifacts": {
+    "directory": "reports/v8/m5_release_reference_stress_confirmation_v1",
+    "consumer_arrays": "public inputs and protected release values only",
+    "scoring_arrays": "truth and predictions isolated from consumer invocation"
+  }
+}

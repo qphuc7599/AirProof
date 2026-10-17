@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-reviewer-event-interval-confirmation-v1",
+  "status": "rule frozen before reading reviewer shared-resource v2 outcomes",
+  "role": "independent event-coverage confirmation on the new shared-resource worlds",
+  "method": "AP_LIFETIME7",
+  "clocks": [
+    "live",
+    "reconstructed"
+  ],
+  "levels": [
+    0.9,
+    0.95
+  ],
+  "calibration": {
+    "split_id": "v6-lifetime-budget7-validation-repurposed-as-v7-interval-calibration",
+    "root": "reports/v6/lifetime_budget7_validation_v2",
+    "seeds": [
+      6241400,
+      6241401,
+      6241402,
+      6241403,
+      6241404,
+      6241405,
+      6241406,
+      6241407,
+      6241408,
+      6241409,
+      6241410,
+      6241411
+    ],
+    "cells": [
+      "anchor_clean",
+      "outage_clean",
+      "severe_clean",
+      "severe_drift",
+      "severe_hotspot"
+    ],
+    "spatial_stride": 4,
+    "minimum_event_support_per_world_cell": 100,
+    "radius_rule": "maximum of finite-sample absolute-event-error quantiles across calibration world/cell units"
+  },
+  "evaluation": {
+    "split_id": "reviewer-shared-resource-confirmation-v2-event-evaluation",
+    "root": "reports/v7/reviewer_revision/shared_resource_confirmation_v2",
+    "seeds": [
+      6251100,
+      6251101,
+      6251102,
+      6251103,
+      6251104,
+      6251105,
+      6251106,
+      6251107,
+      6251108,
+      6251109,
+      6251110,
+      6251111
+    ],
+    "cells": [
+      "severe_clean",
+      "severe_hotspot"
+    ],
+    "event_definition": "truth exceeds the 95th percentile of that world's pre-scoring truth prefix [0,48), fixed before its scored interval",
+    "bootstrap_seed": 6252999,
+    "bootstrap_replicates": 20000,
+    "unit": "whole world paired across cells"
+  },
+  "decision_rule": {
+    "event_coverage_point_estimate_at_least_nominal": true,
+    "report_world_bootstrap_95_intervals": true,
+    "report_width_and_interval_score": true,
+    "no_exact_conditional_or_exchangeable_coverage_claim": true
+  },
+  "prohibitions": [
+    "no evaluation residual may alter the calibrated radii",
+    "no evaluation truth may enter interval construction",
+    "no unsupported event cell may be counted as a success",
+    "no width or interval-score result may be omitted"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "claim_authorized": true,
+  "claim_scope": "incremental protected-release value under the registered persistent public-reference calibration stress only",
+  "gates": {
+    "privacy_information_resource_invariants": true,
+    "protected_below_direct_nonnegative_raw": true,
+    "protected_below_public_reference_stress": true
+  },
+  "main_regime_adverse_result_retained": true,
+  "main_regime_incremental_value": false,
+  "means": {
+    "main_protected_rmse": 1.529841149010281,
+    "main_public_rmse": 0.8654745101859673,
+    "stress_direct_nonnegative_raw_rmse": 18.311331945626186,
+    "stress_direct_residual_rmse": 9.111903798150742,
+    "stress_nonnegative_raw_pool_rmse": 2.877049107431537,
+    "stress_protected_rmse": 2.7149757955288893,
+    "stress_public_rmse": 3.389128369324026
+  },
+  "observed_proxy_confirmation": "not evaluated in this synthetic runner; eligibility audit is a separate artifact",
+  "paired_bounds": {
+    "main_protected_minus_public": {
+      "mean": 0.6643666388243139,
+      "upper95": 0.9117038995660203,
+      "worlds": 8
+    },
+    "stress_protected_minus_direct_nonnegative_raw": {
+      "mean": -15.596356150097298,
+      "upper95": -14.646815058124716,
+      "worlds": 8
+    },
+    "stress_protected_minus_nonnegative_raw_pool": {
+      "mean": -0.16207331190264768,
+      "upper95": -0.03122305388774632,
+      "worlds": 8
+    },
+    "stress_protected_minus_public": {
+      "mean": -0.6741525737951364,
+      "upper95": -0.35016762146706326,
+      "worlds": 8
+    }
+  },
+  "role": "independent synthetic confirmation of protected-release incremental value under a predeclared persistent public-reference stress",
+  "schema_version": 1,
+  "selected_estimator": {
+    "correction_cap": 8.0,
+    "innovation_clip": 21.0,
+    "name": "POOL_V16",
+    "prior_variance": 16.0,
+    "public_uncertainty_gate": 4.0,
+    "state": "groupwise persistent public-reference bias"
+  },
+  "source_lock_sha256": "4b621860365d18223dbdee7a0b0bd9ac68690a2c5e51bbfb50d20a1f0c34bb68",
+  "stress_regime": {
+    "group_bias": [
+      4.0,
+      -4.0,
+      -4.0,
+      4.0
+    ],
+    "magnitude": 4.0,
+    "name": "persistent_regulatory_sensor_group_calibration_shift_4",
+    "nominal_uncertainty_source": "citizen-independent public LOSO pooled scale",
+    "rationale": "half the predeclared correction cap and below the residual clipping radius; a persistent public-sensor calibration offset rather than an outcome-selected event",
+    "scope": "the fixed shift is applied to regulatory reference-observation values before public-model fitting and protected-query construction for the complete deployment; every arm scores the unchanged physical truth on identical support",
+    "transform_order": [
+      "generate physical world and public regulatory observations",
+      "apply registered group shift to regulatory observations without reading truth",
+      "fit public reference",
+      "construct all protected mechanisms under that same reference",
+      "run consumers",
+      "load truth only in isolated scorer"
+    ],
+    "uncertainty_inflation": "sqrt(nominal_scale^2 + 4^2)",
+    "units": "pollutant concentration units"
+  },
+  "worlds": 8
+}

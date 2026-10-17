@@ -1,0 +1,35 @@
+protocol: final-public-reference-causal-fairness-frontier-v1
+status: fixed-before-frontier-outcomes
+base_config: public_reference_validation.yaml
+seeds: [7400, 7401, 7402, 7403, 7404, 7405, 7406, 7407]
+fairness_strengths: [0.0, 0.25, 0.5, 0.75, 1.0]
+targets: [5, 10, 20, 30]
+candidate_method: airproof_v4
+control_method: airproof_v4_no_fairness
+steps: 672
+agents: 1000
+price_of_fairness_max: 0.05
+coverage_gap_reduction_target: 0.20
+worst_group_rmse_reduction_target: 0.10
+selection_rule: >-
+  Among positive-strength candidates with no feasible-floor, solver or privacy-cap
+  violations and mean paired reconstruction and live RMSE prices at most 5%,
+  maximize the smaller of (coverage-gap reduction / .20) and (worst-zone
+  reconstruction-RMSE reduction / .10). Break ties by smaller reconstruction
+  RMSE price, then full strength, then smaller target. Report whether both target
+  reductions are reached. Do not start final primary inference by treating a
+  failed selection target as passed.
+feasibility_interpretation: >-
+  Report unconditional opportunity/global feasibility and shortfall explicitly.
+  Infeasibility caused by absent contributors during an outage is not a constraint
+  violation and is not removed from outcomes. No 90%-of-all-epochs feasibility
+  requirement is imposed on this arrival-clock outage experiment.
+audit: >-
+  39 fixed-prefix spatial/availability strata: seven overlapping positive
+  intersections and all 32 allocation-zone by three-binary-attribute atoms.
+  Report every stratum including empty/small support; at least eight cells for
+  worst-stratum summaries. These are outcome audits, not overlapping hard floors
+  or socioeconomic classifications.
+statistics: eight independent worlds per cell; paired descriptive bootstrap only
+primary_rmse_clock: bounded-fixed-lag-reconstruction-at-horizon-end
+additional_rmse_clock: live estimate frozen at own epoch before future arrivals

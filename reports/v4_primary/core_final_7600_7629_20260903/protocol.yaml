@@ -1,0 +1,63 @@
+protocol_version: final-public-reference-v4-core-campaign-1
+status: prospective-protocol-final-config-and-power-required-before-primary
+frontier: reports/v4_validation/fairness_frontier_7400_7407
+validation_seeds: [7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7308, 7309, 7310, 7311]
+primary_seed_start: 7600
+primary_min_worlds: 30
+primary_max_worlds: 100
+agents: 1000
+steps: 672
+common_methods: [airproof_v4, squared_loss_v4]
+additional_severe_clean_methods: [airproof_v4_no_fairness, airproof_v4_no_relay]
+predeclared_operational_overrides:
+  protocol_version: airproof-v4-core-final-architecture-1
+  status: final-configuration-role-defined-by-campaign-manifest
+  execution.trace_python_allocations: false
+  privacy.epsilon_user_max: 8.0
+  privacy.epsilon_mean: 0.2857142857142857
+  privacy.epsilon_count: 0.0
+  privacy.private_eligibility: false
+  privacy.k_min: 20
+  privacy.release_mode: residual
+  privacy.residual_clip: 10.0
+  privacy.release_deadline_steps: 24
+operational_choice_rationale:
+  - hourly-internal-twin-but-daily-public-DP-views-with-eight-epsilon-full-history-budget
+  - chosen-before-new-DP-grid-outcomes-not-selected-from-best-observed-setting
+  - legacy-hourly-epsilon-504-validation-is-permissive-numerical-diagnostic-not-practical-main-budget
+  - instrumentation-choice-does-not-change-any-scientific-metric-ABBA-regression-verified
+  - RSS-sampling-remains-enabled-python-allocation-profiler-disabled-to-reduce-runtime
+cells:
+  anchor_clean:
+    network.availability: 1.0
+    network.outage_median_hours: 0
+    network.outage_p95_hours: 0
+    world.participation_skew: 1.0
+    attack.kind: clean
+    attack.fraction: 0.0
+  outage_clean:
+    network.availability: 0.75
+    network.outage_median_hours: 6
+    network.outage_p95_hours: 24
+    world.participation_skew: 5.0
+    attack.kind: clean
+    attack.fraction: 0.0
+  severe_clean:
+    attack.kind: clean
+  severe_adversarial_drift:
+    attack.kind: adversarial_drift
+  severe_hotspot_suppression:
+    attack.kind: hotspot_suppression
+validation_role: all-five-physical-cells-and-both-ablations-at-selected-final-fairness-point
+power: upper95-bootstrap-validation-contrast-SD-and-one-sided-noncentral-t-power
+power_target: 0.90
+power_sizing_alpha: 0.007142857142857143
+familywise_alpha: 0.05
+primary_adjustment: Holm-seven-prespecified-hypotheses
+report_unattainable_power: true
+no_retuning_after_primary: true
+primary_n_selected_before_primary_data: true
+source_rule: primary-reuses-validation-source-snapshot-and-configuration-exactly
+clock:
+  prediction: bounded-fixed-lag-reconstruction-and-separately-frozen-live-nowcast
+  DP: acquisition-epoch-plus-fixed-24-epoch-collection-deadline

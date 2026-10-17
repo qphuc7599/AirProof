@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v8-joint-lifetime-allocation-development-v1",
+  "status": "bounded exposed development frozen before v8 candidate outcomes",
+  "role": "mechanism selection only; never independent confirmation",
+  "source_registration": "configs/v7/reviewer_shared_resource_confirmation_v2.json",
+  "source_evidence": {
+    "shared_v2": "reports/v7/reviewer_revision/shared_resource_confirmation_v2/analysis.json",
+    "paced_v1": "reports/v7/reviewer_revision/paced_lifetime_development_v1/analysis.json",
+    "v4_primary": "reports/v4_primary/core_final_7600_7629_20260903/analysis.json"
+  },
+  "reuse": {
+    "seeds": [6251100, 6251101],
+    "cells": ["severe_clean", "severe_hotspot"],
+    "transport_rule": "run the unchanged shared-v2 physical transport once per seed because clean and hotspot have identical topology, observation identities, and public reference; replace values by nullifier for the hotspot arm",
+    "independent_inference": false
+  },
+  "fixed": {
+    "agents": 1000,
+    "acquisition_epochs": 672,
+    "drain_epochs": 24,
+    "lag": 6,
+    "lifetime_budget": 7.0,
+    "innovation_scale_floor": 5.504983038182643,
+    "innovation_clip": 4.0,
+    "outcome_strength": 1.0
+  },
+  "candidates": [
+    {"id": "cadence6_outcome", "decision_interval": 6, "fairness_strength": 0.0},
+    {"id": "cadence12_outcome", "decision_interval": 12, "fairness_strength": 0.0},
+    {"id": "cadence24_outcome", "decision_interval": 24, "fairness_strength": 0.0},
+    {"id": "cadence12_joint1", "decision_interval": 12, "fairness_strength": 1.0},
+    {"id": "cadence24_joint1", "decision_interval": 24, "fairness_strength": 1.0},
+    {"id": "cadence24_joint4", "decision_interval": 24, "fairness_strength": 4.0}
+  ],
+  "descriptive_gates": {
+    "clean_AP_to_SQ_ratio_upper": 1.05,
+    "hotspot_attenuation_lower": 0.20,
+    "event_recall_loss_vs_SQ_upper_percentage_points": 5.0,
+    "contributor_gap_reduction_lower": 0.20,
+    "worst_group_RMSE_gain_lower": 0.10,
+    "maximum_user_lifetime_exposure_upper": 7.0,
+    "solver_failure_rate": 0.0
+  },
+  "selection_rule": "eligible candidates pass all efficacy, fairness, lifetime, and solver gates; choose the eligible candidate with greatest minimum normalized gate margin, then shorter cadence, lower fairness strength, and id",
+  "output": "reports/v8/joint_lifetime_allocation_development_v1"
+}

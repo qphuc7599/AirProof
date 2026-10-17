@@ -1,0 +1,19 @@
+{
+  "schema_version": 3,
+  "role": "multi-world exposed-development input producer; no efficacy outcome authorization",
+  "registration": "configs/v6/innovation_covariance_forcing_development_v2.json",
+  "output_directory": "reports/v6/innovation_covariance_forcing_development_v2/inputs",
+  "collision_policy": "create-new-or-resume-hash-identical-staging-only",
+  "truth_capabilities": {
+    "calibration": "eight clean calibration worlds; labels used only for paired error moments",
+    "development": "separate scoring-only files loaded only after prediction artifacts exist",
+    "prediction_forbidden": ["truth","event_mask","attack_label","corrupted","paired_sensor_error","paired_public_error","process_innovation","field_rng_state","plume_phase","plume_amplitude"]
+  },
+  "world_folds": {"unit":"world","count":8,"row_wise_folds_forbidden":true},
+  "operator": {"format":"single CSR","dense_time_tensor_forbidden":true,"equation":"0.90*(I-0.08*L)"},
+  "forcing": {"availability":"epoch t","future_prefix_use_forbidden":true,"shared_by_all_controls":true,"process_noise_exported":false},
+  "exact_observation_fields": ["user_id","epoch","cell","group","value","sigma","quality","size_bytes","nullifier","arrival"],
+  "covariance_formula": "Var(sensor_error)+Var(public_error)-2Cov(sensor_error,public_error)",
+  "source_roles": {"citizen_observations":"exact_selected_citizen_channel","public_center":"frozen_causal_regulatory_predictor","transition":"declared_physical_operator","physical_forcing":"declared_public_exogenous","calibration_truth":"closed_calibration_labels"},
+  "protected_namespaces": ["reports/v6/innovation_covariance_forcing_development_v1","data/external/epa","reports/v6/epa_2025_protocol","reports/v6/validation","reports/v6/test","reports/v6/primary","reports/v6/confirmation"]
+}

@@ -1,0 +1,87 @@
+{
+  "role": "historical reanalysis; calibration and evaluation caches already exposed; not confirmation",
+  "summary": {
+    "anchor_clean": {
+      "mean_world_rmse": {
+        "public": 0.4487858512888289,
+        "availability": 0.4479872059958092,
+        "protected": 0.44834663378732004,
+        "noiseless_oracle": 0.4456830742358449
+      },
+      "protected_minus_availability": 0.00035942779151081533,
+      "descriptive_95ci": [
+        -0.0002950735759610651,
+        0.0010139291589826957
+      ],
+      "protected_better_worlds": 3,
+      "noiseless_oracle_minus_availability": -0.002304131759964282,
+      "worlds": 12
+    },
+    "outage_clean": {
+      "mean_world_rmse": {
+        "public": 0.4487858512888289,
+        "availability": 0.4479872059958092,
+        "protected": 0.4483538992030591,
+        "noiseless_oracle": 0.4456559115707861
+      },
+      "protected_minus_availability": 0.0003666932072500147,
+      "descriptive_95ci": [
+        -0.00029403410830405543,
+        0.0010274205228040848
+      ],
+      "protected_better_worlds": 3,
+      "noiseless_oracle_minus_availability": -0.002331294425023065,
+      "worlds": 12
+    },
+    "severe_clean": {
+      "mean_world_rmse": {
+        "public": 0.4487858512888289,
+        "availability": 0.4479872059958092,
+        "protected": 0.44836304047459885,
+        "noiseless_oracle": 0.4456690067485978
+      },
+      "protected_minus_availability": 0.0003758344787896985,
+      "descriptive_95ci": [
+        -0.00025293307234985457,
+        0.0010046020299292516
+      ],
+      "protected_better_worlds": 3,
+      "noiseless_oracle_minus_availability": -0.0023181992472114297,
+      "worlds": 12
+    },
+    "severe_drift": {
+      "mean_world_rmse": {
+        "public": 0.4487858512888289,
+        "availability": 0.4479872059958092,
+        "protected": 0.44836826414406455,
+        "noiseless_oracle": 0.44576793490664884
+      },
+      "protected_minus_availability": 0.00038105814825543927,
+      "descriptive_95ci": [
+        -0.00025980077566321587,
+        0.0010219170721740944
+      ],
+      "protected_better_worlds": 3,
+      "noiseless_oracle_minus_availability": -0.0022192710891602713,
+      "worlds": 12
+    },
+    "severe_hotspot": {
+      "mean_world_rmse": {
+        "public": 0.4487858512888289,
+        "availability": 0.4479872059958092,
+        "protected": 0.4483699521761746,
+        "noiseless_oracle": 0.4458946149986081
+      },
+      "protected_minus_availability": 0.0003827461803654064,
+      "descriptive_95ci": [
+        -0.00028329233631141815,
+        0.0010487846970422309
+      ],
+      "protected_better_worlds": 3,
+      "noiseless_oracle_minus_availability": -0.002092590997201086,
+      "worlds": 12
+    }
+  },
+  "citizen_value_confirmed": false,
+  "confirmation_authorized": false
+}

@@ -1,0 +1,137 @@
+{
+  "role": "exploratory retrospective error partition; not causal or event-recall inference",
+  "source_sha256": {
+    "reports\\v5\\tools\\reanalyze_original_wrapper_tail.py": "a186835299f6aa077d0d893634350562d2b7b7c60553417a1b986ab102bfd63a",
+    "reports\\v4_validation\\esntnn_wrapper_7850_7861\\manifest.json": "8219c04f9c5d52153fea138e8defef5133c5831b1ae25b63d2966cf4a595f6b3",
+    "reports\\v4_validation\\esntnn_wrapper_7850_7861\\squared_errors.npz": "b9d76fa65880f26ac5a8f6b69768b035c7f88a53cdc9790a44d6fc5445c0aa11",
+    "reports\\v4_validation\\esntnn_purpleair_7800\\heldout_predictions.npz": "c258a6aec1d404c143223e104b49ed4d0be1ea6572645ab3ad66217a31795a19"
+  },
+  "alignment_verified": true,
+  "seeds": [
+    7850,
+    7851,
+    7852,
+    7853,
+    7854,
+    7855,
+    7856,
+    7857,
+    7858,
+    7859,
+    7860,
+    7861
+  ],
+  "archive_epochs": 137,
+  "stations": 44,
+  "clock": "archive epochs, nominal4hours; timestamps absent; not137hourly observations",
+  "selection_rule": "now-defined exploratory top ceil(0.05*137)=7 epochs ranked by shared backbone station-MSE; stable index tie-break",
+  "AP_pooled_rmse": 2.979866628615538,
+  "SQ_pooled_rmse": 2.4612738074323355,
+  "pooled_rmse_relative_loss": 0.21070098727626396,
+  "AP_mean_per_seed_rmse": 2.9797058594785413,
+  "SQ_mean_per_seed_rmse": 2.4595576974806925,
+  "signed_total_excess_sum": 4638.9345909386075,
+  "total_mean_excess_mse": 2.821736369184068,
+  "partitions": {
+    "top_7_backbone_error_epochs": {
+      "epochs": 7,
+      "epoch_fraction": 0.051094890510948905,
+      "AP_pooled_rmse": 8.983292627179566,
+      "SQ_pooled_rmse": 6.635425375707421,
+      "signed_excess_sum": 3080.336826752367,
+      "signed_share_of_total_excess": 0.6640181633018272,
+      "mean_signed_excess": 36.67067650895675,
+      "positive_excess_sum": 3081.7872463015538,
+      "negative_excess_sum": -1.4504195491869893,
+      "negative_seed_epoch_entries": 3,
+      "negative_time_mean_epochs": 0
+    },
+    "remaining_130_epochs": {
+      "epochs": 130,
+      "epoch_fraction": 0.948905109489051,
+      "AP_pooled_rmse": 2.238833963430576,
+      "SQ_pooled_rmse": 2.003316346691567,
+      "signed_excess_sum": 1558.5977641862407,
+      "signed_share_of_total_excess": 0.3359818366981729,
+      "mean_signed_excess": 0.9991011308886159,
+      "positive_excess_sum": 1805.228331213895,
+      "negative_excess_sum": -246.63056702765445,
+      "negative_seed_epoch_entries": 767,
+      "negative_time_mean_epochs": 58
+    }
+  },
+  "top_error_context": [
+    {
+      "local_epoch": 8,
+      "archive_target_index": 783,
+      "backbone_station_mse": 140.23318786457818,
+      "mean_AP_minus_SQ_mse": 79.27728697304859,
+      "largest_error_station_index": 21,
+      "truth_at_station": 92.845,
+      "public_at_station": 14.980628967285156,
+      "max_truth_across_stations": 92.845
+    },
+    {
+      "local_epoch": 51,
+      "archive_target_index": 826,
+      "backbone_station_mse": 120.09497051049499,
+      "mean_AP_minus_SQ_mse": 40.65651631126993,
+      "largest_error_station_index": 21,
+      "truth_at_station": 75.9675,
+      "public_at_station": 3.702350378036499,
+      "max_truth_across_stations": 75.9675
+    },
+    {
+      "local_epoch": 7,
+      "archive_target_index": 782,
+      "backbone_station_mse": 117.79512300462711,
+      "mean_AP_minus_SQ_mse": 52.056242139244034,
+      "largest_error_station_index": 21,
+      "truth_at_station": 85.89,
+      "public_at_station": 14.460040092468262,
+      "max_truth_across_stations": 85.89
+    },
+    {
+      "local_epoch": 2,
+      "archive_target_index": 777,
+      "backbone_station_mse": 82.02829510896048,
+      "mean_AP_minus_SQ_mse": 28.344930208745662,
+      "largest_error_station_index": 21,
+      "truth_at_station": 71.3775,
+      "public_at_station": 11.640007019042969,
+      "max_truth_across_stations": 71.3775
+    },
+    {
+      "local_epoch": 29,
+      "archive_target_index": 804,
+      "backbone_station_mse": 57.42530301259872,
+      "mean_AP_minus_SQ_mse": 21.757972232276586,
+      "largest_error_station_index": 21,
+      "truth_at_station": 62.635,
+      "public_at_station": 12.68173885345459,
+      "max_truth_across_stations": 62.635
+    },
+    {
+      "local_epoch": 120,
+      "archive_target_index": 895,
+      "backbone_station_mse": 54.35691624008212,
+      "mean_AP_minus_SQ_mse": 17.548682390677993,
+      "largest_error_station_index": 21,
+      "truth_at_station": 48.335,
+      "public_at_station": 2.3465046882629395,
+      "max_truth_across_stations": 48.335
+    },
+    {
+      "local_epoch": 129,
+      "archive_target_index": 904,
+      "backbone_station_mse": 49.15227622575133,
+      "mean_AP_minus_SQ_mse": 17.05310530743444,
+      "largest_error_station_index": 21,
+      "truth_at_station": 47.9,
+      "public_at_station": 1.6275429725646973,
+      "max_truth_across_stations": 47.9
+    }
+  ],
+  "new_estimator_calls": 0,
+  "limitations": "12citizen realizations share one viewed archive; partition based on backbone error is exploratory; no valid training event threshold inferred"
+}

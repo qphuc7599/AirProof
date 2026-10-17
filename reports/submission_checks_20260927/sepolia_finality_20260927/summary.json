@@ -1,0 +1,21 @@
+{
+  "environment": "ethereum-sepolia-public-testnet",
+  "contract_address": "0x76c33862c6F6793BE44EEB18887C8A40CbAcD569",
+  "anchors": 30,
+  "successful_anchors": 30,
+  "readback_verified": true,
+  "finalized_observed": 30,
+  "right_censored_at_end": 0,
+  "finality_latency_seconds": {
+    "min": 786.796,
+    "median": 946.308,
+    "p95": 1126.52,
+    "max": 1161.716
+  },
+  "rpc_failures": 0,
+  "reverted_transactions": 0,
+  "ending_balance_test_eth": "0.293471015741960548",
+  "elapsed_seconds": 4997.224,
+  "finished_at": "2026-09-26T22:12:51.249Z",
+  "scope": "Public Sepolia finality observation; not Ethereum mainnet performance."
+}

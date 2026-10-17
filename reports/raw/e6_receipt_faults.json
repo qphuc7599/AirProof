@@ -1,0 +1,5402 @@
+[
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 0,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 1,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 2,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 3,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 4,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 5,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 6,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 7,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 8,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 9,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 10,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 11,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 12,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 13,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 14,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 15,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 16,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 17,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 18,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 19,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 20,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 21,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 22,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 23,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 24,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 25,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 26,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 27,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 28,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 29,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 30,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 31,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 32,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 33,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 34,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 35,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 36,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 37,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 38,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 39,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 40,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 41,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 42,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 43,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 44,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 45,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 46,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 47,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 48,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 49,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 50,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 51,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 52,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 53,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 54,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 55,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 56,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 57,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 58,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 59,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 60,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 61,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 62,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 63,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 64,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 65,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 66,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 67,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 68,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 69,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 70,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 71,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 72,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 73,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 74,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 75,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 76,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 77,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 78,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 79,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 80,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 81,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 82,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 83,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 84,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 85,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 86,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 87,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 88,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 89,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 90,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 91,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 92,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 93,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 94,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 95,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 96,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 97,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 98,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "receipt_issued_then_omitted",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_inclusion",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "tampered_inclusion_content",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "forged_terminal_witness",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "terminal_status_replay",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "valid_explicit_exclusion",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "late_inclusion",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "revoked_signer",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  },
+  {
+    "detected": true,
+    "fault": "competing_correction_root",
+    "replicate": 99,
+    "study": "E6-receipt-fault"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-reviewer-shared-core-component-controls-v1",
+  "status": "frozen after partial core-v3 progress and before any component-control outcome",
+  "role": "descriptive matched mechanism attribution on the shared-core v3 worlds",
+  "source_registration": "configs/v7/reviewer_shared_resource_core_confirmation_v3.json",
+  "source_confirmation": "reports/v7/reviewer_revision/shared_resource_core_confirmation_v3",
+  "seeds": [
+    6251300,
+    6251301,
+    6251302,
+    6251303,
+    6251304,
+    6251305,
+    6251306,
+    6251307,
+    6251308,
+    6251309,
+    6251310,
+    6251311
+  ],
+  "cells": [
+    "severe_clean",
+    "severe_hotspot"
+  ],
+  "methods": {
+    "INPUT_CLIP_ONLY": {
+      "loss": "quadratic",
+      "input_clip": true,
+      "output_cap": false,
+      "clip_delta": 4.0
+    },
+    "OUTPUT_CAP_ONLY": {
+      "loss": "quadratic",
+      "input_clip": false,
+      "output_cap": true,
+      "cap": 8.0
+    }
+  },
+  "fixed_factors": [
+    "world",
+    "transport trace",
+    "fair allocation",
+    "processing-selected evidence",
+    "arrival clock",
+    "public predictor",
+    "graph regularization",
+    "innovation scale",
+    "scoring clock"
+  ],
+  "analysis": {
+    "role": "descriptive decomposition; no prospective efficacy gate",
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 6256999
+  },
+  "output": "reports/v7/reviewer_revision/shared_core_component_controls_v1"
+}

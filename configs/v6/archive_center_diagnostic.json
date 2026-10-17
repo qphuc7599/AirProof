@@ -1,0 +1,12 @@
+{
+ "role":"new public-center diagnostic on already exposed archive; not independent confirmation",
+ "original_pillar":"robust public-referenced uncertainty-aware twin",
+ "existing_evidence":"frozen v4 ESN-TNN weights and heldout cache; recovered public selection predictions",
+ "weakness":"cap8 sharp archive error floor exceeds historical matched-control margin",
+ "smallest_change":"one stationwise affine public prediction recalibration, ridge0.1 on normalized coefficients toward identity; no backbone training",
+ "fit_indices":[638,775],"scoring_indices":[775,912],
+ "cap":8,"clean_margin":1.05,"candidate_count":1,
+ "selection":"none; retain result whether favorable or adverse",
+ "privacy_scope":"public archive predictor recalibration; not confidential citizen data assimilation",
+ "independent_validation":false,"running_development_modified":false
+}

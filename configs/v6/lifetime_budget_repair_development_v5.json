@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "registration": "v6-causal-lifetime-budget-repair-exposed-development-v5",
+  "status": "prospective_candidate_protocol_frozen_after_validation_v1_failure_before_candidate_predictions",
+  "role": "sequential exposed mechanistic development on reused validation-v1 inputs; never validation, primary, EPA test, or confirmation",
+  "objective": "Determine whether the two previously registered lower causal lifetime budgets repair the severe-drift generalization failure while preserving every original clean, event, hotspot, citizen-value, numerical and resource target.",
+  "failure_lineage": {
+    "parent_development": "reports/v6/causal_lifetime_exposure_development_v4/outcomes/analysis.json",
+    "parent_validation": "reports/v6/causal_lifetime_exposure_validation_v1/outcomes/analysis.json",
+    "statistical_audit": "reports/v6/causal_lifetime_exposure_validation_v1/drift_statistical_audit.json",
+    "mechanism_diagnosis": "reports/v6/causal_lifetime_exposure_validation_v1/drift_failure_diagnosis.json",
+    "observed_failure": "lifetime budget 28 passed development but independent validation failed the registered drift bound; finite-only ratio and post-hoc direct 20-percent margin also failed",
+    "historical_v4_rerun": false
+  },
+  "input_reuse": {
+    "bundle": "reports/v6/causal_lifetime_exposure_validation_v1/inputs",
+    "input_lock": "reports/v6/causal_lifetime_exposure_validation_v1/input_lock.json",
+    "input_manifest": "reports/v6/causal_lifetime_exposure_validation_v1/inputs/manifest.json",
+    "source_validation_outcomes": "reports/v6/causal_lifetime_exposure_validation_v1/outcomes",
+    "seeds": [6241200,6241201,6241202,6241203,6241204,6241205,6241206,6241207,6241208,6241209,6241210,6241211],
+    "cells": ["anchor_clean","outage_clean","severe_clean","severe_drift","severe_hotspot"],
+    "clean_cells": ["anchor_clean","outage_clean","severe_clean"],
+    "attack_pairs": {"severe_drift":"severe_clean","severe_hotspot":"severe_clean"},
+    "exposure": "all twelve source worlds and the parent budget-28 outcomes have been read; this family is development only",
+    "new_world_or_transport_generation": false,
+    "prediction_before_scoring": true
+  },
+  "fixed_estimator": {
+    "innovation_covariance": "world_cross_fitted_covariance",
+    "innovation_calibration": "reports/v6/innovation_covariance_forcing_development_v2/inputs/global_calibration.json",
+    "residual_forcing": "producer_exact_causal",
+    "cap": 8.0,
+    "output_cap": true,
+    "input_clip": false,
+    "loss": "huber",
+    "huber_delta": 1.345,
+    "lag": 6,
+    "lambda_zero": 0.05,
+    "lambda_temporal": 0.05,
+    "lambda_spatial": 0.02,
+    "time_step": 1.0,
+    "tolerance": 1e-7,
+    "max_iterations": 1000,
+    "numerical_refinements": 2,
+    "causal_lifetime_exposure": true,
+    "maximum_record_uses": 7
+  },
+  "candidates": [
+    {"id":"lifetime_budget7_repair","per_user_exposure_budget":7.0},
+    {"id":"lifetime_budget14_repair","per_user_exposure_budget":14.0}
+  ],
+  "candidate_derivation": "Budgets 7 and 14 were members of the pre-validation development-v4 family and produced stronger exposed attack point estimates than the selected budget 28. Their behavior on the reused validation-v1 inputs has not been computed before this registration.",
+  "controls": {
+    "reused_methods": ["AP_LIFETIME28","PUBLIC","SQ","HUBER"],
+    "recompute": false,
+    "same_information": "Every candidate and reused control is bound to the identical validation-v1 prediction input fingerprint for its seed and cell.",
+    "parent_failure_retained": true
+  },
+  "development_gates": {
+    "aggregation_unit": "paired exposed world",
+    "clean_candidate_to_SQ_mean_rmse_ratio_max": 1.05,
+    "attack_target_attenuation": 0.20,
+    "attack_gate": "For each attack, require mean SQ excess > 0 and mean[0.8*SQ excess - candidate excess] >= 0; this is algebraically the unchanged 20-percent target without division.",
+    "event_recall_mean_loss_vs_SQ_max_percentage_points": 5.0,
+    "severe_clean_candidate_to_PUBLIC_mean_rmse_ratio_max": 1.0,
+    "all_solver_failure_rates_max": 0.0,
+    "all_projected_gradient_inf_max": 1e-6,
+    "all_candidate_absolute_corrections_max": 8.0000001,
+    "all_lifetime_exposures_at_most_candidate_budget": true,
+    "all_outputs_finite": true,
+    "all_information_fingerprints_equal": true,
+    "all_resource_invariants": true
+  },
+  "selection_and_exit": {
+    "eligibility": "A candidate is eligible only if every unchanged scientific target and every invariant passes on the complete matrix.",
+    "selection": "Among eligible candidates select the largest minimum drift/hotspot attenuation point estimate; ties use smaller severe-clean ratio, smaller budget, lower runtime and lexicographic id.",
+    "no_eligible_candidate": "Retain all adverse outcomes and stop this repair branch without changing target, attack, data, cap, lag, covariance, forcing or control.",
+    "eligible_candidate": "A nomination authorizes only a separately registered validation on new worlds with simultaneous bounds; it does not rescue validation v1 or open primary, EPA test or confirmation."
+  },
+  "runtime": {
+    "workers": 4,
+    "blas_threads_per_worker": 1,
+    "runtime_smoke_seeds": [6241200],
+    "resume": "only missing hash-identical predictions; no replacement seed"
+  },
+  "artifacts": {
+    "directory": "reports/v6/lifetime_budget_repair_development_v5",
+    "source_lock": "reports/v6/lifetime_budget_repair_development_v5/source_lock.json",
+    "readiness": "reports/v6/lifetime_budget_repair_development_v5/readiness.json",
+    "outcomes": "reports/v6/lifetime_budget_repair_development_v5/outcomes"
+  },
+  "protected_namespaces": [
+    "data/external/epa",
+    "reports/v6/primary",
+    "reports/v6/confirmation",
+    "reports/v6/test"
+  ]
+}

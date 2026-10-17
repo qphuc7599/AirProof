@@ -1,0 +1,358 @@
+{
+  "schema_version": 1,
+  "comparison": "AirProof deadline relay versus RFC-6693-equation PRoPHET GTMX under identical retained resources and streams",
+  "cells": {
+    "Hypertext09:0.002": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.3578485842833783,
+          "restricted_mean_delay_seconds": 17549.759350747387,
+          "group_delivery_gap": 0.0611948781555521,
+          "transmissions_per_delivered": 4.730716167944988
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.3723439511984866,
+          "restricted_mean_delay_seconds": 17535.606151623007,
+          "group_delivery_gap": 0.09344072033739305,
+          "transmissions_per_delivered": 4.259134008878175
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": -1.4495366915108332,
+          "ci95": [
+            -1.7153600730403618,
+            -1.168993685082794
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": -0.0007973999778378537,
+          "ci95": [
+            -0.006247823166409127,
+            0.004582323636041208
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": 3.224584218184094,
+          "ci95": [
+            1.9241344855244722,
+            4.729320443960847
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.11102818518693547,
+          "ci95": [
+            -0.1232761042526195,
+            -0.09871156462877453
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    },
+    "Hypertext09:0.01": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.19477752530415554,
+          "restricted_mean_delay_seconds": 19995.59590537928,
+          "group_delivery_gap": 0.0401408998138723,
+          "transmissions_per_delivered": 7.037692395116477
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.19449459685758025,
+          "restricted_mean_delay_seconds": 20427.787212480078,
+          "group_delivery_gap": 0.08923938932667043,
+          "transmissions_per_delivered": 6.482886540544103
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": 0.028292844657527016,
+          "ci95": [
+            -0.3035060036818482,
+            0.38553374203978585
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.021193322580525465,
+          "ci95": [
+            0.017818019852342503,
+            0.02433303578919117
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": 4.909848951279812,
+          "ci95": [
+            3.6961342564244872,
+            6.123563646135137
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.08764393347439574,
+          "ci95": [
+            -0.1045816576463757,
+            -0.06671293601967995
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    },
+    "InVS13:0.002": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.061436583993326466,
+          "restricted_mean_delay_seconds": 20985.383778079013,
+          "group_delivery_gap": 0.04155993477999641,
+          "transmissions_per_delivered": 11.311769599206555
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.05588362319758059,
+          "restricted_mean_delay_seconds": 21081.458943176545,
+          "group_delivery_gap": 0.040220728966753536,
+          "transmissions_per_delivered": 8.092647938017503
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": 0.5552960795745883,
+          "ci95": [
+            0.3776890825029319,
+            0.7181793763788603
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.0045665002186361155,
+          "ci95": [
+            0.0034049852763797794,
+            0.005452132061659398
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": -0.13392058132428758,
+          "ci95": [
+            -0.6539059234961504,
+            0.45034222180869554
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.39245535564430656,
+          "ci95": [
+            -0.41902981902947667,
+            -0.36023462929218114
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    },
+    "InVS13:0.01": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.02812183453105529,
+          "restricted_mean_delay_seconds": 21362.338592462187,
+          "group_delivery_gap": 0.025831466315403912,
+          "transmissions_per_delivered": 15.63383090948722
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.025807640733274823,
+          "restricted_mean_delay_seconds": 21424.77106745729,
+          "group_delivery_gap": 0.027493602147856615,
+          "transmissions_per_delivered": 9.600858227892903
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": 0.23141937977804683,
+          "ci95": [
+            0.1609893146779535,
+            0.3052277163224302
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.0029177221468833945,
+          "ci95": [
+            0.0020557719322586766,
+            0.003779672361508113
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": 0.16621358324527055,
+          "ci95": [
+            -0.12943301825142833,
+            0.4218919197182737
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.6295049683560396,
+          "ci95": [
+            -0.6638919315714309,
+            -0.6005861783096604
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    },
+    "InVS15:0.002": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.11218421354943323,
+          "restricted_mean_delay_seconds": 20410.61226515592,
+          "group_delivery_gap": 0.0325248796744229,
+          "transmissions_per_delivered": 7.703690331448729
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.10761905700380739,
+          "restricted_mean_delay_seconds": 20536.12666829685,
+          "group_delivery_gap": 0.04004318010233232,
+          "transmissions_per_delivered": 6.503581518553288
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": 0.456515654562585,
+          "ci95": [
+            0.2605202264480904,
+            0.6320353779830997
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.006116940575688146,
+          "ci95": [
+            0.004893051659247538,
+            0.007340829492128753
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": 0.7518300427909426,
+          "ci95": [
+            0.5707765015136155,
+            0.9273642958368333
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.18326405006165697,
+          "ci95": [
+            -0.20421201275722614,
+            -0.1672879769981495
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    },
+    "InVS15:0.01": {
+      "seeds": [
+        8050,
+        8051,
+        8052,
+        8053,
+        8054
+      ],
+      "means": {
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.060591407950357744,
+          "restricted_mean_delay_seconds": 21039.93172583478,
+          "group_delivery_gap": 0.023782579081959337,
+          "transmissions_per_delivered": 10.675467431871095
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.056329358652886595,
+          "restricted_mean_delay_seconds": 21169.78446151684,
+          "group_delivery_gap": 0.029835830528476954,
+          "transmissions_per_delivered": 8.374887534320424
+        }
+      },
+      "paired_airproof_minus_or_improvement_over_prophet": {
+        "delivery_difference_percentage_points": {
+          "mean": 0.4262049297471148,
+          "ci95": [
+            0.33952425268298114,
+            0.5148582476520632
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.0061340792737816004,
+          "ci95": [
+            0.0055858026078546615,
+            0.006539196095334621
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "group_gap_reduction_percentage_points": {
+          "mean": 0.6053251446517617,
+          "ci95": [
+            0.3580211658000233,
+            0.8307008521416135
+          ],
+          "conditional_role_traffic_replications": 5
+        },
+        "relative_transmission_reduction": {
+          "mean": -0.2750058406109767,
+          "ci95": [
+            -0.289250426057141,
+            -0.2574405795368906
+          ],
+          "conditional_role_traffic_replications": 5
+        }
+      }
+    }
+  },
+  "favorable_point_direction_cells_of_six": {
+    "delivery": 5,
+    "delay": 5,
+    "gap": 5,
+    "transmissions": 0
+  },
+  "experimental_unit": "three measured contact collections; five synthetic role/traffic replications conditionally paired per collection/load",
+  "inference_scope": "descriptive conditional bootstrap; the five seeds do not create independent measured networks",
+  "source": "reports/v4_validation/empirical_contacts_8050_8054/results.jsonl",
+  "source_sha256": "cd0e5742848f0fd995e8f4352ff43e9bfe021e1a74f61d39d7801bffd3279220"
+}

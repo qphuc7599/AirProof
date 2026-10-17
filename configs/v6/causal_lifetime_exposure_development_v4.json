@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "registration": "v6-causal-lifetime-exposure-mechanistic-development-v4",
+  "status": "prospective_protocol_frozen_after_v3_closure_before_v4_outcomes",
+  "role": "third sequential exposed mechanistic-synthetic development family; never validation, EPA test, primary, or confirmation",
+  "objective": "Test whether a causal per-user budget on total optimization exposure across overlapping lag windows closes the remaining slow-drift gate while preserving every original margin.",
+  "development_history": {
+    "v2_analysis": "reports/v6/innovation_covariance_forcing_development_v2/outcomes/analysis.json",
+    "v3_analysis": "reports/v6/history_normalized_huber_development_v3/outcomes/analysis.json",
+    "v3_diagnosis": "reports/v6/history_normalized_huber_development_v3/drift_failure_diagnosis.json",
+    "v3_disposition": "fixed-window budget1 improved drift attenuation to 0.39 percent but every budget failed the unchanged 20 percent drift gate",
+    "budget_derivation": "multiply the previously registered per-window budgets 1,2,4 by lag+1=7, the maximum number of rolling solves that can reuse one timely record; chosen before v4 outcomes",
+    "v4_evidence_rerun": false
+  },
+  "inputs": {
+    "campaign_bundle": "reports/v6/innovation_covariance_forcing_development_v2/inputs",
+    "input_lock": "reports/v6/innovation_covariance_forcing_development_v2/input_lock.json",
+    "reuse": "byte-identical v2 prediction inputs; no world or transport regeneration",
+    "development_seeds": [6241020,6241021,6241022,6241023,6241024,6241025,6241026,6241027],
+    "cells": ["severe_clean","severe_drift","severe_hotspot"],
+    "truth_use": "separate scoring capability loaded only after all v4 candidate predictions for a job are written and hashed",
+    "exposure": "same exposed v2/v3 worlds reused for sequential development; no independence or p-value claim"
+  },
+  "fixed_estimator": {
+    "innovation_covariance": "world_cross_fitted_covariance",
+    "residual_forcing": "producer_exact_causal",
+    "cap": 8.0,
+    "output_cap": true,
+    "input_clip": false,
+    "loss": "huber",
+    "huber_delta": 1.345,
+    "lag": 6,
+    "lambda_zero": 0.05,
+    "lambda_temporal": 0.05,
+    "lambda_spatial": 0.02,
+    "time_step": 1.0,
+    "tolerance": 1e-7,
+    "max_iterations": 1000,
+    "numerical_refinements": 2,
+    "history_normalized_huber": false,
+    "causal_lifetime_exposure": true,
+    "maximum_record_uses": 7
+  },
+  "candidates": [
+    {"id":"lifetime_budget7","per_user_exposure_budget":7.0},
+    {"id":"lifetime_budget14","per_user_exposure_budget":14.0},
+    {"id":"lifetime_budget28","per_user_exposure_budget":28.0}
+  ],
+  "controls": {
+    "source_campaign": "reports/v6/innovation_covariance_forcing_development_v2/outcomes",
+    "source_candidate": "world_cross_fitted_covariance__producer_exact_causal",
+    "reused_methods": ["PUBLIC","SQ","HUBER","CANDIDATE"],
+    "renamed_base_method": "BASE_BOUNDED_HUBER",
+    "reuse_rule": "verify every v2 result, prediction and manifest hash in the v4 source lock; never recompute an unchanged control",
+    "same_information": "candidate fingerprints the unmodified raw prediction view before causal reweighting; all controls receive that identical information"
+  },
+  "joint_gates": {
+    "aggregation_unit": "paired exposed development world",
+    "clean_candidate_to_SQ_mean_rmse_ratio_max": 1.05,
+    "drift_mean_excess_rmse_attenuation_min": 0.20,
+    "hotspot_mean_excess_rmse_attenuation_min": 0.20,
+    "event_recall_mean_loss_vs_SQ_max_percentage_points": 5.0,
+    "all_solver_failure_rates_max": 0.0,
+    "all_projected_gradient_inf_max": 1e-6,
+    "all_candidate_absolute_corrections_max": 8.0000001,
+    "all_outputs_finite": true,
+    "all_information_fingerprints_equal_within_comparison": true,
+    "all_resource_invariants": true
+  },
+  "selection_and_exit": {
+    "rule": "A budget is eligible only if every unchanged aggregate gate and every invariant passes. Select at most one by minimum worst normalized loss, then smaller lifetime budget, runtime, and ID.",
+    "no_feasible_candidate": "Close v4 and retain all adverse outcomes; no budget, gate, world, cap, delta, lag, covariance, forcing, or control change inside this family.",
+    "downstream": "A nomination authorizes only a separately frozen validation protocol. It cannot open EPA tests, primary, or confirmation."
+  },
+  "runtime": {
+    "workers": 4,
+    "blas_threads_per_worker": 1,
+    "runtime_smoke_seeds": [6241020],
+    "resume": "only missing hash-identical candidate predictions; no replacement seed"
+  },
+  "artifacts": {
+    "directory": "reports/v6/causal_lifetime_exposure_development_v4",
+    "source_lock": "reports/v6/causal_lifetime_exposure_development_v4/source_lock.json",
+    "readiness": "reports/v6/causal_lifetime_exposure_development_v4/readiness.json",
+    "outcomes": "reports/v6/causal_lifetime_exposure_development_v4/outcomes"
+  },
+  "protected_namespaces": [
+    "data/external/epa",
+    "reports/v6/epa_2025_protocol",
+    "reports/v6/validation",
+    "reports/v6/test",
+    "reports/v6/primary",
+    "reports/v6/confirmation"
+  ]
+}

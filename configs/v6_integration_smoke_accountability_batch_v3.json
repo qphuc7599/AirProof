@@ -1,0 +1,30 @@
+{
+  "registration": "v6-integration-smoke-accountability-batch-v3",
+  "registered_date": "2026-09-08",
+  "role": "engineering fixture; not scientific evidence",
+  "fixture_seed": 6006001,
+  "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+  "fixture_overrides": {
+    "agents": 24,
+    "steps": 48,
+    "grid_side": 4,
+    "burn_in_steps": 8,
+    "reference_station_count": 4,
+    "attack_start_epoch": 24,
+    "drain_epochs": 24
+  },
+  "audit": {
+    "return_mode": "same_origin_terminal_batch_v1",
+    "terminal_batch_size": 4,
+    "terminal_batch_timeout_epochs": 3,
+    "inclusion_deadline_epochs": 24,
+    "max_records": 2048,
+    "collector_return_buffer_bytes": 18432
+  },
+  "comparators": {
+    "legacy_engineering_selected": 181,
+    "per_record_accountability_selected": 39,
+    "stale_gate_per_record_selected": 50
+  },
+  "scope_limits": "No scientific, availability, BFT, finality, censorship-resistance, or primary-campaign claim."
+}

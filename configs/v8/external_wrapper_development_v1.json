@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "gate": "C: external equal-information bounded correction",
+  "role": "bounded development on historically exposed PurpleAir prediction archive",
+  "archive": "reports/v4_validation/esntnn_purpleair_7800/heldout_predictions.npz",
+  "public_prediction_keys": {
+    "primary": "ESN_TNN",
+    "causal_auxiliary": "persistence",
+    "audit_only_unused": "DESN"
+  },
+  "public_input_contract": "Both center inputs are cached one-step predictions. Persistence at target t was formed in the archived runner from the public observation at t-1; no target-t truth, synthetic citizen report, attack label, or future public value enters the center or radius.",
+  "development_seeds": [6283000, 6283001, 6283002, 6283003, 6283004, 6283005],
+  "reserved_confirmation_seeds": [6286000, 6286001, 6286002, 6286003, 6286004, 6286005, 6286006, 6286007],
+  "event_threshold": 19.764249999999958,
+  "event_threshold_source": "reports/v6/public_dynamics_development/selection_lock.json; frozen before this development",
+  "estimator": {
+    "cap": 8.0,
+    "lag": 1,
+    "huber_delta": 1.345,
+    "lambda_temporal": 0.015,
+    "lambda_spatial": 0.006,
+    "lambda_zero": 0.015,
+    "time_step": 4.0,
+    "precision_normalizer": 1.0,
+    "tolerance": 1e-7,
+    "max_iterations": 1000,
+    "numerical_refinements": 1,
+    "loss": "huber",
+    "output_cap": false,
+    "input_clip": false,
+    "clip_delta": 4.0,
+    "consensus_spread_threshold": 1.5,
+    "consensus_singleton_quadratic": false,
+    "history_normalized_huber": false,
+    "per_user_weight_budget": 1.0
+  },
+  "innovation_scale": 3.0,
+  "candidate_family": [
+    {"id": "original_b3_g1_k12", "primary_weight": 1.0, "radius_floor": 3.0, "uncertainty_gain": 1.0, "global_radius": 12.0},
+    {"id": "blend20_b3_g05_k12", "primary_weight": 0.8, "radius_floor": 3.0, "uncertainty_gain": 0.5, "global_radius": 12.0},
+    {"id": "blend20_b3_g1_k12", "primary_weight": 0.8, "radius_floor": 3.0, "uncertainty_gain": 1.0, "global_radius": 12.0},
+    {"id": "blend50_b3_g1_k12", "primary_weight": 0.5, "radius_floor": 3.0, "uncertainty_gain": 1.0, "global_radius": 12.0}
+  ],
+  "cells": [
+    {"id": "neutral_clean", "reference_shift": 0.0, "kind": "clean", "onset_fraction": 0.5},
+    {"id": "neutral_drift_mid", "reference_shift": 0.0, "kind": "drift", "onset_fraction": 0.5},
+    {"id": "neutral_negative_mid", "reference_shift": 0.0, "kind": "negative_bias", "onset_fraction": 0.5},
+    {"id": "neutral_drift_late", "reference_shift": 0.0, "kind": "drift", "onset_fraction": 0.75},
+    {"id": "high2_clean", "reference_shift": 2.0, "kind": "clean", "onset_fraction": 0.5},
+    {"id": "high2_drift_mid", "reference_shift": 2.0, "kind": "drift", "onset_fraction": 0.5},
+    {"id": "high2_negative_mid", "reference_shift": 2.0, "kind": "negative_bias", "onset_fraction": 0.5}
+  ],
+  "attack": {"reports_per_station": 3, "sigma": 3.0, "availability": 0.6, "attack_fraction": 0.2, "attack_amplitude": 40.0},
+  "clean_baselines": {"neutral": "neutral_clean", "high2": "high2_clean"},
+  "gates": {"clean_ratio_max": 1.05, "attack_attenuation_min": 0.20, "event_recall_loss_max": 0.05, "solver_failure_rate_max": 0.0},
+  "attack_growth_rule": "Apply attenuation gate to every identifiable matched attack cell whose robust_unbounded mean RMSE exceeds its same-reference clean mean RMSE.",
+  "selection_rule": "Eligible candidates pass every applicable gate; choose lowest mean clean RMSE, then highest worst applicable attenuation, then lexical id. Preserve all failed candidates.",
+  "confirmation_scope": "Fresh synthetic-channel seeds over the same historically exposed real-pollution archive; randomization confirmation, not a new pollution archive or observed-fault confirmation."
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "role": "post-run provenance completion; this file does not alter the pre-outcome lock",
+  "pre_outcome_lock": "source_lock.json",
+  "omission": "airproof/v6_transport.py was imported transitively by the locked shared-resource runner but was absent from the explicit pre-outcome source inventory",
+  "execution_time_source_sha256": "d40d797cdbea931c5373c65641559db76e1bd50ae012a0f77d790d0c6d6b7a2e",
+  "recovered_copy": "frozen_transitive_snapshot/airproof/v6_transport.py",
+  "recovered_copy_sha256": "d40d797cdbea931c5373c65641559db76e1bd50ae012a0f77d790d0c6d6b7a2e",
+  "independent_prior_lock": "reports/v7/reviewer_revision/shared_resource_core_confirmation_v3/source_lock.json",
+  "independent_prior_lock_recorded_sha256": "d40d797cdbea931c5373c65641559db76e1bd50ae012a0f77d790d0c6d6b7a2e",
+  "current_workspace_source_sha256": "0a263d0d432022dd88d25f16987d504735c4fdc367549359ae0affb92eb712b6",
+  "reason_for_difference": "the workspace transport was subsequently extended with Gate-A fairness policies; M5 outcomes predate that edit",
+  "claim_boundary": "The M5 source/config/seed/gate lock was prospective, but its transitive inventory was incomplete. Reproduction must use the recovered transport copy. This completion is disclosed rather than relabelled as a prospectively locked file."
+}

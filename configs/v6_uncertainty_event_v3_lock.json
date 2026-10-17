@@ -1,0 +1,18 @@
+{
+  "lock_version": 2,
+  "created_date": "2026-09-08",
+  "role": "superseded source lock; the 40-file design must not run and produced no outcome",
+  "sha256": {
+    "configs/v6_uncertainty_event_v3.json": "41654578e53ef9a75f814239264998c54b5a098e0f2f90bb02402d8e67b97e01",
+    "airproof/v6_uncertainty_event_v3.py": "0dd48866fd073f1bc8755bf80b52354d7eda8a797619e84e842181fa7708fc4b",
+    "scripts/run_v6_uncertainty_event_v3.py": "1e477b4aaaa7b498f76b3637244807322419fc373d6044502e70b35b9af49af9",
+    "tests/test_v6_uncertainty_event_v3.py": "a62fd964305a0c44029d6c1359145b76bbe492bba9eafbcdca5114b317895387",
+    "airproof/v6_uncertainty_public_prereq.py": "0cc4a6582b82546ff3dfe48031c57e4b0ac66f97f54e90e091b1ce8ae94fb4b5",
+    "scripts/build_v6_uncertainty_v3_public.py": "aa6a2cee6c60b2ef2da23c2520e958a40927aade0351a224e9bb89a4face84ae",
+    "tests/test_v6_uncertainty_public_prereq.py": "2e5087b4def56c1cc0ee30b5af85c0c6e6b8db4e0b2a7ec4e1c2bf396637f20b"
+  },
+  "required_public_artifacts": 40,
+  "available_at_supersession": 0,
+  "campaign_authorized": false,
+  "superseded_by": "v6-uncertainty-event-aware-v3.1"
+}

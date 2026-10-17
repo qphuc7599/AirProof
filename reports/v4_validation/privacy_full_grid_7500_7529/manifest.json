@@ -1,0 +1,2619 @@
+{
+  "protocol": {
+    "protocol_version": "v4-public-reference-full-privacy-interactions-1",
+    "role": "prespecified-secondary-mechanism-campaign-not-primary-twin-confirmation",
+    "base_config": "public_reference_validation.yaml",
+    "agents": 1000,
+    "steps": 672,
+    "seeds": [
+      7500,
+      7501,
+      7502,
+      7503,
+      7504,
+      7505,
+      7506,
+      7507,
+      7508,
+      7509,
+      7510,
+      7511,
+      7512,
+      7513,
+      7514,
+      7515,
+      7516,
+      7517,
+      7518,
+      7519,
+      7520,
+      7521,
+      7522,
+      7523,
+      7524,
+      7525,
+      7526,
+      7527,
+      7528,
+      7529
+    ],
+    "epsilon_user_caps": [
+      1.0,
+      4.0,
+      8.0,
+      32.0,
+      128.0,
+      512.0
+    ],
+    "scheduled_epochs": [
+      28,
+      112,
+      672
+    ],
+    "k_min": [
+      10,
+      20,
+      50
+    ],
+    "private_eligibility": [
+      false,
+      true
+    ],
+    "count_budget_fraction": 0.2,
+    "false_release_probability": 0.01,
+    "release_modes": [
+      "raw",
+      "residual"
+    ],
+    "raw_clip": 50.0,
+    "residual_clip": 10.0,
+    "public_collection_deadline_steps": 24,
+    "cells": {
+      "anchor_clean": {
+        "network.availability": 1.0,
+        "network.outage_median_hours": 0,
+        "network.outage_p95_hours": 0,
+        "world.participation_skew": 1.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "outage_clean": {
+        "network.availability": 0.75,
+        "network.outage_median_hours": 6,
+        "network.outage_p95_hours": 24,
+        "world.participation_skew": 5.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "severe_clean": {
+        "attack.kind": "clean"
+      },
+      "severe_adversarial_drift": {
+        "attack.kind": "adversarial_drift"
+      },
+      "severe_hotspot_suppression": {
+        "attack.kind": "hotspot_suppression"
+      }
+    },
+    "analysis": {
+      "unit": "paired-independent-physical-world",
+      "bootstrap_replicates": 10000,
+      "primary_secondary_claim_cell": "severe_clean",
+      "primary_secondary_claim_epsilon_user_max": 8.0,
+      "primary_secondary_claim_scheduled_epochs": 28,
+      "primary_secondary_claim_k_min": 20,
+      "primary_secondary_claim_private_eligibility": false,
+      "reduction_target": 0.5,
+      "rest_of_full_grid": "descriptive-interactions-including-suppression-and-release-cadence",
+      "empty_or_selectively_released_cohorts": "report-support-never-replace-missing-RMSE-by-zero"
+    },
+    "resource_contract": {
+      "independently_reserved_bytes_per_user_per_epoch": 256,
+      "additional_to_raw_evidence_budget": true,
+      "raw_evidence_budget_bytes_per_epoch": 83200,
+      "ingress_model": "logical-reservation-not-measured-DTN-control-packet-encoding"
+    },
+    "privacy_scope": [
+      "arbitrary-replacement-of-one-user-complete-history-including-region-changes",
+      "vector-sensitivity-4C-over-k-and-optional-count-vector-sensitivity-2",
+      "public-schedule-and-full-composition-even-for-suppressed-queries",
+      "no-private-scheduler-displacement-or-unaccounted-private-predictor",
+      "grid-is-counterfactual-on-synthetic-data-not-jointly-private-publication",
+      "fixed-deadline-output-horizon-extends-24-epochs-beyond-acquisition-horizon"
+    ]
+  },
+  "source_hash": "ba3f0eb180c88d09ae183accbff916f7c8e512242f6e64065a67d071b6450f2f",
+  "dependency": {
+    "pid": 10392,
+    "created": 1788409209.4542816,
+    "output": "D:\\DoAnChuyenNganh\\airprooff\\reports\\v4_validation\\fairness_frontier_7400_7407"
+  },
+  "runner_hash": "2c6030985dafac3fca51e6f4355c8606aff9242857b10dbd85b162b24207742a",
+  "created_unix": 1788410857.5518587,
+  "physical_jobs": 150,
+  "settings_per_world": 216,
+  "total_rows": 32400,
+  "workers_max": 10,
+  "job_plan": [
+    {
+      "seed": 7500,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7500,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7500,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7500,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7500,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7501,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7501,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7501,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7501,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7501,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7502,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7502,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7502,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7502,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7502,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7503,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7503,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7503,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7503,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7503,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7504,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7504,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7504,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7504,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7504,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7505,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7505,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7505,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7505,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7505,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7506,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7506,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7506,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7506,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7506,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7507,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7507,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7507,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7507,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7507,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7508,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7508,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7508,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7508,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7508,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7509,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7509,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7509,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7509,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7509,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7510,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7510,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7510,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7510,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7510,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7511,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7511,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7511,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7511,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7511,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7512,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7512,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7512,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7512,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7512,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7513,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7513,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7513,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7513,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7513,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7514,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7514,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7514,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7514,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7514,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7515,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7515,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7515,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7515,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7515,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7516,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7516,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7516,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7516,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7516,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7517,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7517,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7517,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7517,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7517,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7518,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7518,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7518,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7518,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7518,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7519,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7519,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7519,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7519,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7519,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7520,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7520,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7520,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7520,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7520,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7521,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7521,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7521,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7521,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7521,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7522,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7522,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7522,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7522,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7522,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7523,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7523,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7523,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7523,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7523,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7524,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7524,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7524,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7524,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7524,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7525,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7525,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7525,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7525,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7525,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7526,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7526,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7526,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7526,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7526,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7527,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7527,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7527,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7527,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7527,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7528,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7528,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7528,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7528,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7528,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    },
+    {
+      "seed": 7529,
+      "cell": "anchor_clean",
+      "config_hash": "9e75fc04583648b456b5000835a8fea98a4e26eabe83e59361c7dee028c9e756"
+    },
+    {
+      "seed": 7529,
+      "cell": "outage_clean",
+      "config_hash": "59294e52bde6656b2df8a4670ae46d0a65c1b72bf9291b1a29d11b6f3293fba5"
+    },
+    {
+      "seed": 7529,
+      "cell": "severe_clean",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7529,
+      "cell": "severe_adversarial_drift",
+      "config_hash": "1b3f33380a5b0c39b132f90811e1a67a2a8bc2a4f7a91c96d92dc7bd7e9ce44e"
+    },
+    {
+      "seed": 7529,
+      "cell": "severe_hotspot_suppression",
+      "config_hash": "bd54d80fb40c3053e54941220fd05b5bf12191b2f5b5a7b4fffa3b3fa7a93c45"
+    }
+  ],
+  "expected_settings": [
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 1.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 4.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 8.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 32.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 128.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 28,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 112,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 10,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 20,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": false,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "raw"
+    },
+    {
+      "epsilon_user_max": 512.0,
+      "scheduled_epochs": 672,
+      "k_min": 50,
+      "private_eligibility": true,
+      "count_budget_fraction": 0.2,
+      "release_mode": "residual"
+    }
+  ]
+}

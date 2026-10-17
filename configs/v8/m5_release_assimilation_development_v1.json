@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v8-m5-release-assimilation-development-v1",
+  "status": "predeclared exposed-development family; no independent confirmation claim",
+  "source": "reports/v7/reviewer_revision/shared_resource_core_confirmation_v3",
+  "source_role": "previously exposed synthetic shared-resource outcomes, reused without rerunning transport or privacy mechanisms",
+  "cells": ["severe_clean"],
+  "seeds": [6251300, 6251301, 6251302, 6251303, 6251304, 6251305, 6251306, 6251307, 6251308, 6251309, 6251310, 6251311],
+  "privacy_contract": {
+    "epsilon_history": 8.0,
+    "release_count": 28,
+    "deadline_epochs": 24,
+    "k_min": 20,
+    "residual_laplace_scale": 7.0,
+    "nonnegative_raw_laplace_scale": 17.5,
+    "postprocessing_epsilon": 0.0
+  },
+  "stress_regime": {
+    "name": "persistent_group_reference_calibration_shift_4",
+    "group_bias": [4.0, -4.0, -4.0, 4.0],
+    "scope": "downstream public group-reference calibration shift; protected absolute releases, target, support, cadence and admission remain fixed",
+    "nominal_uncertainty_source": "job result public_provenance.scale.pooled_scale",
+    "uncertainty_inflation": "sqrt(nominal_scale^2 + group_bias^2)"
+  },
+  "shared_parameters": {
+    "public_uncertainty_gate": 4.0,
+    "innovation_clip": 21.0,
+    "correction_cap": 8.0,
+    "score_half_open": [48, 672]
+  },
+  "candidate_family": [
+    {"name": "POOL_V16", "prior_variance": 16.0},
+    {"name": "POOL_V25", "prior_variance": 25.0},
+    {"name": "POOL_V36", "prior_variance": 36.0}
+  ],
+  "selection_rule": "minimum mean stress RMSE; candidate must improve on public-only and equally postprocessed nonnegative raw in at least 9 of 12 paired worlds; ties choose lower prior variance",
+  "main_regime_rule": "always report protected minus public; equality or an interval crossing zero is adverse and authorizes no main-regime value claim",
+  "reuse_rule": "all candidate outcomes are retained; no candidate, stress magnitude, gate or score support may change after outcomes"
+}

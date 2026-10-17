@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-08T10:33:47.967500+00:00",
+  "updated_utc": "2026-09-09T00:00:00+07:00",
+  "title": "AirProof origin-to-v4-to-v6 contribution ledger",
+  "scientific_targets_lowered": false,
+  "primary_v6_launched": false,
+  "confirmation_v6_read": false,
+  "policy": "docs/V6_V4_REUSE_AND_CLAIM_POLICY.md",
+  "claims": [
+    {
+      "claim_id": "C0",
+      "pillar": "joint five-pillar execution",
+      "original_statement": "AirProof combines robust digital twins, fairness, DTN, privacy and blockchain-supported accountability in one citizen-sensing architecture.",
+      "v4_mechanism_evidence": "Historical v4 primary establishes H1-H7 for its original execution; transfer, DTN, privacy and accountability remain separately scoped components.",
+      "v6_current_mechanism": "A common trace/resource/clock interface and four internal-reference adapters exist; no complete five-factor scientific campaign has run.",
+      "assumptions": "Changed mechanisms cannot inherit old outcomes; component effects do not compose without a matched execution.",
+      "evidence": [
+        "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+        "reports/v6/reuse_verified_manifest.json",
+        "airproof/v6_baseline_adapters.py",
+        "configs/v6/whole_system_baseline_adapters_v1.json",
+        "docs/V6_SCIENTIFIC_COMPLETION_AUDIT.md"
+      ],
+      "reuse_status": "Retain v4 efficacy only in its original execution; v6 adapters are engineering evidence.",
+      "changed_part": "v6 makes common traces/resources/clocks, evidence roles and failure states explicit.",
+      "acceptance_criteria": "Complete matched five-factor factorial; all original targets; faithful external baselines; independent locked confirmation.",
+      "unverified_scope": "Scientific whole-system comparison, full factorial, primary and confirmation.",
+      "status": "incomplete; original integrated claim target retained"
+    },
+    {
+      "claim_id": "C1",
+      "pillar": "robust digital twin",
+      "original_statement": "Original contribution2: uncertainty-aware graph state-space twin with clipped quality weighting, Huber robustness and explicit privacy-noise variance.",
+      "v4_mechanism_evidence": "Historical v4 H1-H5 passed Holm and Beijing transfer passed its registered 5% noninferiority test.",
+      "assumptions": "Citizen-independent causal public predictor; absolute cap 8; lag 6; same arrivals/support/clock; fixed public context/operators and preceding boundary for fixed-window sensitivity.",
+      "acceptance_criteria": "Clean Huber/SQ <=1.05; drift and hotspot attenuation >=20%; event-recall loss <=5pp; all numerical/resource invariants.",
+      "evidence": [
+        "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+        "reports/v4_validation/beijing_seasonal_20260903/analysis.json",
+        "reports/v6/development_v1/complete_matrix.json",
+        "reports/v6/archive_matched_diagnostic/summary.json",
+        "reports/v6/innovation_covariance_forcing_development_v2/outcomes/analysis.json",
+        "reports/v6/history_normalized_huber_development_v3/outcomes/analysis.json",
+        "reports/v6/causal_lifetime_exposure_development_v4/outcomes/analysis.json",
+        "reports/v6/causal_lifetime_exposure_validation_v1/outcomes/analysis.json",
+        "reports/v6/causal_lifetime_exposure_validation_v1/drift_statistical_audit.json",
+        "reports/v6/causal_lifetime_exposure_validation_v1/drift_failure_diagnosis.json",
+        "reports/v6/causal_lifetime_exposure_development_v4/recursive_sensitivity_certificate.json",
+        "docs/V6_LIFETIME_RECURSIVE_SENSITIVITY_THEOREM.md"
+      ],
+      "unverified_scope": "A changed-v6 estimator with an independently supported drift bound, external validation for that mechanism, integrated primary and confirmation.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "Retain v4 H1-H5/Beijing historically; do not relabel them for changed v6.",
+      "changed_part": "Residual-coordinate Huber, world-cross-fitted citizen-public covariance, exact causal residual forcing, causal lifetime exposure accounting, recursive replacement-stability certificate and matched public-only controls.",
+      "status": "development nomination obtained; independent changed-v6 validation adverse at the drift gate; target unchanged",
+      "v6_current_mechanism": "Sequential exposed development corrected provenance, covariance, residual forcing and rolling-window lifetime accounting, then nominated lifetime budget 28. The locked independent 12-world, five-cell, four-method validation completed 240/240 rows with all invariants and seven of eight gates passing. It remained an overall FAIL because the preregistered severe-drift attenuation lower bound was undefined after one nonpositive SQ-excess bootstrap draw; finite-only and direct 20% post-hoc contrasts also failed. This result does not replace historical v4 efficacy or authorize primary, EPA test or confirmation."
+    },
+    {
+      "claim_id": "C2",
+      "pillar": "fairness",
+      "original_statement": "Original contribution3: deficit-aware online scheduling and relay priority enforce minimum neighborhood coverage.",
+      "v4_mechanism_evidence": "Historical v4 H6 contributor-gap and H7 worst-group-RMSE targets passed in its original execution.",
+      "assumptions": "Disjoint representatives; additive nonnegative integer costs; per-epoch causal reduction; no raw-pool or starvation theorem.",
+      "acceptance_criteria": "H6 contributor-gap reduction >=20%; H7 worst-group RMSE reduction >=10%; zero floor/byte/resource violations.",
+      "evidence": [
+        "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+        "reports/v6/fairness_closure/exhaustive.json",
+        "reports/v6/fairness_validation_v1/analysis.json",
+        "reports/v6/fairness_ceiling_diagnostic/certificate.json",
+        "docs/V6_FAIRNESS_ESTIMATOR_FINAL_AUDIT.md"
+      ],
+      "unverified_scope": "Raw-pool optimality, starvation freedom, opportunity procurement, clean primary and real-world justice.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "Retain favorable v4 H6-H7 historically; changed-v6 adverse validation remains separate.",
+      "changed_part": "Minimax certificate, causal debt/service feedback and opportunity/allocation decomposition.",
+      "status": "component theorem proven; changed-v6 H6/H7 contradicted",
+      "v6_current_mechanism": "Exact minimax avoidable-deficit allocation on a fixed representative partition; changed-v6 12-world validation fails unchanged H6 and H7."
+    },
+    {
+      "claim_id": "C3",
+      "pillar": "DTN",
+      "original_statement": "Original contribution1/3 and RQ1: delayed duplicate-safe relay improves evidence freshness at a fixed communication budget.",
+      "v4_mechanism_evidence": "Historical synthetic and measured-contact DTN studies are retained in standalone scope.",
+      "assumptions": "Public contacts/identities; next-slot forwarding; immutable observations; charged receipt/feedback bytes.",
+      "acceptance_criteria": "Delivery deficit <=2pp vs capped epidemic; delay reduction >=15% and group-gap reduction >=20% vs Spray; zero resource violations.",
+      "evidence": [
+        "reports/v4_validation/dtn_deadline_confirm_7950_7979/summary.json",
+        "docs/V5_EMPIRICAL_TRANSPORT_RESULTS.md",
+        "airproof/v6_transport.py",
+        "docs/V6_TRANSPORT_FAIRNESS.md",
+        "docs/V6_CAPACITY_ORACLE.md"
+      ],
+      "unverified_scope": "Closing changed-v6 empirical/common-workload useful-delivery campaign and twin-accuracy benefit.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "Retain v4 standalone DTN; changed-v6 shared-resource effects need new evidence.",
+      "changed_part": "Common arrival clock, DP reservation, lag/TTL separation, causal feedback and byte-exact controls.",
+      "status": "implementation/diagnostics proven; changed-v6 scientific endpoint incomplete",
+      "v6_current_mechanism": "Acquisition-time routing with lag-6 usefulness, TTL-24 archival delivery, finite buffers/copies, release reservation, charged controls and a capacity oracle on one trace."
+    },
+    {
+      "claim_id": "C4",
+      "pillar": "privacy",
+      "original_statement": "Original contribution2/4 and RQ2: user-level private public aggregates with explicit DP-noise treatment in assimilation.",
+      "v4_mechanism_evidence": "Historical 32,400-row privacy grid/accountant retained for the original independently admitted release path.",
+      "assumptions": "Whole history may change group; sensitivity 4C/k; no raw state/exact private counts; non-release transcripts excluded.",
+      "acceptance_criteria": "epsilon<=8; 28 queries; k_min20; deadline24; zero accounting/admission violations; gain vs matched public/availability control.",
+      "evidence": [
+        "reports/v4_validation/privacy_full_grid_7500_7529/analysis.json",
+        "reports/v6/privacy_release_contract/manifest.json",
+        "reports/v6/release_incremental_value/result.json",
+        "docs/V6_PRIVACY_RELEASE_CONTRACT_RESULTS.md"
+      ],
+      "unverified_scope": "Protected citizen value, full-transcript privacy and independent release-only confirmation.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "Retain v4 accountant in original scope; v6 contract and adverse value test are separate.",
+      "changed_part": "Reserved ingress, publication clock, release-only twin and matched availability control.",
+      "status": "release-only DP contract proven; protected-value gain contradicted for registered family",
+      "v6_current_mechanism": "Release-only reserved ingress has 28 queries, whole-history epsilon 8, k_min20, delay24 and lag48; suppression is missing and Laplace variance is added once. Matched exposed analysis shows no protected citizen gain."
+    },
+    {
+      "claim_id": "C5",
+      "pillar": "blockchain/accountability",
+      "original_statement": "Original contribution1/4: encrypted off-chain traces, Merkle-root commitments, policy metadata and tamper evidence under ledger assumptions.",
+      "v4_mechanism_evidence": "Historical concurrency/receipt trials, 30 Sepolia anchors and local contract benchmarks are retained where compatible.",
+      "assumptions": "Accepted receipt defines obligation; registered comparison/read path; one auditor is not general availability; no BFT/finality/censorship/physical-truth inference.",
+      "acceptance_criteria": "No forged inclusion/terminal acceptance; terminal material reaches affected origins under declared contract; matched detection/cost; visible public-path failures.",
+      "evidence": [
+        "reports/v6/accountability_integrated_confirmation/manifest.json",
+        "reports/v6/durable_inclusion_async_return_v1/results.json",
+        "reports/v6/durable_public_checkpoint_v2/results.json",
+        "reports/v6/ledger_transparency_same_stream_v2/analysis.json",
+        "docs/V6_LEDGER_TRANSPARENCY_SAME_STREAM_RESULTS.md"
+      ],
+      "unverified_scope": "Universal origin return, public availability, gossip, BFT, finality, censorship resistance and scientific throughput.",
+      "original_source": "source_paper/AirProof_Elsevier/AirProof_Elsevier_origin.pdf, page2 contributions/RQs",
+      "reuse_status": "Retain compatible v4/Sepolia historically; corrected v6 comparison is local engineering evidence.",
+      "changed_part": "Finite return reservation, durable append before allocation, public head uplink, comparison and exact byte costs.",
+      "status": "cryptographic/resource engineering proven; universal return contradicted; public availability incomplete",
+      "v6_current_mechanism": "Content-bound resource-charged admission, durable inclusion, finite origin/public return and corrected 8,000-row signed-log/transparency/anchor comparison. Origin/public reach is incomplete; auditor partition is 0/400 detected and fully censored."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "registration": "configs/v5/protocol.yaml",
+  "historical_namespace_scan": {
+    "roots": ["configs", "reports", "results", "data"],
+    "extensions": ["json", "yaml", "md"],
+    "exclude": ["new v5 artifacts"],
+    "pattern": "six-digit integers 910000..917999",
+    "findings": "No historical seed collision found. Four text matches were decimal RMSE/interval digits (0.916667 and 0.917705), not integer seeds.",
+    "scope_limit": "Text configuration/result inventory; not proof about undeclared external executions."
+  },
+  "consumed": [
+    {"generator": "fairness partition component", "seeds": [560901], "role": "standalone development diagnostic outside world namespaces"},
+    {"generator": "v5 public contact trace", "seeds": [910000], "role": "transport-only preflight"},
+    {"generator": "integrated synthetic world", "seeds": [910001, 910002], "role": "reduced smoke and full-scale preflight"},
+    {"generator": "cached viewed archive citizen channel", "seeds": [916000, 916001], "role": "wrapper diagnostic; not fresh pollution data"},
+    {"generator": "release component public synthetic model", "range": [912000, 912007], "role": "moment fitting/calibration; distinct generator from integrated worlds"},
+    {"generator": "release component public synthetic model", "range": [915000, 915003], "role": "diagnostic heldout; corrected scale rerun retained same seeds"},
+    {"generator": "empirical contact role and traffic resampling", "seeds": [917000], "role": "single frozen-matrix runtime job; conditional on existing collection"}
+  ],
+  "active": [{"generator": "integrated synthetic world", "range": [911000, 911007], "role": "bounded candidate development"}],
+  "reserved": [
+    {"generator": "integrated synthetic world", "range": [912000, 912007], "role": "separate calibration"},
+    {"generator": "integrated synthetic world", "range": [913000, 913011], "role": "selected-model validation"},
+    {"generator": "integrated synthetic world", "range": [914000, 914099], "role": "prospectively locked confirmation only"},
+    {"generator": "integrated synthetic stress", "range": [915004, 915007], "role": "descriptive stress"},
+    {"generator": "EPA synthetic citizen channel", "range": [916002, 916005], "role": "frozen archive test windows; not independent datasets"},
+    {"generator": "empirical contact role and traffic resampling", "range": [917000, 917004], "role": "complete frozen 480-job matrix including preserved preflight job"}
+  ]
+}

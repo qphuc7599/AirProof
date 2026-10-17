@@ -5,7 +5,7 @@ for key in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS'):
 import argparse, hashlib, json, sys, time, threading
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
-PRIMARY = ROOT / 'retained_primary'
+PRIMARY = ROOT / 'reports/v4_primary/core_final_7600_7629_20260903'
 sys.path.insert(0, str(PRIMARY / 'source_snapshot'))
 import numpy as np
 import psutil

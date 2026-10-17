@@ -1,0 +1,19 @@
+{
+  "registration_sha256": "2b30b406ce644d86869bda80bc07dd7ede1f785815d6cbfb77db62ed0d5b8cbf",
+  "source_hashes": {
+    "configs/v6_accountability_confirmation.json": "2b30b406ce644d86869bda80bc07dd7ede1f785815d6cbfb77db62ed0d5b8cbf",
+    "scripts/run_v6_accountability_confirmation.py": "42ecbedccd7b2992439c3fd00a68eb49d74d76bb9b290c0e350e028780bcfcbc",
+    "airproof/v6_experiment.py": "2d5a417279678188ede2501516eced3c384abb7daab54235b1b7330186ec464d",
+    "airproof/v6_transport.py": "aa7de6f00b52bd14d2f5ffe5ed095839e21073c41bf0c2691a187a9fd7b32b92",
+    "airproof/v6_audit_return.py": "276cdc0a192819a743c851f79e7ccc338583d7bd411786ed469b00cde9cdbddb",
+    "airproof/v6_receipts.py": "facfadb74bb8120f3380ceed61f1b61f6ee73e95f1ca84d93a0c51d854ced928",
+    "airproof/audit.py": "33264127b9e086bf0f56c1c467ec46522a725c738a699e1ae7134c4bc9d63d08"
+  },
+  "historical_comparator": {
+    "artifact": "reports/v5/audit_same_stream/manifest.json",
+    "scope": "historical v5 payload-agnostic same-stream cryptographic benchmark; not relabeled as v6"
+  },
+  "claim_limit": "integrated deterministic accountability confirmation only; no availability, BFT, consensus finality, censorship-resistance, or public-chain latency claim",
+  "case_count": 6,
+  "all_fault_checks_passed": true
+}

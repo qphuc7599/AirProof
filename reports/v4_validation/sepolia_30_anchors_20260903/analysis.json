@@ -1,0 +1,161 @@
+{
+  "role": "public-network-feasibility-not-throughput-or-finality-latency-benchmark",
+  "anchors": 30,
+  "time_blocks": 3,
+  "all_readbacks_verified": true,
+  "contract_address": "0x7ae1AEC092a8E399F529db8988C7fC7479e052D0",
+  "overall": {
+    "gas_used": {
+      "mean": 190296.8,
+      "median": 190302.0,
+      "p95": 190302.0,
+      "min": 190278.0,
+      "max": 190302.0
+    },
+    "time_to_receipt_seconds": {
+      "mean": 12.377470443333358,
+      "median": 11.31510015000002,
+      "p95": 13.836049375000176,
+      "min": 8.976041200000328,
+      "max": 21.700910299999638
+    },
+    "time_to_confirmation_seconds": {
+      "mean": 24.58335517666667,
+      "median": 24.360996649999986,
+      "p95": 31.271812559999862,
+      "min": 21.05753019999992,
+      "max": 35.73805739999999
+    },
+    "fee_test_eth": {
+      "mean": 0.00040849573953740824,
+      "median": 0.000410040435519177,
+      "p95": 0.00042464461180806716,
+      "min": 0.00038628633233124,
+      "max": 0.000424956235516344
+    }
+  },
+  "by_block": {
+    "0": {
+      "gas_used": {
+        "mean": 190298.4,
+        "median": 190302.0,
+        "p95": 190302.0,
+        "min": 190278.0,
+        "max": 190302.0
+      },
+      "time_to_receipt_seconds": {
+        "mean": 11.836860920000005,
+        "median": 11.089152049999988,
+        "p95": 13.711611770000003,
+        "min": 10.966278500000016,
+        "max": 13.778981
+      },
+      "time_to_confirmation_seconds": {
+        "mean": 25.03927778,
+        "median": 24.588814300000013,
+        "p95": 31.095217544999983,
+        "min": 21.984409200000023,
+        "max": 35.73805739999999
+      },
+      "fee_test_eth": {
+        "mean": 0.0004106353242722808,
+        "median": 0.00041319014240998205,
+        "p95": 0.0004240391707902015,
+        "min": 0.000394190710627644,
+        "max": 0.000424544826523752
+      }
+    },
+    "1": {
+      "gas_used": {
+        "mean": 190293.6,
+        "median": 190302.0,
+        "p95": 190302.0,
+        "min": 190278.0,
+        "max": 190302.0
+      },
+      "time_to_receipt_seconds": {
+        "mean": 12.241052010000054,
+        "median": 13.183995100000057,
+        "p95": 13.503916775000036,
+        "min": 10.606999199999962,
+        "max": 13.734398000000045
+      },
+      "time_to_confirmation_seconds": {
+        "mean": 23.712404670000005,
+        "median": 23.656904449999914,
+        "p95": 26.208317790000095,
+        "min": 21.05753019999992,
+        "max": 26.209176300000166
+      },
+      "fee_test_eth": {
+        "mean": 0.0004071625856392344,
+        "median": 0.000409469143235628,
+        "p95": 0.00042114217896428485,
+        "min": 0.00038628633233124,
+        "max": 0.000424726254313416
+      }
+    },
+    "2": {
+      "gas_used": {
+        "mean": 190298.4,
+        "median": 190302.0,
+        "p95": 190302.0,
+        "min": 190290.0,
+        "max": 190302.0
+      },
+      "time_to_receipt_seconds": {
+        "mean": 13.054498400000018,
+        "median": 12.563446650000056,
+        "p95": 18.170844799999905,
+        "min": 8.976041200000328,
+        "max": 21.700910299999638
+      },
+      "time_to_confirmation_seconds": {
+        "mean": 24.99838308000001,
+        "median": 24.83333799999999,
+        "p95": 30.859650134999853,
+        "min": 22.125645399999804,
+        "max": 35.41396949999966
+      },
+      "fee_test_eth": {
+        "mean": 0.0004076893087007094,
+        "median": 0.00040566544249345197,
+        "p95": 0.00042049724339715116,
+        "min": 0.000396662435594712,
+        "max": 0.000424956235516344
+      }
+    }
+  },
+  "anchor_fees_total_test_eth": 0.012254872186122246,
+  "deployment_receipts": [
+    {
+      "time": "2026-09-03T03:05:21.266Z",
+      "event": "receipt",
+      "label": "deployment",
+      "transaction_hash": "0x9fde70691a4d4e30ecc116ec8c42586a83877ce052b9ba14fea7c9403f5eed69",
+      "nonce": 55,
+      "status": 1,
+      "reverted": false,
+      "block_number": 11623841,
+      "block_hash": "0x975c8a99590030c3f8c8301de93b0bb50e2a42a8a5732aadddabc625334a43cf",
+      "gas_used": 767857,
+      "gas_price_wei": "2189100910",
+      "fee_test_eth": "0.00168091645744987",
+      "time_to_receipt_seconds": 5.8526354000000005,
+      "time_to_confirmation_seconds": 16.8433961,
+      "confirmations": 2,
+      "contract_address": "0x7ae1AEC092a8E399F529db8988C7fC7479e052D0"
+    }
+  ],
+  "rpc_failures": 0,
+  "reverted_transactions": 0,
+  "confirmations": 2,
+  "anchors_consensus_finalized_at_measurement_end": 20,
+  "timing_scope": "receipt availability and two block confirmations; neither is consensus finalization time",
+  "statistical_scope": "descriptive sample across three time blocks, not thirty independent network regimes",
+  "input_sha256": {
+    "anchors.json": "b74af9fb6ba12e36642b2f5d6e990ff88e1b5f58695ca1ce14ebb88579d251f0",
+    "summary.json": "2d5f8a14272c5d128fa48a7c87c8228ba5d4ca4e549481d142df6d0d01752617",
+    "events.jsonl": "0d369a3363c490743be1bc9340472ad9d52f6c0023a807056a6950f9c48c35f5"
+  }
+}

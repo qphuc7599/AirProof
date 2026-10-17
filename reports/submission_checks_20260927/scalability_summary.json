@@ -1,0 +1,70 @@
+{
+  "rows": [
+    {
+      "agents": 1000,
+      "grid_side": 32,
+      "worlds": 3,
+      "epoch_update_p95_s_max": 0.030604169995058328,
+      "peak_rss_mib_max": 542.83984375,
+      "cg_mean_mean": 26.95684523809524,
+      "cg_p95_max": 57.0,
+      "allocation_p95_ms_max": 6.8352849979419235,
+      "allocation_total_s_mean": 3.002182866713459,
+      "wall_s_mean": 35.608889766672895,
+      "wall_s_range": [
+        35.51795930000662,
+        35.72270280000521
+      ]
+    },
+    {
+      "agents": 5000,
+      "grid_side": 32,
+      "worlds": 3,
+      "epoch_update_p95_s_max": 0.07115251999202882,
+      "peak_rss_mib_max": 1752.31640625,
+      "cg_mean_mean": 24.377480158730155,
+      "cg_p95_max": 50.0,
+      "allocation_p95_ms_max": 17.011160002584802,
+      "allocation_total_s_mean": 4.9495588999755755,
+      "wall_s_mean": 143.7644947666704,
+      "wall_s_range": [
+        128.23218360000465,
+        155.82258320000255
+      ]
+    },
+    {
+      "agents": 10000,
+      "grid_side": 32,
+      "worlds": 3,
+      "epoch_update_p95_s_max": 0.030623114996706134,
+      "peak_rss_mib_max": 3256.63671875,
+      "cg_mean_mean": 24.327380952380953,
+      "cg_p95_max": 50.0,
+      "allocation_p95_ms_max": 17.155294999247417,
+      "allocation_total_s_mean": 7.36890473329792,
+      "wall_s_mean": 322.8581081666683,
+      "wall_s_range": [
+        311.72583779999695,
+        337.8223438999994
+      ]
+    },
+    {
+      "agents": 1000,
+      "grid_side": 64,
+      "worlds": 3,
+      "epoch_update_p95_s_max": 0.07790358499987633,
+      "peak_rss_mib_max": 831.6640625,
+      "cg_mean_mean": 32.73313492063492,
+      "cg_p95_max": 67.0,
+      "allocation_p95_ms_max": 6.069575007131787,
+      "allocation_total_s_mean": 2.919591600060812,
+      "wall_s_mean": 66.1711578000007,
+      "wall_s_range": [
+        65.73137110000243,
+        66.49205880000954
+      ]
+    }
+  ],
+  "complete_jobs": 12,
+  "scope": "Descriptive retained-estimator scale extension; fixed processing budget; population-scaled DP reservation; sampled RSS including generation; shared host timings."
+}

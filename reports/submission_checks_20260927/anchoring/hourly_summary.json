@@ -1,0 +1,22 @@
+{
+  "scope": "Hourly local-EVM batches of checkpoints actually delivered over the finite reverse path; no public-chain finality or chain-network simulation",
+  "input_sha256": "212221d3158eb35c920ecfc7f6f817931d42bb0450db4551d3a231c906f0ae78",
+  "runner_sha256": "6160e536c76656ee28b19e8c005ec1fa30c3e1dd379d4fc9d2891703b8f81a80",
+  "issued_receipts": 107504,
+  "verified_receipts": 1475,
+  "timely_receipts": 117,
+  "anchored_batches": 622,
+  "reverse_payload_bytes": 3515904,
+  "reverse_control_bytes": 109872,
+  "chain_transaction_data_bytes": 141816,
+  "gas_total": 118365984,
+  "delay_from_acceptance_epochs": {
+    "median": 338.0,
+    "p95": 640.3
+  },
+  "deadline_excess_epochs": {
+    "median": 314.0,
+    "p95": 616.3
+  },
+  "checkpoint_proof_bytes": 71008
+}

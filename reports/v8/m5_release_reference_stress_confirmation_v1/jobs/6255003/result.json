@@ -1,0 +1,566 @@
+{
+  "cell": "severe_clean",
+  "config_hash": "e42bce8cfe87676ab775fc18b713ffde0199cdaf78d96e55df6e4696e461bde6",
+  "consumer_diagnostics": {
+    "main": {
+      "consumer_signature_excludes": [
+        "truth",
+        "noiseless_query",
+        "exact_contributor_counts",
+        "raw_records"
+      ],
+      "protected": {
+        "assimilated_releases": 108,
+        "clipped_innovations": 14,
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "exact_private_counts_used": false,
+        "gated_group_epochs": 2688,
+        "k_min": 20,
+        "laplace_variance_added_once": 98.0,
+        "noiseless_query_used": false,
+        "posterior_mean": [
+          -0.24450475546431732,
+          0.8970263051915444,
+          -2.9102522929603665,
+          -1.8868725165715057
+        ],
+        "posterior_variance": [
+          2.9584905660377343,
+          2.9584905660377343,
+          2.9584905660377343,
+          2.9584905660377343
+        ],
+        "privacy_spend_added_by_postprocessing": 0.0,
+        "public_uncertainty_gate": 4.0,
+        "raw_records_used": false,
+        "release_count_contract": 28,
+        "state": "groupwise persistent public-reference bias",
+        "suppressed_releases": 0,
+        "unique_slots_seen": 108
+      },
+      "raw_nonnegative_config": {
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "groups": 4,
+        "innovation_clip": 21.0,
+        "k_min": 20,
+        "laplace_scale": 17.5,
+        "prior_variance": 16.0,
+        "public_uncertainty_gate": 4.0,
+        "scheduled_acquisition_epochs": [
+          0,
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          264,
+          288,
+          312,
+          336,
+          360,
+          384,
+          408,
+          432,
+          456,
+          480,
+          504,
+          528,
+          552,
+          576,
+          600,
+          624,
+          648
+        ]
+      },
+      "raw_nonnegative_pool": {
+        "assimilated_releases": 108,
+        "clipped_innovations": 37,
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "exact_private_counts_used": false,
+        "gated_group_epochs": 2688,
+        "k_min": 20,
+        "laplace_variance_added_once": 612.5,
+        "noiseless_query_used": false,
+        "posterior_mean": [
+          -2.1121358045940526,
+          1.2651614009380148,
+          -1.9803131058559706,
+          -1.7572684437722221
+        ],
+        "posterior_variance": [
+          9.382479655337468,
+          9.382479655337468,
+          9.382479655337468,
+          9.382479655337468
+        ],
+        "privacy_spend_added_by_postprocessing": 0.0,
+        "public_uncertainty_gate": 4.0,
+        "raw_records_used": false,
+        "release_count_contract": 28,
+        "state": "groupwise persistent public-reference bias",
+        "suppressed_releases": 0,
+        "unique_slots_seen": 108
+      },
+      "residual_config": {
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "groups": 4,
+        "innovation_clip": 21.0,
+        "k_min": 20,
+        "laplace_scale": 7.0,
+        "prior_variance": 16.0,
+        "public_uncertainty_gate": 4.0,
+        "scheduled_acquisition_epochs": [
+          0,
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          264,
+          288,
+          312,
+          336,
+          360,
+          384,
+          408,
+          432,
+          456,
+          480,
+          504,
+          528,
+          552,
+          576,
+          600,
+          624,
+          648
+        ]
+      }
+    },
+    "stress": {
+      "consumer_signature_excludes": [
+        "truth",
+        "noiseless_query",
+        "exact_contributor_counts",
+        "raw_records"
+      ],
+      "protected": {
+        "assimilated_releases": 108,
+        "clipped_innovations": 10,
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "exact_private_counts_used": false,
+        "gated_group_epochs": 2688,
+        "k_min": 20,
+        "laplace_variance_added_once": 98.0,
+        "noiseless_query_used": false,
+        "posterior_mean": [
+          -0.7997043851470154,
+          3.121147343562973,
+          -0.591188058017908,
+          -2.7629494429687984
+        ],
+        "posterior_variance": [
+          2.9584905660377343,
+          2.9584905660377343,
+          2.9584905660377343,
+          2.9584905660377343
+        ],
+        "privacy_spend_added_by_postprocessing": 0.0,
+        "public_uncertainty_gate": 4.0,
+        "raw_records_used": false,
+        "release_count_contract": 28,
+        "state": "groupwise persistent public-reference bias",
+        "suppressed_releases": 0,
+        "unique_slots_seen": 108
+      },
+      "raw_nonnegative_config": {
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "groups": 4,
+        "innovation_clip": 21.0,
+        "k_min": 20,
+        "laplace_scale": 17.5,
+        "prior_variance": 16.0,
+        "public_uncertainty_gate": 4.0,
+        "scheduled_acquisition_epochs": [
+          0,
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          264,
+          288,
+          312,
+          336,
+          360,
+          384,
+          408,
+          432,
+          456,
+          480,
+          504,
+          528,
+          552,
+          576,
+          600,
+          624,
+          648
+        ]
+      },
+      "raw_nonnegative_pool": {
+        "assimilated_releases": 108,
+        "clipped_innovations": 40,
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "exact_private_counts_used": false,
+        "gated_group_epochs": 2688,
+        "k_min": 20,
+        "laplace_variance_added_once": 612.5,
+        "noiseless_query_used": false,
+        "posterior_mean": [
+          -2.47024334499136,
+          2.847965920089724,
+          -0.5422971965648111,
+          -2.2587299556104696
+        ],
+        "posterior_variance": [
+          9.382479655337468,
+          9.382479655337468,
+          9.382479655337468,
+          9.382479655337468
+        ],
+        "privacy_spend_added_by_postprocessing": 0.0,
+        "public_uncertainty_gate": 4.0,
+        "raw_records_used": false,
+        "release_count_contract": 28,
+        "state": "groupwise persistent public-reference bias",
+        "suppressed_releases": 0,
+        "unique_slots_seen": 108
+      },
+      "residual_config": {
+        "correction_cap": 8.0,
+        "deadline_epochs": 24,
+        "epsilon_history": 8.0,
+        "groups": 4,
+        "innovation_clip": 21.0,
+        "k_min": 20,
+        "laplace_scale": 7.0,
+        "prior_variance": 16.0,
+        "public_uncertainty_gate": 4.0,
+        "scheduled_acquisition_epochs": [
+          0,
+          24,
+          48,
+          72,
+          96,
+          120,
+          144,
+          168,
+          192,
+          216,
+          240,
+          264,
+          288,
+          312,
+          336,
+          360,
+          384,
+          408,
+          432,
+          456,
+          480,
+          504,
+          528,
+          552,
+          576,
+          600,
+          624,
+          648
+        ]
+      }
+    }
+  },
+  "consumer_inputs_sha256": "c21ef663669185ea511c6be33f3a463a0e67bf00a9d37dfaf16dffcfc2bb2b5a",
+  "decomposition": {
+    "clipping_sampling_stabilization_scope": "deterministic query bias is joint; no raw private state was opened to isolate clipping alone",
+    "main_public_reference_bias": -0.15795474960614447,
+    "mean_release_age_epochs": 11.5,
+    "nonnegative_raw_deterministic_query_bias": -2.1283174538716665,
+    "nonnegative_raw_laplace_variance": 612.5,
+    "released_group_queries": 104,
+    "residual_deterministic_query_bias": -1.1635339997158853,
+    "residual_laplace_variance": 98.00000000000003,
+    "stress_public_reference_bias": -1.6955609499602275
+  },
+  "invariant_failures": [],
+  "invariants": {
+    "consumer_information_safe": true,
+    "deadline_exact_24": true,
+    "epsilon_history_exact_8": true,
+    "k_min_exact_20": true,
+    "postprocessing_epsilon_zero": true,
+    "privacy_budget_violations_zero": true,
+    "release_count_exact_28": true,
+    "same_release_masks": true,
+    "same_scoring_support": true,
+    "same_transport_and_admission": true,
+    "transport_token_violations_zero": true
+  },
+  "main_release": {
+    "admitted_user_epochs": 214411,
+    "deadline": 24,
+    "epsilon_history": 8.0,
+    "privacy_budget_violations": 0,
+    "raw_nonnegative": {
+      "adjacency": "replace one complete user history; private group may change",
+      "common_random_numbers_with_other_release_arms": true,
+      "deterministic_query_mse": 22.18349240874629,
+      "domain": [
+        0.0,
+        50.0
+      ],
+      "laplace_scale": 17.5,
+      "laplace_variance": 612.5,
+      "released_group_queries": 104,
+      "replacement_vector_l1_sensitivity": 5.0,
+      "rmse": 26.444844046025178,
+      "same_support_public_rmse": 0.8974316072656673,
+      "scheduled_group_queries": 104
+    },
+    "raw_symmetric_historical_control": {
+      "deterministic_query_mse": 22.18349240874629,
+      "laplace_variance": 2450.000000000001,
+      "released_group_queries": 104,
+      "rmse": 51.9996400816904,
+      "same_support_public_rmse": 0.8974316072656673,
+      "scheduled_group_queries": 104
+    },
+    "residual": {
+      "deterministic_query_mse": 1.4036143128523217,
+      "laplace_variance": 98.00000000000003,
+      "released_group_queries": 104,
+      "rmse": 10.350135888633824,
+      "same_support_public_rmse": 0.8974316072656673,
+      "scheduled_group_queries": 104
+    },
+    "scheduled_epochs": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      240,
+      264,
+      288,
+      312,
+      336,
+      360,
+      384,
+      408,
+      432,
+      456,
+      480,
+      504,
+      528,
+      552,
+      576,
+      600,
+      624,
+      648
+    ],
+    "scope": "release-only-user-history-given-public-topology; raw/residual-counterfactual-comparison"
+  },
+  "main_scores": {
+    "PROTECTED_POOL": {
+      "bias": -1.3375674985857733,
+      "rmse": 2.21004662471503,
+      "support": 2496
+    },
+    "PUBLIC": {
+      "bias": -0.15795474960614447,
+      "rmse": 0.9132613049786306,
+      "support": 2496
+    },
+    "PUBLIC_AVAILABILITY": {
+      "bias": -0.15795474960614447,
+      "rmse": 0.9132613049786306,
+      "support": 2496
+    },
+    "RAW_NONNEGATIVE_DIRECT": {
+      "bias": -0.9193827045111809,
+      "rmse": 18.243647821316113,
+      "support": 2496
+    },
+    "RAW_NONNEGATIVE_POOL": {
+      "bias": -1.1104649242739804,
+      "rmse": 1.798681268390688,
+      "support": 2496
+    },
+    "RESIDUAL_DIRECT": {
+      "bias": -1.369853482994068,
+      "rmse": 9.25243565290538,
+      "support": 2496
+    }
+  },
+  "role": "independent synthetic confirmation of protected-release incremental value under a predeclared persistent public-reference stress",
+  "runtime_seconds": 120.99821540000266,
+  "schema_version": 1,
+  "scoring_outputs_sha256": "9e6dcb8823f53373c900cc5e27fb8e77d96248dbc8f2f1b7a4c8384caa958c61",
+  "seed": 6255003,
+  "shared_resource": {
+    "max_contact_direction_bytes": 880,
+    "max_release_buffer_bytes": 6144,
+    "raw_timely_delivered": 182250,
+    "release_buffer_drops": 1,
+    "release_delivered": 214411,
+    "total_wire_bytes": 225222400
+  },
+  "source_lock_sha256": "4b621860365d18223dbdee7a0b0bd9ac68690a2c5e51bbfb50d20a1f0c34bb68",
+  "status": "complete",
+  "stress_release": {
+    "admitted_user_epochs": 214411,
+    "deadline": 24,
+    "epsilon_history": 8.0,
+    "privacy_budget_violations": 0,
+    "raw_nonnegative": {
+      "adjacency": "replace one complete user history; private group may change",
+      "common_random_numbers_with_other_release_arms": true,
+      "deterministic_query_mse": 22.18349240874629,
+      "domain": [
+        0.0,
+        50.0
+      ],
+      "laplace_scale": 17.5,
+      "laplace_variance": 612.5,
+      "released_group_queries": 104,
+      "replacement_vector_l1_sensitivity": 5.0,
+      "rmse": 26.444844046025178,
+      "same_support_public_rmse": 3.381193890589171,
+      "scheduled_group_queries": 104
+    },
+    "raw_symmetric_historical_control": {
+      "deterministic_query_mse": 22.18349240874629,
+      "laplace_variance": 2450.000000000001,
+      "released_group_queries": 104,
+      "rmse": 51.9996400816904,
+      "same_support_public_rmse": 3.381193890589171,
+      "scheduled_group_queries": 104
+    },
+    "residual": {
+      "deterministic_query_mse": 5.073490029363404,
+      "laplace_variance": 98.00000000000003,
+      "released_group_queries": 104,
+      "rmse": 10.527847770692764,
+      "same_support_public_rmse": 3.381193890589171,
+      "scheduled_group_queries": 104
+    },
+    "scheduled_epochs": [
+      0,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      240,
+      264,
+      288,
+      312,
+      336,
+      360,
+      384,
+      408,
+      432,
+      456,
+      480,
+      504,
+      528,
+      552,
+      576,
+      600,
+      624,
+      648
+    ],
+    "scope": "release-only-user-history-given-public-topology; raw/residual-counterfactual-comparison"
+  },
+  "stress_scores": {
+    "PROTECTED_POOL": {
+      "bias": -2.212806880990762,
+      "rmse": 3.2293794779217375,
+      "support": 2496
+    },
+    "PUBLIC": {
+      "bias": -1.6955609499602275,
+      "rmse": 3.390866842864705,
+      "support": 2496
+    },
+    "PUBLIC_AVAILABILITY": {
+      "bias": -1.6955609499602275,
+      "rmse": 3.390866842864705,
+      "support": 2496
+    },
+    "RAW_NONNEGATIVE_DIRECT": {
+      "bias": -0.9193827045111809,
+      "rmse": 18.243647821316113,
+      "support": 2496
+    },
+    "RAW_NONNEGATIVE_POOL": {
+      "bias": -2.3330494547586786,
+      "rmse": 3.0824306572547076,
+      "support": 2496
+    },
+    "RESIDUAL_DIRECT": {
+      "bias": -1.8865065307655802,
+      "rmse": 9.343554915825385,
+      "support": 2496
+    }
+  },
+  "stress_transform": {
+    "applied_before_public_fit_and_release_query": true,
+    "citizen_observations_changed": false,
+    "group_bias": [
+      4.0,
+      -4.0,
+      -4.0,
+      4.0
+    ],
+    "public_observations_shifted": 10752,
+    "truth_changed": false
+  },
+  "trace_hash": "911244d8d9a7fc17a648b3353e29eb8cfeaf0cddac598d65ea00f174e7f2e367"
+}

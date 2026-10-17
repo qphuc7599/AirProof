@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v8-reviewer-fairness-resource-sweep-v1",
+  "status": "reviewer-directed descriptive sensitivity frozen before outcomes",
+  "role": "shared-path processing-resource sensitivity for the retained hard-if-feasible allocator",
+  "source_registration": "configs/v7/reviewer_shared_resource_core_confirmation_v3.json",
+  "source_confirmation": "reports/v7/reviewer_revision/shared_resource_core_confirmation_v3",
+  "seeds": [
+    6251300,
+    6251301,
+    6251302,
+    6251303,
+    6251304,
+    6251305,
+    6251306,
+    6251307,
+    6251308,
+    6251309,
+    6251310,
+    6251311
+  ],
+  "cell": "severe_clean",
+  "processing_budget_bytes_per_epoch": [41600, 83200, 166400],
+  "fixed_factors": [
+    "physical world",
+    "public reference",
+    "transport trace and relay policy",
+    "buffers and copy tokens",
+    "release reservation",
+    "receipt return and audit bounds",
+    "target q=30",
+    "allocator and fairness strength"
+  ],
+  "reported_outcomes": [
+    "complete-floor feasibility",
+    "feasible-floor violations",
+    "avoidable and opportunity-limited deficits",
+    "coverage gap and lower-decile service",
+    "selected evidence and charged wire/control bytes",
+    "receipt issuance and return"
+  ],
+  "analysis_rule": "Report every registered budget. Treat the curve as a descriptive reviewer-directed sensitivity, not independent confirmation or a replacement for the locked H6/H7 tests.",
+  "runtime_contract": {
+    "workers": 8,
+    "total_wall_time_limit_seconds": 1200
+  },
+  "output": "reports/v8/reviewer_revision/fairness_resource_sweep_v1_workers8"
+}

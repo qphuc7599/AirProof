@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-09T00:00:00Z",
+  "role": "immutable seed registry for independent lifetime-budget-7 validation v2",
+  "namespaces": {
+    "lifetime_budget7_validation_v2": [
+      6241400,
+      6241401,
+      6241402,
+      6241403,
+      6241404,
+      6241405,
+      6241406,
+      6241407,
+      6241408,
+      6241409,
+      6241410,
+      6241411
+    ],
+    "lifetime_budget7_validation_v2_bootstrap": [
+      6241499
+    ]
+  },
+  "collision_scan": {
+    "roots": [
+      "configs",
+      "reports",
+      "results",
+      "data",
+      "airproof",
+      "scripts",
+      "tests",
+      "docs"
+    ],
+    "pre_registration_matches": []
+  }
+}

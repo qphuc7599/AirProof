@@ -1,0 +1,33 @@
+{
+  "role": "prospective one-family exposed mechanistic development; never validation or confirmation",
+  "registered_before_new_method_outcomes": true,
+  "method": "history_normalized_huber",
+  "default_changed": false,
+  "fixed_parameters": {
+    "cap": 8.0,
+    "output_cap": true,
+    "huber_delta": 1.345,
+    "lag": 6,
+    "loss": "huber",
+    "input_clip": false,
+    "precision_normalizer": 1.0
+  },
+  "per_user_weight_budgets": [1.0, 2.0, 4.0],
+  "budget_rationale": "1x, 2x, and 4x the maximum single-record raw quality weight. Each preserves singleton parity; the theorem certificate scales linearly with the fixed budget.",
+  "exposed_development_seeds": [6201000, 6201001, 6201002, 6201003, 6201004, 6201005, 6201006, 6201007],
+  "evaluation_scope": "reuse exact cached public predictions, frozen scales, selected raw records, arrival maps and transitions only; do not regenerate or substitute missing inputs",
+  "required_cached_inputs": [
+    "public prediction for the complete optimization horizon",
+    "frozen innovation scales",
+    "exact selected raw Observation fields including user_id and nullifier",
+    "exact collector selection/arrival map",
+    "transition operators"
+  ],
+  "targets_unchanged": {
+    "clean_ratio": 1.05,
+    "attack_reduction": 0.20,
+    "event_target": "unchanged from v6 development_v1"
+  },
+  "stopping_rule": "If exact cached inputs are absent, record an input audit and run no mechanistic outcome. Never regenerate exposed worlds for this cache-only family and never inspect validation or confirmation.",
+  "old_failure_retained": "The original v6 bounded Huber family selected no eligible candidate; this opt-in family does not erase or relabel that result."
+}

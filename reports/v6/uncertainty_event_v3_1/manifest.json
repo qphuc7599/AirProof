@@ -1,0 +1,18 @@
+{
+  "registration_sha256": "b6f1bb99ab9748aca8581cf50e5fe01189fc695f5ad3f0f77e45dc1980c0a79a",
+  "role": "exposed development follow-up; not test or confirmation evidence",
+  "input_hashes": {
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202000/PUBLIC.npz": "7094c8d46a8b679c33f437cb6f00080389e6419a014b2e8ac9b8abf2ae3d2611",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202001/PUBLIC.npz": "243d72336fd41fbed2b6d1a810c932b084defe6668d77cde94a620bbc89a2daa",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202002/PUBLIC.npz": "5cd6ec9c9008f9912325330631fb39b6731a4641470c552cb80943677cb440c3",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202003/PUBLIC.npz": "5de8bab5aa2141381aa4a69d7768e57b8aa41ccb510fbf15bff793d6351753fe",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202004/PUBLIC.npz": "11b519ed0da94d904aa52cce3519c5ad82e19b75a73bc624ec9ab3d69c872435",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202005/PUBLIC.npz": "54490e4e517f4c017478c7128eebe0287f0ec21cbae9ac8d1c9fcb9b1a0fc230",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202006/PUBLIC.npz": "18b442c39ac42af73cfc7312b2df5dbec9a9b990c652190c1530f1c440e7127b",
+    "reports/v6/uncertainty_v3_1_public_prerequisites_v1/6202007/PUBLIC.npz": "d45148ca9f3c2db20e5ed1a15799679c9f8442dfa127aac6e65e3b32afe5fa7c"
+  },
+  "post_v2_failure_design": true,
+  "evaluation_residual_updates": 0,
+  "epa_test_read": false,
+  "confirmation_read": false
+}

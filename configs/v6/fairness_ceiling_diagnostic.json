@@ -1,0 +1,21 @@
+{
+  "role": "exposed post-validation ceiling diagnostic; not development selection, validation, or confirmation",
+  "source_validation": "reports/v6/fairness_validation_v1",
+  "seeds": [6203000, 6203001, 6203002, 6203003, 6203004, 6203005, 6203006, 6203007, 6203008, 6203009, 6203010, 6203011],
+  "cell": "severe_clean",
+  "relay_policy": "deadline6",
+  "allocator": "v6_minimax",
+  "q": 30,
+  "processing_budget_bytes": 83200,
+  "lag_epochs": 6,
+  "fixed_estimator": "Huber reg0.1 cap8 with frozen public scales; previously failed development selection",
+  "record_reweighting": {
+    "definition": "multiply each selected record quality by (minimum final group service rate / its group final service rate)^alpha",
+    "alpha_grid": [0, 4, 8, 16, 32],
+    "oracle_selection": "post-hoc per-world minimum worst-group RMSE; ceiling diagnostic only"
+  },
+  "h6_ceiling": "serve every participant or every timely-arrived distinct user/group pair; no deliberate withholding of better-served groups",
+  "h7_target": "worst_group_v6 <= 0.9 * worst_group_utility_only",
+  "decision_rule": "Only design a new cross-layer policy if both the no-withholding H6 ceiling and fixed-estimator H7 record-reweighting ceiling meet their original margins. Otherwise produce a quantitative obstruction certificate and architecture requirements.",
+  "reuse_rule": "All seeds and outcomes are already exposed; results cannot be called independent validation. No confirmation seeds may be opened."
+}

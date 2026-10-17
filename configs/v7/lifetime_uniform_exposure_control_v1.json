@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-lifetime-uniform-exposure-control-v1",
+  "status": "frozen post-hoc attribution protocol before oracle-control outcomes",
+  "role": "noncausal equal-total-exposure attribution control over the retained independent v6 validation worlds",
+  "source_validation": "configs/v6/lifetime_budget7_validation_v2.json",
+  "input_bundle": "reports/v6/lifetime_budget7_validation_v2/inputs",
+  "input_lock": "reports/v6/lifetime_budget7_validation_v2/input_lock.json",
+  "retained_outcomes": "reports/v6/lifetime_budget7_validation_v2/outcomes",
+  "seeds": [6241400, 6241401, 6241402, 6241403, 6241404, 6241405, 6241406, 6241407, 6241408, 6241409, 6241410, 6241411],
+  "cells": ["severe_clean", "severe_hotspot"],
+  "candidate": "UNIFORM_TOTAL_EXPOSURE_ORACLE",
+  "causal_comparator": "AP_LIFETIME7",
+  "per_user_exposure_budget": 7.0,
+  "lag": 6,
+  "estimator": "exactly the registered lifetime_budget7_validation_v2 estimator",
+  "oracle_scope": "The control reads all usable records of each user and uniformly scales them so its per-user total exposure exactly matches min(B,total requested). It is an attribution control, not a deployable online policy.",
+  "evaluation": {
+    "overall_half_open": [48, 672],
+    "late_third_half_open": [464, 672],
+    "paired_worlds": 12,
+    "bootstrap_seed": 6241599,
+    "bootstrap_replicates": 20000,
+    "noninferiority_margin_ratio": 1.05
+  },
+  "artifacts": "reports/v7/reviewer_revision/lifetime_uniform_exposure_control_v1"
+}

@@ -1,0 +1,15 @@
+{
+  "registration_sha256": "d51780c515b98a7c47cdbfe8a007a064b1cf6bf18b893ad29a4ba99b4ae4dece",
+  "results_sha256": "241796d67a9c68520fec36abeb1bb392eda22aece889d07f982535cbe3fe1a79",
+  "analysis_sha256": "7eaa856634f802b6f55a650ad01b2205a03a63f17ac79abc5edc1f6f283817bb",
+  "source_hashes": {
+    "configs/v6_ledger_transparency_same_stream_v2.json": "d51780c515b98a7c47cdbfe8a007a064b1cf6bf18b893ad29a4ba99b4ae4dece",
+    "scripts/run_v6_ledger_transparency_same_stream.py": "22844751799f270bd89889d7902774621c803cb22cfdd1dace36e56ed8e34b65",
+    "airproof/v6_ledger_transparency.py": "bbd981e70b223afa32072f6ae8d3205a809adb182c16f1e3c1df7f60a81192e2",
+    "airproof/v6_public_checkpoint.py": "d70c365d92ef6e8bb0578661fe9e6eed04fcf3ccb1dcc08b72db3473d496c8ac",
+    "airproof/v6_audit_return.py": "dfc84021d117a2c305fdee61f2ff73a8f268caae01f085d5582755b8e1afeb56",
+    "airproof/audit.py": "33264127b9e086bf0f56c1c467ec46522a725c738a699e1ae7134c4bc9d63d08"
+  },
+  "complete": true,
+  "scope_limits": "Local Ed25519/Merkle and finite in-memory publication only; no Sepolia transaction, BFT, finality, availability, or censorship-resistance claim."
+}

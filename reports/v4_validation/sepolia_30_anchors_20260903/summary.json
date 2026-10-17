@@ -1,0 +1,14 @@
+{
+  "environment": "ethereum-sepolia-public-testnet",
+  "contract_address": "0x7ae1AEC092a8E399F529db8988C7fC7479e052D0",
+  "anchors": 30,
+  "successful_anchors": 30,
+  "readback_verified": true,
+  "time_blocks": 3,
+  "confirmations": 2,
+  "finalized_block_at_end": 11624068,
+  "anchors_finalized_at_end": 20,
+  "finished_at": "2026-09-03T04:10:00.479Z",
+  "rpc_failures": 0,
+  "reverted_transactions": 0
+}

@@ -1,0 +1,69 @@
+{
+  "role": "fixed-estimator-interface-test-on-public-real-field-with-synthetic-citizen-channel",
+  "predictor_prediction_sha256": "c258a6aec1d404c143223e104b49ed4d0be1ea6572645ab3ad66217a31795a19",
+  "module_sha256": {
+    "predictor_wrapper.py": "5d7343085e709a8d02959bfe4d8ace77bd9d4a99c5f3885aa75622504b5d6cef",
+    "twin.py": "8b0b86a01b57efbed938a6168637c4a9d3c96d40b80b16c3084a83934512bec6",
+    "meteorology.py": "3411b23e402b14bdd21360e6d7b6986831f64bdf8e10f96dfa266f552c43a339"
+  },
+  "seeds": [
+    7850,
+    7851,
+    7852,
+    7853,
+    7854,
+    7855,
+    7856,
+    7857,
+    7858,
+    7859,
+    7860,
+    7861
+  ],
+  "attack_kinds": [
+    "clean",
+    "adversarial_drift",
+    "negative_bias"
+  ],
+  "wrapper_configs": {
+    "AirProof_Ptheta": {
+      "delta": 4.0,
+      "correction_clip": 8.0
+    },
+    "unbounded_graph_Ptheta": {
+      "delta": 1000000.0,
+      "correction_clip": 1000000.0
+    }
+  },
+  "configuration_selection": "none on this test; bounded delta/cap/lag/regularization fixed from primary v4 implementation",
+  "shared_wrapper_parameters": {
+    "fixed_lag": 6,
+    "lambda_temporal": 0.5,
+    "lambda_spatial": 0.2
+  },
+  "citizen_channel": {
+    "reports_per_station": 3,
+    "sigma": 3.0,
+    "availability": 0.6,
+    "attack_fraction": 0.2,
+    "attack_amplitude": 12.0,
+    "delay_epochs": [
+      0,
+      1,
+      2,
+      8
+    ],
+    "delay_probabilities": [
+      0.7,
+      0.2,
+      0.08,
+      0.02
+    ]
+  },
+  "comparison_scope": "Ptheta uses public information through t-1; both graph wrappers additionally use exactly the same synthetic citizen records that arrived by t; reconstruction accuracy retention, NOT equal-information forecasting superiority",
+  "geometry": "44 real stations, local kilometre coordinates, symmetric 4-neighbor graph; 5 isolated padded solver vertices",
+  "meteorology": "unavailable in this archive; identity transition is explicit for this interface-only benchmark",
+  "independence": "noise/participation/delay replications share one public field and predictor; do not count as independent physical worlds",
+  "created_unix": 1788407513.5932252,
+  "total_jobs": 72
+}

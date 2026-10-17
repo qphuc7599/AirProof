@@ -1,0 +1,722 @@
+[
+  {
+    "seed": 913000,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.4259130894085661,
+      "availability": 0.42517792455512016,
+      "protected": 0.4258227543241438,
+      "noiseless_oracle": 0.42188814195402913
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913000,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.4259130894085661,
+      "availability": 0.42517792455512016,
+      "protected": 0.4258663055554311,
+      "noiseless_oracle": 0.42178761708932333
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913000,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.4259130894085661,
+      "availability": 0.42517792455512016,
+      "protected": 0.42581714218853817,
+      "noiseless_oracle": 0.42214286375900645
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913000,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.4259130894085661,
+      "availability": 0.42517792455512016,
+      "protected": 0.42574498581927495,
+      "noiseless_oracle": 0.42197815493588176
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913000,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.4259130894085661,
+      "availability": 0.42517792455512016,
+      "protected": 0.42567255975453233,
+      "noiseless_oracle": 0.4218979415784395
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913001,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.43343644229997663,
+      "availability": 0.4352132620433284,
+      "protected": 0.43565261913660897,
+      "noiseless_oracle": 0.4398615541274398
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913001,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.43343644229997663,
+      "availability": 0.4352132620433284,
+      "protected": 0.4356553080436189,
+      "noiseless_oracle": 0.43988830749096297
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913001,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.43343644229997663,
+      "availability": 0.4352132620433284,
+      "protected": 0.4356118153514977,
+      "noiseless_oracle": 0.4402181994973648
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913001,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.43343644229997663,
+      "availability": 0.4352132620433284,
+      "protected": 0.4356466396286572,
+      "noiseless_oracle": 0.4403402737566831
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913001,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.43343644229997663,
+      "availability": 0.4352132620433284,
+      "protected": 0.4357205747576544,
+      "noiseless_oracle": 0.4399700872567416
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913002,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.452892069080627,
+      "availability": 0.451752834490135,
+      "protected": 0.45033279966766043,
+      "noiseless_oracle": 0.4484399519147253
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913002,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.452892069080627,
+      "availability": 0.451752834490135,
+      "protected": 0.45032040412928914,
+      "noiseless_oracle": 0.44847299178840866
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913002,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.452892069080627,
+      "availability": 0.451752834490135,
+      "protected": 0.45040408055946873,
+      "noiseless_oracle": 0.4482812375396982
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913002,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.452892069080627,
+      "availability": 0.451752834490135,
+      "protected": 0.45035322144711154,
+      "noiseless_oracle": 0.44823539297311227
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913002,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.452892069080627,
+      "availability": 0.451752834490135,
+      "protected": 0.45024779630031236,
+      "noiseless_oracle": 0.4482980749477378
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913003,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.46741946019198954,
+      "availability": 0.4686385165731234,
+      "protected": 0.47086385401505354,
+      "noiseless_oracle": 0.47463663866527067
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913003,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.46741946019198954,
+      "availability": 0.4686385165731234,
+      "protected": 0.470912354272011,
+      "noiseless_oracle": 0.4744986617542764
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913003,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.46741946019198954,
+      "availability": 0.4686385165731234,
+      "protected": 0.47073012776959644,
+      "noiseless_oracle": 0.4748010587472833
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913003,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.46741946019198954,
+      "availability": 0.4686385165731234,
+      "protected": 0.47074971424843365,
+      "noiseless_oracle": 0.4748079430685852
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913003,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.46741946019198954,
+      "availability": 0.4686385165731234,
+      "protected": 0.4707742292274067,
+      "noiseless_oracle": 0.4747698382461086
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913004,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.49353233918390516,
+      "availability": 0.49047995568828123,
+      "protected": 0.4908858090748914,
+      "noiseless_oracle": 0.4847879645931013
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913004,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.49353233918390516,
+      "availability": 0.49047995568828123,
+      "protected": 0.49086039139546905,
+      "noiseless_oracle": 0.4848868107866337
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913004,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.49353233918390516,
+      "availability": 0.49047995568828123,
+      "protected": 0.490930819406724,
+      "noiseless_oracle": 0.4846694478003133
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913004,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.49353233918390516,
+      "availability": 0.49047995568828123,
+      "protected": 0.4908966654861398,
+      "noiseless_oracle": 0.4849177093117867
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913004,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.49353233918390516,
+      "availability": 0.49047995568828123,
+      "protected": 0.4908461691975278,
+      "noiseless_oracle": 0.48560650559502094
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913005,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.41367845578001966,
+      "availability": 0.41290150333824865,
+      "protected": 0.41454267651267906,
+      "noiseless_oracle": 0.4076489663684203
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913005,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.41367845578001966,
+      "availability": 0.41290150333824865,
+      "protected": 0.41453671801361597,
+      "noiseless_oracle": 0.4076356584469297
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913005,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.41367845578001966,
+      "availability": 0.41290150333824865,
+      "protected": 0.4145345240890151,
+      "noiseless_oracle": 0.407627683961958
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913005,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.41367845578001966,
+      "availability": 0.41290150333824865,
+      "protected": 0.4146127495958924,
+      "noiseless_oracle": 0.40781812066623013
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913005,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.41367845578001966,
+      "availability": 0.41290150333824865,
+      "protected": 0.4147029411170557,
+      "noiseless_oracle": 0.4077327495512493
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913006,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.41578680396963674,
+      "availability": 0.4145365964556875,
+      "protected": 0.4148489475279582,
+      "noiseless_oracle": 0.41016431054121305
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913006,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.41578680396963674,
+      "availability": 0.4145365964556875,
+      "protected": 0.4148641673090199,
+      "noiseless_oracle": 0.41019283093901376
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913006,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.41578680396963674,
+      "availability": 0.4145365964556875,
+      "protected": 0.4149066469293847,
+      "noiseless_oracle": 0.4101005495549148
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913006,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.41578680396963674,
+      "availability": 0.4145365964556875,
+      "protected": 0.4149575279158205,
+      "noiseless_oracle": 0.4101841798703462
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913006,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.41578680396963674,
+      "availability": 0.4145365964556875,
+      "protected": 0.4149864331964833,
+      "noiseless_oracle": 0.41028932739469703
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913007,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.4241294439267431,
+      "availability": 0.4227216181082182,
+      "protected": 0.4218933395998126,
+      "noiseless_oracle": 0.41918808367993765
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913007,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.4241294439267431,
+      "availability": 0.4227216181082182,
+      "protected": 0.4218850947238928,
+      "noiseless_oracle": 0.4192697742798423
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913007,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.4241294439267431,
+      "availability": 0.4227216181082182,
+      "protected": 0.4218899698339452,
+      "noiseless_oracle": 0.41936594108754527
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913007,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.4241294439267431,
+      "availability": 0.4227216181082182,
+      "protected": 0.4219168441196369,
+      "noiseless_oracle": 0.4196231223795663
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913007,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.4241294439267431,
+      "availability": 0.4227216181082182,
+      "protected": 0.42194156000141025,
+      "noiseless_oracle": 0.4200617084504151
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913008,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.4851755825172367,
+      "availability": 0.4822461272253509,
+      "protected": 0.4830464957306123,
+      "noiseless_oracle": 0.47615392048024024
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913008,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.4851755825172367,
+      "availability": 0.4822461272253509,
+      "protected": 0.48307098611654176,
+      "noiseless_oracle": 0.475966004684792
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913008,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.4851755825172367,
+      "availability": 0.4822461272253509,
+      "protected": 0.48312830293122033,
+      "noiseless_oracle": 0.47555599371232293
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913008,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.4851755825172367,
+      "availability": 0.4822461272253509,
+      "protected": 0.4831101948733196,
+      "noiseless_oracle": 0.4758843521589959
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913008,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.4851755825172367,
+      "availability": 0.4822461272253509,
+      "protected": 0.4831325896728076,
+      "noiseless_oracle": 0.47662998618453795
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913009,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.4628084337756513,
+      "availability": 0.46517554200753797,
+      "protected": 0.4652501271067062,
+      "noiseless_oracle": 0.4687331815766519
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913009,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.4628084337756513,
+      "availability": 0.46517554200753797,
+      "protected": 0.4653048428111853,
+      "noiseless_oracle": 0.4684862641182585
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913009,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.4628084337756513,
+      "availability": 0.46517554200753797,
+      "protected": 0.46523658866710943,
+      "noiseless_oracle": 0.46895010812925714
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913009,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.4628084337756513,
+      "availability": 0.46517554200753797,
+      "protected": 0.46523140363446597,
+      "noiseless_oracle": 0.4687564040179695
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913009,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.4628084337756513,
+      "availability": 0.46517554200753797,
+      "protected": 0.4651802190463061,
+      "noiseless_oracle": 0.46832258960965567
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913010,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.47590836527919894,
+      "availability": 0.4736645022751976,
+      "protected": 0.4744970484107028,
+      "noiseless_oracle": 0.4675502208133226
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913010,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.47590836527919894,
+      "availability": 0.4736645022751976,
+      "protected": 0.4744527637285721,
+      "noiseless_oracle": 0.4676950131265986
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913010,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.47590836527919894,
+      "availability": 0.4736645022751976,
+      "protected": 0.4745249602931916,
+      "noiseless_oracle": 0.46744268805957795
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913010,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.47590836527919894,
+      "availability": 0.4736645022751976,
+      "protected": 0.4745727516108299,
+      "noiseless_oracle": 0.4677552690866309
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913010,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.47590836527919894,
+      "availability": 0.4736645022751976,
+      "protected": 0.4746505045566016,
+      "noiseless_oracle": 0.4680809734301467
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913011,
+    "cell": "anchor_clean",
+    "scores": {
+      "public": 0.4347497300523952,
+      "availability": 0.43333808918948136,
+      "protected": 0.43252313434101075,
+      "noiseless_oracle": 0.42914395611578693
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913011,
+    "cell": "outage_clean",
+    "scores": {
+      "public": 0.4347497300523952,
+      "availability": 0.43333808918948136,
+      "protected": 0.43251745433806343,
+      "noiseless_oracle": 0.4290910043443935
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913011,
+    "cell": "severe_clean",
+    "scores": {
+      "public": 0.4347497300523952,
+      "availability": 0.43333808918948136,
+      "protected": 0.43264150767549525,
+      "noiseless_oracle": 0.42887230913393104
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913011,
+    "cell": "severe_drift",
+    "scores": {
+      "public": 0.4347497300523952,
+      "availability": 0.43333808918948136,
+      "protected": 0.43262647134919313,
+      "noiseless_oracle": 0.4289142966539991
+    },
+    "release_slots": 28,
+    "released_values": 112
+  },
+  {
+    "seed": 913011,
+    "cell": "severe_hotspot",
+    "scores": {
+      "public": 0.4347497300523952,
+      "availability": 0.43333808918948136,
+      "protected": 0.43258384928599697,
+      "noiseless_oracle": 0.42907559773854703
+    },
+    "release_slots": 28,
+    "released_values": 112
+  }
+]

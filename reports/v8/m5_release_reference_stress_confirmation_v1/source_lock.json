@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "role": "immutable source/config/seed/gate lock created before independent outcomes",
+  "outcomes_before_lock": 0,
+  "registration_sha256": "104307e5efd56775c68c1397a1cd90e0567053fa228e51c3423c55c9b3d6db62",
+  "source_identity": "fb9186850abe0f5c55dbc016d048657a265d1e7afb30593a3c474b8d229e8e5c",
+  "source_inventory": {
+    "configs/v8/m5_release_reference_stress_confirmation_v1.json": "104307e5efd56775c68c1397a1cd90e0567053fa228e51c3423c55c9b3d6db62",
+    "configs/v8/seed_registry.json": "3e2e091b1d06b9c453c1fe3b679b62712ef758904560e81071864dbf81c42d4a",
+    "configs/v8/m5_release_assimilation_development_v1.json": "bb29609d1c8d1c1930e155871b62496a3832633a8d7c0d349cc8a35fbfbeddf4",
+    "reports/v8/m5_release_assimilation_development_v1/result.json": "cf4f8ae5c306880554f2f815b15f87ad0eecdcab3229887c311719e0f38d0dda",
+    "configs/v7/reviewer_shared_resource_core_confirmation_v3.json": "411fbeb0d7bcefdaffaa1f29b630e9e4f5f6fea895960e6510e25f46633e36a4",
+    "configs/v7/seed_registry.json": "44cb15ec738c90b2062e8258412ba6cad1d15ffd3c374e64a526f51919d8c81b",
+    "configs/v6/protocol.yaml": "e5048a2e141b31863a18e61aa7f08801ede02f42687fb40b68790adf387b2424",
+    "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml": "911d7b8b4b286c2899ec9cfed9bb07ca4e8384ee4541244bf39a9814645a8af3",
+    "airproof/v8_release_assimilation.py": "084aec89e4109e536d619e999a2e005a5be6a929ded0651b4e824fd8fe2ffa2b",
+    "airproof/v7_privacy_controls.py": "32b4b8869e6bdff7c473eaff416507ece839415116d5a13961af929941bfc6ba",
+    "airproof/v7_shared_execution.py": "94dbf57012f7e8c3d1ffd93a98d855e40f2283450903a3d2b02a084cb48e51ae",
+    "scripts/run_v8_m5_release_confirmation.py": "779ebb93500470e5bc4128f8ba2aa789c3c8dfffa5949ed77b30dcf2eb10679f",
+    "scripts/run_v7_shared_resource_confirmation.py": "06e06509b860702b27ed86a315bd297deed3ab2fe2768675c693f4494d1004aa",
+    "airproof/v5_experiment.py": "bfb598db10d78226b7de3e1863030aaa5963772ee55d146182fb1e81513ecb39",
+    "airproof/continual_release.py": "4041c80bd2d5cc21e77860cf5fc25b935422a907f74553f381f3b4d320b9e58c"
+  }
+}

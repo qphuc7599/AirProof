@@ -1,0 +1,7 @@
+{
+  "baseline_bundle_verified": true,
+  "content_mutation_detected": true,
+  "checkpoint_root_mutation_detected": true,
+  "receipt_signature_mutation_detected": true,
+  "duplicate_nullifier_detected": true
+}

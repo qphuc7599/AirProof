@@ -1,0 +1,95 @@
+{
+  "T1": {
+    "worlds": [
+      {
+        "seed": 6255000,
+        "rmse": 17.354271319007214,
+        "prediction_min": 0.0,
+        "prediction_max": 87.1063211401253
+      },
+      {
+        "seed": 6255001,
+        "rmse": 17.132589806159835,
+        "prediction_min": 0.0,
+        "prediction_max": 65.28466738738368
+      },
+      {
+        "seed": 6255002,
+        "rmse": 17.237776336690604,
+        "prediction_min": 0.0,
+        "prediction_max": 102.47815061661557
+      },
+      {
+        "seed": 6255003,
+        "rmse": 18.243647821316113,
+        "prediction_min": 0.0,
+        "prediction_max": 84.99330112018603
+      },
+      {
+        "seed": 6255004,
+        "rmse": 20.106406782528914,
+        "prediction_min": 0.0,
+        "prediction_max": 113.15031792223735
+      },
+      {
+        "seed": 6255005,
+        "rmse": 20.631794597132867,
+        "prediction_min": 0.0,
+        "prediction_max": 106.39229773259866
+      },
+      {
+        "seed": 6255006,
+        "rmse": 17.213521068076073,
+        "prediction_min": 0.0,
+        "prediction_max": 85.4615609515611
+      },
+      {
+        "seed": 6255007,
+        "rmse": 18.570647834097866,
+        "prediction_min": 0.0,
+        "prediction_max": 84.61911281507916
+      }
+    ],
+    "mean_rmse": 18.311331945626186,
+    "postprocessing": "max(last available noisy release, 0); public fallback until first release; publication clock; no upper clamp",
+    "laplace_standard_deviation": 24.748737341529164
+  },
+  "T2": {
+    "gradient_map_contraction_upper": 0.95,
+    "inexact_sum_active_window_l2_bound": 1295.2630930576565,
+    "inexact_uniform_active_window_l2_bound": 128.95227835370545,
+    "maximum_projected_gradient_inf": 2.7339126296155314e-07,
+    "maximum_projected_gradient_l2": 2.3146409357252273e-05,
+    "maximum_window_dimension": 7168,
+    "one_path_sum_deviation_from_recursive_exact_upper": 2.916447579013791,
+    "one_path_uniform_deviation_from_recursive_exact_upper": 0.004629281871450462,
+    "per_solve_l2_error_upper": 0.00046292818714504505,
+    "projected_gradient_step": 1.0,
+    "solve_count": 630,
+    "summed_numerical_remainder": 5.832895158027582,
+    "uniform_numerical_remainder": 0.009258563742900924
+  },
+  "T8e": {
+    "role": "post-hoc sensitivity, not replacement of registered primary",
+    "margin": 0.01,
+    "worlds": 30,
+    "p_values": {
+      "H1": 1.1926692574121188e-06,
+      "H2": 1.1555993768359974e-06,
+      "H3": 4.0959083543737e-07,
+      "H4": 7.310427969174794e-09,
+      "H5": 1.6462857540772817e-26,
+      "H6": 2.290704863971199e-09,
+      "H7": 2.152992564129676e-12
+    },
+    "holm_seven": {
+      "H5": 1.1524000278540973e-25,
+      "H7": 1.2917955384778056e-11,
+      "H6": 1.1453524319855996e-08,
+      "H4": 2.9241711876699176e-08,
+      "H3": 1.22877250631211e-06,
+      "H2": 2.311198753671995e-06,
+      "H1": 2.311198753671995e-06
+    }
+  }
+}

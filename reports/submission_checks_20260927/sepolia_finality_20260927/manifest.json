@@ -1,0 +1,21 @@
+{
+  "protocol": "sepolia-finality-three-blocks-v1",
+  "network": "ethereum-sepolia-public-testnet",
+  "chain_id": 11155111,
+  "wallet_address": "0xc6d80Cb8Eef27cfdBF8ecAF208e5c62ed0a0023d",
+  "rpc_host": "ethereum-sepolia-rpc.publicnode.com",
+  "starting_balance_test_eth": "0.300445175449396358",
+  "latest_block": 11788660,
+  "latest_block_age_seconds": 10.516999959945679,
+  "gas_price_wei": "1043504398",
+  "time_blocks": 3,
+  "anchors_per_block": 10,
+  "spacing_seconds": 1800,
+  "confirmations": 2,
+  "finality_poll_seconds": 12,
+  "finality_wait_after_last_anchor_seconds": 2700,
+  "hard_campaign_limit_seconds": 7200,
+  "contract_source_sha256": "6e7badf7cd392a6976828c70ee71c2f743432ed4aa8144e02fc31b3c90517d4f",
+  "bytecode_sha256": "0db17472e14d77f6985c301ece25b5c2885e1f0681bf0679ed7243c42a8b14cc",
+  "started_at": "2026-09-26T20:49:34.025Z"
+}

@@ -1,0 +1,64 @@
+{
+  "role": "empirical-contact-replay-with-synthetic-roles-and-traffic",
+  "source_hash": "7ef2e5dc92fceb532bf4e5adc0de11fe125124e3fe5efba57369e6f569e27227",
+  "selection_sha256": "63bd64a22f2ee8be6f464008ac5ecc7623c690141e60e73e0d533ce21d8642f6",
+  "datasets": [
+    "Hypertext09",
+    "InVS13",
+    "InVS15"
+  ],
+  "seeds": [
+    8050,
+    8051,
+    8052,
+    8053,
+    8054
+  ],
+  "probabilities_per_native_slot": [
+    0.002,
+    0.01
+  ],
+  "policies": [
+    "ttl_one_copy",
+    "prophet_gtmx",
+    "binary_spray_wait",
+    "epidemic_cap",
+    "airproof_deadline"
+  ],
+  "ttl_seconds": 21600,
+  "warmup_fraction": 0.2,
+  "collector_fraction": 0.05,
+  "groups": 4,
+  "base_resources": {
+    "nodes": 120,
+    "groups": 4,
+    "steps": 168,
+    "message_probability": 0.5,
+    "record_size_bytes": 512,
+    "ttl_steps": 24,
+    "bytes_per_contact": 1024,
+    "queue_records": 48,
+    "copy_budget": 4,
+    "peer_contact_rate": 0.35,
+    "regular_gateway_availability": 0.45,
+    "underserved_gateway_availability": 0.18,
+    "gateway_outage_start_probability": 0.08,
+    "prophet_p_encounter": 0.7,
+    "prophet_p_first": 0.5,
+    "prophet_p_first_threshold": 0.1,
+    "prophet_beta": 0.9,
+    "prophet_gamma": 0.999,
+    "prophet_delta": 0.01,
+    "deadline_deficit_weight": 6.0,
+    "deadline_age_weight": 1.0,
+    "deadline_slack_weight": 0.25,
+    "peer_copy_available_next_epoch": false
+  },
+  "parameter_selection": "relay weights frozen on synthetic validation, no tuning on these empirical replay outcomes",
+  "registered_descriptive_comparator": "binary_spray_wait",
+  "statistical_scope": "three physical contact collections, two at the same workplace; five conditional role/traffic replications are not independent real traces or cities",
+  "traffic_units": "native 20-second slots; workload probabilities .002 and .01 imply mean report intervals 2.778 and .556 hours per observed source",
+  "acknowledgments": "ideal common delivery acknowledgment and copy bookkeeping, equal across all five policies",
+  "total_jobs": 150,
+  "created_unix": 1788408545.4681296
+}

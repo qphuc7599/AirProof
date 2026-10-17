@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "registration": "v6-causal-lifetime-exposure-independent-synthetic-validation-v1",
+  "status": "prospective_protocol_frozen_after_development_nomination_before_validation_input_generation",
+  "role": "independent synthetic mechanism validation; not primary, EPA test, or confirmation",
+  "objective": "Validate the single development-nominated causal lifetime-exposure estimator on new worlds and all five physical cells before any integrated campaign.",
+  "nomination": {
+    "development_registration": "configs/v6/causal_lifetime_exposure_development_v4.json",
+    "development_analysis": "reports/v6/causal_lifetime_exposure_development_v4/outcomes/analysis.json",
+    "selected_candidate": "lifetime_budget28",
+    "selection_rule_applied_once": true,
+    "no_validation_outcome_seen": true
+  },
+  "historical_reuse": {
+    "v4_primary": "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+    "v4_reuse_lock": "configs/v6/v4_reuse_hash_lock.json",
+    "rerun": false,
+    "scope": "v4 H1-H7 remain historical; validation computes only the changed robust-twin arms on new worlds"
+  },
+  "worlds": {
+    "seeds": [6241200,6241201,6241202,6241203,6241204,6241205,6241206,6241207,6241208,6241209,6241210,6241211],
+    "seed_registry": "configs/v6/seed_registry.json",
+    "seed_namespace": "lifetime_estimator_validation",
+    "cells": ["anchor_clean","outage_clean","severe_clean","severe_drift","severe_hotspot"],
+    "clean_cells": ["anchor_clean","outage_clean","severe_clean"],
+    "attack_pairs": {"severe_drift":"severe_clean","severe_hotspot":"severe_clean"},
+    "agents": 1000,
+    "grid_side": 32,
+    "acquisition_epochs": 672,
+    "burn_in_epochs": 48,
+    "fixed_lag_epochs": 6,
+    "transport_drain_epochs": 24
+  },
+  "evaluation_clock": {
+    "scored_acquisition_half_open": [48,672],
+    "prediction_half_open": [48,678],
+    "rmse_attenuation_and_citizen_value": "lag-6 reconstructed estimate scored on acquisition epochs [48,672)",
+    "event_recall": "immutable live estimate at each acquisition epoch in [48,672)",
+    "lag_tail_and_transport_drain": "generated for causal reconstruction/resource completeness but unscored",
+    "event_threshold_source": "per-world truth prefix [0,48) for each clean base cell; severe attacks reuse the severe_clean threshold",
+    "event_threshold_quantile": 0.95,
+    "event_comparison": ">=",
+    "event_support_required_positive": true
+  },
+  "attack_contract": {
+    "severe_drift": {"kind":"adversarial_drift","fraction":0.2,"amplitude":12.0,"start_epoch":336},
+    "severe_hotspot": {"kind":"hotspot_suppression","fraction":0.2,"amplitude":12.0,"start_epoch":336},
+    "matched_fields": ["truth","physical_transition","physical_forcing","public_center","candidate_identity","arrival_clock","selection_order"],
+    "allowed_difference": "observation value and corrupted flag only after start_epoch for the registered attacker set"
+  },
+  "fixed_estimator": {
+    "innovation_covariance": "world_cross_fitted_covariance",
+    "innovation_calibration": "reports/v6/innovation_covariance_forcing_development_v2/inputs/global_calibration.json",
+    "residual_forcing": "producer_exact_causal",
+    "cap": 8.0,
+    "output_cap": true,
+    "input_clip": false,
+    "loss": "huber",
+    "huber_delta": 1.345,
+    "lag": 6,
+    "lambda_zero": 0.05,
+    "lambda_temporal": 0.05,
+    "lambda_spatial": 0.02,
+    "time_step": 1.0,
+    "tolerance": 1e-7,
+    "max_iterations": 1000,
+    "numerical_refinements": 2,
+    "causal_lifetime_exposure": true,
+    "per_user_exposure_budget": 28.0,
+    "maximum_record_uses": 7
+  },
+  "methods": ["AP_LIFETIME28","PUBLIC","SQ","HUBER"],
+  "same_information": "For every world/cell all methods hash the same raw public center, selected records, arrivals, transition, covariance and residual forcing before method-specific ignoring or weighting.",
+  "input_producer": {
+    "bundle": "reports/v6/causal_lifetime_exposure_validation_v1/inputs",
+    "source_lock": "reports/v6/causal_lifetime_exposure_validation_v1/source_lock.json",
+    "input_lock": "reports/v6/causal_lifetime_exposure_validation_v1/input_lock.json",
+    "readiness": "reports/v6/causal_lifetime_exposure_validation_v1/readiness.json",
+    "truth_boundary": "prediction and scoring capabilities are separate; every prediction is written and hashed before scoring is loaded"
+  },
+  "executable_sources": {
+    "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+    "protocol": "configs/v6/protocol.yaml",
+    "expected_config_hash": {
+      "anchor_clean": "b2b9328c85bc7b5a8e4f604be7208aae99bf1eb75ceb051dea4225455fc70380",
+      "outage_clean": "26770ed4f29033755c4ffe12d9dc9d39524477b3565a592460ed3ea3568e482b",
+      "severe_clean": "e3109978621347ee42467c0a863d159e8023b50b2676e9e25288bb08750599f0",
+      "severe_drift": "6ab77d4ade6738e8cd0511f13374424268abc0203aa4ab6c8c67b29d2bdd35b1",
+      "severe_hotspot": "ca7838b0c16f7336ea1e726b09ec326574ea1c9e184472ac47b827dc7cd9fc29"
+    }
+  },
+  "scientific_gates": {
+    "bootstrap_seed": 6241299,
+    "bootstrap_replicates": 20000,
+    "confidence_level": 0.95,
+    "simultaneous_family_size": 8,
+    "simultaneous_method": "paired-world percentile bootstrap with one-sided Bonferroni alpha/8 bounds",
+    "clean_AP_to_SQ_ratio_upper_max": 1.05,
+    "drift_excess_RMSE_attenuation_lower_min": 0.20,
+    "hotspot_excess_RMSE_attenuation_lower_min": 0.20,
+    "event_recall_loss_vs_SQ_upper_max_percentage_points": 5.0,
+    "severe_clean_AP_to_PUBLIC_ratio_upper_max": 1.0,
+    "all_solver_failure_rates_max": 0.0,
+    "all_projected_gradient_inf_max": 1e-6,
+    "AP_LIFETIME28_absolute_correction_max": 8.0000001,
+    "all_lifetime_exposures_max": 28.0000001,
+    "all_information_fingerprints_equal": true,
+    "all_resource_invariants": true,
+    "all_outputs_finite": true
+  },
+  "decision": {
+    "pass": "Every registered one-sided bootstrap bound and invariant must pass; no cell may be dropped.",
+    "fail": "Retain the adverse validation and do not open integrated primary/confirmation or EPA tests.",
+    "success": "Freeze one integrated common-resource validation using AP_LIFETIME28; success is not primary or confirmation."
+  },
+  "runtime": {
+    "workers": 4,
+    "blas_threads_per_worker": 1,
+    "runtime_smoke_seeds": [6241200],
+    "resume": "only missing hash-identical inputs or predictions; no replacement seed"
+  },
+  "artifacts": {
+    "directory": "reports/v6/causal_lifetime_exposure_validation_v1",
+    "outcomes": "reports/v6/causal_lifetime_exposure_validation_v1/outcomes"
+  },
+  "protected_namespaces": [
+    "data/external/epa",
+    "reports/v6/epa_2025_protocol",
+    "reports/v6/test",
+    "reports/v6/primary",
+    "reports/v6/confirmation"
+  ]
+}

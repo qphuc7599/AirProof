@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "role": "prospective exposed-development-only mechanistic family; never validation, test, primary, or confirmation",
+  "registered_before_new_family_outcomes": true,
+  "objective": "Test whether correctly composed citizen-public innovation covariance and justified residual forcing jointly repair bounded citizen assimilation.",
+  "family_axes": {
+    "innovation_scale": [
+      "independence_Vs_plus_Vp",
+      "cross_fitted_Vs_plus_Vp_minus_2Cps"
+    ],
+    "residual_dynamics": [
+      "registered_zero_forcing",
+      "exact_causal_declared_forcing"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "independence__zero_forcing",
+      "innovation_scale": "independence_Vs_plus_Vp",
+      "residual_dynamics": "registered_zero_forcing"
+    },
+    {
+      "id": "independence__exact_forcing",
+      "innovation_scale": "independence_Vs_plus_Vp",
+      "residual_dynamics": "exact_causal_declared_forcing"
+    },
+    {
+      "id": "cross_covariance__zero_forcing",
+      "innovation_scale": "cross_fitted_Vs_plus_Vp_minus_2Cps",
+      "residual_dynamics": "registered_zero_forcing"
+    },
+    {
+      "id": "cross_covariance__exact_forcing",
+      "innovation_scale": "cross_fitted_Vs_plus_Vp_minus_2Cps",
+      "residual_dynamics": "exact_causal_declared_forcing"
+    }
+  ],
+  "locked_source": {
+    "archive": "data/external/baselines/esntnn_author/Data/APFour.RData",
+    "public_fit_half_open": [0, 638],
+    "mechanism_calibration_half_open": [638, 775],
+    "exposed_evaluation_half_open": [775, 912],
+    "public_validation_artifact": "reports/v6/backbone_validation_recovery/public_validation_predictions.npz",
+    "public_evaluation_artifact": "reports/v6/public_dynamics_development/increment_r1.0_w1.0_test.npz",
+    "truth_evaluation_artifact": "reports/v4_validation/esntnn_purpleair_7800/heldout_predictions.npz",
+    "interval_hours": 4,
+    "exposure": "all three partitions and replay seeds are already exposed; any result is development only"
+  },
+  "locked_seeds": {
+    "citizen_replay": [916000, 916001],
+    "new_seed_allowed": false,
+    "regeneration_allowed": false,
+    "reason": "Exact prior replay inputs must be reused if present; deterministic regeneration from truth is not accepted as provenance for this new family."
+  },
+  "fixed_estimator": {
+    "loss": "huber",
+    "huber_delta": 1.345,
+    "cap": 8.0,
+    "output_cap": true,
+    "input_clip": false,
+    "lag_epochs": 1,
+    "lag_hours_target": 6,
+    "time_step_hours": 4.0,
+    "lambda_zero": 0.05,
+    "lambda_temporal": 0.05,
+    "lambda_spatial": 0.02,
+    "tolerance": 1e-7,
+    "max_iterations": 1000,
+    "numerical_refinements": 2
+  },
+  "same_information_controls": [
+    "PUBLIC",
+    "SQ",
+    "HUBER"
+  ],
+  "required_attack_endpoints": [
+    "adversarial_drift",
+    "severe_hotspot"
+  ],
+  "joint_gates": {
+    "clean_huber_sq_ratio_max": 1.05,
+    "drift_attenuation_min": 0.20,
+    "hotspot_attenuation_min": 0.20,
+    "event_recall_loss_max_percentage_points": 5.0,
+    "all_numerical_checks_pass": true,
+    "all_provenance_checks_pass": true
+  },
+  "producer_contracts": {
+    "public_error_variance": {
+      "required": ["prediction", "truth_label", "label_available_at", "prediction_available_at", "split_id", "public_model_id"],
+      "prediction_use": "frozen numeric variance only; no calibration truth is exposed to the estimator"
+    },
+    "sensor_error_variance": {
+      "required": ["exact_observation_value", "paired_truth_label", "credential_or_user_id", "acquisition_epoch", "arrival_epoch", "sensor_model_id", "split_id"]
+    },
+    "error_covariance": {
+      "required": ["paired_public_error", "paired_sensor_error", "pair_id", "closed_calibration_split", "cross_fit_fold", "psd_audit"]
+    },
+    "transition": {
+      "required": ["operator_per_epoch", "producer_id", "latest_input_epoch", "prediction_epoch", "source_hash"]
+    },
+    "physical_forcing": {
+      "required": ["forcing_per_epoch", "producer_id", "latest_input_epoch", "prediction_epoch", "source_hash"],
+      "forbidden_substitutes": ["simulator truth", "future public measurement", "post-outcome fitted residual"]
+    }
+  },
+  "prediction_input_fields": [
+    "public_center",
+    "innovation_variance",
+    "transition_operator",
+    "residual_forcing",
+    "causally_arrived_observations"
+  ],
+  "scoring_only_fields": [
+    "truth",
+    "attack_label",
+    "event_mask"
+  ],
+  "forbidden_prediction_inputs": [
+    "truth",
+    "target",
+    "attack",
+    "attack_flag",
+    "attack_label",
+    "event_mask",
+    "future_public",
+    "future_observation",
+    "future_contact"
+  ],
+  "readiness": {
+    "required_exact_files": {
+      "citizen_calibration_records": "reports/v6/innovation_covariance_forcing_development_v1/inputs/citizen_calibration_records.jsonl",
+      "citizen_evaluation_records": "reports/v6/innovation_covariance_forcing_development_v1/inputs/citizen_evaluation_records.jsonl",
+      "transition_operators": "reports/v6/innovation_covariance_forcing_development_v1/inputs/transition_operators.npz",
+      "physical_forcing": "reports/v6/innovation_covariance_forcing_development_v1/inputs/physical_forcing.npz",
+      "producer_manifest": "reports/v6/innovation_covariance_forcing_development_v1/inputs/producer_manifest.json"
+    },
+    "fail_closed": true,
+    "no_outcome_if_any_input_missing_or_noncausal": true
+  },
+  "selection_and_exit_rule": {
+    "selection": "Nominate at most one candidate only if every joint gate passes in every required cell; tie by lower worst normalized loss then lexicographic candidate id.",
+    "no_feasible_candidate": "Close this family. Do not alter cap, margins, split, seeds, producer family, or add candidates.",
+    "downstream": "A passing exposed-development candidate may only motivate a separately authorized independent validation registration."
+  },
+  "protected_namespaces": [
+    "data/external/epa",
+    "reports/v6/epa_2025_protocol",
+    "reports/v6/confirmation",
+    "6203000-6203011",
+    "6204000-6204099"
+  ]
+}
+

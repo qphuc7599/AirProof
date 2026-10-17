@@ -1,0 +1,42 @@
+{
+  "role": "registered v6 fairness-mechanism validation; descriptive, not primary or estimator validation",
+  "registered_before_outcomes": true,
+  "seeds": [6203000, 6203001, 6203002, 6203003, 6203004, 6203005, 6203006, 6203007, 6203008, 6203009, 6203010, 6203011],
+  "cell": "severe_clean",
+  "target_contributors_q": 30,
+  "processing_budget_bytes_per_epoch": 83200,
+  "raw_lag_epochs": 6,
+  "rolling_window_epochs": 24,
+  "allocator_levels": ["v6_minimax", "utility_only", "v4_fallback"],
+  "factorial_allocator_levels": ["v6_minimax", "utility_only"],
+  "relay_levels": {"off": "direct", "on": "deadline6"},
+  "robustification_levels": {
+    "off": "quadratic without output cap",
+    "on": "Huber loss with output cap"
+  },
+  "estimator": {
+    "regularization_multiplier": 0.1,
+    "huber_delta": 1.345,
+    "note": "fixed registered development-family member; it failed whole-estimator selection and is used only to measure allocator/factorial outcomes"
+  },
+  "matrix": {
+    "factorial_2x2x2_arms_per_world": 8,
+    "v4_comparator_arms_per_world": 4,
+    "total_arms_per_world": 12,
+    "total_evaluations": 144
+  },
+  "paired_trace_contract": "Within a world and relay level, every allocator and robustification arm receives the identical raw-arrival map and processing budget. Relay levels share the same exogenous mobility/contact trace and finite transport resources.",
+  "transport_scope": "finite raw/release buffers, directional contact capacity, copy tokens and reserved release path; receipt return is excluded from this allocator-attribution validation",
+  "outcomes": [
+    "H6 coverage-gap contrast using unchanged 20 percent reduction threshold",
+    "H7 worst-group RMSE contrast using unchanged 10 percent reduction threshold",
+    "24-epoch capped target service by group",
+    "zero-service and opportunity-aware starvation runs",
+    "cumulative distinct contributors and population distinct-user debt",
+    "opportunity and allocation deficits",
+    "all 39 frozen-prefix outcome strata with support retained",
+    "processing and transport byte/resource invariants",
+    "paired per-world baseline differences and 2x2x2 factorial effects"
+  ],
+  "claim_rule": "Validation is descriptive. Preserve adverse outcomes. Do not launch primary, alter H6/H7 thresholds, select an estimator, or claim starvation freedom."
+}

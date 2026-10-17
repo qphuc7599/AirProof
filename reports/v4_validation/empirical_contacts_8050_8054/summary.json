@@ -1,0 +1,363 @@
+{
+  "role": "empirical-contact-replay-with-synthetic-roles-and-traffic",
+  "jobs": 150,
+  "cells": {
+    "Hypertext09:0.002": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.24978787996496804,
+          "restricted_mean_delay_seconds": 19085.9258136676,
+          "restricted_mean_aoi_seconds": 25288.650122433603,
+          "group_delivery_gap": 0.07917869176648354,
+          "transmissions_per_delivered": 7.190939054540746
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.3723439511984866,
+          "restricted_mean_delay_seconds": 17535.606151623007,
+          "restricted_mean_aoi_seconds": 24648.53042004144,
+          "group_delivery_gap": 0.09344072033739305,
+          "transmissions_per_delivered": 4.259134008878175
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.3611411741958843,
+          "restricted_mean_delay_seconds": 17644.525649044408,
+          "restricted_mean_aoi_seconds": 24666.008099453757,
+          "group_delivery_gap": 0.10325714569004155,
+          "transmissions_per_delivered": 4.667089725915183
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.3648233951022308,
+          "restricted_mean_delay_seconds": 17570.368400202144,
+          "restricted_mean_aoi_seconds": 24689.70964400075,
+          "group_delivery_gap": 0.08288852039798675,
+          "transmissions_per_delivered": 4.835354304650359
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.3578485842833783,
+          "restricted_mean_delay_seconds": 17549.759350747387,
+          "restricted_mean_aoi_seconds": 24476.001506875116,
+          "group_delivery_gap": 0.0611948781555521,
+          "transmissions_per_delivered": 4.730716167944988
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": -0.32925899125060387,
+          "lower95": -0.7019651843642505,
+          "upper95": 0.17239440859072697,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.005399578050932985,
+          "lower95": 0.002513019147170037,
+          "upper95": 0.008312630079745188,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 4.206226753448943,
+          "lower95": 1.841411744846404,
+          "upper95": 5.826484489287556,
+          "paired_role_workload_replications": 5
+        }
+      }
+    },
+    "Hypertext09:0.01": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.13939254886650904,
+          "restricted_mean_delay_seconds": 20501.092224794073,
+          "restricted_mean_aoi_seconds": 23768.395177999624,
+          "group_delivery_gap": 0.0653697994523162,
+          "transmissions_per_delivered": 8.376873880379947
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.19449459685758025,
+          "restricted_mean_delay_seconds": 20427.787212480078,
+          "restricted_mean_aoi_seconds": 25193.916085891884,
+          "group_delivery_gap": 0.08923938932667043,
+          "transmissions_per_delivered": 6.482886540544103
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.1960027955700819,
+          "restricted_mean_delay_seconds": 20312.855167160313,
+          "restricted_mean_aoi_seconds": 24847.72932755698,
+          "group_delivery_gap": 0.10433741657398707,
+          "transmissions_per_delivered": 7.437416528040099
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.19871121177520384,
+          "restricted_mean_delay_seconds": 20289.074016487964,
+          "restricted_mean_aoi_seconds": 24620.921925032966,
+          "group_delivery_gap": 0.08731706851638228,
+          "transmissions_per_delivered": 7.727926316837073
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.19477752530415554,
+          "restricted_mean_delay_seconds": 19995.59590537928,
+          "restricted_mean_aoi_seconds": 23390.881427764176,
+          "group_delivery_gap": 0.0401408998138723,
+          "transmissions_per_delivered": 7.037692395116477
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": -0.12252702659263759,
+          "lower95": -0.39503439198736673,
+          "upper95": 0.09552655596618553,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.015664370955438156,
+          "lower95": 0.01285671102668684,
+          "upper95": 0.018472030884189472,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 6.419651676011479,
+          "lower95": 5.002605872630379,
+          "upper95": 7.860006356286737,
+          "paired_role_workload_replications": 5
+        }
+      }
+    },
+    "InVS13:0.002": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.040700484292449546,
+          "restricted_mean_delay_seconds": 21187.22503860959,
+          "restricted_mean_aoi_seconds": 91763.48916609291,
+          "group_delivery_gap": 0.031974375266864516,
+          "transmissions_per_delivered": 9.337313260551412
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.05588362319758059,
+          "restricted_mean_delay_seconds": 21081.458943176545,
+          "restricted_mean_aoi_seconds": 82932.98353651128,
+          "group_delivery_gap": 0.040220728966753536,
+          "transmissions_per_delivered": 8.092647938017503
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.060130724178866043,
+          "restricted_mean_delay_seconds": 21045.166444991664,
+          "restricted_mean_aoi_seconds": 83243.27633550686,
+          "group_delivery_gap": 0.042319892090069006,
+          "transmissions_per_delivered": 10.723570994830444
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.060997333401331455,
+          "restricted_mean_delay_seconds": 21039.39859536677,
+          "restricted_mean_aoi_seconds": 83271.51688874488,
+          "group_delivery_gap": 0.04057588718533618,
+          "transmissions_per_delivered": 11.70919401713484
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.061436583993326466,
+          "restricted_mean_delay_seconds": 20985.383778079013,
+          "restricted_mean_aoi_seconds": 83847.22880806771,
+          "group_delivery_gap": 0.04155993477999641,
+          "transmissions_per_delivered": 11.311769599206555
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": 0.13058598144604153,
+          "lower95": -0.009797643725912158,
+          "upper95": 0.27096960661799524,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.002849522324253795,
+          "lower95": 0.0018324375479476852,
+          "upper95": 0.003962741123639346,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 0.07599573100725968,
+          "lower95": -0.42349666141820175,
+          "upper95": 0.6431233294751287,
+          "paired_role_workload_replications": 5
+        }
+      }
+    },
+    "InVS13:0.01": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.023253252024080906,
+          "restricted_mean_delay_seconds": 21412.152295680564,
+          "restricted_mean_aoi_seconds": 80793.98402251833,
+          "group_delivery_gap": 0.024974465560848296,
+          "transmissions_per_delivered": 9.908348133552934
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.025807640733274823,
+          "restricted_mean_delay_seconds": 21424.77106745729,
+          "restricted_mean_aoi_seconds": 82652.29545178406,
+          "group_delivery_gap": 0.027493602147856615,
+          "transmissions_per_delivered": 9.600858227892903
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.027099393413332472,
+          "restricted_mean_delay_seconds": 21424.49771641501,
+          "restricted_mean_aoi_seconds": 80486.38471507837,
+          "group_delivery_gap": 0.027486281333831603,
+          "transmissions_per_delivered": 15.968022345229835
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.027026662931152225,
+          "restricted_mean_delay_seconds": 21428.764956448147,
+          "restricted_mean_aoi_seconds": 81431.79824632457,
+          "group_delivery_gap": 0.027804689367262818,
+          "transmissions_per_delivered": 16.796585213058385
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.02812183453105529,
+          "restricted_mean_delay_seconds": 21362.338592462187,
+          "restricted_mean_aoi_seconds": 79529.04465189745,
+          "group_delivery_gap": 0.025831466315403912,
+          "transmissions_per_delivered": 15.63383090948722
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": 0.1022441117722817,
+          "lower95": 0.07549253860544788,
+          "upper95": 0.13246625698427034,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.0029048759474956665,
+          "lower95": 0.00204243455419868,
+          "upper95": 0.0037272079150838964,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 0.16548150184276905,
+          "lower95": 0.08253210532181567,
+          "upper95": 0.2714069287983044,
+          "paired_role_workload_replications": 5
+        }
+      }
+    },
+    "InVS15:0.002": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.07311291660405903,
+          "restricted_mean_delay_seconds": 20825.632591933274,
+          "restricted_mean_aoi_seconds": 63201.97165747413,
+          "group_delivery_gap": 0.02935109750416453,
+          "transmissions_per_delivered": 9.02246720934679
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.10761905700380739,
+          "restricted_mean_delay_seconds": 20536.12666829685,
+          "restricted_mean_aoi_seconds": 63185.15314626193,
+          "group_delivery_gap": 0.04004318010233232,
+          "transmissions_per_delivered": 6.503581518553288
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.10999896367073339,
+          "restricted_mean_delay_seconds": 20493.40020853352,
+          "restricted_mean_aoi_seconds": 62739.19060751239,
+          "group_delivery_gap": 0.044181775586425096,
+          "transmissions_per_delivered": 7.5495126703638435
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.11240756354274536,
+          "restricted_mean_delay_seconds": 20469.2710067403,
+          "restricted_mean_aoi_seconds": 62819.51839848624,
+          "group_delivery_gap": 0.04381587692862974,
+          "transmissions_per_delivered": 7.915673660426687
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.11218421354943323,
+          "restricted_mean_delay_seconds": 20410.61226515592,
+          "restricted_mean_aoi_seconds": 62272.80345424534,
+          "group_delivery_gap": 0.0325248796744229,
+          "transmissions_per_delivered": 7.703690331448729
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": 0.21852498786998326,
+          "lower95": 0.1758543610617097,
+          "upper95": 0.2575659203153796,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.004039415630469967,
+          "lower95": 0.0035279954791710643,
+          "upper95": 0.00455083578176887,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 1.1656895912002194,
+          "lower95": 0.9873640787922714,
+          "upper95": 1.3811555374475823,
+          "paired_role_workload_replications": 5
+        }
+      }
+    },
+    "InVS15:0.01": {
+      "means": {
+        "ttl_one_copy": {
+          "deadline_delivery_ratio": 0.044433949310668956,
+          "restricted_mean_delay_seconds": 21196.827563072708,
+          "restricted_mean_aoi_seconds": 60818.41098675471,
+          "group_delivery_gap": 0.02390971594375063,
+          "transmissions_per_delivered": 9.565472245152625
+        },
+        "prophet_gtmx": {
+          "deadline_delivery_ratio": 0.056329358652886595,
+          "restricted_mean_delay_seconds": 21169.78446151684,
+          "restricted_mean_aoi_seconds": 61752.32237610209,
+          "group_delivery_gap": 0.029835830528476954,
+          "transmissions_per_delivered": 8.374887534320424
+        },
+        "binary_spray_wait": {
+          "deadline_delivery_ratio": 0.05840615394840863,
+          "restricted_mean_delay_seconds": 21155.782696629867,
+          "restricted_mean_aoi_seconds": 61544.01849913442,
+          "group_delivery_gap": 0.03293894957968668,
+          "transmissions_per_delivered": 11.174100980884836
+        },
+        "epidemic_cap": {
+          "deadline_delivery_ratio": 0.059268148700488035,
+          "restricted_mean_delay_seconds": 21156.783988632895,
+          "restricted_mean_aoi_seconds": 61854.39582913966,
+          "group_delivery_gap": 0.0323030145204795,
+          "transmissions_per_delivered": 11.80270033368094
+        },
+        "airproof_deadline": {
+          "deadline_delivery_ratio": 0.060591407950357744,
+          "restricted_mean_delay_seconds": 21039.93172583478,
+          "restricted_mean_aoi_seconds": 59608.06773622127,
+          "group_delivery_gap": 0.023782579081959337,
+          "transmissions_per_delivered": 10.675467431871095
+        }
+      },
+      "paired_vs_registered_spray": {
+        "delivery_difference_pp": {
+          "mean": 0.21852540019491049,
+          "lower95": 0.18752200128204638,
+          "upper95": 0.2442034467001904,
+          "paired_role_workload_replications": 5
+        },
+        "relative_delay_reduction": {
+          "mean": 0.005476723696589336,
+          "lower95": 0.005145757919249117,
+          "upper95": 0.005836884514003837,
+          "paired_role_workload_replications": 5
+        },
+        "group_gap_reduction_pp": {
+          "mean": 0.9156370497727344,
+          "lower95": 0.6747179630498567,
+          "upper95": 1.156556136495612,
+          "paired_role_workload_replications": 5
+        }
+      }
+    }
+  },
+  "statistical_scope": "three physical contact collections, two at the same workplace; five conditional role/traffic replications are not independent real traces or cities",
+  "intervals": "descriptive paired bootstrap conditional on each observed trace, not confirmatory population-level inference",
+  "elapsed_seconds": 778.3921877999965
+}

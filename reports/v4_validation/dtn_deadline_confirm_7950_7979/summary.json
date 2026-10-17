@@ -1,0 +1,252 @@
+{
+  "role": "independent-confirmatory-DTN-secondary-family",
+  "rows": 210,
+  "traces": 30,
+  "means": {
+    "direct": {
+      "deadline_delivery_ratio": 0.7439505383922439,
+      "restricted_mean_delivery_delay": 11.370332209157135,
+      "group_delivery_gap": 0.4793070544056583,
+      "transmissions_per_delivered": 1.0
+    },
+    "ttl_one_copy": {
+      "deadline_delivery_ratio": 0.9255251568032925,
+      "restricted_mean_delivery_delay": 8.37095851996513,
+      "group_delivery_gap": 0.08882490673367567,
+      "transmissions_per_delivered": 1.6461102949809763
+    },
+    "prophet_gtmx": {
+      "deadline_delivery_ratio": 0.9459346716382182,
+      "restricted_mean_delivery_delay": 8.195303068211253,
+      "group_delivery_gap": 0.12184761742757372,
+      "transmissions_per_delivered": 1.6818186804273982
+    },
+    "binary_spray_wait": {
+      "deadline_delivery_ratio": 0.9572664864809622,
+      "restricted_mean_delivery_delay": 7.613042539005657,
+      "group_delivery_gap": 0.11263617537307109,
+      "transmissions_per_delivered": 2.0201815826843856
+    },
+    "epidemic_cap": {
+      "deadline_delivery_ratio": 0.9595776156253233,
+      "restricted_mean_delivery_delay": 7.676759418483048,
+      "group_delivery_gap": 0.10571097258853837,
+      "transmissions_per_delivered": 2.0324488252262585
+    },
+    "airproof_deficit": {
+      "deadline_delivery_ratio": 0.8974245472133835,
+      "restricted_mean_delivery_delay": 5.96840442419283,
+      "group_delivery_gap": 0.07982736965647287,
+      "transmissions_per_delivered": 1.7570076634201428
+    },
+    "airproof_deadline": {
+      "deadline_delivery_ratio": 0.9804863693333302,
+      "restricted_mean_delivery_delay": 5.8755590411566265,
+      "group_delivery_gap": 0.027905665904544644,
+      "transmissions_per_delivered": 1.9826315810025068
+    }
+  },
+  "paired_comparisons": {
+    "direct": {
+      "delivery_difference_pp": {
+        "mean": 23.65358309410862,
+        "lower95": 23.30577168493323,
+        "upper95": 23.99720833979841,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.4838174204915352,
+        "lower95": 0.47596849906647815,
+        "upper95": 0.49194123951779684,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.9419970271200956,
+        "lower95": 0.9365592470770353,
+        "upper95": 0.9471886704728655,
+        "paired_traces": 30
+      }
+    },
+    "ttl_one_copy": {
+      "delivery_difference_pp": {
+        "mean": 5.496121253003773,
+        "lower95": 5.2163432992878445,
+        "upper95": 5.772374777085966,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.29845930567042356,
+        "lower95": 0.2933074395301462,
+        "upper95": 0.3039064118407857,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.6786426053038511,
+        "lower95": 0.6513445859968926,
+        "upper95": 0.7053743494809753,
+        "paired_traces": 30
+      }
+    },
+    "prophet_gtmx": {
+      "delivery_difference_pp": {
+        "mean": 3.45516976951119,
+        "lower95": 3.2057674908156764,
+        "upper95": 3.696346026720589,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.2833380541377267,
+        "lower95": 0.27959730091090346,
+        "upper95": 0.2872328670271903,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.7692099829568625,
+        "lower95": 0.7519436136532174,
+        "upper95": 0.7851472136984299,
+        "paired_traces": 30
+      }
+    },
+    "binary_spray_wait": {
+      "delivery_difference_pp": {
+        "mean": 2.3219882852368072,
+        "lower95": 2.108265966124491,
+        "upper95": 2.5272058815231184,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.22840321907303504,
+        "lower95": 0.22502446204206292,
+        "upper95": 0.2319425277266051,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.7507604717275668,
+        "lower95": 0.7338302253309777,
+        "upper95": 0.7666294290576209,
+        "paired_traces": 30
+      }
+    },
+    "epidemic_cap": {
+      "delivery_difference_pp": {
+        "mean": 2.090875370800668,
+        "lower95": 1.8752547675665667,
+        "upper95": 2.298948099584055,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.23473703959817713,
+        "lower95": 0.23098006821136666,
+        "upper95": 0.23839039960223998,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.7322412384601495,
+        "lower95": 0.7130684045297835,
+        "upper95": 0.7504570697712345,
+        "paired_traces": 30
+      }
+    },
+    "airproof_deficit": {
+      "delivery_difference_pp": {
+        "mean": 8.306182211994672,
+        "lower95": 8.051949830557858,
+        "upper95": 8.563714870016236,
+        "paired_traces": 30
+      },
+      "relative_delay_reduction": {
+        "mean": 0.016284895577382205,
+        "lower95": 0.010745764730549508,
+        "upper95": 0.02232404117988215,
+        "paired_traces": 30
+      },
+      "relative_gap_reduction": {
+        "mean": 0.6478172694699913,
+        "lower95": 0.6170014534985756,
+        "upper95": 0.6767779730677898,
+        "paired_traces": 30
+      }
+    }
+  },
+  "hypothesis_tests": [
+    {
+      "id": "D1",
+      "comparator": "epidemic_cap",
+      "contrast": "AP delivery - comparator delivery + .02",
+      "alternative": ">0",
+      "effect": {
+        "mean": 0.040908753708006666,
+        "lower95": 0.03875254767566567,
+        "upper95": 0.042989480995840545,
+        "paired_traces": 30
+      },
+      "p_raw": 2.0929913902355472e-26,
+      "p_holm": 4.1859827804710943e-26,
+      "reject_at_05": true
+    },
+    {
+      "id": "D2",
+      "comparator": "binary_spray_wait",
+      "contrast": ".85 comparator restricted delay - AP restricted delay",
+      "alternative": ">0",
+      "effect": {
+        "mean": 0.5955271169981832,
+        "lower95": 0.5703722482611824,
+        "upper95": 0.6216593716293461,
+        "paired_traces": 30
+      },
+      "p_raw": 1.0062181314822384e-28,
+      "p_holm": 3.018654394446715e-28,
+      "reject_at_05": true
+    },
+    {
+      "id": "D3",
+      "comparator": "binary_spray_wait",
+      "contrast": ".8 comparator group gap - AP group gap",
+      "alternative": ">0",
+      "effect": {
+        "mean": 0.062203274393912225,
+        "lower95": 0.05625256067965751,
+        "upper95": 0.06833331382763401,
+        "paired_traces": 30
+      },
+      "p_raw": 7.164953134101738e-19,
+      "p_holm": 7.164953134101738e-19,
+      "reject_at_05": true
+    }
+  ],
+  "all_transport_gates_pass_holm": true,
+  "trace_sha256": {
+    "7950": "94e97a34a172c94b5ae0235a75e2d2e67cc4255bdeae97255c9da4e3877619df",
+    "7951": "010402ab9c89a5b93f84f0224df8ac0ab75880017b686f96b95510fef53ded02",
+    "7952": "67520ab91546356487bb4ab08b3be2a68e5d634edd0cc981b5a2fb4f43229853",
+    "7953": "ea492e3012b2fa8cfb68b4fa83d668387c9bee41cccb35fb31b78f2480dd03a3",
+    "7954": "ce9939306ea6875f44791ae7995cd68cba1618074a5289f30f94500bcc3fd2b1",
+    "7955": "175223707d6afb375cda2c2dc7cab0c8da09eae5bd5a4dd78b410707df97dea5",
+    "7956": "57933962dde23bb94dcda3c8ac81968a52f355ca6eb84d5bf2461f25c58fa811",
+    "7957": "5a8b88cb5075fba99120fc19253a6468db1f8cff36e72020696206ed6b924aa8",
+    "7958": "06c89dcd39f88e62048479d84f11fa2bc99ce9960b293236fa258c71700e763a",
+    "7959": "cc220a794032a80db92e6722d257cd99910fe0b2d12a4ba10e275ec4e82c75ad",
+    "7960": "92d76844d936866135cc0d27b9e0a8fb84ed6a307c6e7e1dde9ed2b455789fbd",
+    "7961": "fb5e1dbe621c950a57ac57b7a1b9052ef3f2f44a5fa3d3e763d263f0da6533a5",
+    "7962": "f39fef48302f4380f0f60cb49c79dcaab57385c8db53845715edbff31de8d8ab",
+    "7963": "aa8abff5bcab202dbb8e0d12b964b90c742a3f2467900f3ac1edd5b2a5b41384",
+    "7964": "536a22570653fb857e0c3fbd512d0b0f6ede54336e52c3e4957ceb6b644b382c",
+    "7965": "d8435add2f6692233b23716fb16fac39dd1f20e86ffcd174f89660daca1af7bb",
+    "7966": "c04b0ab66753b23edbc8d96bfc3a2e7051d5947d9169238b9c6ae27596cf30ef",
+    "7967": "ca0878e1007f141015bcd69cd5d1c25d900a6a2d071914e962af7bec8ab7ccb5",
+    "7968": "32859fa7820e7591d3aa8687f6082f8dc420901421b0d4d69ef6d164acadad16",
+    "7969": "7efbbc929340713c9705e3f3a3d0ff5bb122aedf30e2e03501e32e3962f2d40e",
+    "7970": "479d333db6372764daa35f6a0a03bda622a4d063102624d1d0ea7b6f4fa022af",
+    "7971": "9283147018c05d4359e1e6f773b9a181aa1f8e78ba9c9aecd27d283653c14a52",
+    "7972": "0c075becd42c8c27c0760704154f5e6e9fa43f600f66ed441515c3f56ccc8c67",
+    "7973": "6464c349de85beb6f10ca6e654447a1bc0db626bf11ed40803a4df2d292a41fe",
+    "7974": "36affc6fd67ca1fb4fab4cbfa69af4ccf089240157a23f1d67e8cf2909b9bdb5",
+    "7975": "15701ae47be8933484fd31e9441cd17becc5cf5e6a6a1f5dc4fad4df8bb2b6d2",
+    "7976": "580f50eaa9c5a3235b1619c365fa008e78aac85a9cf30918a0620ada333f236a",
+    "7977": "fb7c9d4b4c0caa3d8f2de1fa60cec3c9d347dfc75f55203185b22dccc26c700c",
+    "7978": "71115d56c725b099edc3c7f128100d04feb4ba94d21b05238887f1e3e8d519eb",
+    "7979": "cdbe571eaacf19e553a91e40ed5b07179507a29a12d47a94a8ec00916997217f"
+  },
+  "elapsed_seconds": 160.90346229998977
+}

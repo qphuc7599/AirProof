@@ -1,0 +1,19 @@
+{
+  "lock_version": 1,
+  "created_date": "2026-09-08",
+  "role": "source lock for post-v2 exposed-development v3.1 registration; no result exists",
+  "sha256": {
+    "configs/v6_uncertainty_event_v3_1.json": "b6f1bb99ab9748aca8581cf50e5fe01189fc695f5ad3f0f77e45dc1980c0a79a",
+    "airproof/v6_uncertainty_event_v3.py": "0dd48866fd073f1bc8755bf80b52354d7eda8a797619e84e842181fa7708fc4b",
+    "scripts/run_v6_uncertainty_event_v3_1.py": "be8f7d360c3701c0ba97bbfa8e62a3f59f226786d45d557eedc0cf733a17e321",
+    "tests/test_v6_uncertainty_event_v3.py": "a62fd964305a0c44029d6c1359145b76bbe492bba9eafbcdca5114b317895387",
+    "airproof/v6_uncertainty_public_prereq.py": "0cc4a6582b82546ff3dfe48031c57e4b0ac66f97f54e90e091b1ce8ae94fb4b5",
+    "scripts/build_v6_uncertainty_v3_1_public.py": "b15e601e803cfaad04123434d5da6163bdc63048ff562fadf788e043531af04f",
+    "tests/test_v6_uncertainty_public_prereq.py": "2e5087b4def56c1cc0ee30b5af85c0c6e6b8db4e0b2a7ec4e1c2bf396637f20b"
+  },
+  "required_public_artifacts": 8,
+  "available_at_lock": 0,
+  "canonical_public_cell": "anchor_clean",
+  "each_seed_scored_once": true,
+  "campaign_authorized": false
+}

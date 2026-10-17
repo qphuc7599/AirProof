@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-reviewer-shared-core-fairness-control-v1",
+  "status": "frozen before reading shared-resource core v3 outcomes",
+  "role": "matched no-fairness control for the integrated robust shared core",
+  "source_registration": "configs/v7/reviewer_shared_resource_core_confirmation_v3.json",
+  "source_confirmation": "reports/v7/reviewer_revision/shared_resource_core_confirmation_v3",
+  "seeds": [
+    6251300,
+    6251301,
+    6251302,
+    6251303,
+    6251304,
+    6251305,
+    6251306,
+    6251307,
+    6251308,
+    6251309,
+    6251310,
+    6251311
+  ],
+  "cells": [
+    "severe_clean",
+    "severe_hotspot"
+  ],
+  "method": "AP_SHARED_CORE",
+  "changed_factor": "fairness disabled in the retained hard-if-feasible allocator",
+  "fixed_factors": [
+    "world",
+    "transport trace",
+    "finite directional capacity",
+    "buffers",
+    "copy tokens",
+    "release reservation",
+    "receipt return",
+    "estimator",
+    "public predictor",
+    "scoring clock"
+  ],
+  "decision_rules": {
+    "clean_contributor_gap_reduction_lower": 0.2,
+    "clean_worst_group_rmse_reduction_lower": 0.1,
+    "one_sided_bonferroni_family_size": 2,
+    "bootstrap_replicates": 20000,
+    "bootstrap_seed": 6255999
+  },
+  "output": "reports/v7/reviewer_revision/shared_core_fairness_control_v1"
+}

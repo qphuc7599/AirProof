@@ -1,0 +1,32 @@
+{
+  "registration": "v6-integrated-accountability-confirmation-v1",
+  "registered_date": "2026-09-08",
+  "role": "bounded deterministic integrated confirmation; not a primary scientific campaign",
+  "mechanism": "IntegratedCollector per-record signed acceptance and terminal inclusion return",
+  "fixed_resources": {
+    "capacity_bytes_per_direction": 1024,
+    "raw_packet_bytes": 512,
+    "release_packet_bytes": 256,
+    "release_gateway_reservation_bytes": 256,
+    "control_budget_bytes": 128,
+    "return_frame_bytes": 512,
+    "return_ack_bytes": 16,
+    "inclusion_deadline_epochs": 24,
+    "copy_tokens": 4
+  },
+  "matrix": [
+    {"id": "adequate_single", "records": 1, "pattern": "burst", "nodes": 1, "acquisition_epochs": 1, "drain_epochs": 4, "contacts": "all", "audit": {"max_records": 8, "max_return_frames": 8, "collector_return_buffer_bytes": 4096}},
+    {"id": "adequate_serial4", "records": 4, "pattern": "serial", "nodes": 1, "acquisition_epochs": 4, "drain_epochs": 12, "contacts": "all", "audit": {"max_records": 8, "max_return_frames": 32, "collector_return_buffer_bytes": 18432}},
+    {"id": "bounded_burst8", "records": 8, "pattern": "burst", "nodes": 8, "acquisition_epochs": 1, "drain_epochs": 6, "contacts": "all", "audit": {"max_records": 8, "collector_return_buffer_bytes": 2048}},
+    {"id": "frame_budget_zero", "records": 1, "pattern": "burst", "nodes": 1, "acquisition_epochs": 1, "drain_epochs": 0, "contacts": "all", "audit": {"max_records": 8, "max_return_frames": 0, "collector_return_buffer_bytes": 4096}},
+    {"id": "absent_reverse", "records": 1, "pattern": "burst", "nodes": 1, "acquisition_epochs": 1, "drain_epochs": 25, "contacts": "initial_only", "audit": {"max_records": 8, "max_return_frames": 8, "collector_return_buffer_bytes": 4096}},
+    {"id": "partition_past_deadline", "records": 1, "pattern": "burst", "nodes": 1, "acquisition_epochs": 1, "drain_epochs": 25, "contacts": "initial_and_late", "audit": {"max_records": 8, "max_return_frames": 8, "collector_return_buffer_bytes": 4096}}
+  ],
+  "fault_checks": ["content_mutation", "checkpoint_root_mutation", "receipt_signature_mutation", "duplicate_nullifier"],
+  "historical_comparator": {
+    "artifact": "reports/v5/audit_same_stream/manifest.json",
+    "scope": "historical v5 payload-agnostic same-stream cryptographic benchmark; not relabeled as v6"
+  },
+  "measurements": ["physical_delivered", "admitted", "allocated", "collector_included", "origin_verified", "raw_bytes", "return_bytes", "return_control_bytes", "total_control_bytes", "expired_return_objects", "complete_pair_latency_epochs"],
+  "claim_limit": "integrated deterministic accountability confirmation only; no availability, BFT, consensus finality, censorship-resistance, or public-chain latency claim"
+}

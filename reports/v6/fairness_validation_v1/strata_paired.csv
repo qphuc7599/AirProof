@@ -1,0 +1,937 @@
+seed,baseline,stratum,cells,both_supported,rmse_difference,selected_distinct_difference
+6203000,utility_only,peripheral,448,1,-0.0004302750163942548,42
+6203001,utility_only,peripheral,448,1,-0.0014324086669981195,49
+6203002,utility_only,peripheral,448,1,-0.0004275118757750551,53
+6203003,utility_only,peripheral,448,1,-0.00133437387258728,30
+6203004,utility_only,peripheral,448,1,-0.0007863975911761578,42
+6203005,utility_only,peripheral,448,1,-0.001577909714922221,41
+6203006,utility_only,peripheral,448,1,-0.001333736953908149,39
+6203007,utility_only,peripheral,448,1,-0.0005185366454774076,56
+6203008,utility_only,peripheral,448,1,-0.002946059626141917,45
+6203009,utility_only,peripheral,448,1,-0.0003167089474838125,34
+6203010,utility_only,peripheral,448,1,-0.0002035825070603181,44
+6203011,utility_only,peripheral,448,1,-0.0018805046563223904,41
+6203000,utility_only,high_public_exposure,256,1,0.0024360004594055074,28
+6203001,utility_only,high_public_exposure,256,1,0.0006885710750759166,44
+6203002,utility_only,high_public_exposure,256,1,0.001339164419972061,42
+6203003,utility_only,high_public_exposure,256,1,0.0027574830596743816,61
+6203004,utility_only,high_public_exposure,256,1,0.0031977666982720976,31
+6203005,utility_only,high_public_exposure,256,1,0.0016393216748114003,39
+6203006,utility_only,high_public_exposure,256,1,-0.004694507647646784,43
+6203007,utility_only,high_public_exposure,256,1,0.0028989284605802634,29
+6203008,utility_only,high_public_exposure,256,1,0.003843149702402293,18
+6203009,utility_only,high_public_exposure,256,1,-0.0013098209313113784,32
+6203010,utility_only,high_public_exposure,256,1,-0.00016241035078046195,59
+6203011,utility_only,high_public_exposure,256,1,0.002114806199446706,45
+6203000,utility_only,low_prefix_ingress,256,1,-0.004407781943564393,16
+6203001,utility_only,low_prefix_ingress,256,1,-0.006450661513157652,18
+6203002,utility_only,low_prefix_ingress,256,1,-0.005454409958956852,19
+6203003,utility_only,low_prefix_ingress,256,1,-0.007807575405871958,12
+6203004,utility_only,low_prefix_ingress,256,1,-0.0050034771944995615,15
+6203005,utility_only,low_prefix_ingress,256,1,-0.009068968613613393,9
+6203006,utility_only,low_prefix_ingress,256,1,-0.008010068534110903,9
+6203007,utility_only,low_prefix_ingress,256,1,-0.00379645841064824,24
+6203008,utility_only,low_prefix_ingress,256,1,-0.010251619132895406,13
+6203009,utility_only,low_prefix_ingress,256,1,-0.003730670184340923,20
+6203010,utility_only,low_prefix_ingress,256,1,-0.006702912198853106,21
+6203011,utility_only,low_prefix_ingress,256,1,-0.008314860016994885,18
+6203000,utility_only,peripheral & high_public_exposure,67,1,0.00176468272349517,2
+6203001,utility_only,peripheral & high_public_exposure,64,1,0.001227506158832492,31
+6203002,utility_only,peripheral & high_public_exposure,66,1,0.0007071638308795425,28
+6203003,utility_only,peripheral & high_public_exposure,70,1,0.00046177731740160155,18
+6203004,utility_only,peripheral & high_public_exposure,69,1,0.001617582489669811,0
+6203005,utility_only,peripheral & high_public_exposure,65,1,-0.0002144131902139801,13
+6203006,utility_only,peripheral & high_public_exposure,67,1,-0.007377101420263932,21
+6203007,utility_only,peripheral & high_public_exposure,67,1,0.002695707564405181,1
+6203008,utility_only,peripheral & high_public_exposure,66,1,0.0020509673803867923,-2
+6203009,utility_only,peripheral & high_public_exposure,67,1,-0.0036660423681600385,17
+6203010,utility_only,peripheral & high_public_exposure,66,1,8.626213550844142e-05,26
+6203011,utility_only,peripheral & high_public_exposure,65,1,0.0004867358009468248,15
+6203000,utility_only,peripheral & low_prefix_ingress,156,1,-0.003520251209185865,12
+6203001,utility_only,peripheral & low_prefix_ingress,158,1,-0.006867530871458305,23
+6203002,utility_only,peripheral & low_prefix_ingress,159,1,-0.004263371642404978,19
+6203003,utility_only,peripheral & low_prefix_ingress,147,1,-0.006346989745409148,13
+6203004,utility_only,peripheral & low_prefix_ingress,140,1,-0.0037102210227721866,26
+6203005,utility_only,peripheral & low_prefix_ingress,159,1,-0.006011770008641948,9
+6203006,utility_only,peripheral & low_prefix_ingress,161,1,-0.006598752331446134,9
+6203007,utility_only,peripheral & low_prefix_ingress,151,1,-0.003335025628246946,17
+6203008,utility_only,peripheral & low_prefix_ingress,160,1,-0.009388220107541478,11
+6203009,utility_only,peripheral & low_prefix_ingress,151,1,-0.0033216976453323,11
+6203010,utility_only,peripheral & low_prefix_ingress,158,1,-0.005358583243111115,22
+6203011,utility_only,peripheral & low_prefix_ingress,145,1,-0.0076354841706312016,15
+6203000,utility_only,high_public_exposure & low_prefix_ingress,10,1,0.004581470870098414,-3
+6203001,utility_only,high_public_exposure & low_prefix_ingress,54,1,-0.006058831542588461,26
+6203002,utility_only,high_public_exposure & low_prefix_ingress,68,1,-0.004436856556112367,19
+6203003,utility_only,high_public_exposure & low_prefix_ingress,26,1,0.0012830641968755163,25
+6203004,utility_only,high_public_exposure & low_prefix_ingress,18,1,0.0018059385785522686,-5
+6203005,utility_only,high_public_exposure & low_prefix_ingress,1,0,,0
+6203006,utility_only,high_public_exposure & low_prefix_ingress,130,1,-0.009299762186190996,18
+6203007,utility_only,high_public_exposure & low_prefix_ingress,27,1,0.003814212544539064,2
+6203008,utility_only,high_public_exposure & low_prefix_ingress,8,1,0.004190153362106042,-3
+6203009,utility_only,high_public_exposure & low_prefix_ingress,123,1,-0.00556210956761527,21
+6203010,utility_only,high_public_exposure & low_prefix_ingress,57,1,-0.006982763912086298,32
+6203011,utility_only,high_public_exposure & low_prefix_ingress,16,1,0.002092981927078963,3
+6203000,utility_only,peripheral & high_public_exposure & low_prefix_ingress,5,0,,-2
+6203001,utility_only,peripheral & high_public_exposure & low_prefix_ingress,18,1,-0.002733483220974886,24
+6203002,utility_only,peripheral & high_public_exposure & low_prefix_ingress,20,1,-0.0032078358712699373,9
+6203003,utility_only,peripheral & high_public_exposure & low_prefix_ingress,8,1,-3.303457216263794e-05,8
+6203004,utility_only,peripheral & high_public_exposure & low_prefix_ingress,1,0,,1
+6203005,utility_only,peripheral & high_public_exposure & low_prefix_ingress,1,0,,0
+6203006,utility_only,peripheral & high_public_exposure & low_prefix_ingress,64,1,-0.007574997958399665,20
+6203007,utility_only,peripheral & high_public_exposure & low_prefix_ingress,6,0,,-4
+6203008,utility_only,peripheral & high_public_exposure & low_prefix_ingress,1,0,,-1
+6203009,utility_only,peripheral & high_public_exposure & low_prefix_ingress,62,1,-0.003826830850462315,17
+6203010,utility_only,peripheral & high_public_exposure & low_prefix_ingress,19,1,-0.004298770749671776,18
+6203011,utility_only,peripheral & high_public_exposure & low_prefix_ingress,4,0,,-1
+6203000,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,6,0,,26
+6203001,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,4,0,,11
+6203002,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,6,0,,17
+6203003,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,13,1,-0.013264532469255741,31
+6203004,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,17,1,-0.011365488484162078,46
+6203005,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,2,0,,7
+6203006,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,2,0,,5
+6203007,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,25,1,-0.009156174007890705,46
+6203008,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,12,1,-0.015630206798999513,48
+6203009,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,3,0,,11
+6203010,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,4,0,,13
+6203011,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,14,1,-0.011390945186776635,36
+6203000,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,90,1,-0.006598314810743133,32
+6203001,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,52,1,-0.00768000319162665,28
+6203002,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,48,1,-0.008960728853156574,28
+6203003,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,76,1,-0.013321169799064947,27
+6203004,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,79,1,-0.009487730916528658,41
+6203005,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,94,1,-0.013222815632308205,25
+6203006,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,26,1,-0.009669277550858002,28
+6203007,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,71,1,-0.008287439063320523,45
+6203008,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,84,1,-0.014115069260039359,29
+6203009,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,25,1,-0.002911587421884354,21
+6203010,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,54,1,-0.009794653196605108,23
+6203011,utility_only,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,82,1,-0.012917489153685402,27
+6203000,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,4,0,,13
+6203002,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203004,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203006,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,15
+6203007,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,7,0,,16
+6203010,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,2,0,,5
+6203011,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203000,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,36,1,-0.007260600838735698,16
+6203002,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,42,1,-0.005830509663030892,20
+6203003,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,25
+6203004,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,65,1,-0.010848074376631267,33
+6203007,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,61,1,-0.006910214557277694,35
+6203010,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,36,1,-0.008632098057217874,40
+6203011,utility_only,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,17,1,-0.005051286266565258,27
+6203001,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,12,1,-0.00468228228489842,13
+6203002,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,6,0,,13
+6203003,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,24,1,-0.009279838391650364,27
+6203004,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,38,1,-0.004450458189691364,31
+6203005,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,3,0,,9
+6203006,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,4,0,,7
+6203007,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,24,1,-0.004127007931986615,37
+6203008,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,13,1,-0.00795606694689166,30
+6203009,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,9,1,-0.003385379206893857,24
+6203010,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,12,1,-0.006007019012792991,22
+6203011,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,26,1,-0.0062698963050935586,33
+6203000,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,143,1,-0.0040670704456933215,13
+6203001,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-0.007683094211447639,13
+6203002,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-0.004546884698127807,24
+6203003,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,133,1,-0.00704508462287734,12
+6203004,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,122,1,-0.004433433921479768,27
+6203005,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,157,1,-0.006102650037156376,9
+6203006,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,91,1,-0.006327425949762988,22
+6203007,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,136,1,-0.0038674146040047486,17
+6203008,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,147,1,-0.010381742692691986,11
+6203009,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,86,1,-0.0030714504901216966,15
+6203010,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-0.005771370414644039,17
+6203011,utility_only,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-0.008176512009320014,13
+6203000,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,1,0,,1
+6203002,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203004,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203006,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,1,0,,4
+6203007,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,3,0,,2
+6203010,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203000,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,13,1,-0.0038525685572186052,20
+6203002,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,20,1,-0.0032078358712699373,9
+6203003,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,9
+6203004,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,64,1,-0.007574997958399665,20
+6203007,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,62,1,-0.003826830850462315,17
+6203010,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,14,1,-0.0067675632933530405,15
+6203011,utility_only,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,183,1,0.002188353296644907,15
+6203001,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,0.0024426767931600146,13
+6203002,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,91,1,0.0017147014172089747,10
+6203003,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,0.003315844409035318,14
+6203004,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,184,1,0.0010135038008498576,14
+6203005,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,135,1,0.003952377558427589,6
+6203006,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,73,1,0.0020368643455070945,15
+6203007,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,187,1,0.001845474296523264,16
+6203008,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,191,1,0.004270373549619677,10
+6203009,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,74,1,0.0026018363242190645,10
+6203010,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,92,1,0.001717556592574443,21
+6203011,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,130,1,0.002182213038741443,13
+6203000,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203001,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,-1
+6203002,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,13,1,0.0014935566890454943,1
+6203004,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203007,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,1
+6203008,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203009,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,3
+6203010,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,1
+6203011,utility_only,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,12,1,0.0014925355288433195,0
+6203000,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,5,0,,4
+6203001,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,96,1,0.0026910278975047497,10
+6203002,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,97,1,0.0034591743246719098,8
+6203003,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,77,1,0.0019976881558316784,13
+6203004,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,8,1,0.0013567493862347568,7
+6203005,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,57,1,0.003230200900505631,13
+6203006,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,0.0006808966023217344,17
+6203007,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,5
+6203008,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,0.0033221068845943336,6
+6203010,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,94,1,0.0011356623031630875,14
+6203011,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,44,1,0.0049029262932673845,12
+6203000,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,-2
+6203003,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,0
+6203004,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,1,0,,-1
+6203007,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,0
+6203011,utility_only,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,6,0,,2
+6203000,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.002138223824368346,12
+6203001,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,0.0016790847361347616,7
+6203002,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,0.0026406846752229374,3
+6203003,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,29,1,0.003684053836439549,8
+6203004,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,64,1,0.0008375700637881511,9
+6203005,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,45,1,0.0019986767021362706,8
+6203006,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,0.00028601651812465434,15
+6203007,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.0007645549063988177,16
+6203008,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,63,1,0.0019214003453666972,12
+6203009,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.002608909778027746,0
+6203010,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,28,1,0.0022899991546778686,5
+6203011,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,48,1,-0.0004041824801888083,8
+6203000,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203001,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203002,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,0
+6203004,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203007,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203008,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203009,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203011,utility_only,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203000,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,0.0018761203467154708,8
+6203002,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,32,1,0.0021222472727291386,11
+6203003,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,30,1,-1.6625765313360574e-06,7
+6203004,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,19,1,0.0013851641457696129,3
+6203006,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203007,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203010,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,27,1,0.00022130109247830987,4
+6203011,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,-0.0010374353891733357,9
+6203000,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,5
+6203002,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,2,0,,-1
+6203004,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,5,0,,3
+6203011,utility_only,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,75,1,0.0013632769847067294,15
+6203001,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,129,1,0.004149018091264889,13
+6203002,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,144,1,0.002738217763602613,14
+6203003,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,107,1,0.0036912932547727983,19
+6203004,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,60,1,0.0024964134694474005,11
+6203005,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,0.003690954786108369,4
+6203006,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,187,1,0.003374049195274953,15
+6203007,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,65,1,0.0014763997326605605,10
+6203008,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,70,1,0.003972819845855291,19
+6203009,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,170,1,0.002366124368966105,16
+6203010,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,134,1,0.0027529893949429507,15
+6203011,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,91,1,0.0036902309363577857,13
+6203000,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,7,0,,1
+6203002,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203003,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,-1
+6203004,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,17,1,0.003417780304267204,-4
+6203005,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203006,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203007,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,9,1,0.0024743294047895326,10
+6203008,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,-3
+6203009,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,18,1,0.0031182527196822463,8
+6203010,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,4
+6203011,utility_only,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,-1
+6203000,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,0.00299071831196307,14
+6203001,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,56,1,0.002400304363277872,8
+6203002,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,45,1,0.0036075468414678014,7
+6203003,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,80,1,0.005031847675471823,16
+6203004,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,101,1,0.0025530770501005495,12
+6203005,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,96,1,0.0015518225875355007,15
+6203006,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,5
+6203007,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,103,1,0.002313406087323777,9
+6203008,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,111,1,0.005644725233610259,10
+6203009,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,4,0,,5
+6203010,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,56,1,0.002500970541511549,9
+6203011,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,95,1,0.002383866880803165,10
+6203000,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,1
+6203003,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,-2
+6203004,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,14,1,0.0014452614212689952,-3
+6203005,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,15,1,0.003730595564769068,4
+6203008,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,-2
+6203009,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,-2
+6203000,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,0.0018054510623115583,10
+6203001,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,45,1,0.0029813844809734036,7
+6203002,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,47,1,0.0022576560787492816,8
+6203003,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,31,1,0.003625138740002143,0
+6203004,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,55,1,0.0015987255382599042,7
+6203005,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,0.0016643171512977784,8
+6203006,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.0023597369250210054,7
+6203007,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,0.00014115645229928475,13
+6203008,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,59,1,0.0006437596707180582,11
+6203009,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,0.0008949235890649554,16
+6203010,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,43,1,0.002112903650975051,7
+6203011,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,31,1,0.00013710490299390088,1
+6203000,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203001,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203002,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,-1
+6203003,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203004,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203005,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203007,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,-1
+6203008,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,1
+6203009,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,1
+6203010,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203011,utility_only,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,3
+6203000,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203001,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,0.003571001800663165,3
+6203002,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,14,1,0.0021765524981725015,8
+6203003,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,0.0008185070863304666,2
+6203004,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,5,0,,0
+6203005,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,32,1,-0.002056430284772981,8
+6203006,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,-1
+6203008,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,20,1,0.003312585907861987,3
+6203011,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,0.0014005087414667994,3
+6203000,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,2,0,,-1
+6203002,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,0
+6203004,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,0
+6203000,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,28,1,-0.0003281637535230697,3
+6203001,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,94,1,-0.0002955948582488155,22
+6203002,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,0.0011441555079185761,26
+6203003,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,84,1,0.0033313020947476346,11
+6203004,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,29,1,0.0019477157631426767,3
+6203005,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,56,1,0.003925165490646476,9
+6203006,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,0.002219473647171011,14
+6203007,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,26,1,0.0019483147116929889,3
+6203008,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,24,1,0.004664325666224656,13
+6203009,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,0.0007040180326143286,20
+6203010,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,0.002865627578142238,18
+6203011,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,51,1,0.006011178813247087,12
+6203000,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203001,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,3
+6203002,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203004,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,3,0,,3
+6203005,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,-1
+6203006,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,-2
+6203008,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,3,0,,0
+6203000,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,62,1,0.0015044523106100272,10
+6203001,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203002,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,11,1,0.0051630101453810084,3
+6203004,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,61,1,0.0061843610118370584,14
+6203005,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,38,1,0.0018379650133553138,8
+6203006,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,62,1,0.003918090181691092,12
+6203008,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,72,1,0.0025144145803555062,10
+6203009,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,40,1,-0.0001852470600585132,12
+6203000,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,5,0,,0
+6203001,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203004,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,3,0,,-3
+6203005,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,6,0,,3
+6203008,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,3
+6203000,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,90,1,0.001042396991324468,1
+6203001,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,155,1,0.001234913317318842,7
+6203002,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,158,1,0.0012450622172470727,5
+6203003,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,155,1,0.0022914735987971113,2
+6203004,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,83,1,0.000853414846776035,8
+6203005,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,145,1,0.0012782778479403234,3
+6203006,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,157,1,0.001947641782009013,7
+6203007,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,89,1,0.0019225915603631183,6
+6203008,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,88,1,0.0010670648265405092,7
+6203009,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,160,1,0.0009120983083212852,10
+6203010,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,160,1,0.003724647679029358,4
+6203011,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,137,1,0.0037745614919308945,4
+6203000,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,1
+6203001,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,-1
+6203002,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,-1
+6203003,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,-1
+6203004,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,13,1,0.0024108097300559184,-2
+6203005,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203006,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,-2
+6203007,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,4
+6203008,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,0
+6203009,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,-1
+6203000,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,60,1,0.0018378284072178008,2
+6203001,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203002,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,3,0,,1
+6203004,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,63,1,0.0012553069614378298,0
+6203005,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,13,1,0.0017144443195922232,3
+6203006,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,59,1,0.0026404135511761684,2
+6203008,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,65,1,0.002065467032299262,-2
+6203009,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,0.0006298060739313716,2
+6203000,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,5,0,,-2
+6203001,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203004,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,1
+6203005,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,0
+6203006,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,6,0,,-4
+6203008,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,-1
+6203009,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,utility_only,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,-1
+6203000,v4_fallback,peripheral,448,1,0.0003363121965422877,28
+6203001,v4_fallback,peripheral,448,1,0.00017176497428539328,36
+6203002,v4_fallback,peripheral,448,1,0.0001654905006100993,34
+6203003,v4_fallback,peripheral,448,1,0.00015299202982688165,20
+6203004,v4_fallback,peripheral,448,1,2.0251254981173972e-05,27
+6203005,v4_fallback,peripheral,448,1,-0.00030952532519501474,34
+6203006,v4_fallback,peripheral,448,1,-0.0001562685095986005,37
+6203007,v4_fallback,peripheral,448,1,-6.805105101026498e-05,43
+6203008,v4_fallback,peripheral,448,1,-0.00014559335424313424,34
+6203009,v4_fallback,peripheral,448,1,0.00012626353244704625,24
+6203010,v4_fallback,peripheral,448,1,0.0002859542779711788,29
+6203011,v4_fallback,peripheral,448,1,5.885552970896768e-05,35
+6203000,v4_fallback,high_public_exposure,256,1,3.212712507827398e-05,31
+6203001,v4_fallback,high_public_exposure,256,1,-0.000611235574413449,27
+6203002,v4_fallback,high_public_exposure,256,1,0.00011259429997778625,23
+6203003,v4_fallback,high_public_exposure,256,1,-0.00011086046875830036,38
+6203004,v4_fallback,high_public_exposure,256,1,0.00022897926280629477,32
+6203005,v4_fallback,high_public_exposure,256,1,-0.0007619755952752438,39
+6203006,v4_fallback,high_public_exposure,256,1,-0.00011176084824393584,22
+6203007,v4_fallback,high_public_exposure,256,1,0.0002194949712315264,30
+6203008,v4_fallback,high_public_exposure,256,1,0.0002992447182288416,19
+6203009,v4_fallback,high_public_exposure,256,1,0.0001044714902951327,16
+6203010,v4_fallback,high_public_exposure,256,1,-0.00044107539547377783,31
+6203011,v4_fallback,high_public_exposure,256,1,-0.0009151075581907975,44
+6203000,v4_fallback,low_prefix_ingress,256,1,4.224334532287877e-05,0
+6203001,v4_fallback,low_prefix_ingress,256,1,5.000755844797311e-05,13
+6203002,v4_fallback,low_prefix_ingress,256,1,1.3430008535042504e-05,-2
+6203003,v4_fallback,low_prefix_ingress,256,1,2.4466524629174202e-05,2
+6203004,v4_fallback,low_prefix_ingress,256,1,2.696684445679942e-05,-2
+6203005,v4_fallback,low_prefix_ingress,256,1,-6.118528942478108e-05,2
+6203006,v4_fallback,low_prefix_ingress,256,1,-7.324361357774478e-05,1
+6203007,v4_fallback,low_prefix_ingress,256,1,3.2475584925251155e-05,14
+6203008,v4_fallback,low_prefix_ingress,256,1,0.0001440435691932862,3
+6203009,v4_fallback,low_prefix_ingress,256,1,4.578325181259224e-05,12
+6203010,v4_fallback,low_prefix_ingress,256,1,-0.00016291391185374593,9
+6203011,v4_fallback,low_prefix_ingress,256,1,-8.650305156798765e-05,7
+6203000,v4_fallback,peripheral & high_public_exposure,67,1,0.0005833241045987148,3
+6203001,v4_fallback,peripheral & high_public_exposure,64,1,-0.0005701138971276887,17
+6203002,v4_fallback,peripheral & high_public_exposure,66,1,-0.0002741361267650788,22
+6203003,v4_fallback,peripheral & high_public_exposure,70,1,-0.00033905165375580637,12
+6203004,v4_fallback,peripheral & high_public_exposure,69,1,0.0008197482248406551,1
+6203005,v4_fallback,peripheral & high_public_exposure,65,1,-0.0020231805181427642,15
+6203006,v4_fallback,peripheral & high_public_exposure,67,1,-3.373793687977411e-06,-1
+6203007,v4_fallback,peripheral & high_public_exposure,67,1,0.0007204122037465233,2
+6203008,v4_fallback,peripheral & high_public_exposure,66,1,0.0010305128450434076,-1
+6203009,v4_fallback,peripheral & high_public_exposure,67,1,-8.774076701634215e-06,1
+6203010,v4_fallback,peripheral & high_public_exposure,66,1,-0.00014282089604700232,12
+6203011,v4_fallback,peripheral & high_public_exposure,65,1,-0.0011208122179082736,19
+6203000,v4_fallback,peripheral & low_prefix_ingress,156,1,4.4670939898683315e-05,0
+6203001,v4_fallback,peripheral & low_prefix_ingress,158,1,-1.74183448062859e-05,4
+6203002,v4_fallback,peripheral & low_prefix_ingress,159,1,-7.28316416886976e-06,-1
+6203003,v4_fallback,peripheral & low_prefix_ingress,147,1,1.4896245034812239e-05,0
+6203004,v4_fallback,peripheral & low_prefix_ingress,140,1,5.5511831990928684e-05,0
+6203005,v4_fallback,peripheral & low_prefix_ingress,159,1,-1.7943124881458772e-05,0
+6203006,v4_fallback,peripheral & low_prefix_ingress,161,1,-4.125470154470179e-05,1
+6203007,v4_fallback,peripheral & low_prefix_ingress,151,1,4.239440588027499e-05,2
+6203008,v4_fallback,peripheral & low_prefix_ingress,160,1,-3.8121063548057776e-06,3
+6203009,v4_fallback,peripheral & low_prefix_ingress,151,1,-2.8043380052134026e-05,1
+6203010,v4_fallback,peripheral & low_prefix_ingress,158,1,-3.161849778177128e-05,5
+6203011,v4_fallback,peripheral & low_prefix_ingress,145,1,-5.789000221567697e-05,3
+6203000,v4_fallback,high_public_exposure & low_prefix_ingress,10,1,0.000832877217875172,-1
+6203001,v4_fallback,high_public_exposure & low_prefix_ingress,54,1,-3.9150570683155195e-05,4
+6203002,v4_fallback,high_public_exposure & low_prefix_ingress,68,1,-3.897555830523203e-06,-1
+6203003,v4_fallback,high_public_exposure & low_prefix_ingress,26,1,0.00040420098029803064,1
+6203004,v4_fallback,high_public_exposure & low_prefix_ingress,18,1,2.7366128226846698e-05,-3
+6203005,v4_fallback,high_public_exposure & low_prefix_ingress,1,0,,0
+6203006,v4_fallback,high_public_exposure & low_prefix_ingress,130,1,-5.107102982293554e-05,-1
+6203007,v4_fallback,high_public_exposure & low_prefix_ingress,27,1,0.0010269034218839401,5
+6203008,v4_fallback,high_public_exposure & low_prefix_ingress,8,1,0.0002126516137082035,-1
+6203009,v4_fallback,high_public_exposure & low_prefix_ingress,123,1,2.5060932522080748e-05,0
+6203010,v4_fallback,high_public_exposure & low_prefix_ingress,57,1,-0.00024823085314418236,5
+6203011,v4_fallback,high_public_exposure & low_prefix_ingress,16,1,-0.00029795151368849915,4
+6203000,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,5,0,,-1
+6203001,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,18,1,-0.00013734257291075913,4
+6203002,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,20,1,-7.891682458316396e-05,0
+6203003,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,8,1,4.9097197007963445e-05,-1
+6203004,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,1,0,,0
+6203005,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,1,0,,0
+6203006,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,64,1,-2.656130679401514e-06,-1
+6203007,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,6,0,,-4
+6203008,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,1,0,,-1
+6203009,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,62,1,-4.351648513312156e-06,0
+6203010,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,19,1,-8.75615310169664e-06,5
+6203011,v4_fallback,peripheral & high_public_exposure & low_prefix_ingress,4,0,,0
+6203000,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,6,0,,0
+6203001,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,4,0,,0
+6203002,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,6,0,,0
+6203003,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,13,1,5.876158996942493e-05,0
+6203004,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,17,1,-7.65158064783833e-05,0
+6203005,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,2,0,,0
+6203006,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,2,0,,0
+6203007,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,25,1,-1.3754975950686088e-05,0
+6203008,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,12,1,-4.796016781938306e-06,1
+6203009,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,3,0,,0
+6203010,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,4,0,,0
+6203011,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,14,1,9.201906713962593e-05,0
+6203000,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,90,1,-4.8769682405414017e-05,0
+6203001,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,52,1,3.4142227790745494e-05,0
+6203002,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,48,1,4.079490537600705e-05,0
+6203003,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,76,1,-9.76789712137105e-06,0
+6203004,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,79,1,-0.00012073301782389301,0
+6203005,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,94,1,-7.229305477207681e-05,0
+6203006,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,26,1,-0.00011455034514584739,0
+6203007,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,71,1,-9.43167593385752e-05,0
+6203008,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,84,1,0.00010465958612160264,0
+6203009,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,25,1,2.529359302005929e-05,0
+6203010,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,54,1,-0.00022410870909972402,0
+6203011,v4_fallback,zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,82,1,-5.670366416854478e-06,0
+6203000,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,4,0,,0
+6203002,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203004,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203006,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,0
+6203007,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,7,0,,0
+6203010,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203011,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203000,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,36,1,-9.339889995629846e-06,0
+6203002,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,42,1,-3.145725239273034e-05,0
+6203003,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,0
+6203004,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,65,1,-9.433515671330994e-05,0
+6203007,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,61,1,4.5183843322860184e-05,0
+6203010,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,36,1,-0.0003202173724838886,0
+6203011,v4_fallback,zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,17,1,-4.87814037741785e-05,0
+6203001,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,12,1,-4.394497473914072e-06,0
+6203002,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,6,0,,0
+6203003,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,24,1,1.668575671187611e-05,0
+6203004,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,38,1,-4.441818565403821e-06,0
+6203005,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,3,0,,0
+6203006,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,4,0,,0
+6203007,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,24,1,-2.9496014259944303e-06,0
+6203008,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,13,1,6.520813747989962e-05,0
+6203009,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,9,1,-1.0162095859467257e-05,0
+6203010,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,12,1,-5.813172641033759e-05,0
+6203011,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,26,1,6.143271751302137e-07,0
+6203000,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,143,1,3.584158087877043e-06,0
+6203001,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-5.75444596195851e-06,0
+6203002,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,1.668866910886635e-06,0
+6203003,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,133,1,-1.4658374622555925e-05,0
+6203004,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,122,1,-4.104017146255856e-05,0
+6203005,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,157,1,-2.5693164416917824e-05,0
+6203006,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,91,1,-6.661536879404295e-05,0
+6203007,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,136,1,7.120416999795154e-06,0
+6203008,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,147,1,2.1713902722542144e-05,0
+6203009,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,86,1,-4.2651254440695396e-05,0
+6203010,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-6.290568342959268e-05,1
+6203011,v4_fallback,zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,134,1,-5.331190116031337e-06,0
+6203000,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,1,0,,0
+6203002,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203004,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203006,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,1,0,,0
+6203007,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,3,0,,0
+6203010,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203000,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,13,1,1.8854476694141198e-05,0
+6203002,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,20,1,-7.891682458316396e-05,0
+6203003,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,0
+6203004,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,64,1,-2.656130679401514e-06,-1
+6203007,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,62,1,-4.351648513312156e-06,0
+6203010,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,14,1,-2.7461804418038582e-05,0
+6203011,v4_fallback,zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,183,1,-0.0003732153238460434,15
+6203001,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,-0.00044131887953646753,12
+6203002,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,91,1,-2.7052687550987997e-05,10
+6203003,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,-0.0005019975515372366,15
+6203004,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,184,1,-0.000836696618009336,14
+6203005,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,135,1,-0.0005147411772004062,6
+6203006,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,73,1,-0.0006717855388811422,16
+6203007,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,187,1,-0.00017477695283529826,17
+6203008,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,191,1,0.00038525186129456657,11
+6203009,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,74,1,5.8183363463637505e-05,12
+6203010,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,92,1,-0.0005485845770021314,22
+6203011,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,130,1,-0.00023743168053314,14
+6203000,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203001,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203002,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,13,1,-0.00038418976314869013,2
+6203004,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203007,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,1
+6203008,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,2
+6203009,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,3
+6203010,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,1
+6203011,v4_fallback,zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,12,1,0.0001832674993595962,-1
+6203000,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,5,0,,4
+6203001,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,96,1,-0.000502068779695275,11
+6203002,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,97,1,0.0005567281444278649,9
+6203003,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,77,1,-0.0007510843046683036,14
+6203004,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,8,1,-0.0006321566316556115,8
+6203005,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,57,1,-0.00010660789776961721,14
+6203006,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,-0.00010091041182169747,19
+6203007,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,6
+6203008,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,0.0003157935917550425,9
+6203010,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,94,1,-0.0005904263384102215,14
+6203011,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,44,1,-0.0007508695194196058,11
+6203000,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,-2
+6203003,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,1
+6203004,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,1,0,,0
+6203007,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,1
+6203011,v4_fallback,zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,6,0,,1
+6203000,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.0007794350266048244,12
+6203001,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,-0.00041788874026948974,9
+6203002,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,0.0002329020739402221,4
+6203003,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,29,1,0.0008756829848379777,9
+6203004,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,64,1,-0.00033793926247760453,11
+6203005,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,45,1,-0.0004311713760385416,9
+6203006,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,-0.0010072085942018916,14
+6203007,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,-0.0007932173677709375,18
+6203008,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,63,1,-0.000782403031336365,12
+6203009,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,0.00032266847591166936,2
+6203010,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,28,1,0.0006492893120744192,5
+6203011,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,48,1,-0.00034952580104241626,8
+6203000,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203001,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203002,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,0
+6203004,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203007,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203008,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203009,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203011,v4_fallback,zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203000,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203001,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,-0.0011317395068897174,9
+6203002,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,32,1,7.841866199131964e-05,12
+6203003,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,30,1,-0.0009956547079004174,7
+6203004,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203005,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,19,1,-0.0012481769881644844,3
+6203006,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203007,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203008,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,1
+6203010,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,27,1,-0.00028425298493028883,5
+6203011,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,-0.0012308601691775056,9
+6203000,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,5
+6203002,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,2,0,,-1
+6203004,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,5,0,,5
+6203011,v4_fallback,zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203000,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,75,1,-0.0010310231584729213,15
+6203001,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,129,1,0.0004716890313138933,14
+6203002,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,144,1,-7.938088864811732e-05,18
+6203003,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,107,1,-0.0013247594550469532,19
+6203004,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,60,1,-0.001509219862986022,13
+6203005,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,95,1,0.00024296550478997148,4
+6203006,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,187,1,-4.6887219031344074e-05,17
+6203007,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,65,1,-0.0008586241371206782,15
+6203008,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,70,1,-0.001187375581859662,20
+6203009,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,170,1,0.0001136055696009386,17
+6203010,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,134,1,-0.00013591498935783264,18
+6203011,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,91,1,-0.000805533537973746,14
+6203000,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,7,0,,6
+6203002,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203003,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203004,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,17,1,0.0010517729236003692,-3
+6203005,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,2
+6203006,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,2
+6203007,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,9,1,-0.0015166038569582874,13
+6203008,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,4,0,,-3
+6203009,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,18,1,0.0006408856388713247,10
+6203010,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,4
+6203011,v4_fallback,zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,1
+6203000,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,117,1,-0.00010550600690883982,15
+6203001,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,56,1,-0.0012288628699739235,13
+6203002,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,45,1,-0.0002521328358193742,8
+6203003,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,80,1,0.00033562443835433164,18
+6203004,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,101,1,-0.001128037813332261,12
+6203005,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,96,1,-0.0009060390753132808,15
+6203006,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,3,0,,5
+6203007,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,103,1,-0.00021713415964819127,9
+6203008,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,111,1,0.0001378882582301344,10
+6203009,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,4,0,,7
+6203010,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,56,1,-0.0005398831176837149,10
+6203011,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,95,1,-0.0009641393488148964,11
+6203000,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,1
+6203003,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,0
+6203004,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,14,1,-0.0006720485144537935,0
+6203005,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,15,1,0.0012016905458094307,6
+6203008,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,7,0,,0
+6203009,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,4,0,,0
+6203000,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,0.00046327987496130874,11
+6203001,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,45,1,0.0005898395366550346,9
+6203002,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,47,1,-5.343729342044412e-05,10
+6203003,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,31,1,-2.523557512890129e-05,0
+6203004,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,55,1,-0.0006465567199365196,8
+6203005,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,32,1,-0.0003012368233628049,8
+6203006,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,62,1,-0.0009793787667309317,14
+6203007,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,-0.000985019031469525,15
+6203008,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,59,1,-0.0013169754684982937,12
+6203009,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,61,1,-9.98036945405456e-05,16
+6203010,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,43,1,0.00038729961004180247,8
+6203011,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,31,1,-0.001306640218472932,4
+6203000,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203001,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203002,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,0
+6203003,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203004,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,4,0,,0
+6203005,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,1
+6203007,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,1
+6203008,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,3
+6203009,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,1
+6203010,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203011,v4_fallback,zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,3
+6203000,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,1
+6203001,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,-0.00019068860586113345,5
+6203002,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,14,1,-0.0011272059573483872,10
+6203003,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,0.0003692187539767744,4
+6203004,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,5,0,,1
+6203005,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,32,1,-0.003764633372994819,9
+6203006,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,2,0,,0
+6203008,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203009,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,20,1,-9.137563051631048e-05,3
+6203011,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,29,1,-0.0012027313425340136,6
+6203000,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203001,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,2,0,,-1
+6203002,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,0
+6203004,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203005,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203008,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,3,0,,0
+6203000,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,28,1,-0.0009327862118599928,5
+6203001,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,94,1,-0.000703754206508922,20
+6203002,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,8.102285152133959e-05,25
+6203003,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,84,1,-0.00016394422603238645,13
+6203004,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,29,1,0.00011407353267767206,3
+6203005,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,56,1,-0.00024264958983732932,7
+6203006,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,-0.00022036853650764243,14
+6203007,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,26,1,0.0005314066904482662,4
+6203008,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,24,1,-0.00026683679617556244,13
+6203009,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,-0.0005563021036980587,20
+6203010,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,96,1,-0.00022330444003726413,18
+6203011,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0,51,1,-0.001620100244465572,12
+6203000,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203001,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,2
+6203002,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203004,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,3,0,,3
+6203005,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203006,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203008,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1,3,0,,0
+6203000,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,62,1,-0.0002866989483421012,12
+6203001,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203002,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,11,1,0.001454930764185569,3
+6203004,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,61,1,0.002167754664563315,12
+6203005,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,38,1,0.00024707459000938847,7
+6203006,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,62,1,0.0004346387897160575,12
+6203008,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,72,1,8.457114638149577e-05,10
+6203009,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0,40,1,-0.001125566619649021,12
+6203000,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,5,0,,1
+6203001,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203004,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,3,0,,-3
+6203005,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203006,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,6,0,,4
+6203008,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203009,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1,2,0,,3
+6203000,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,90,1,0.0003017533397730032,2
+6203001,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,155,1,0.0006917602957690061,6
+6203002,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,158,1,0.0005730048685255174,4
+6203003,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,155,1,0.0004217327755760003,2
+6203004,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,83,1,0.00015439523173421676,9
+6203005,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,145,1,0.00018396969718192935,3
+6203006,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,157,1,0.00042641471533166886,8
+6203007,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,89,1,0.0005577231883286959,7
+6203008,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,88,1,3.491197429372761e-06,7
+6203009,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,160,1,0.00030443022539961007,6
+6203010,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,160,1,0.0006867149606599732,4
+6203011,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0,137,1,0.0012292376164158014,4
+6203000,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,1
+6203001,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,5,0,,0
+6203002,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,-1
+6203003,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,2,0,,0
+6203004,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,13,1,0.0009281343391611685,0
+6203005,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,1,0,,0
+6203006,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,3,0,,-1
+6203007,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,4
+6203008,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,1
+6203009,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1,6,0,,0
+6203000,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,60,1,0.000677050103573551,2
+6203001,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203002,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203003,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,3,0,,2
+6203004,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,63,1,0.0005223164157117655,0
+6203005,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,13,1,0.0010804846046095218,3
+6203006,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203007,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,59,1,0.0007150007096596855,2
+6203008,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,65,1,0.0010431275475570878,-1
+6203009,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0,16,1,-0.0006035584198698096,3
+6203000,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,5,0,,-1
+6203001,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203002,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203003,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203004,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,0
+6203005,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,0
+6203006,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203007,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,6,0,,-4
+6203008,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,-1
+6203009,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203010,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,0,0,,0
+6203011,v4_fallback,zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1,1,0,,0

@@ -1,0 +1,14 @@
+{
+  "registration_sha256": "caf08bace133a1245dc78c205ae17b36304dfb638526f73c313bd731818daa1f",
+  "results_sha256": "31f229fa2d20ed73852f44e4566dc8837ab0d07f3f94fa7d977e30ac5ee2a014",
+  "source_hashes": {
+    "configs/v6_durable_inclusion_async_return_v1.json": "caf08bace133a1245dc78c205ae17b36304dfb638526f73c313bd731818daa1f",
+    "scripts/run_v6_durable_inclusion_async_return_v1.py": "47816cb85a72f15aabe0632d0d7705dc7c5bf4e649dd914f7b8ab2c534c0871b",
+    "airproof/v6_experiment.py": "2a6c89e53652cb2dfd1d00eb835bfcd707dddc7be76e0750fa8b215d1c99538a",
+    "airproof/v6_audit_return.py": "dfc84021d117a2c305fdee61f2ff73a8f268caae01f085d5582755b8e1afeb56",
+    "airproof/v6_receipts.py": "cf94496fbb370d8b9c3bc2de5f6d8248b792eaa9c54ef9725543cf8f7fd560bd",
+    "airproof/audit.py": "33264127b9e086bf0f56c1c467ec46522a725c738a699e1ae7134c4bc9d63d08"
+  },
+  "confirmation_eligible": false,
+  "scope_limits": "No availability, BFT, finality, censorship-resistance, public-publication, or scientific claim."
+}

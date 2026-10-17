@@ -1,0 +1,122 @@
+{
+  "live": {
+    "clock": "live",
+    "fit_split_id": "uncertainty-v3.1-fit-6202000-6202001",
+    "calibration_split_id": "uncertainty-v3.1-calibration-6202002-6202003",
+    "evaluation_split_id": "uncertainty-v3.1-evaluation-6202004-6202007",
+    "fit_end": 1.0,
+    "calibration_end": 3.0,
+    "evaluation_start": 4.0,
+    "prediction_cuts": [
+      16.00782840862164,
+      33.08370613099921,
+      44.745723504266536
+    ],
+    "scale_cut": 5.082831267204774,
+    "event_threshold": 47.542056200977804,
+    "pooled_error_scale": 1.3520395138083092,
+    "stratum_error_scales": [
+      [
+        "prediction-high|scale-stable",
+        1.9486537343502528
+      ],
+      [
+        "prediction-high|scale-uncertain",
+        1.8599024844375576
+      ],
+      [
+        "prediction-low|scale-stable",
+        1.1888030602997368
+      ],
+      [
+        "prediction-low|scale-uncertain",
+        1.1087222391518052
+      ],
+      [
+        "prediction-mid|scale-stable",
+        1.708764261091627
+      ],
+      [
+        "prediction-mid|scale-uncertain",
+        1.519871431382274
+      ],
+      [
+        "prediction-tail|scale-stable",
+        1.7766983630391655
+      ],
+      [
+        "prediction-tail|scale-uncertain",
+        1.8321942605070705
+      ]
+    ],
+    "normalized_radii": [
+      2.1415719886633364,
+      2.5766947070256405
+    ],
+    "minimum_fit_support": 100,
+    "levels": [
+      0.9,
+      0.95
+    ]
+  },
+  "reconstructed": {
+    "clock": "reconstructed",
+    "fit_split_id": "uncertainty-v3.1-fit-6202000-6202001",
+    "calibration_split_id": "uncertainty-v3.1-calibration-6202002-6202003",
+    "evaluation_split_id": "uncertainty-v3.1-evaluation-6202004-6202007",
+    "fit_end": 1.0,
+    "calibration_end": 3.0,
+    "evaluation_start": 4.0,
+    "prediction_cuts": [
+      16.00782840862164,
+      33.08370613099921,
+      44.745723504266536
+    ],
+    "scale_cut": 5.082831267204774,
+    "event_threshold": 47.542056200977804,
+    "pooled_error_scale": 1.3520395138083092,
+    "stratum_error_scales": [
+      [
+        "prediction-high|scale-stable",
+        1.9486537343502528
+      ],
+      [
+        "prediction-high|scale-uncertain",
+        1.8599024844375576
+      ],
+      [
+        "prediction-low|scale-stable",
+        1.1888030602997368
+      ],
+      [
+        "prediction-low|scale-uncertain",
+        1.1087222391518052
+      ],
+      [
+        "prediction-mid|scale-stable",
+        1.708764261091627
+      ],
+      [
+        "prediction-mid|scale-uncertain",
+        1.519871431382274
+      ],
+      [
+        "prediction-tail|scale-stable",
+        1.7766983630391655
+      ],
+      [
+        "prediction-tail|scale-uncertain",
+        1.8321942605070705
+      ]
+    ],
+    "normalized_radii": [
+      2.1415719886633364,
+      2.5766947070256405
+    ],
+    "minimum_fit_support": 100,
+    "levels": [
+      0.9,
+      0.95
+    ]
+  }
+}

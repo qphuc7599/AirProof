@@ -1,0 +1,2065 @@
+{
+  "role": "validation-selection-only-not-primary-inference",
+  "source_hash": "0e40bacaff46a3b8d7bc20abf5ef85c1a0868bad453f61fa7d29f42251c69446",
+  "rows": 168,
+  "seeds": [
+    7400,
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407
+  ],
+  "candidates": {
+    "q5_lambda0": {
+      "target": 5,
+      "strength": 0.0,
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "coverage_gap": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": false,
+      "balanced_target_score": -0.0,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.0,
+      "mean_opportunity_shortfall_group_epochs": 4.375,
+      "means": {
+        "rmse": 2.1948426663251612,
+        "live_rmse": 2.2498640758847444,
+        "worst_group_rmse": 2.9942279176426956,
+        "live_worst_group_rmse": 3.0430814710121386,
+        "coverage_gap": 0.4269661275625149
+      }
+    },
+    "q5_lambda0.25": {
+      "target": 5,
+      "strength": 0.25,
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.0008046216178343402,
+          "lower95": -0.0013049089150346106,
+          "upper95": -0.0003592700527444381,
+          "worlds": 8,
+          "sd": 0.0007437423800609524
+        },
+        "live_rmse": {
+          "mean": -0.0007532413584373104,
+          "lower95": -0.0012339580067112425,
+          "upper95": -0.0003307859418428954,
+          "worlds": 8,
+          "sd": 0.0007144322046782962
+        },
+        "worst_group_rmse": {
+          "mean": -0.001716143293675741,
+          "lower95": -0.0026023550793342278,
+          "upper95": -0.0008977606142905954,
+          "worlds": 8,
+          "sd": 0.0013318195845012976
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.0016437808482336065,
+          "lower95": -0.0025196708800896655,
+          "upper95": -0.0008537214674204346,
+          "worlds": 8,
+          "sd": 0.0013045252311034959
+        },
+        "coverage_gap": {
+          "mean": -0.017878037621835104,
+          "lower95": -0.02392239024539944,
+          "upper95": -0.011790241636149841,
+          "worlds": 8,
+          "sd": 0.009472387785748151
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.01716143293675741,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 1.0,
+      "mean_opportunity_shortfall_group_epochs": 4.375,
+      "means": {
+        "rmse": 2.193165924441371,
+        "live_rmse": 2.248255809724186,
+        "worst_group_rmse": 2.989271960283853,
+        "live_worst_group_rmse": 3.0382671667348378,
+        "coverage_gap": 0.4193381900246807
+      }
+    },
+    "q5_lambda0.5": {
+      "target": 5,
+      "strength": 0.5,
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.0026066859001452006,
+          "lower95": -0.0038148865780222386,
+          "upper95": -0.0015608715631280055,
+          "worlds": 8,
+          "sd": 0.0017759138244782435
+        },
+        "live_rmse": {
+          "mean": -0.0024484787048129437,
+          "lower95": -0.0036313307557728617,
+          "upper95": -0.0014142811867089195,
+          "worlds": 8,
+          "sd": 0.0017355589120977514
+        },
+        "worst_group_rmse": {
+          "mean": -0.005616019524121664,
+          "lower95": -0.00762636512302867,
+          "upper95": -0.003741952866516517,
+          "worlds": 8,
+          "sd": 0.003041162229034976
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.00538071723072049,
+          "lower95": -0.007379004092885296,
+          "upper95": -0.0035272838248521935,
+          "worlds": 8,
+          "sd": 0.0030247256454665797
+        },
+        "coverage_gap": {
+          "mean": -0.05245351613100299,
+          "lower95": -0.0648067645659749,
+          "upper95": -0.039383812996755294,
+          "worlds": 8,
+          "sd": 0.019812696132264277
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.05616019524121664,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.9989983974358975,
+      "mean_opportunity_shortfall_group_epochs": 4.375,
+      "means": {
+        "rmse": 2.1893843277789857,
+        "live_rmse": 2.2446051894690404,
+        "worst_group_rmse": 2.977909122230671,
+        "live_worst_group_rmse": 3.0271945506144027,
+        "coverage_gap": 0.4043175056516032
+      }
+    },
+    "q5_lambda0.75": {
+      "target": 5,
+      "strength": 0.75,
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.005936209770276759,
+          "lower95": -0.008274107959637182,
+          "upper95": -0.0038723493976151467,
+          "worlds": 8,
+          "sd": 0.0034207040988649294
+        },
+        "live_rmse": {
+          "mean": -0.005529750404221437,
+          "lower95": -0.007816637692367318,
+          "upper95": -0.0035680002717409457,
+          "worlds": 8,
+          "sd": 0.0032884959163134784
+        },
+        "worst_group_rmse": {
+          "mean": -0.013035141468883338,
+          "lower95": -0.016933035409127262,
+          "upper95": -0.009316732973315851,
+          "worlds": 8,
+          "sd": 0.0058756124085131145
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.012362033279866971,
+          "lower95": -0.016192195509416713,
+          "upper95": -0.008819251604165948,
+          "worlds": 8,
+          "sd": 0.005699990140798357
+        },
+        "coverage_gap": {
+          "mean": -0.10579256142738132,
+          "lower95": -0.12760026059289378,
+          "upper95": -0.08336198254492433,
+          "worlds": 8,
+          "sd": 0.03457070524147064
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.13035141468883338,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.9977964743589743,
+      "mean_opportunity_shortfall_group_epochs": 4.375,
+      "means": {
+        "rmse": 2.1823227779427836,
+        "live_rmse": 2.237898186488377,
+        "worst_group_rmse": 2.956052438949601,
+        "live_worst_group_rmse": 3.0062839923227305,
+        "coverage_gap": 0.38133471747044556
+      }
+    },
+    "q5_lambda1": {
+      "target": 5,
+      "strength": 1.0,
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.01091279783864824,
+          "lower95": -0.014393003476549576,
+          "upper95": -0.007781931626584263,
+          "worlds": 8,
+          "sd": 0.005131462163807756
+        },
+        "live_rmse": {
+          "mean": -0.010043203947906733,
+          "lower95": -0.01330994157757639,
+          "upper95": -0.0070676150834186715,
+          "worlds": 8,
+          "sd": 0.004860403976075911
+        },
+        "worst_group_rmse": {
+          "mean": -0.024444152485583202,
+          "lower95": -0.029994825690682937,
+          "upper95": -0.019058773736875353,
+          "worlds": 8,
+          "sd": 0.008528620023541263
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.02295247024115833,
+          "lower95": -0.02836207711791453,
+          "upper95": -0.0178060900298048,
+          "worlds": 8,
+          "sd": 0.008201588462757913
+        },
+        "coverage_gap": {
+          "mean": -0.15450527269181058,
+          "lower95": -0.1773664776174729,
+          "upper95": -0.1325360866971489,
+          "worlds": 8,
+          "sd": 0.034919726604678035
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.244441524855832,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.992988782051282,
+      "mean_opportunity_shortfall_group_epochs": 4.375,
+      "means": {
+        "rmse": 2.171791047249125,
+        "live_rmse": 2.2280928025714593,
+        "worst_group_rmse": 2.922563630157157,
+        "live_worst_group_rmse": 2.9746638438732815,
+        "coverage_gap": 0.36025288628241403
+      }
+    },
+    "q10_lambda0": {
+      "target": 10,
+      "strength": 0.0,
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "coverage_gap": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": false,
+      "balanced_target_score": -0.0,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.0,
+      "mean_opportunity_shortfall_group_epochs": 133.375,
+      "means": {
+        "rmse": 2.1948426663251612,
+        "live_rmse": 2.2498640758847444,
+        "worst_group_rmse": 2.9942279176426956,
+        "live_worst_group_rmse": 3.0430814710121386,
+        "coverage_gap": 0.4269661275625149
+      }
+    },
+    "q10_lambda0.25": {
+      "target": 10,
+      "strength": 0.25,
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.0026066859001452006,
+          "lower95": -0.0038148865780222386,
+          "upper95": -0.0015608715631280055,
+          "worlds": 8,
+          "sd": 0.0017759138244782435
+        },
+        "live_rmse": {
+          "mean": -0.0024484787048129437,
+          "lower95": -0.0036313307557728617,
+          "upper95": -0.0014142811867089195,
+          "worlds": 8,
+          "sd": 0.0017355589120977514
+        },
+        "worst_group_rmse": {
+          "mean": -0.005616019524121664,
+          "lower95": -0.00762636512302867,
+          "upper95": -0.003741952866516517,
+          "worlds": 8,
+          "sd": 0.003041162229034976
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.00538071723072049,
+          "lower95": -0.007379004092885296,
+          "upper95": -0.0035272838248521935,
+          "worlds": 8,
+          "sd": 0.0030247256454665797
+        },
+        "coverage_gap": {
+          "mean": -0.05245351613100299,
+          "lower95": -0.0648067645659749,
+          "upper95": -0.039383812996755294,
+          "worlds": 8,
+          "sd": 0.019812696132264277
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.05616019524121664,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.9989983974358975,
+      "mean_opportunity_shortfall_group_epochs": 133.375,
+      "means": {
+        "rmse": 2.1893843277789857,
+        "live_rmse": 2.2446051894690404,
+        "worst_group_rmse": 2.977909122230671,
+        "live_worst_group_rmse": 3.0271945506144027,
+        "coverage_gap": 0.4043175056516032
+      }
+    },
+    "q10_lambda0.5": {
+      "target": 10,
+      "strength": 0.5,
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.01091279783864824,
+          "lower95": -0.014393003476549576,
+          "upper95": -0.007781931626584263,
+          "worlds": 8,
+          "sd": 0.005131462163807756
+        },
+        "live_rmse": {
+          "mean": -0.010043203947906733,
+          "lower95": -0.01330994157757639,
+          "upper95": -0.0070676150834186715,
+          "worlds": 8,
+          "sd": 0.004860403976075911
+        },
+        "worst_group_rmse": {
+          "mean": -0.024444152485583202,
+          "lower95": -0.029994825690682937,
+          "upper95": -0.019058773736875353,
+          "worlds": 8,
+          "sd": 0.008528620023541263
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.02295247024115833,
+          "lower95": -0.02836207711791453,
+          "upper95": -0.0178060900298048,
+          "worlds": 8,
+          "sd": 0.008201588462757913
+        },
+        "coverage_gap": {
+          "mean": -0.15450527269181058,
+          "lower95": -0.1773664776174729,
+          "upper95": -0.1325360866971489,
+          "worlds": 8,
+          "sd": 0.034919726604678035
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.244441524855832,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.992988782051282,
+      "mean_opportunity_shortfall_group_epochs": 133.375,
+      "means": {
+        "rmse": 2.171791047249125,
+        "live_rmse": 2.2280928025714593,
+        "worst_group_rmse": 2.922563630157157,
+        "live_worst_group_rmse": 2.9746638438732815,
+        "coverage_gap": 0.36025288628241403
+      }
+    },
+    "q10_lambda0.75": {
+      "target": 10,
+      "strength": 0.75,
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.02912184406619455,
+          "lower95": -0.03491257910502689,
+          "upper95": -0.023472858588970157,
+          "worlds": 8,
+          "sd": 0.008885897986602748
+        },
+        "live_rmse": {
+          "mean": -0.02599418411389737,
+          "lower95": -0.03128159594086633,
+          "upper95": -0.02086682664458025,
+          "worlds": 8,
+          "sd": 0.008110763298719412
+        },
+        "worst_group_rmse": {
+          "mean": -0.0679194666840636,
+          "lower95": -0.07653121005247993,
+          "upper95": -0.05909298800051306,
+          "worlds": 8,
+          "sd": 0.013724413224472879
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.06214043150181471,
+          "lower95": -0.07023437090482972,
+          "upper95": -0.0539556103967783,
+          "worlds": 8,
+          "sd": 0.012780173102861395
+        },
+        "coverage_gap": {
+          "mean": -0.2306052772601125,
+          "lower95": -0.26381957874149814,
+          "upper95": -0.19292444833548975,
+          "worlds": 8,
+          "sd": 0.055576744288077455
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.6791946668406359,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.9142628205128205,
+      "mean_opportunity_shortfall_group_epochs": 133.375,
+      "means": {
+        "rmse": 2.1329373563771434,
+        "live_rmse": 2.1932123864706377,
+        "worst_group_rmse": 2.7941815722065084,
+        "live_worst_group_rmse": 2.8571514377643714,
+        "coverage_gap": 0.3271194699534775
+      }
+    },
+    "q10_lambda1": {
+      "target": 10,
+      "strength": 1.0,
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.03913058400979558,
+          "lower95": -0.04657804375913361,
+          "upper95": -0.031913987128463245,
+          "worlds": 8,
+          "sd": 0.011344972575810231
+        },
+        "live_rmse": {
+          "mean": -0.034104602431894976,
+          "lower95": -0.04075335046166116,
+          "upper95": -0.027731063696540718,
+          "worlds": 8,
+          "sd": 0.010102568815149048
+        },
+        "worst_group_rmse": {
+          "mean": -0.09424779408045099,
+          "lower95": -0.10490370273396005,
+          "upper95": -0.08361717192883246,
+          "worlds": 8,
+          "sd": 0.01686800419824101
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.08458271262598013,
+          "lower95": -0.09436895487032902,
+          "upper95": -0.07474580553481663,
+          "worlds": 8,
+          "sd": 0.015408805706603081
+        },
+        "coverage_gap": {
+          "mean": -0.2551726079721742,
+          "lower95": -0.29648369889394516,
+          "upper95": -0.2081478331982038,
+          "worlds": 8,
+          "sd": 0.06934881462522592
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.9424779408045099,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.7862580128205128,
+      "mean_opportunity_shortfall_group_epochs": 133.375,
+      "means": {
+        "rmse": 2.1115324941014904,
+        "live_rmse": 2.175431055507784,
+        "worst_group_rmse": 2.7160815390935173,
+        "live_worst_group_rmse": 2.789535516183464,
+        "coverage_gap": 0.3163003093909922
+      }
+    },
+    "q20_lambda0": {
+      "target": 20,
+      "strength": 0.0,
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "coverage_gap": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": false,
+      "balanced_target_score": -0.0,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.0,
+      "mean_opportunity_shortfall_group_epochs": 587.0,
+      "means": {
+        "rmse": 2.1948426663251612,
+        "live_rmse": 2.2498640758847444,
+        "worst_group_rmse": 2.9942279176426956,
+        "live_worst_group_rmse": 3.0430814710121386,
+        "coverage_gap": 0.4269661275625149
+      }
+    },
+    "q20_lambda0.25": {
+      "target": 20,
+      "strength": 0.25,
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.01091279783864824,
+          "lower95": -0.014393003476549576,
+          "upper95": -0.007781931626584263,
+          "worlds": 8,
+          "sd": 0.005131462163807756
+        },
+        "live_rmse": {
+          "mean": -0.010043203947906733,
+          "lower95": -0.01330994157757639,
+          "upper95": -0.0070676150834186715,
+          "worlds": 8,
+          "sd": 0.004860403976075911
+        },
+        "worst_group_rmse": {
+          "mean": -0.024444152485583202,
+          "lower95": -0.029994825690682937,
+          "upper95": -0.019058773736875353,
+          "worlds": 8,
+          "sd": 0.008528620023541263
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.02295247024115833,
+          "lower95": -0.02836207711791453,
+          "upper95": -0.0178060900298048,
+          "worlds": 8,
+          "sd": 0.008201588462757913
+        },
+        "coverage_gap": {
+          "mean": -0.15450527269181058,
+          "lower95": -0.1773664776174729,
+          "upper95": -0.1325360866971489,
+          "worlds": 8,
+          "sd": 0.034919726604678035
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.244441524855832,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.992988782051282,
+      "mean_opportunity_shortfall_group_epochs": 587.0,
+      "means": {
+        "rmse": 2.171791047249125,
+        "live_rmse": 2.2280928025714593,
+        "worst_group_rmse": 2.922563630157157,
+        "live_worst_group_rmse": 2.9746638438732815,
+        "coverage_gap": 0.36025288628241403
+      }
+    },
+    "q20_lambda0.5": {
+      "target": 20,
+      "strength": 0.5,
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.03913058400979558,
+          "lower95": -0.04657804375913361,
+          "upper95": -0.031913987128463245,
+          "worlds": 8,
+          "sd": 0.011344972575810231
+        },
+        "live_rmse": {
+          "mean": -0.034104602431894976,
+          "lower95": -0.04075335046166116,
+          "upper95": -0.027731063696540718,
+          "worlds": 8,
+          "sd": 0.010102568815149048
+        },
+        "worst_group_rmse": {
+          "mean": -0.09424779408045099,
+          "lower95": -0.10490370273396005,
+          "upper95": -0.08361717192883246,
+          "worlds": 8,
+          "sd": 0.01686800419824101
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.08458271262598013,
+          "lower95": -0.09436895487032902,
+          "upper95": -0.07474580553481663,
+          "worlds": 8,
+          "sd": 0.015408805706603081
+        },
+        "coverage_gap": {
+          "mean": -0.2551726079721742,
+          "lower95": -0.29648369889394516,
+          "upper95": -0.2081478331982038,
+          "worlds": 8,
+          "sd": 0.06934881462522592
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.9424779408045099,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.7862580128205128,
+      "mean_opportunity_shortfall_group_epochs": 587.0,
+      "means": {
+        "rmse": 2.1115324941014904,
+        "live_rmse": 2.175431055507784,
+        "worst_group_rmse": 2.7160815390935173,
+        "live_worst_group_rmse": 2.789535516183464,
+        "coverage_gap": 0.3163003093909922
+      }
+    },
+    "q20_lambda0.75": {
+      "target": 20,
+      "strength": 0.75,
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.049925709607156685,
+          "lower95": -0.058722881881063095,
+          "upper95": -0.04138217466416043,
+          "worlds": 8,
+          "sd": 0.013510653665396022
+        },
+        "live_rmse": {
+          "mean": -0.041609601669680585,
+          "lower95": -0.04919927905012423,
+          "upper95": -0.034162430275070994,
+          "worlds": 8,
+          "sd": 0.011669851204218488
+        },
+        "worst_group_rmse": {
+          "mean": -0.12636092302582758,
+          "lower95": -0.13758320928950057,
+          "upper95": -0.11494770065372575,
+          "worlds": 8,
+          "sd": 0.017954075632187434
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.10958265426542442,
+          "lower95": -0.11968778287407866,
+          "upper95": -0.09931724459884024,
+          "worlds": 8,
+          "sd": 0.0160293241884233
+        },
+        "coverage_gap": {
+          "mean": -0.278704985783621,
+          "lower95": -0.32327174001756254,
+          "upper95": -0.22517439130406053,
+          "worlds": 8,
+          "sd": 0.07900587413464097
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 1.2636092302582758,
+      "both_fairness_targets_pass": true,
+      "unconditional_global_floor_feasibility": 0.2860576923076923,
+      "mean_opportunity_shortfall_group_epochs": 587.0,
+      "means": {
+        "rmse": 2.088457236817823,
+        "live_rmse": 2.1590156138754777,
+        "worst_group_rmse": 2.6204721866109746,
+        "live_worst_group_rmse": 2.713889382868537,
+        "coverage_gap": 0.30604887337947695
+      }
+    },
+    "q20_lambda1": {
+      "target": 20,
+      "strength": 1.0,
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.05206106209464968,
+          "lower95": -0.061487321969467296,
+          "upper95": -0.043091845317126294,
+          "worlds": 8,
+          "sd": 0.014221496157336732
+        },
+        "live_rmse": {
+          "mean": -0.042748433394553094,
+          "lower95": -0.0506678385964758,
+          "upper95": -0.03504632251052357,
+          "worlds": 8,
+          "sd": 0.012145069728617536
+        },
+        "worst_group_rmse": {
+          "mean": -0.1332933004799078,
+          "lower95": -0.14525780404000313,
+          "upper95": -0.12136649172154212,
+          "worlds": 8,
+          "sd": 0.018649493935092305
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.11432066037969218,
+          "lower95": -0.12486023756184986,
+          "upper95": -0.10383947696926332,
+          "worlds": 8,
+          "sd": 0.016448891076410243
+        },
+        "coverage_gap": {
+          "mean": -0.2823926122732403,
+          "lower95": -0.3288700529207995,
+          "upper95": -0.22723648047845557,
+          "worlds": 8,
+          "sd": 0.0819116076120442
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 1.332933004799078,
+      "both_fairness_targets_pass": true,
+      "unconditional_global_floor_feasibility": 0.05929487179487179,
+      "mean_opportunity_shortfall_group_epochs": 587.0,
+      "means": {
+        "rmse": 2.0839697347442834,
+        "live_rmse": 2.156602364684839,
+        "worst_group_rmse": 2.5998624469540723,
+        "live_worst_group_rmse": 2.699568101408061,
+        "coverage_gap": 0.30444768974450487
+      }
+    },
+    "q30_lambda0": {
+      "target": 30,
+      "strength": 0.0,
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "live_worst_group_rmse": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        },
+        "coverage_gap": {
+          "mean": 0.0,
+          "lower95": 0.0,
+          "upper95": 0.0,
+          "worlds": 8,
+          "sd": 0.0
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": false,
+      "balanced_target_score": -0.0,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.0,
+      "mean_opportunity_shortfall_group_epochs": 620.25,
+      "means": {
+        "rmse": 2.1948426663251612,
+        "live_rmse": 2.2498640758847444,
+        "worst_group_rmse": 2.9942279176426956,
+        "live_worst_group_rmse": 3.0430814710121386,
+        "coverage_gap": 0.4269661275625149
+      }
+    },
+    "q30_lambda0.25": {
+      "target": 30,
+      "strength": 0.25,
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.02912184406619455,
+          "lower95": -0.03491257910502689,
+          "upper95": -0.023472858588970157,
+          "worlds": 8,
+          "sd": 0.008885897986602748
+        },
+        "live_rmse": {
+          "mean": -0.02599418411389737,
+          "lower95": -0.03128159594086633,
+          "upper95": -0.02086682664458025,
+          "worlds": 8,
+          "sd": 0.008110763298719412
+        },
+        "worst_group_rmse": {
+          "mean": -0.0679194666840636,
+          "lower95": -0.07653121005247993,
+          "upper95": -0.05909298800051306,
+          "worlds": 8,
+          "sd": 0.013724413224472879
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.06214043150181471,
+          "lower95": -0.07023437090482972,
+          "upper95": -0.0539556103967783,
+          "worlds": 8,
+          "sd": 0.012780173102861395
+        },
+        "coverage_gap": {
+          "mean": -0.2306052772601125,
+          "lower95": -0.26381957874149814,
+          "upper95": -0.19292444833548975,
+          "worlds": 8,
+          "sd": 0.055576744288077455
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 0.6791946668406359,
+      "both_fairness_targets_pass": false,
+      "unconditional_global_floor_feasibility": 0.9142628205128205,
+      "mean_opportunity_shortfall_group_epochs": 620.25,
+      "means": {
+        "rmse": 2.1329373563771434,
+        "live_rmse": 2.1932123864706377,
+        "worst_group_rmse": 2.7941815722065084,
+        "live_worst_group_rmse": 2.8571514377643714,
+        "coverage_gap": 0.3271194699534775
+      }
+    },
+    "q30_lambda0.5": {
+      "target": 30,
+      "strength": 0.5,
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.049925709607156685,
+          "lower95": -0.058722881881063095,
+          "upper95": -0.04138217466416043,
+          "worlds": 8,
+          "sd": 0.013510653665396022
+        },
+        "live_rmse": {
+          "mean": -0.041609601669680585,
+          "lower95": -0.04919927905012423,
+          "upper95": -0.034162430275070994,
+          "worlds": 8,
+          "sd": 0.011669851204218488
+        },
+        "worst_group_rmse": {
+          "mean": -0.12636092302582758,
+          "lower95": -0.13758320928950057,
+          "upper95": -0.11494770065372575,
+          "worlds": 8,
+          "sd": 0.017954075632187434
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.10958265426542442,
+          "lower95": -0.11968778287407866,
+          "upper95": -0.09931724459884024,
+          "worlds": 8,
+          "sd": 0.0160293241884233
+        },
+        "coverage_gap": {
+          "mean": -0.278704985783621,
+          "lower95": -0.32327174001756254,
+          "upper95": -0.22517439130406053,
+          "worlds": 8,
+          "sd": 0.07900587413464097
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 1.2636092302582758,
+      "both_fairness_targets_pass": true,
+      "unconditional_global_floor_feasibility": 0.2860576923076923,
+      "mean_opportunity_shortfall_group_epochs": 620.25,
+      "means": {
+        "rmse": 2.088457236817823,
+        "live_rmse": 2.1590156138754777,
+        "worst_group_rmse": 2.6204721866109746,
+        "live_worst_group_rmse": 2.713889382868537,
+        "coverage_gap": 0.30604887337947695
+      }
+    },
+    "q30_lambda0.75": {
+      "target": 30,
+      "strength": 0.75,
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.052308143783474315,
+          "lower95": -0.06177411512728465,
+          "upper95": -0.04325210863796467,
+          "worlds": 8,
+          "sd": 0.014320961186148205
+        },
+        "live_rmse": {
+          "mean": -0.04282416279056832,
+          "lower95": -0.050752765708648236,
+          "upper95": -0.035057572706357155,
+          "worlds": 8,
+          "sd": 0.012198449387311633
+        },
+        "worst_group_rmse": {
+          "mean": -0.1342646661489456,
+          "lower95": -0.14626673045835825,
+          "upper95": -0.1222571584683941,
+          "worlds": 8,
+          "sd": 0.01876632890318964
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.11491733907565718,
+          "lower95": -0.1254770809997054,
+          "upper95": -0.10436681534616585,
+          "worlds": 8,
+          "sd": 0.01651083434232252
+        },
+        "coverage_gap": {
+          "mean": -0.28381912076836424,
+          "lower95": -0.33091885717733555,
+          "upper95": -0.22843159803241428,
+          "worlds": 8,
+          "sd": 0.08264165420433336
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 1.342646661489456,
+      "both_fairness_targets_pass": true,
+      "unconditional_global_floor_feasibility": 0.02463942307692308,
+      "mean_opportunity_shortfall_group_epochs": 620.25,
+      "means": {
+        "rmse": 2.083458787951705,
+        "live_rmse": 2.1564506298641613,
+        "worst_group_rmse": 2.596996759647035,
+        "live_worst_group_rmse": 2.6977816863740385,
+        "coverage_gap": 0.303839777536581
+      }
+    },
+    "q30_lambda1": {
+      "target": 30,
+      "strength": 1.0,
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b",
+      "paired_relative_changes": {
+        "rmse": {
+          "mean": -0.05254803745330029,
+          "lower95": -0.06201595605611063,
+          "upper95": -0.04344974401147605,
+          "worlds": 8,
+          "sd": 0.014362523938190278
+        },
+        "live_rmse": {
+          "mean": -0.04291049428970344,
+          "lower95": -0.05085906928512042,
+          "upper95": -0.035157269811303786,
+          "worlds": 8,
+          "sd": 0.012209079601077597
+        },
+        "worst_group_rmse": {
+          "mean": -0.13500006041265375,
+          "lower95": -0.14705653153414144,
+          "upper95": -0.12294716003038084,
+          "worlds": 8,
+          "sd": 0.018841240779835153
+        },
+        "live_worst_group_rmse": {
+          "mean": -0.11532491368053072,
+          "lower95": -0.12591141747516216,
+          "upper95": -0.10481555199797135,
+          "worlds": 8,
+          "sd": 0.01653174925608886
+        },
+        "coverage_gap": {
+          "mean": -0.2860150850414056,
+          "lower95": -0.3336060504401758,
+          "upper95": -0.2303856958077375,
+          "worlds": 8,
+          "sd": 0.08291124398175471
+        }
+      },
+      "violations": {
+        "feasible_floor": 0,
+        "privacy_cap": 0,
+        "max_solver_failure_rate": 0.0
+      },
+      "eligible": true,
+      "balanced_target_score": 1.3500006041265373,
+      "both_fairness_targets_pass": true,
+      "unconditional_global_floor_feasibility": 0.006009615384615384,
+      "mean_opportunity_shortfall_group_epochs": 620.25,
+      "means": {
+        "rmse": 2.0829166961890797,
+        "live_rmse": 2.1562381518987555,
+        "worst_group_rmse": 2.594767171230713,
+        "live_worst_group_rmse": 2.696510346057858,
+        "coverage_gap": 0.3028974163416784
+      }
+    }
+  },
+  "selected": "q30_lambda1",
+  "selection_target_pass": true,
+  "selected_intersectional_outcome_audit": {
+    "peripheral": {
+      "cells_by_world": [
+        448,
+        448,
+        448,
+        448,
+        448,
+        448,
+        448,
+        448
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.10068496566908886,
+        "lower95": -0.10767241853280489,
+        "upper95": -0.09468438145504454,
+        "worlds": 8,
+        "sd": 0.010077824097435881
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.08509189567145908,
+        "lower95": -0.09102807072921357,
+        "upper95": -0.08000666538410971,
+        "worlds": 8,
+        "sd": 0.008601851501336055
+      }
+    },
+    "high_public_exposure": {
+      "cells_by_world": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.005301704036748997,
+        "lower95": -0.05236453812722609,
+        "upper95": 0.02867382157072133,
+        "worlds": 8,
+        "sd": 0.06009516849069109
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.002384370855535072,
+        "lower95": -0.04347217193092157,
+        "upper95": 0.027498187931369766,
+        "worlds": 8,
+        "sd": 0.052819135464981584
+      }
+    },
+    "low_prefix_ingress": {
+      "cells_by_world": [
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256,
+        256
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.13425155759899532,
+        "lower95": -0.14629916262073903,
+        "upper95": -0.12231019287774934,
+        "worlds": 8,
+        "sd": 0.018729551177594343
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.11466853695507823,
+        "lower95": -0.12524641867711328,
+        "upper95": -0.10426967928938094,
+        "worlds": 8,
+        "sd": 0.016424941768960203
+      }
+    },
+    "peripheral & high_public_exposure": {
+      "cells_by_world": [
+        64,
+        79,
+        78,
+        69,
+        70,
+        69,
+        74,
+        70
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.028423392820275048,
+        "lower95": -0.10425381587053703,
+        "upper95": 0.024863200116696918,
+        "worlds": 8,
+        "sd": 0.09564364583080075
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.024139001980398953,
+        "lower95": -0.09186899137934938,
+        "upper95": 0.02348593794479847,
+        "worlds": 8,
+        "sd": 0.08517444594190654
+      }
+    },
+    "peripheral & low_prefix_ingress": {
+      "cells_by_world": [
+        162,
+        157,
+        159,
+        160,
+        160,
+        161,
+        163,
+        159
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.16006852468095567,
+        "lower95": -0.16804782987418426,
+        "upper95": -0.15263545918930538,
+        "worlds": 8,
+        "sd": 0.012145550045814685
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.13893864895477342,
+        "lower95": -0.14576666963008378,
+        "upper95": -0.13244918239384804,
+        "worlds": 8,
+        "sd": 0.010516763583647195
+      }
+    },
+    "high_public_exposure & low_prefix_ingress": {
+      "cells_by_world": [
+        0,
+        2,
+        2,
+        0,
+        7,
+        146,
+        2,
+        145
+      ],
+      "supported_worlds": 2,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.1353291002517012,
+        "lower95": -0.1366877914763022,
+        "upper95": -0.1339704090271002,
+        "worlds": 2,
+        "sd": 0.0019214795569080427
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.11560508761713206,
+        "lower95": -0.11728973276954661,
+        "upper95": -0.11392044246471751,
+        "worlds": 2,
+        "sd": 0.002382448022330749
+      }
+    },
+    "peripheral & high_public_exposure & low_prefix_ingress": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        69,
+        2,
+        70
+      ],
+      "supported_worlds": 2,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.18301791246163296,
+        "lower95": -0.18678032555876498,
+        "upper95": -0.17925549936450094,
+        "worlds": 2,
+        "sd": 0.005320855629214259
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.16181622865268785,
+        "lower95": -0.1619886897273908,
+        "upper95": -0.16164376757798493,
+        "worlds": 2,
+        "sd": 0.00024389679082633303
+      }
+    },
+    "zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        4,
+        0,
+        1,
+        1,
+        1,
+        2,
+        4,
+        1
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=0|peripheral=0|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        92,
+        96,
+        95,
+        95,
+        89,
+        18,
+        92,
+        19
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.11620270583187886,
+        "lower95": -0.1329428542509746,
+        "upper95": -0.09881431789434388,
+        "worlds": 8,
+        "sd": 0.02657886003133257
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.09735517993093695,
+        "lower95": -0.11240428281645129,
+        "upper95": -0.08189727365932949,
+        "worlds": 8,
+        "sd": 0.02390443971138504
+      }
+    },
+    "zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=0|peripheral=0|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        76,
+        0,
+        75
+      ],
+      "supported_worlds": 2,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.11357531372820226,
+        "lower95": -0.11426989509402444,
+        "upper95": -0.11288073236238008,
+        "worlds": 2,
+        "sd": 0.000982286387717352
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.09427249951104182,
+        "lower95": -0.09772718810046017,
+        "upper95": -0.09081781092162346,
+        "worlds": 2,
+        "sd": 0.00488566745693102
+      }
+    },
+    "zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        2,
+        3,
+        3,
+        0,
+        0,
+        0,
+        3,
+        1
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=0|peripheral=1|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        158,
+        157,
+        157,
+        160,
+        159,
+        91,
+        157,
+        89
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.1552139937943109,
+        "lower95": -0.16558885130331524,
+        "upper95": -0.1458729389036579,
+        "worlds": 8,
+        "sd": 0.015285856823070739
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.1343767331406724,
+        "lower95": -0.14315539044308537,
+        "upper95": -0.126465210525741,
+        "worlds": 8,
+        "sd": 0.012994427976044262
+      }
+    },
+    "zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=0|peripheral=1|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        69,
+        0,
+        70
+      ],
+      "supported_worlds": 2,
+      "paired_reconstruction_rmse_change": {
+        "mean": -0.18301791246163296,
+        "lower95": -0.18678032555876498,
+        "upper95": -0.17925549936450094,
+        "worlds": 2,
+        "sd": 0.005320855629214259
+      },
+      "paired_live_rmse_change": {
+        "mean": -0.16181622865268785,
+        "lower95": -0.1619886897273908,
+        "upper95": -0.16164376757798493,
+        "worlds": 2,
+        "sd": 0.00024389679082633303
+      }
+    },
+    "zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        192,
+        176,
+        177,
+        125,
+        110,
+        81,
+        183,
+        81
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.0005000674253011839,
+        "lower95": -0.0076035320338501125,
+        "upper95": 0.009834268594823553,
+        "worlds": 8,
+        "sd": 0.013489451503781717
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.0022008075119698376,
+        "lower95": -0.005177022884514311,
+        "upper95": 0.010581061360608615,
+        "worlds": 8,
+        "sd": 0.012229059076662243
+      }
+    },
+    "zone=1|peripheral=0|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        0,
+        14,
+        15,
+        66,
+        81,
+        110,
+        9,
+        110
+      ],
+      "supported_worlds": 7,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.014233108364759012,
+        "lower95": -0.001175386749348169,
+        "upper95": 0.029185782616378997,
+        "worlds": 7,
+        "sd": 0.022037366561504672
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.014045774133215078,
+        "lower95": -0.0008763647606670869,
+        "upper95": 0.02831511434971624,
+        "worlds": 7,
+        "sd": 0.021049439142126536
+      }
+    },
+    "zone=1|peripheral=0|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        64,
+        64,
+        64,
+        38,
+        32,
+        64,
+        64,
+        64
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.008713655340320935,
+        "lower95": 0.007575639128634785,
+        "upper95": 0.00967446865826715,
+        "worlds": 8,
+        "sd": 0.0016768106486586944
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.008873977234578612,
+        "lower95": 0.006860729263529987,
+        "upper95": 0.010553801199420957,
+        "worlds": 8,
+        "sd": 0.002917280847430384
+      }
+    },
+    "zone=1|peripheral=1|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        26,
+        32,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 2,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.0169674660867327,
+        "lower95": 0.006500919177069977,
+        "upper95": 0.027434012996395425,
+        "worlds": 2,
+        "sd": 0.01480193259085923
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.01669683157486735,
+        "lower95": 0.008457650543650674,
+        "upper95": 0.024936012606084024,
+        "worlds": 2,
+        "sd": 0.011651961557193764
+      }
+    },
+    "zone=1|peripheral=1|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        71,
+        84,
+        84,
+        98,
+        107,
+        192,
+        78,
+        190
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.028850942492112702,
+        "lower95": 0.028028999300382877,
+        "upper95": 0.029749599423560324,
+        "worlds": 8,
+        "sd": 0.0013259292604917853
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.027616971998009457,
+        "lower95": 0.026806772213294687,
+        "upper95": 0.02853764493507435,
+        "worlds": 8,
+        "sd": 0.0013520920382631676
+      }
+    },
+    "zone=2|peripheral=0|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        121,
+        107,
+        107,
+        94,
+        85,
+        0,
+        113,
+        0
+      ],
+      "supported_worlds": 6,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.030954907263870592,
+        "lower95": 0.027879044478198906,
+        "upper95": 0.03328854344763015,
+        "worlds": 6,
+        "sd": 0.0036937883821992583
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.029679427344953144,
+        "lower95": 0.027038996063850296,
+        "upper95": 0.03180559224256355,
+        "worlds": 6,
+        "sd": 0.0032533221370027463
+      }
+    },
+    "zone=2|peripheral=0|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        64,
+        41,
+        43,
+        32,
+        32,
+        64,
+        54,
+        64
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.026079494354434747,
+        "lower95": 0.023905551158019896,
+        "upper95": 0.028172202847372284,
+        "worlds": 8,
+        "sd": 0.003257657869562828
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.02465008052248041,
+        "lower95": 0.022412752710394408,
+        "upper95": 0.026721213883784276,
+        "worlds": 8,
+        "sd": 0.003318424754683932
+      }
+    },
+    "zone=2|peripheral=1|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        0,
+        23,
+        20,
+        32,
+        32,
+        0,
+        8,
+        0
+      ],
+      "supported_worlds": 5,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.03213786758764823,
+        "lower95": 0.02692733783967065,
+        "upper95": 0.03732715243083283,
+        "worlds": 5,
+        "sd": 0.006813470605270459
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.0300810945526435,
+        "lower95": 0.024931290363852186,
+        "upper95": 0.03491206735577408,
+        "worlds": 5,
+        "sd": 0.006506211241601205
+      }
+    },
+    "zone=2|peripheral=1|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        23,
+        42,
+        41,
+        69,
+        82,
+        96,
+        36,
+        96
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.028431577642072277,
+        "lower95": 0.024271695005302293,
+        "upper95": 0.032512309989742874,
+        "worlds": 8,
+        "sd": 0.006463491031110526
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.027090188332190707,
+        "lower95": 0.02319920688146473,
+        "upper95": 0.03094942349198735,
+        "worlds": 8,
+        "sd": 0.006101658661832067
+      }
+    },
+    "zone=3|peripheral=0|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        71,
+        54,
+        54,
+        27,
+        14,
+        0,
+        60,
+        0
+      ],
+      "supported_worlds": 6,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.02987091385932102,
+        "lower95": 0.023590775103329117,
+        "upper95": 0.034388385909725296,
+        "worlds": 6,
+        "sd": 0.007660506063522331
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.028221719749881233,
+        "lower95": 0.022052134623799336,
+        "upper95": 0.03266672970824422,
+        "worlds": 6,
+        "sd": 0.007579580334057279
+      }
+    },
+    "zone=3|peripheral=0|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=0": {
+      "cells_by_world": [
+        92,
+        104,
+        101,
+        149,
+        155,
+        159,
+        92,
+        160
+      ],
+      "supported_worlds": 8,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.021402876440744914,
+        "lower95": 0.019901929647010236,
+        "upper95": 0.022875597945212853,
+        "worlds": 8,
+        "sd": 0.0022942084831689235
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.02019237200111245,
+        "lower95": 0.018737100901588817,
+        "upper95": 0.021611696789711008,
+        "worlds": 8,
+        "sd": 0.0022630578374426263
+      }
+    },
+    "zone=3|peripheral=1|high_public_exposure=0|low_prefix_ingress=1": {
+      "cells_by_world": [
+        4,
+        0,
+        1,
+        0,
+        0,
+        1,
+        4,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    },
+    "zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=0": {
+      "cells_by_world": [
+        64,
+        56,
+        58,
+        11,
+        5,
+        0,
+        64,
+        0
+      ],
+      "supported_worlds": 5,
+      "paired_reconstruction_rmse_change": {
+        "mean": 0.025804226322238843,
+        "lower95": 0.02040848276319132,
+        "upper95": 0.03377375420978833,
+        "worlds": 5,
+        "sd": 0.00907802997825914
+      },
+      "paired_live_rmse_change": {
+        "mean": 0.024162651683118756,
+        "lower95": 0.018543627821463068,
+        "upper95": 0.032157233412365295,
+        "worlds": 5,
+        "sd": 0.009237368026169545
+      }
+    },
+    "zone=3|peripheral=1|high_public_exposure=1|low_prefix_ingress=1": {
+      "cells_by_world": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "supported_worlds": 0,
+      "paired_reconstruction_rmse_change": null,
+      "paired_live_rmse_change": null
+    }
+  },
+  "selection_rule": "Among positive-strength candidates with no feasible-floor, solver or privacy-cap violations and mean paired reconstruction and live RMSE prices at most 5%, maximize the smaller of (coverage-gap reduction / .20) and (worst-zone reconstruction-RMSE reduction / .10). Break ties by smaller reconstruction RMSE price, then full strength, then smaller target. Report whether both target reductions are reached. Do not start final primary inference by treating a failed selection target as passed.",
+  "feasibility_interpretation": "Report unconditional opportunity/global feasibility and shortfall explicitly. Infeasibility caused by absent contributors during an outage is not a constraint violation and is not removed from outcomes. No 90%-of-all-epochs feasibility requirement is imposed on this arrival-clock outage experiment.",
+  "analysis_sha256": "dd1d4fe28c24b415b986683573a892ccd3528aed9d5c7e5e3a68c1f2b6fb3b3d"
+}

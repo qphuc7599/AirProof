@@ -1,0 +1,27 @@
+{
+  "scope": "Local EVM causal replay after actual finite reverse delivery; not public-network finality",
+  "input_seed": 927200,
+  "issued_receipts": 107504,
+  "anchored_roots": 1475,
+  "verified_receipts": 1475,
+  "verified_before_deadline": 117,
+  "reverse_payload_bytes": 3515904,
+  "reverse_control_bytes": 109872,
+  "chain_transaction_data_bytes": 336300,
+  "gas_total": 280703358,
+  "delay_from_acceptance_epochs": {
+    "min": 3.0,
+    "median": 337.0002777777778,
+    "p95": 639.3003888888888,
+    "max": 688.0008333333334
+  },
+  "deadline_excess_epochs": {
+    "min": -21.0,
+    "median": 313.0002777777778,
+    "p95": 615.3003888888888,
+    "max": 664.0008333333334
+  },
+  "coverage_pct": 1.3720419705313291,
+  "timely_pct_issued": 0.1088331596963834,
+  "late_verified": 1358
+}

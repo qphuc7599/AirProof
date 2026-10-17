@@ -1,0 +1,171 @@
+{
+  "role": "confirmation",
+  "archive_scope": "Fresh synthetic-channel seeds over the same historically exposed real-pollution archive; randomization confirmation, not a new pollution archive or observed-fault confirmation.",
+  "rows": 280,
+  "expected_rows": 280,
+  "seeds": [
+    6286000,
+    6286001,
+    6286002,
+    6286003,
+    6286004,
+    6286005,
+    6286006,
+    6286007
+  ],
+  "event_threshold": 19.764249999999958,
+  "event_support": 36,
+  "elapsed_seconds": 48.500344200001564,
+  "candidate_summaries": [
+    {
+      "id": "blend50_b3_g1_k12",
+      "config": {
+        "id": "blend50_b3_g1_k12",
+        "primary_weight": 0.5,
+        "radius_floor": 3.0,
+        "uncertainty_gain": 1.0,
+        "global_radius": 12.0
+      },
+      "clean_ratios": {
+        "neutral": 1.0244525703526146,
+        "high2": 1.0260883570933947
+      },
+      "mean_clean_rmse": 2.504536627249288,
+      "attacks": {
+        "neutral_drift_mid": {
+          "comparator_growth": 0.35937890836874775,
+          "candidate_growth": 0.2119104098245299,
+          "protocol_identifiable": true,
+          "gate_applicable": true,
+          "attenuation": 0.4103426637183307
+        },
+        "neutral_negative_mid": {
+          "comparator_growth": 0.1353773015932047,
+          "candidate_growth": 0.09655823235261529,
+          "protocol_identifiable": true,
+          "gate_applicable": true,
+          "attenuation": 0.2867472521888259
+        },
+        "neutral_drift_late": {
+          "comparator_growth": 0.18620369808160842,
+          "candidate_growth": 0.1115210837268319,
+          "protocol_identifiable": true,
+          "gate_applicable": true,
+          "attenuation": 0.40108018865471196
+        },
+        "high2_drift_mid": {
+          "comparator_growth": 0.5654120881951639,
+          "candidate_growth": 0.42587469464170224,
+          "protocol_identifiable": true,
+          "gate_applicable": true,
+          "attenuation": 0.24678884032860893
+        },
+        "high2_negative_mid": {
+          "comparator_growth": 0.04352461463727186,
+          "candidate_growth": -0.0037757205276576222,
+          "protocol_identifiable": true,
+          "gate_applicable": true,
+          "attenuation": 1.0867490857558177
+        }
+      },
+      "worst_applicable_attenuation": 0.24678884032860893,
+      "event_recall_losses": {
+        "neutral_clean": 0.041666666666666685,
+        "neutral_drift_mid": 0.041666666666666685,
+        "neutral_negative_mid": 0.034722222222222154,
+        "neutral_drift_late": 0.041666666666666685,
+        "high2_clean": 0.041666666666666685,
+        "high2_drift_mid": 0.048611111111111105,
+        "high2_negative_mid": 0.034722222222222154
+      },
+      "max_event_recall_loss": 0.048611111111111105,
+      "max_solver_failure_rate": 0.0,
+      "descriptive_bootstrap": {
+        "method": "paired seed bootstrap; marginal descriptive 95% intervals",
+        "seed": 6286999,
+        "replicates": 20000,
+        "clean_ratio": {
+          "neutral": {
+            "lower95": 1.0195705588332895,
+            "upper95": 1.03023375050642,
+            "finite_replicates": 20000
+          },
+          "high2": {
+            "lower95": 1.021623014910817,
+            "upper95": 1.031308986266779,
+            "finite_replicates": 20000
+          }
+        },
+        "attack_attenuation": {
+          "neutral_drift_mid": {
+            "lower95": 0.3750413288930967,
+            "upper95": 0.440631676676656,
+            "finite_replicates": 20000
+          },
+          "neutral_negative_mid": {
+            "lower95": 0.2484574264475428,
+            "upper95": 0.32926478046282864,
+            "finite_replicates": 20000
+          },
+          "neutral_drift_late": {
+            "lower95": 0.3633367332508864,
+            "upper95": 0.43303228909870806,
+            "finite_replicates": 20000
+          },
+          "high2_drift_mid": {
+            "lower95": 0.22173283222634316,
+            "upper95": 0.2689128119381675,
+            "finite_replicates": 20000
+          },
+          "high2_negative_mid": {
+            "lower95": 0.9486402126972158,
+            "upper95": 1.3209425919777826,
+            "finite_replicates": 20000
+          }
+        },
+        "event_recall_loss": {
+          "neutral_clean": {
+            "lower95": 0.027777777777777735,
+            "upper95": 0.052083333333333426,
+            "finite_replicates": 20000
+          },
+          "neutral_drift_mid": {
+            "lower95": 0.027777777777777735,
+            "upper95": 0.052083333333333426,
+            "finite_replicates": 20000
+          },
+          "neutral_negative_mid": {
+            "lower95": 0.02083333333333337,
+            "upper95": 0.04861111111111105,
+            "finite_replicates": 20000
+          },
+          "neutral_drift_late": {
+            "lower95": 0.027777777777777735,
+            "upper95": 0.052083333333333426,
+            "finite_replicates": 20000
+          },
+          "high2_clean": {
+            "lower95": 0.027777777777777735,
+            "upper95": 0.052083333333333426,
+            "finite_replicates": 20000
+          },
+          "high2_drift_mid": {
+            "lower95": 0.031250000000000056,
+            "upper95": 0.06250000000000006,
+            "finite_replicates": 20000
+          },
+          "high2_negative_mid": {
+            "lower95": 0.02083333333333337,
+            "upper95": 0.04861111111111105,
+            "finite_replicates": 20000
+          }
+        }
+      },
+      "failures": [],
+      "eligible": true
+    }
+  ],
+  "selected": "blend50_b3_g1_k12",
+  "selection_rule": "Eligible candidates pass every applicable gate; choose lowest mean clean RMSE, then highest worst applicable attenuation, then lexical id. Preserve all failed candidates.",
+  "all_required_gates_pass": true
+}

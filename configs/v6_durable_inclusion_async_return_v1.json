@@ -1,0 +1,22 @@
+{
+  "registration": "v6-durable-inclusion-async-return-v1",
+  "registered_date": "2026-09-08",
+  "role": "opt-in engineering development mechanism; not scientific evidence or confirmation",
+  "fixture_seed": 6006001,
+  "base_configuration": "reports/v4_primary/core_final_7600_7629_20260903/base_configuration.yaml",
+  "immutable_fixture": {"agents": 24, "steps": 48, "grid_side": 4, "burn_in_steps": 8, "reference_station_count": 4, "attack_start_epoch": 24, "drain_epochs": 24},
+  "audit": {
+    "return_mode": "durable_inclusion_async_return_v1",
+    "max_records": 2048,
+    "max_content_bytes": 2048,
+    "durable_log_capacity_bytes": 1048576,
+    "collector_return_buffer_bytes": 18432,
+    "inclusion_deadline_epochs": 24,
+    "max_epoch": 1000000000
+  },
+  "paired_comparator": "reports/v6/integration_smoke_accountability_batch_v3/outcome.json",
+  "fixed_claim": "Allocation eligibility requires a content-bound durable leaf plus signed acceptance and on-time INCLUDED witness. Return delivery is asynchronous, finite and never assumed.",
+  "publication_scope": "No public checkpoint publication path exists in this fixture. Externally checkpointed means a signed head left the collector and was reassembled by the submitting origin.",
+  "decision_rule": "No confirmation unless all integrity/storage/accounting tests pass and a separately modeled public checkpoint publication path exists.",
+  "scope_limits": "No availability, BFT, finality, censorship-resistance, public-publication, or scientific claim."
+}

@@ -1,0 +1,32 @@
+{
+  "T1": {
+    "paired_worlds": 8,
+    "protected_minus_raw_upper_95": -14.646815058124716
+  },
+  "T2": {
+    "prediction_interval": [
+      48,
+      678
+    ],
+    "N": 630,
+    "verified_manifest_hashes": 60,
+    "verified_prediction_hashes": 60,
+    "recalculated": {
+      "projected_gradient_step": 1.0,
+      "gradient_map_contraction_upper": 0.95,
+      "maximum_projected_gradient_inf": 2.7339126296155314e-07,
+      "maximum_window_dimension": 7168,
+      "maximum_projected_gradient_l2": 2.3146409357252273e-05,
+      "per_solve_l2_error_upper": 0.00046292818714504505,
+      "solve_count": 630,
+      "one_path_uniform_deviation_from_recursive_exact_upper": 0.004629281871450462,
+      "one_path_sum_deviation_from_recursive_exact_upper": 2.916447579013791,
+      "uniform_numerical_remainder": 0.009258563742900924,
+      "summed_numerical_remainder": 5.832895158027582,
+      "inexact_uniform_active_window_l2_bound": 128.95227835370545,
+      "inexact_sum_active_window_l2_bound": 1295.2630930576565
+    },
+    "certificate_sha256": "4a7a22d9d25fb8b0b7ce8b6333588d340cba71c9b4682c8d1d9105aefcee5232",
+    "scope": "Rehash saved outputs and recompute bound; does not regenerate source-locked inputs. Current transport source differs from historical source lock, which is preserved unchanged."
+  }
+}

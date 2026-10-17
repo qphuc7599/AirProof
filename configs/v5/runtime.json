@@ -1,0 +1,15 @@
+{
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Admin\\AppData\\Local\\Programs\\Python\\Python313\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.17.1",
+    "cryptography": "46.0.3",
+    "PyYAML": "6.0.3",
+    "psutil": "7.2.2"
+  },
+  "logical_cpus": 12,
+  "ram_bytes": 16873545728,
+  "worker_blas_threads": 1
+}

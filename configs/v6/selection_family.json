@@ -1,0 +1,17 @@
+{
+  "role": "bounded development registration before outcomes",
+  "family": "residual Huber with frozen public-backbone LOSO scale proxy",
+  "candidates": [
+    {"id": "HUBER_reg0.1_cap8", "regularization_multiplier": 0.1, "cap": 8.0},
+    {"id": "HUBER_reg0.3_cap8", "regularization_multiplier": 0.3, "cap": 8.0},
+    {"id": "HUBER_reg1_cap8", "regularization_multiplier": 1.0, "cap": 8.0}
+  ],
+  "fixed": {"huber_delta":1.345,"lag":6,"tolerance":0.0000001,"max_iterations":1000,"input_clip":false},
+  "controls": ["same-regularization unbounded quadratic", "unchanged v4 public backbone"],
+  "cells": ["anchor_clean","outage_clean","severe_clean","severe_drift","severe_hotspot"],
+  "development_seeds": [6201000,6201001,6201002,6201003,6201004,6201005,6201006,6201007],
+  "selection_order": ["all correctness and numerical invariants", "clean noninferiority5percent in all3cells", "drift and hotspot growth attenuation20percent", "event recall loss at most5percentagepoints", "minimum worst normalized condition loss"],
+  "ties": ["smaller regularization multiplier", "lower runtime"],
+  "no_feasible_candidate": "no confirmation; report failure and preserve outcomes",
+  "scope": "selection is development; no confirmatory p values; privacy/fairness/archive gates remain mandatory"
+}

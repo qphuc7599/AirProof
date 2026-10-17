@@ -1,0 +1,100 @@
+{
+  "schema_version": 3,
+  "registration": "v6-innovation-covariance-forcing-mechanistic-synthetic-development-v2",
+  "status": "prospective_protocol_frozen_before_input_generation_and_outcomes",
+  "protocol_revision_note": "Replaced the zero-outcome draft's record-wise folds and 32-world power placeholder with disjoint world-level calibration/development roles. No v2 efficacy outcome existed before this revision.",
+  "role": "prospective mechanistic-synthetic exposed development only; never archive validation, EPA, validation, test, primary, or confirmation",
+  "objective": "Test whether correctly composed citizen-public innovation variance and causally published residual forcing repair bounded citizen assimilation without changing the original scientific gates.",
+  "historical_reuse": {
+    "retain": [
+      "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+      "reports/v4_validation/beijing_seasonal_20260903/analysis.json",
+      "reports/v4_validation/dtn_deadline_confirm_7950_7979/summary.json",
+      "reports/v4_validation/privacy_full_grid_7500_7529/analysis.json"
+    ],
+    "rerun": false,
+    "scope": "Historical v4 evidence remains authoritative only for its unchanged mechanisms. This development family addresses the changed estimator gate only."
+  },
+  "scale": {"agents": 1000, "grid_side": 32, "groups": 4, "acquisition_epochs": 672, "burn_in_epochs": 48, "fixed_lag_epochs": 6, "transport_drain_epochs": 24, "epoch_hours": 1},
+  "world_roles": {
+    "calibration": {"seeds": [6241000,6241001,6241002,6241003,6241004,6241005,6241006,6241007], "cell": "severe_clean", "truth_use": "closed labels for Vs, Vp and Cps only", "fold_unit": "world", "folds": 8},
+    "development": {"seeds": [6241020,6241021,6241022,6241023,6241024,6241025,6241026,6241027], "cells": ["severe_clean","severe_drift","severe_hotspot"], "truth_use": "scoring only after prediction artifacts are written and hashed"},
+    "runtime_smoke": {"seeds": [6241020], "scope": "complete registered matrix for this development seed; retained as development evidence and resumed, never rerun with a replacement seed"}
+  },
+  "seed_namespace": {"registry": "configs/v6/seed_registry.json", "half_open": [6241000,6241100], "pre_registration_collision_audit": "no prior occurrence in registered namespaces", "reuse_forbidden_outside_this_family": true},
+  "producer": {
+    "config": "configs/v6/innovation_covariance_forcing_producer_development_v2.json",
+    "campaign_bundle": "reports/v6/innovation_covariance_forcing_development_v2/inputs",
+    "campaign_manifest": "reports/v6/innovation_covariance_forcing_development_v2/inputs/manifest.json",
+    "global_calibration": "reports/v6/innovation_covariance_forcing_development_v2/inputs/global_calibration.json",
+    "input_lock": "reports/v6/innovation_covariance_forcing_development_v2/input_lock.json",
+    "input_lock_create_new_only": true,
+    "operator_storage": "one CSR physical operator per world identity, never a dense time-by-cell-by-cell tensor",
+    "prediction_view_excludes": ["calibration_truth","evaluation_truth","paired_sensor_error","paired_public_error","attack_label","event_mask","process_innovation","field_rng_state","plume_phase","plume_amplitude"]
+  },
+  "synthetic_boundary": {
+    "physical_state_equation": "x_t = F x_(t-1) + u_t + w_t for t>=1, where w_t includes Gaussian innovation and any nonnegative-projection correction",
+    "initialization": "epoch 0 is a boundary and is never treated as a transition row",
+    "residual_identity": "z_t = F z_(t-1) + [u_t + F p_(t-1) - p_t] + w_t",
+    "public_forcing_clock": "u_t is released at epoch t to every arm; an offline bundle stores all rows with per-row availability, while the estimator objective reads only the current closed prefix",
+    "public_center_clock": "p_t is available after on-time epoch-t regulatory arrivals and before the epoch-t twin update",
+    "calibration_truth": "allowed only in eight disjoint clean calibration worlds to freeze scalar covariance summaries",
+    "development_truth": "stored in separate scoring-only files and loaded only after prediction files are written and hashed",
+    "attacks": "white-box stress generation may use latent truth, but attack/corruption labels never enter producer fitting, scales, forcing or estimator inputs"
+  },
+  "family_axes": {"innovation_covariance": ["independence","world_cross_fitted_covariance"], "residual_forcing": ["zero","producer_exact_causal"]},
+  "candidates": [
+    {"id":"independence__zero","innovation_covariance":"independence","residual_forcing":"zero"},
+    {"id":"independence__producer_exact_causal","innovation_covariance":"independence","residual_forcing":"producer_exact_causal"},
+    {"id":"world_cross_fitted_covariance__zero","innovation_covariance":"world_cross_fitted_covariance","residual_forcing":"zero"},
+    {"id":"world_cross_fitted_covariance__producer_exact_causal","innovation_covariance":"world_cross_fitted_covariance","residual_forcing":"producer_exact_causal"}
+  ],
+  "covariance_calibration": {
+    "pairing":"selected clean citizen observation and causal public prediction at the same acquisition epoch and cell",
+    "sensor_error":"post-measurement-clipping citizen value minus calibration truth",
+    "public_error":"frozen causal public center minus calibration truth",
+    "independence_variance":"world-fold-weighted Vs + Vp with Cps fixed to zero",
+    "cross_fitted_variance":"world-fold-weighted Vs + Vp - 2 Cps; each fold estimate excludes the held world",
+    "fold_leakage_forbidden":true,
+    "variance_floor":1e-6,
+    "psd_tolerance":1e-10,
+    "minimum_pairs_per_training_fold":1000,
+    "selection_from_development_outcomes":false
+  },
+  "fixed_estimator": {"cap":8.0,"output_cap":true,"input_clip":false,"loss":"huber","huber_delta":1.345,"lag":6,"lambda_zero":0.05,"lambda_temporal":0.05,"lambda_spatial":0.02,"time_step":1.0,"tolerance":1e-7,"max_iterations":1000,"numerical_refinements":2},
+  "same_information_controls": {
+    "names":["PUBLIC","SQ","HUBER"],
+    "SQ":{"loss":"quadratic","output_cap":false},
+    "HUBER":{"loss":"huber","output_cap":false},
+    "PUBLIC":{"citizen_independent":true},
+    "required_fingerprint_fields":["public_center","observations","arrival_map","innovation_variance","transitions","residual_forcing","prediction_epochs"],
+    "parity":"For one seed, cell and candidate, all four methods receive one byte-identical input fingerprint; PUBLIC ignores citizen inputs only after the fingerprint is committed."
+  },
+  "joint_gates": {
+    "aggregation_unit":"paired development world",
+    "clean_candidate_to_SQ_mean_rmse_ratio_max":1.05,
+    "drift_mean_excess_rmse_attenuation_min":0.20,
+    "hotspot_mean_excess_rmse_attenuation_min":0.20,
+    "event_recall_mean_loss_vs_SQ_max_percentage_points":5.0,
+    "all_solver_failure_rates_max":0.0,
+    "all_projected_gradient_inf_max":1e-6,
+    "all_candidate_absolute_corrections_max":8.0000001,
+    "all_outputs_finite":true,
+    "all_information_fingerprints_equal_within_comparison":true,
+    "all_resource_invariants":true
+  },
+  "selection_and_exit": {
+    "rule":"A candidate is eligible only if every aggregate scientific gate and every per-run correctness/resource invariant passes. Nominate at most one by minimum worst normalized condition loss, then smaller innovation scale, then lower runtime, then lexicographic id.",
+    "no_feasible_candidate":"Close v2 and retain every adverse outcome; do not alter family, cap, delta, lag, gates, seeds, producer or controls.",
+    "downstream":"A development nomination can motivate a separately frozen validation registration only; it cannot open EPA test, primary or confirmation."
+  },
+  "runtime": {"workers_initial":4,"workers_max":8,"blas_threads_per_worker":1,"reserve_ram_bytes":3221225472,"smoke_projection_multiplier":1.5,"smoke_projection_deadline_seconds":86400,"resume":"only missing hash-identical jobs; scientific failures are never replaced by new seeds"},
+  "readiness": {
+    "artifact":"reports/v6/innovation_covariance_forcing_development_v2/readiness.json",
+    "required_checks":["registration","seed_namespace","source_snapshot","input_lock","global_calibration","world_level_folds","sparse_operator","producer_hashes","producer_causality","prediction_truth_isolation","same_information_contract","fixed_estimator","runner_adapter"],
+    "fail_closed":true,
+    "no_outcome_before_pass":true
+  },
+  "output": {"directory":"reports/v6/innovation_covariance_forcing_development_v2/outcomes","predictions_before_scores":true,"complete_matrix_required":true},
+  "protected_namespaces":["data/external/epa","reports/v6/epa_2025_protocol","reports/v6/validation","reports/v6/test","reports/v6/primary","reports/v6/confirmation","6203000-6203011","6204000-6204099"]
+}

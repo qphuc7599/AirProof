@@ -1,0 +1,47 @@
+{
+  "registration": "v6-uncertainty-event-aware-v3",
+  "registered_date": "2026-09-08",
+  "registration_timing": "proposed after observing v2 fixed-event coverage 0.5126/0.6054",
+  "role": "exposed development follow-up; not test or confirmation evidence",
+  "estimator": "PUBLIC",
+  "required_input_pattern": "reports/v6/uncertainty_v3_public_prerequisites_v1/{seed}_{cell}/PUBLIC.npz",
+  "required_arrays": ["live", "reconstructed", "truth", "scales", "identity", "source_hash"],
+  "namespace": [6202000, 6202001, 6202002, 6202003, 6202004, 6202005, 6202006, 6202007],
+  "fit": {
+    "split_id": "uncertainty-v3-fit-6202000-6202001",
+    "seeds": [6202000, 6202001],
+    "end": 1
+  },
+  "calibration": {
+    "split_id": "uncertainty-v3-calibration-6202002-6202003",
+    "seeds": [6202002, 6202003],
+    "end": 3
+  },
+  "evaluation": {
+    "split_id": "uncertainty-v3-evaluation-6202004-6202007",
+    "seeds": [6202004, 6202005, 6202006, 6202007],
+    "start": 4
+  },
+  "cells": ["anchor_clean", "outage_clean", "severe_clean", "severe_drift", "severe_hotspot"],
+  "clocks": ["live", "reconstructed"],
+  "levels": [0.9, 0.95],
+  "prediction_level_quantiles_fit_only": [0.5, 0.8, 0.95],
+  "public_scale_quantile_fit_only": 0.5,
+  "event_threshold_quantile_fit_truth_only": 0.95,
+  "minimum_fit_support": 100,
+  "spatial_stride": 4,
+  "bootstrap": {"method": "moving whole-time-row blocks", "block_length": 24, "replicates": 50, "seed": 6607002},
+  "prohibitions": [
+    "no EPA test or confirmation input",
+    "no evaluation residual used to fit bins, scales, radii or event threshold",
+    "no change to nominal levels or event threshold after evaluation",
+    "no reuse of exposed 6201000-series data as a substitute",
+    "no exact conditional or conformal coverage claim"
+  ],
+  "prior_evidence": {
+    "v1": "retained invalid for event claims because the event mask used evaluation truth quantiles",
+    "v2": "retained adverse at event coverage 0.5126/0.6054"
+  },
+  "status": "superseded-before-outcomes-by-v3.1-canonical-seed-design",
+  "superseded_reason": "five physical-cell PUBLIC artifacts are identical per seed; combining them would multiply effective support and bootstrap rows by five"
+}

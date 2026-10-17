@@ -1,0 +1,103 @@
+{
+  "updated_utc": "2026-09-07T04:32:28.718868+00:00",
+  "records": [
+    {
+      "role": "development",
+      "seeds": [
+        911000,
+        911001,
+        911002,
+        911003,
+        911004,
+        911005,
+        911006,
+        911007
+      ],
+      "artifact": "reports/v5/development/integrated_911000_911007_v1",
+      "manifest_sha256": "e6de7d666120c620892d9d70331292ee42d949c90da0b4b8b85976a0aaf577ad",
+      "outcomes_sha256": "2608445482f82fd38d511e6569c9e80d205f4a5f99f759ef99c75348c964db89",
+      "pollution_worlds": "synthetic; distinct world seeds",
+      "status": "completed and analyzed"
+    },
+    {
+      "role": "calibration",
+      "seeds": [
+        912000,
+        912001,
+        912002,
+        912003,
+        912004,
+        912005,
+        912006,
+        912007
+      ],
+      "artifact": "reports/v5/selected_campaign_v1/calibration",
+      "manifest_sha256": "28e0ff70844f79d2681d82a002358211d4012cc54cc5735555b776c176184294",
+      "outcomes_sha256": "9fbc4be76c1d9ba190cb4c4b0dd8c317f427a425611728758b173df105e9e569",
+      "pollution_worlds": "synthetic; distinct world seeds",
+      "status": "completed and analyzed"
+    },
+    {
+      "role": "validation",
+      "seeds": [
+        913000,
+        913001,
+        913002,
+        913003,
+        913004,
+        913005,
+        913006,
+        913007,
+        913008,
+        913009,
+        913010,
+        913011
+      ],
+      "artifact": "reports/v5/selected_campaign_v1/validation",
+      "manifest_sha256": "846f321ecec7ceedc369fb71d38599ad839cbd6fa2d8e6d466ced863962f94e6",
+      "outcomes_sha256": "0db6fd8ad297d1ef6b7bd0c2762dbcf6f40ce57eadbfb95302d2ac25da45e03b",
+      "pollution_worlds": "synthetic; distinct world seeds",
+      "status": "completed and analyzed"
+    },
+    {
+      "role": "EPA selected-estimator archive diagnostic",
+      "status": "scored and analyzed; never fresh again",
+      "archive": "data/external/epa/epa_bay_area_pm25_2024.parquet",
+      "half_open_hour_indices": [
+        [
+          7944,
+          8280
+        ],
+        [
+          8448,
+          8784
+        ]
+      ],
+      "synthetic_citizen_seeds": [
+        916002,
+        916003,
+        916004,
+        916005
+      ],
+      "new_pollution_datasets": 0,
+      "scored_sha256": "f6e51663bb3a4d6c78adcd66b1d75f31fdbdda678a6dce68207e79d4f8e3ab39",
+      "previous_usage_registry": "configs/v5/archive_usage.json",
+      "previous_usage_registry_sha256": "58dfa01e1529ef0e5b09351e896c0b5db3f2971b80e32f6537020938c310fd73"
+    },
+    {
+      "role": "registered descriptive stress",
+      "seeds": [
+        915004,
+        915005,
+        915006,
+        915007
+      ],
+      "status": "completed",
+      "artifact": "reports\\v5\\stress_registered_v1\\scoring",
+      "manifest_sha256": "844085bab93707251482ebffb66d756cc61c0e6880c334f510bb5cf45477c60d"
+    }
+  ],
+  "locked_pretest_registries_modified": false,
+  "primary_status": "not launched; null lock; no primary outcomes",
+  "reuse_rule": "exposure and execution reserve windows/seeds even when results fail; new citizen seeds do not create fresh pollution data"
+}

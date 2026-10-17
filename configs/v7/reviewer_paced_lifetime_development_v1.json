@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "registration": "airproof-v7-paced-lifetime-development-v1",
+  "status": "development opened after the shared-v2 late-attack zero-exposure diagnosis",
+  "role": "bounded mechanism diagnosis; never an independent confirmation",
+  "source_registration": "configs/v7/reviewer_shared_resource_confirmation_v2.json",
+  "seeds": [6251100, 6251101, 6251102, 6251103],
+  "cells": ["severe_clean", "severe_hotspot"],
+  "candidate": {
+    "id": "linear_public_horizon_accrual_v1",
+    "lifetime_budget": 7.0,
+    "horizon_start": 0,
+    "horizon_end": 624,
+    "rule": "at arrival a, cumulative user exposure cannot exceed B*(a+1)/624; unused exposure carries forward"
+  },
+  "descriptive_gates": {
+    "clean_AP_to_SQ_ratio_upper": 1.05,
+    "clean_AP_to_PUBLIC_ratio_upper": 1.0,
+    "hotspot_SQ_growth_positive_in_every_world": true,
+    "hotspot_growth_attenuation_lower": 0.20,
+    "event_recall_loss_vs_SQ_upper_percentage_points": 5.0
+  },
+  "output": "reports/v7/reviewer_revision/paced_lifetime_development_v1"
+}

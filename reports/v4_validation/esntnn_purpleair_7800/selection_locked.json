@@ -1,0 +1,14 @@
+{
+  "selected_before_test_evaluation_unix": 1788407122.531506,
+  "best_checkpoint_step": 1800,
+  "completed_optimizer_steps": 2800,
+  "tnn_convex_weight": 1.0,
+  "validation_rmse": {
+    "DESN": 5.8890566347579805,
+    "TNN": 2.8283351829950982,
+    "ESN_TNN": 2.8283351829950982
+  },
+  "DESN_artifact_sha256": "be67c79aed8b8e226c924e0f71bb4774dce9b439391a862dc6e408b3b2ea9019",
+  "TNN_artifact_sha256": "b414666d8bd5be20e9f21cb86ec0f9fd771bf0de87acb89294b2571471e51e00",
+  "no_test_parameter_updates": true
+}

@@ -1,0 +1,1173 @@
+{
+  "role": "final-estimator-validation-frontier-not-primary-inference",
+  "protocol": {
+    "protocol": "final-public-reference-causal-fairness-frontier-v1",
+    "status": "fixed-before-frontier-outcomes",
+    "base_config": "public_reference_validation.yaml",
+    "seeds": [
+      7400,
+      7401,
+      7402,
+      7403,
+      7404,
+      7405,
+      7406,
+      7407
+    ],
+    "fairness_strengths": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "targets": [
+      5,
+      10,
+      20,
+      30
+    ],
+    "candidate_method": "airproof_v4",
+    "control_method": "airproof_v4_no_fairness",
+    "steps": 672,
+    "agents": 1000,
+    "price_of_fairness_max": 0.05,
+    "coverage_gap_reduction_target": 0.2,
+    "worst_group_rmse_reduction_target": 0.1,
+    "selection_rule": "Among positive-strength candidates with no feasible-floor, solver or privacy-cap violations and mean paired reconstruction and live RMSE prices at most 5%, maximize the smaller of (coverage-gap reduction / .20) and (worst-zone reconstruction-RMSE reduction / .10). Break ties by smaller reconstruction RMSE price, then full strength, then smaller target. Report whether both target reductions are reached. Do not start final primary inference by treating a failed selection target as passed.",
+    "feasibility_interpretation": "Report unconditional opportunity/global feasibility and shortfall explicitly. Infeasibility caused by absent contributors during an outage is not a constraint violation and is not removed from outcomes. No 90%-of-all-epochs feasibility requirement is imposed on this arrival-clock outage experiment.",
+    "audit": "39 fixed-prefix spatial/availability strata: seven overlapping positive intersections and all 32 allocation-zone by three-binary-attribute atoms. Report every stratum including empty/small support; at least eight cells for worst-stratum summaries. These are outcome audits, not overlapping hard floors or socioeconomic classifications.",
+    "statistics": "eight independent worlds per cell; paired descriptive bootstrap only",
+    "primary_rmse_clock": "bounded-fixed-lag-reconstruction-at-horizon-end",
+    "additional_rmse_clock": "live estimate frozen at own epoch before future arrivals"
+  },
+  "source_hash": "0e40bacaff46a3b8d7bc20abf5ef85c1a0868bad453f61fa7d29f42251c69446",
+  "seeds": [
+    7400,
+    7401,
+    7402,
+    7403,
+    7404,
+    7405,
+    7406,
+    7407
+  ],
+  "candidates": {
+    "q5_lambda0": {
+      "target": 5,
+      "strength": 0.0,
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    "q5_lambda0.25": {
+      "target": 5,
+      "strength": 0.25,
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    "q5_lambda0.5": {
+      "target": 5,
+      "strength": 0.5,
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    "q5_lambda0.75": {
+      "target": 5,
+      "strength": 0.75,
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    "q5_lambda1": {
+      "target": 5,
+      "strength": 1.0,
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    "q10_lambda0": {
+      "target": 10,
+      "strength": 0.0,
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    "q10_lambda0.25": {
+      "target": 10,
+      "strength": 0.25,
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    "q10_lambda0.5": {
+      "target": 10,
+      "strength": 0.5,
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    "q10_lambda0.75": {
+      "target": 10,
+      "strength": 0.75,
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    "q10_lambda1": {
+      "target": 10,
+      "strength": 1.0,
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    "q20_lambda0": {
+      "target": 20,
+      "strength": 0.0,
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    "q20_lambda0.25": {
+      "target": 20,
+      "strength": 0.25,
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    "q20_lambda0.5": {
+      "target": 20,
+      "strength": 0.5,
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    "q20_lambda0.75": {
+      "target": 20,
+      "strength": 0.75,
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    "q20_lambda1": {
+      "target": 20,
+      "strength": 1.0,
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    "q30_lambda0": {
+      "target": 30,
+      "strength": 0.0,
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    "q30_lambda0.25": {
+      "target": 30,
+      "strength": 0.25,
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    "q30_lambda0.5": {
+      "target": 30,
+      "strength": 0.5,
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    "q30_lambda0.75": {
+      "target": 30,
+      "strength": 0.75,
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    "q30_lambda1": {
+      "target": 30,
+      "strength": 1.0,
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    }
+  },
+  "control_config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084",
+  "workers_max": 11,
+  "job_plan": [
+    {
+      "seed": 7400,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7400,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7401,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7402,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7403,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7404,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7405,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7406,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4_no_fairness",
+      "label": "no_fairness",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q5_lambda0",
+      "config_hash": "7c62ff05c331ce548b6b0d70a7f6d7acac919d81b1ec35b9b4a34c0feba4dace"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.25",
+      "config_hash": "8fccd4e813937f209dbfeb4bfcbe4e116e1a59903b8846dd32362423b0e65934"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.5",
+      "config_hash": "c0c75a0dc288d73160f752762dc7cb7249391267ddd2af51dae8184b4a300bb0"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q5_lambda0.75",
+      "config_hash": "72afd779142dc539231cf8533bd11a9c9e3ede369e0d702aec170cb0e09432bb"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q5_lambda1",
+      "config_hash": "a54969f400be4378fb8cfb0ac92c15915852bd49b40a5b349adebbf55a69ed7c"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q10_lambda0",
+      "config_hash": "4af8177382427e26d1666e89e5891e9d7a48abda3df336b506256f4ec90a20a6"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.25",
+      "config_hash": "7301643ce614ac48aedeb1dd9041dd5440584aea42b1ebb022eb607766b7e3d0"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.5",
+      "config_hash": "04ecdb3d10b84b4b4bad666e21eca460cd8b320a658bf4e16ff113995e40f0e4"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q10_lambda0.75",
+      "config_hash": "354f1f5e66a7c572329773f2b52d085cde1ba5a97882d051b2ec14ba4d29d2b6"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q10_lambda1",
+      "config_hash": "ea0e16f99ab532aea589b13e16038324a820bf310946c13fbe32b4281dfe7084"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q20_lambda0",
+      "config_hash": "e402e5bd78d0e89cede730d5151500aebb6ec62ea595908148a295599c015b17"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.25",
+      "config_hash": "02f66c63b6681bbaa15ab687880034c6b91b7accca7dd4691e150207ed36fe21"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.5",
+      "config_hash": "9a8f1cd7879e32718b9ae9a17d25845c0049c362cef8af4f7ae1d09dc72b261d"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q20_lambda0.75",
+      "config_hash": "7e18188b1d8f7083d547ecb88099250236e21b42c798518401cf7e8e5f65df56"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q20_lambda1",
+      "config_hash": "7af4794c782d5e612ab614f489ee9981bd8cf1542c9127b01837744c1225e08a"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q30_lambda0",
+      "config_hash": "a7bb9f2dfcb89e998de47cee072a70317e1ab1e9b2127c551f4e29a983e7e5ba"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.25",
+      "config_hash": "e726977ed5e18d63fcddb1068b36b172dfdf156bd06a307a9e35f445ba9bae7f"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.5",
+      "config_hash": "a0b5f66bc51d9e19cf8a793ba8874ea73336210ff9a8db81ab0f9285c7e0bbf0"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q30_lambda0.75",
+      "config_hash": "d840a04c0f4d8d69cd3ee204ec7e778ba2557e40baddc60ff3a410129ae74f78"
+    },
+    {
+      "seed": 7407,
+      "method": "airproof_v4",
+      "label": "q30_lambda1",
+      "config_hash": "0a716cb1af8dd058472cbb91b032968f6ceee35aec5eab6084b8ec467126393b"
+    }
+  ],
+  "total_jobs": 168,
+  "created_unix": 1788409211.1130211,
+  "reserve_memory_mb": 2000,
+  "runner_sha256": "84a29e022b69ac53de7ebeb1761188bca5a39ce0d8ae5c9fe0f438bb4ec9af14"
+}

@@ -1,0 +1,14 @@
+{
+  "failed_gates": [],
+  "main_regime": {
+    "bound": {
+      "mean": 0.6643666388243139,
+      "upper95": 0.9117038995660203,
+      "worlds": 8
+    },
+    "claim_scope_changed": false,
+    "reported": true,
+    "result": "adverse/no incremental value"
+  },
+  "schema_version": 1
+}

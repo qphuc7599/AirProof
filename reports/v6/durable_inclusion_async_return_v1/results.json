@@ -1,0 +1,41 @@
+{
+  "registration": "v6-durable-inclusion-async-return-v1",
+  "role": "opt-in engineering development mechanism; not scientific evidence or confirmation",
+  "trace_hash": "8e7b7b7c9f0c7a82a1e923b3109f2d2e2f8513af5a67a5667890028ec21a1456",
+  "observations": 529,
+  "physical_raw_delivered": 288,
+  "timely_raw_delivered": 181,
+  "stale_rejected": 107,
+  "storage_rejected": 0,
+  "selected": 181,
+  "collector_included": 181,
+  "externally_checkpointed": 73,
+  "publicly_checkpointed": 0,
+  "origin_verified": 73,
+  "durable_storage_bytes": 266734,
+  "durable_storage_capacity_bytes": 1048576,
+  "durable_storage_peak_bytes": 266734,
+  "inclusion_proof_bytes": 20608,
+  "return_raw_bytes": 148480,
+  "return_control_bytes": 4640,
+  "expired_return_objects": 0,
+  "pending_return_objects": 21,
+  "return_backlog_objects": 179,
+  "finite_estimates": true,
+  "paired_batch_v3": {
+    "selected": 45,
+    "origin_verified": 32,
+    "return_raw_bytes": 64000,
+    "return_control_bytes": 2000
+  },
+  "detection_scope": {
+    "omission_after_received_acceptance": "visible as missing terminal state",
+    "mutation": "receipt content hash and Merkle proof verification",
+    "rollback": "retained newer signed tree size detects older-head replay",
+    "split_view": "conflicting signed roots detectable only when heads are compared",
+    "public_availability": "not modeled"
+  },
+  "confirmation_eligible": false,
+  "confirmation_blocker": "No confirmation unless all integrity/storage/accounting tests pass and a separately modeled public checkpoint publication path exists.",
+  "scope_limits": "No availability, BFT, finality, censorship-resistance, public-publication, or scientific claim."
+}

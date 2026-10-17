@@ -1,0 +1,82 @@
+{
+  "role": "contemporary-public-predictor-one-step-adaptation",
+  "source_paper": "https://doi.org/10.1093/jrsssc/qlaf007",
+  "author_repository": "https://github.com/Env-an-Stat-group/25.Bonas.JRSSC",
+  "author_commit": "6f05f241ffe175b26a4d081091c30bfd4cfb10a2",
+  "data_sha256": "82f6a273a0b7dbcf42988549321385df56671274b8470334daaf12ce74207064",
+  "locations_sha256": "5a716c3bbda9e0ae3bbc22d15c8ad1021107cc4fa1f0ed1801c41b3d4bf426a5",
+  "module_sha256": "86c9124ea1fc2d3a594e66c0f882b6366f8d7fa0c397da47e177467dc057b22d",
+  "runner_sha256": "06750cbff8cb132b57404f5d652bde7858be06c631f4551ff24b8f8bf22c7cdb",
+  "stations": 44,
+  "epochs": 912,
+  "source_interval_hours": 4,
+  "time_axis_note": "ordered author archive has 912 epochs, while article describes 870; no timestamps supplied; not an exact table replication",
+  "split_half_open": {
+    "DESN_fit": [
+      0,
+      456
+    ],
+    "TNN_fit": [
+      456,
+      638
+    ],
+    "model_selection": [
+      638,
+      775
+    ],
+    "untouched_test": [
+      775,
+      912
+    ]
+  },
+  "forecast_input": "public archive observations up to target t-1, never target t",
+  "PCA_fit": "DESN training prefix only, unlike author code's combined train/future PCA",
+  "future_observations": "each is used as an input only after its acquisition time in rolling one-step evaluation",
+  "DESN": {
+    "units": 500,
+    "layers": 3,
+    "reduced_units": 10,
+    "spectral_radii": [
+      0.4,
+      1.0,
+      1.0
+    ],
+    "leak": 0.49,
+    "sparsity": 0.1,
+    "ridge": 0.1,
+    "lag": 1,
+    "ensemble": 100,
+    "washout": 12
+  },
+  "TNN": {
+    "channels": 4,
+    "heads": 2,
+    "encoder_layers": 1,
+    "decoder_layers": 1,
+    "feedforward": 16,
+    "dropout": 0.1,
+    "history": 48,
+    "max_optimizer_steps": 4000,
+    "lr": 0.001,
+    "batch_size": 64,
+    "optimizer": "Adam",
+    "loss": "MSE in frozen training units",
+    "checkpoint_interval": 100,
+    "patience_checks": 10,
+    "minimum_steps": 500,
+    "seed": 7800
+  },
+  "adaptations": [
+    "causal one-step horizon",
+    "separate out-of-sample TNN fit prefix",
+    "training-only PCA",
+    "bounded optimizer budget and early stopping",
+    "validation-only convex ensemble weight",
+    "nonnegative outputs for every predictor"
+  ],
+  "torch": "2.14.0+cpu",
+  "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+  "device": "cpu",
+  "threads": 1,
+  "created_unix": 1788406896.4365947
+}

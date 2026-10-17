@@ -1,0 +1,31 @@
+{
+  "role": "registered v6 fairness-mechanism validation; descriptive, not primary or estimator validation",
+  "source_outcomes_sha256": "961f359e3b0d4f87776a435a5426e5a6f3e43fc0e0d0b4fc6e04bd5858428673",
+  "analysis_script_sha256": "7e8088ccc7062bfd44407f42c5c340af9fa30f8d0b810a68b71403eb5494589c",
+  "artifacts_sha256": {
+    "outcomes.json": "961f359e3b0d4f87776a435a5426e5a6f3e43fc0e0d0b4fc6e04bd5858428673",
+    "per_world.csv": "85a05215ec009e70410900023cfaa059b86325c85365f5c915f3581dd78a2a1b",
+    "paired_outcomes.csv": "f0b51f5207a6dcd2d4a7346213558be387091997e7803d846aa9cfeec7514d6f",
+    "factorial_effects.csv": "40087cfd204b0e6fadf5ab98a9279409c6e6e2f95f48943bb2a1b0ca1c230062",
+    "strata_paired.csv": "403c836681f858500e8646c49624d744083fead7143d87cf3222e19e4bbdc342",
+    "analysis.json": "f8d9b162ff9a9075460db61fdbed7f66110926920c3e90f6f55c28c082dc2f21"
+  },
+  "results_document_sha256": "5c6884e66275e11707612bb29222a88e6c15d7fbbabecf2a09e49e9216e70d37",
+  "run_manifest_sha256": "4fa65adc1853fd2ced90e9bc08041865a1c8368fd40ef56965620dccd44ac594",
+  "world_results_sha256": {
+    "6203000": "4e4fa3659d38b3b7cf58fd95ad967244d6e60a274fd9b0a85b2104d4963d48c6",
+    "6203001": "d3d50af513cf3de5e499df379fe77a7627fa803c4e4de9d6a1b8f11c07765140",
+    "6203002": "8560c8eb71dc731b947ac941a83cfbfbdf95f18584688df0b17ca99c92dd9289",
+    "6203003": "2df389be7f330c6795ad919256636f38a452b8006bfa301df97e674242303fa8",
+    "6203004": "b6fcacc7f09e4a14c110b27bc4d0684810a8669f66f23b83d1ee123410afcd17",
+    "6203005": "ac33671ad82c5d17f8d84781e7315ba4fbccca82a868ac3cb249916ad64fe252",
+    "6203006": "202540e13a796512addf760074539b5709535a20cebe862e4f47e5e3890e9059",
+    "6203007": "0255f4137f6ff3f52aa37c5a55117c15090f0542aa9c30d62766596744f53103",
+    "6203008": "c32eff654516e29cd8423d3a62c531549fee3b77107178b43496f455fa5507b8",
+    "6203009": "308b6fdd65b033e8cbd5e38c3672ed6abb25be9a6aff60f0bb7a9ccd629b528d",
+    "6203010": "bc5b9c76ca3106dffcc4ec91be8feed1a87ff75124c33893b2cd04baf29334aa",
+    "6203011": "2ab650e298c2d8e6ff93b0554875008c5f77487d7d111dbd4ec5df7f6b65c6ca"
+  },
+  "primary_authorized": false,
+  "remaining_for_primary": "eligible frozen estimator, independent calibration, prospective power/sample-size lock, and untouched confirmation seeds"
+}

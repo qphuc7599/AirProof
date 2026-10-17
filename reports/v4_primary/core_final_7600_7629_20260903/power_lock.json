@@ -1,0 +1,219 @@
+{
+  "role": "prospective-before-any-primary-world",
+  "protocol": {
+    "protocol_version": "final-public-reference-v4-core-campaign-1",
+    "status": "prospective-protocol-final-config-and-power-required-before-primary",
+    "frontier": "reports/v4_validation/fairness_frontier_7400_7407",
+    "validation_seeds": [
+      7300,
+      7301,
+      7302,
+      7303,
+      7304,
+      7305,
+      7306,
+      7307,
+      7308,
+      7309,
+      7310,
+      7311
+    ],
+    "primary_seed_start": 7600,
+    "primary_min_worlds": 30,
+    "primary_max_worlds": 100,
+    "agents": 1000,
+    "steps": 672,
+    "common_methods": [
+      "airproof_v4",
+      "squared_loss_v4"
+    ],
+    "additional_severe_clean_methods": [
+      "airproof_v4_no_fairness",
+      "airproof_v4_no_relay"
+    ],
+    "predeclared_operational_overrides": {
+      "protocol_version": "airproof-v4-core-final-architecture-1",
+      "status": "final-configuration-role-defined-by-campaign-manifest",
+      "execution.trace_python_allocations": false,
+      "privacy.epsilon_user_max": 8.0,
+      "privacy.epsilon_mean": 0.2857142857142857,
+      "privacy.epsilon_count": 0.0,
+      "privacy.private_eligibility": false,
+      "privacy.k_min": 20,
+      "privacy.release_mode": "residual",
+      "privacy.residual_clip": 10.0,
+      "privacy.release_deadline_steps": 24
+    },
+    "operational_choice_rationale": [
+      "hourly-internal-twin-but-daily-public-DP-views-with-eight-epsilon-full-history-budget",
+      "chosen-before-new-DP-grid-outcomes-not-selected-from-best-observed-setting",
+      "legacy-hourly-epsilon-504-validation-is-permissive-numerical-diagnostic-not-practical-main-budget",
+      "instrumentation-choice-does-not-change-any-scientific-metric-ABBA-regression-verified",
+      "RSS-sampling-remains-enabled-python-allocation-profiler-disabled-to-reduce-runtime"
+    ],
+    "cells": {
+      "anchor_clean": {
+        "network.availability": 1.0,
+        "network.outage_median_hours": 0,
+        "network.outage_p95_hours": 0,
+        "world.participation_skew": 1.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "outage_clean": {
+        "network.availability": 0.75,
+        "network.outage_median_hours": 6,
+        "network.outage_p95_hours": 24,
+        "world.participation_skew": 5.0,
+        "attack.kind": "clean",
+        "attack.fraction": 0.0
+      },
+      "severe_clean": {
+        "attack.kind": "clean"
+      },
+      "severe_adversarial_drift": {
+        "attack.kind": "adversarial_drift"
+      },
+      "severe_hotspot_suppression": {
+        "attack.kind": "hotspot_suppression"
+      }
+    },
+    "validation_role": "all-five-physical-cells-and-both-ablations-at-selected-final-fairness-point",
+    "power": "upper95-bootstrap-validation-contrast-SD-and-one-sided-noncentral-t-power",
+    "power_target": 0.9,
+    "power_sizing_alpha": 0.007142857142857143,
+    "familywise_alpha": 0.05,
+    "primary_adjustment": "Holm-seven-prespecified-hypotheses",
+    "report_unattainable_power": true,
+    "no_retuning_after_primary": true,
+    "primary_n_selected_before_primary_data": true,
+    "source_rule": "primary-reuses-validation-source-snapshot-and-configuration-exactly",
+    "clock": {
+      "prediction": "bounded-fixed-lag-reconstruction-and-separately-frozen-live-nowcast",
+      "DP": "acquisition-epoch-plus-fixed-24-epoch-collection-deadline"
+    }
+  },
+  "source_hash": "758f96a75587eaaf1c0f884444f62d0aa12353dfa8ef0e85ddbc3c3746eb64a5",
+  "base_configuration_hash": "3d55919b847b818aa1f107ed0983833b71163b0b667536c6020870efdf9f9e7f",
+  "validation_results_sha256": "9878eb12a2cc2e8692b92f2bbc962656184bf33f1f111a5090fa4dae9f5b365c",
+  "validation_seeds": [
+    7300,
+    7301,
+    7302,
+    7303,
+    7304,
+    7305,
+    7306,
+    7307,
+    7308,
+    7309,
+    7310,
+    7311
+  ],
+  "hypotheses": {
+    "H1": {
+      "pilot_mean_contrast": -0.09459105761558491,
+      "pilot_sd": 0.02295623411344693,
+      "upper95_bootstrap_pilot_sd": 0.03280355498074346,
+      "required_worlds": 5,
+      "effect_in_target_direction": true,
+      "power_at_30": 1.0,
+      "power_at_selected_n": 1.0
+    },
+    "H2": {
+      "pilot_mean_contrast": -0.09291107857540713,
+      "pilot_sd": 0.020538388206384525,
+      "upper95_bootstrap_pilot_sd": 0.029267960310813745,
+      "required_worlds": 5,
+      "effect_in_target_direction": true,
+      "power_at_30": 1.0,
+      "power_at_selected_n": 1.0
+    },
+    "H3": {
+      "pilot_mean_contrast": -0.1028654409506058,
+      "pilot_sd": 0.025115434945427853,
+      "upper95_bootstrap_pilot_sd": 0.035518723347482066,
+      "required_worlds": 5,
+      "effect_in_target_direction": true,
+      "power_at_30": 1.0,
+      "power_at_selected_n": 1.0
+    },
+    "H4": {
+      "pilot_mean_contrast": -0.018161739721122932,
+      "pilot_sd": 0.012860534803093654,
+      "upper95_bootstrap_pilot_sd": 0.016403730733649303,
+      "required_worlds": 15,
+      "effect_in_target_direction": true,
+      "power_at_30": 0.9994928291391827,
+      "power_at_selected_n": 0.9994928291391827
+    },
+    "H5": {
+      "pilot_mean_contrast": -0.14968205812780377,
+      "pilot_sd": 0.02120290580072169,
+      "upper95_bootstrap_pilot_sd": 0.0247316706492684,
+      "required_worlds": 4,
+      "effect_in_target_direction": true,
+      "power_at_30": 1.0,
+      "power_at_selected_n": 1.0
+    },
+    "H6": {
+      "pilot_mean_contrast": -0.05679838363793327,
+      "pilot_sd": 0.029138052234855813,
+      "upper95_bootstrap_pilot_sd": 0.03465297019891979,
+      "required_worlds": 9,
+      "effect_in_target_direction": true,
+      "power_at_30": 0.9999999991559192,
+      "power_at_selected_n": 0.9999999991559192
+    },
+    "H7": {
+      "pilot_mean_contrast": -0.12154034924652302,
+      "pilot_sd": 0.03802505288228034,
+      "upper95_bootstrap_pilot_sd": 0.04808877874311732,
+      "required_worlds": 6,
+      "effect_in_target_direction": true,
+      "power_at_30": 1.0,
+      "power_at_selected_n": 1.0
+    }
+  },
+  "unconstrained_proposed_n": 30,
+  "selected_n": 30,
+  "resource_cap_binds": false,
+  "all_estimated_powers_at_least_target": true,
+  "primary_seeds": [
+    7600,
+    7601,
+    7602,
+    7603,
+    7604,
+    7605,
+    7606,
+    7607,
+    7608,
+    7609,
+    7610,
+    7611,
+    7612,
+    7613,
+    7614,
+    7615,
+    7616,
+    7617,
+    7618,
+    7619,
+    7620,
+    7621,
+    7622,
+    7623,
+    7624,
+    7625,
+    7626,
+    7627,
+    7628,
+    7629
+  ],
+  "assumptions": "plug-in paired-world Gaussian t-test power using validation mean and upper bootstrap SD; conditional planning, not guaranteed achieved power",
+  "nonpositive_effect_handling": "no sample size promises a target-direction effect absent in validation; retain this finding, do not claim 90% power",
+  "locked_unix": 1788416899.6966736,
+  "primary_worlds_observed": 0,
+  "analysis_sha256": "1d21be5721426d0f4ae5412cac8322f3db65e3f9afbc428a436cc064d103adb6"
+}

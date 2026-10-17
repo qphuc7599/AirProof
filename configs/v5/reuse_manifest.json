@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-07T00:32:08.671312+00:00",
+  "artifacts": [
+    {
+      "path": "results/fullpaper30h_20260902/results/e6_hardhat_local.json",
+      "exists": true,
+      "bytes": 6158,
+      "sha256": "5aec38aac256e0653a5a524a9c8c92f6764e510cd3dca49c792d925470f539c0"
+    },
+    {
+      "path": "reports/v4_validation/sepolia_30_anchors_20260903/analysis.json",
+      "exists": true,
+      "bytes": 5136,
+      "sha256": "afba3a08edc869097721614ef45160667b5be3efa92096d732cfc1fc41881b1b"
+    },
+    {
+      "path": "reports/v4_validation/sepolia_30_anchors_20260903/anchors.json",
+      "exists": true,
+      "bytes": 19052,
+      "sha256": "b74af9fb6ba12e36642b2f5d6e990ff88e1b5f58695ca1ce14ebb88579d251f0"
+    },
+    {
+      "path": "contracts/src/AirProofAnchor.sol",
+      "exists": true,
+      "bytes": 4851,
+      "sha256": "6e7badf7cd392a6976828c70ee71c2f743432ed4aa8144e02fc31b3c90517d4f"
+    },
+    {
+      "path": "docs/V4_REPRODUCTION_AND_EVIDENCE.md",
+      "exists": true,
+      "bytes": 17690,
+      "sha256": "846fb10c98a3358858ed9d3c1de89e299958ff0bf2becfca8e43278c009b3808"
+    },
+    {
+      "path": "reports/v4_primary/core_final_7600_7629_20260903/analysis.json",
+      "exists": true,
+      "bytes": 54583,
+      "sha256": "c246b29b165b4712cf1073d53927a2e7ad572909b9d88019f10bddaefdf59208"
+    }
+  ],
+  "hardhat": {
+    "rows": 30,
+    "expected": 30,
+    "role": "historical-local-EVM-feasibility"
+  },
+  "sepolia": {
+    "rows": 30,
+    "expected": 30,
+    "all_success_readback": true,
+    "unique_transactions": 30,
+    "time_blocks": 3,
+    "role": "historical-public-network-feasibility-not-v5-delay-or-finality"
+  },
+  "no_new_public_transactions": true,
+  "v4_primary_relabelled_as_v5": false,
+  "reuse_gate": "Evidence remains attached to its original mechanism, inputs, resource contract, target and clock. Changed integrated v5 needs new evidence.",
+  "local_v5_audit": {
+    "path": "reports/v5/audit_same_stream/analysis.json",
+    "exists": true,
+    "bytes": 39089,
+    "sha256": "8b15e3d608635040e79dcdaa525fea28c42764e9f7e06169707f7ee0c8aa769d"
+  }
+}

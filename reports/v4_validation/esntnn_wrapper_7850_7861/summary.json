@@ -1,0 +1,124 @@
+{
+  "role": "fixed-estimator-interface-test-on-public-real-field-with-synthetic-citizen-channel",
+  "jobs": 72,
+  "contrasts": {
+    "clean": {
+      "wrapper_rmse": 2.979866628615538,
+      "unbounded_graph_rmse": 2.4612738074323355,
+      "versus_backbone": [
+        {
+          "ratio": 0.9082829782178912,
+          "lower95": 0.8803906233415113,
+          "upper95": 0.9256655340927491,
+          "time_block_epochs": 6,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 0.9082829782178912,
+          "lower95": 0.8772121661249198,
+          "upper95": 0.9275454455253686,
+          "time_block_epochs": 12,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 0.9082829782178912,
+          "lower95": 0.8711355954644336,
+          "upper95": 0.9278680713449671,
+          "time_block_epochs": 24,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        }
+      ],
+      "versus_same_information_unbounded": {
+        "ratio": 1.210700987276264,
+        "lower95": 1.092387736474295,
+        "upper95": 1.2949302524205282,
+        "time_block_epochs": 12,
+        "draws": 4000,
+        "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+      }
+    },
+    "adversarial_drift": {
+      "wrapper_rmse": 3.379713216808192,
+      "unbounded_graph_rmse": 3.0365089167243653,
+      "versus_backbone": [
+        {
+          "ratio": 1.0301588522809593,
+          "lower95": 0.9673732447394771,
+          "upper95": 1.1363592183133864,
+          "time_block_epochs": 6,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 1.0301588522809593,
+          "lower95": 0.9524789129266176,
+          "upper95": 1.164443580827121,
+          "time_block_epochs": 12,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 1.0301588522809593,
+          "lower95": 0.9306452721845729,
+          "upper95": 1.1992412648164386,
+          "time_block_epochs": 24,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        }
+      ],
+      "versus_same_information_unbounded": {
+        "ratio": 1.113025948382216,
+        "lower95": 1.0018781647609387,
+        "upper95": 1.2278177027821093,
+        "time_block_epochs": 12,
+        "draws": 4000,
+        "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+      }
+    },
+    "negative_bias": {
+      "wrapper_rmse": 3.0905782203621026,
+      "unbounded_graph_rmse": 2.592400590952444,
+      "versus_backbone": [
+        {
+          "ratio": 0.9420286006927912,
+          "lower95": 0.9151710182649605,
+          "upper95": 0.9781662692739126,
+          "time_block_epochs": 6,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 0.9420286006927912,
+          "lower95": 0.9113142735947535,
+          "upper95": 0.9921557807160067,
+          "time_block_epochs": 12,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        },
+        {
+          "ratio": 0.9420286006927912,
+          "lower95": 0.9086796711141013,
+          "upper95": 1.006008735773369,
+          "time_block_epochs": 24,
+          "draws": 4000,
+          "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+        }
+      ],
+      "versus_same_information_unbounded": {
+        "ratio": 1.192168460055253,
+        "lower95": 1.0775915805323315,
+        "upper95": 1.2811160979596368,
+        "time_block_epochs": 12,
+        "draws": 4000,
+        "scope": "joint noise-realization and circular temporal-block bootstrap; stations kept together; one public archive, not independent cities"
+      }
+    }
+  },
+  "backbone_rmse": 3.2807689894863223,
+  "max_solver_failure_rate": 0.0,
+  "maximum_bounded_correction": 8.0,
+  "elapsed_seconds": 378.64162990001205
+}

@@ -1,0 +1,219 @@
+{
+  "verified_at": "2026-09-27T01:05:25.296Z",
+  "anchors": 30,
+  "chain_id": 11155111,
+  "finalized_head": 11789840,
+  "checked": [
+    {
+      "transaction_hash": "0x21c10afa8a5c38f738fde80f86e7d1f474d70720f78dac9ee96b0b31b6aa9c98",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x8926805c6405cb4f8480807f2484015d33ed57235a536b011b8c942153c1830a",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xc9c9b40327d84aad76a09b737bd7a1f64cac1cf3f619874dcc96919429bace74",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x386a78539f4c83acd1a9a880c511745b8eac6215376be1965d034441d0a7abfb",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xe00dbeb6fe10984113024a1c94106a6c627db9bb4719a14f56e0b095043b187a",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xd4c9f499de9d6903957089352965093e1ba168d1256a724f0fbcfe4d0ed7c1aa",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x2cdcde5aa3193719fd97df69c9c94a5c18c983121d9d12c899c269bab25a79a4",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x28c97befc3bc09dee3211b307f870b064dd7cc235dffe5f2977581ba53229b94",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x0a5864c7330fa4787c57fa6748582b97665b46d01691b3ce831fecfa7cc966e2",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x26a5bcb585a8fefa9fb2dde67589a861e2b2e94eb86f9140a074f8a5c1b1ef3b",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xa89f3acc7976fac25bcdaf520813ff218b88d3da359a2c1da3ca880d85192cee",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xe0e332eff4b600ee93c708f0f489ee3bdf822918755cff4188c943e76393280c",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x9dcec7bc444a7953712a7ab40ef42e83b90bfbfefe63d4e5ffa55748bbc47f91",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xe2002ae7be8cb12442645abbe7558dba86db226e50ca7ed9bef1a33cf9f28a1a",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xd2006cb895f046d7c3aad2f466dc5ad8f8a7180c5393319923870a0bf2336bc0",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x9cf86f2ff0c988fa048839c3069eef2d4338a4c5a51890a801c7aa9bc5fc7a7f",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x431e280455715b80489aa28577699245715d1f8c343b9e10663a6d917f4ea88d",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x2f9b5b639896fbd1254b0d981155de10f2c2844445574a917c23e3e7d5cbcb75",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xf4b971253d9e514297ed3d45449d73bbddc576ac728436d70ed8ff195943c5d2",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x399994ea6bcaf870e9943ae59960840d77f7eefcc3c9b21e93a6b36bf7e461b6",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xded3cd3f2d041696e226e9767d85109e13ed0f3f0862c1cdb2a4c00ab72866d5",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x884c69cb16085fd402c266535a7688d9ba20d29d9e022147a658050e5724af55",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x6b94172bfdcfa49851d0e2de34a385d47e6b20b7e8bee9bf13297a3f8fcce31b",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x2e29b9d336400861ef5c2eec29b1bd9e9a04cc479eb7d36d309e610470e1f7de",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xf714ecb5df098e8ab6133d272ce4febfdf6a2c6dfcf1016937483eb834071742",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xcd9e746821f7afe50ee4f106aa34d012bbef93bffa19cc503d191a4498450223",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xffa5a1e77dcb92ef603f466c703e692df4c6d55ce967bf94efd249cb5ca12278",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xfcce404bef18b1935196f6f6096fabde53c9bbc679106a9696d1478c623b0dab",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0x7a2aa60b5223647d70f2219a5620d98f3420d4b01f96b82536f328af9e743a59",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    },
+    {
+      "transaction_hash": "0xbd39fe8dfe9baf434c42740d966fd45e9c63113fb3e0678ffad500f92d09dea6",
+      "canonical_receipt": true,
+      "contract_readback": true,
+      "finalized": true
+    }
+  ],
+  "quantile_convention": "linear interpolation at (n-1)*p; median averages the middle two for n=30",
+  "observed_finality_seconds": {
+    "minimum": 786.796,
+    "median": 950.049,
+    "p95": 1133.12275,
+    "maximum": 1161.716
+  },
+  "two_confirmation_observation_seconds": {
+    "minimum": 19.78,
+    "median": 33.6575,
+    "p95": 37.324,
+    "maximum": 47.16
+  },
+  "gas": {
+    "minimum": 190278,
+    "median": 190302,
+    "p95": 190302,
+    "maximum": 190302
+  },
+  "anchor_fees_test_eth": 0.006094956356162946,
+  "elapsed_seconds": 4997.224,
+  "rpc_failures": 0,
+  "reverted_anchors": 0,
+  "right_censored": 0,
+  "clock_note": "signed_at precedes signing/broadcast; time_to_receipt_seconds was recorded after two-confirmation wait and is not first-inclusion latency. Finality is first RPC observation with nominal 12 s polling, not exact consensus transition time.",
+  "source_sha256": {
+    "manifest.json": "2fdc90719fe459d563465d4e3061f59522b31c000e4268d569d903dc3f1f802b",
+    "anchors.json": "9275c80775ccce43b36e5c80c9a0a05f4693ad0088022b39c6a53cb1c503ac9a",
+    "events.jsonl": "28afcdf725cb1495bd68f6261893d8b77a116ba1e4edc3e2f90967e5f9f92456",
+    "summary.json": "09c61979441aa1695d94eaf77c66850059a9ced005faeaae3ad1f19aadb501b5"
+  }
+}

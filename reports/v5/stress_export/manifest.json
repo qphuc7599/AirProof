@@ -1,0 +1,23 @@
+{
+  "role": "complete descriptive OAT stress; four synthetic worlds; no primary or new selection",
+  "point_rows": 304,
+  "clock_rows": 608,
+  "sidecar_rows": 608,
+  "solver_failure_rows": 0,
+  "resource_checks_pass": true,
+  "transport_cache_hits": 64,
+  "transport_cache_misses": 12,
+  "inputs": {
+    "reports\\v5\\stress_registered_v1\\scoring\\results.jsonl": "8739cc4c5332ef7dea812b6a25138319f97c45571732c1e393d95e3bcc031069",
+    "reports\\v5\\stress_registered_v1\\intervals_sidecar\\world_metrics.jsonl": "160ef68bfd45315f9b1aadaba7288582f347e90bc29452dc80a2894dfdfa3bd3"
+  },
+  "outputs": {
+    "all_events.csv": "ce070e9598b54aee9e3e077e35f19a733e6d10b4d40ddea8148306ff2c2475cd",
+    "all_intervals.csv": "6882237ff93b488a08a11cd31d53935a6cfa144a53c8914e3bfebb040efb4521",
+    "all_points.csv": "8e8c397eb1647bc0a305e47ed451cd2a26d06d5e505d85606685088fb080a739",
+    "event_means.csv": "f07c09c64ee3464f9d43577fdd1f394936114e0d85c65e15f9e530acaad379ac",
+    "event_valid_world_counts.csv": "2af14c5fe96722e27ad6d081752d1ba8a26e3443854e150ff69af7360ad5aae0",
+    "interval_means.csv": "7f26da50b96de02f9ac38e1800c0efaecfddd2ead2dbc2a9a7ae978b480f9bc1",
+    "means.csv": "a4c5849ea56f98223529a45b373e197481bb53a23ac6685c7474ca9bba63f0c5"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "registration": "v6-durable-public-checkpoint-v2",
+  "role": "single engineering development fixture; not scientific evidence or confirmation",
+  "trace_hash": "8e7b7b7c9f0c7a82a1e923b3109f2d2e2f8513af5a67a5667890028ec21a1456",
+  "observations": 529,
+  "selected": 181,
+  "collector_included": 181,
+  "origin_verified": 73,
+  "externally_checkpointed": 73,
+  "publicly_checkpointed": 99,
+  "public_heads_verified": 6,
+  "public_uplink_contacts": 18,
+  "public_raw_bytes": 7680,
+  "public_control_bytes": 240,
+  "public_expired": 2,
+  "public_pending": 1,
+  "public_peak_queue_bytes": 1536,
+  "public_peak_reassembly_bytes": 2048,
+  "origin_return_raw_bytes": 148480,
+  "origin_return_control_bytes": 4640,
+  "durable_storage_bytes": 266734,
+  "durable_storage_capacity_bytes": 1048576,
+  "inclusion_proof_bytes": 20608,
+  "fault_checks": {
+    "normal_heads_signed": true,
+    "tampered_head_rejected": true,
+    "rollback_detected_when_compared": true,
+    "split_view_detected_when_compared": true,
+    "missing_publication_not_counted": true,
+    "byte_control_exact": true
+  },
+  "all_fault_checks_passed": true,
+  "comparators": {
+    "batch_v3": {
+      "selected": 45,
+      "origin_verified": 32
+    },
+    "durable_v1": {
+      "selected": 181,
+      "origin_verified": 73,
+      "publicly_checkpointed": 0
+    }
+  },
+  "schedule_source": "prospectively fixed synthetic public-auditor uplink; every fourth epoch over the registered 72-epoch engineering horizon",
+  "finite_estimates": true,
+  "confirmation_eligible": false,
+  "confirmation_blocker": "This single exposed engineering fixture cannot authorize confirmation; public-path and detection checks must pass before any separately registered validation proposal.",
+  "scope_limits": "No availability, BFT, finality, censorship-resistance, scientific, or general-publication claim."
+}

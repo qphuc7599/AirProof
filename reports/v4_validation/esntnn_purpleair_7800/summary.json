@@ -1,0 +1,66 @@
+{
+  "role": "contemporary-public-predictor-one-step-adaptation",
+  "test_epochs": 137,
+  "stations": 44,
+  "metrics": {
+    "persistence": {
+      "rmse": 3.1696779086671305,
+      "mae": 1.408870587633551
+    },
+    "DESN": {
+      "rmse": 7.841556034635197,
+      "mae": 5.644680057576529
+    },
+    "TNN": {
+      "rmse": 3.2807689894863223,
+      "mae": 1.4474933938151873
+    },
+    "ESN_TNN": {
+      "rmse": 3.2807689894863223,
+      "mae": 1.4474933938151873
+    }
+  },
+  "selection": {
+    "selected_before_test_evaluation_unix": 1788407122.531506,
+    "best_checkpoint_step": 1800,
+    "completed_optimizer_steps": 2800,
+    "tnn_convex_weight": 1.0,
+    "validation_rmse": {
+      "DESN": 5.8890566347579805,
+      "TNN": 2.8283351829950982,
+      "ESN_TNN": 2.8283351829950982
+    },
+    "DESN_artifact_sha256": "be67c79aed8b8e226c924e0f71bb4774dce9b439391a862dc6e408b3b2ea9019",
+    "TNN_artifact_sha256": "b414666d8bd5be20e9f21cb86ec0f9fd771bf0de87acb89294b2571471e51e00",
+    "no_test_parameter_updates": true
+  },
+  "ESN_TNN_vs_persistence": [
+    {
+      "ratio": 1.0350480660875432,
+      "lower95": 0.8753564035320325,
+      "upper95": 1.206957199577919,
+      "block_epochs": 6,
+      "draws": 4000,
+      "method": "circular time-block bootstrap of complete spatial vectors"
+    },
+    {
+      "ratio": 1.0350480660875432,
+      "lower95": 0.8734858212547473,
+      "upper95": 1.2077444578585017,
+      "block_epochs": 12,
+      "draws": 4000,
+      "method": "circular time-block bootstrap of complete spatial vectors"
+    },
+    {
+      "ratio": 1.0350480660875432,
+      "lower95": 0.8844525387585429,
+      "upper95": 1.1755297537216216,
+      "block_epochs": 24,
+      "draws": 4000,
+      "method": "circular time-block bootstrap of complete spatial vectors"
+    }
+  ],
+  "wrapper_evaluation": "not included in this predictor-only artifact",
+  "elapsed_seconds": 258.69007719999354,
+  "finished_unix": 1788407150.4662716
+}

@@ -1,0 +1,20 @@
+{
+  "registration": "v6-ledger-transparency-same-stream-v1",
+  "registered_date": "2026-09-08",
+  "role": "local cryptographic engineering benchmark; not scientific evidence or consensus",
+  "batch_sizes": [32, 128, 512, 2048],
+  "trials": 100,
+  "modes": ["signed_log", "transparency_signed_comparison", "transparency_finite_public_anchor"],
+  "faults": ["mutation", "omission_after_receipt", "rollback", "split_view", "checkpoint_loss", "auditor_partition", "delayed_anchor", "forged_terminal_witness"],
+  "applicability": {
+    "signed_log": ["mutation", "omission_after_receipt", "rollback", "split_view", "checkpoint_loss", "forged_terminal_witness"],
+    "transparency_signed_comparison": ["mutation", "omission_after_receipt", "rollback", "split_view", "checkpoint_loss", "forged_terminal_witness"],
+    "transparency_finite_public_anchor": ["mutation", "omission_after_receipt", "rollback", "split_view", "checkpoint_loss", "auditor_partition", "delayed_anchor", "forged_terminal_witness"]
+  },
+  "schedule": {"fault_epoch": 10, "comparison_epoch": 18, "receipt_deadline_epoch": 24, "horizon_epoch": 60, "normal_anchor_uplinks": [10, 12, 14, 16, 18, 20], "delayed_anchor_uplinks": [36, 40, 44, 48, 52]},
+  "public_uplink": {"capacity_bytes_per_direction": 1024, "release_reserved_bytes": 256, "control_budget_bytes": 128, "queue_buffer_bytes": 4096, "auditor_reassembly_buffer_bytes": 4096, "expiry_epochs": 8},
+  "v5_reuse_disposition": {"compatible": false, "manifest": "reports/v5/audit_same_stream/manifest.json", "manifest_sha256": "9e18724a13e8302dd65373624224f08dea2e0c634c3f465c90f3130adac5234c", "results_sha256": "d0695853e06100243b1016753b3708244d7078297d966bc378ad7185038dc0d9", "reason": "v5 payload IDs, local anchor abstraction and payload_loss/replay schedule differ from durable/public v6 objects, finite uplink and forged-terminal/delayed-anchor faults"},
+  "expected_rows": 8000,
+  "censoring": "undetected applicable faults receive right_censored=true and restricted_detection_time=50 at horizon 60; inapplicable mode/fault pairs appear only in the applicability table",
+  "scope_limits": "Local Ed25519/Merkle and finite in-memory publication only; no Sepolia transaction, BFT, finality, availability, or censorship-resistance claim."
+}
